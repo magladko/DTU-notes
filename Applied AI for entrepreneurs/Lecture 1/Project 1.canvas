@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"0c4865765e3fa179","type":"text","text":"Predictive Maintenance Optimizer","x":-820,"y":-660,"width":250,"height":80,"color":"3"},
+		{"id":"3dfd6cfe3382a9cd","x":-820,"y":-560,"width":250,"height":60,"color":"3","type":"text","text":"Supply Chain Resilience Planner"},
+		{"id":"4817bfac64ce3a2b","x":-820,"y":-480,"width":250,"height":60,"color":"3","type":"text","text":"Personalized Health Forecaster"},
+		{"id":"d37d5551edab267e","x":-820,"y":-400,"width":250,"height":60,"color":"3","type":"text","text":"Smart City Resource Allocator"},
+		{"id":"c3c811d74cceb559","x":-820,"y":-320,"width":250,"height":60,"color":"3","type":"text","text":"Financial Risk Analyzer"},
+		{"id":"d43cf6f4a1a8359a","type":"file","file":"Applied AI for entrepreneurs/Lecture 1/Navigator-1.png","x":-820,"y":-180,"width":1319,"height":933}
+	],
+	"edges":[]
+}
