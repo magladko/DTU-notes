@@ -1,5 +1,5 @@
 # Introduction
-
+[[Claude-Exploring GPT2 Simulator Components]]
 [DTU Learn - Course Intro](https://learn.inside.dtu.dk/d2l/le/lessons/215232/units/860064
 
 [Aethena AI (Dashboards)](https://app.aethena.ai/experiences/cm0mkz2ua3c8w0810vyp5m60t/program?activeTab=content&lessonId=cm0mn0nev7dox0810mfn7g79l)
