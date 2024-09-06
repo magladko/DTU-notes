@@ -37,7 +37,6 @@ $$
 such that $(e,v) \in \rightarrow$, which we also write as $e \rightarrow v$, holds if and only if $v$ is the value obtained from evaluating expression $e$.
 
 For example, we have $(19 \oplus 23) \ominus 42 \rightarrow 0$.
-
 ### Answer
 
 $$
@@ -48,3 +47,4 @@ $$
 
 \end{aligned}
 $$
+## Exercise 1.3
