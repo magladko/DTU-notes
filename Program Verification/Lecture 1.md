@@ -1,6 +1,6 @@
 [Introduction @DTU Learn](https://learn.inside.dtu.dk/d2l/le/lessons/215949/units/861144)
 
-[[Preliminaries]]
+[[Preliminary Exercises]]
 
 What is program verification
 
