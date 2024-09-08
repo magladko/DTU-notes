@@ -15,6 +15,7 @@
               "state": {
                 "file": "Program Verification/Preliminary Exercises.md",
                 "mode": "source",
+                "backlinks": false,
                 "source": false
               }
             }
@@ -69,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e41b1fdf766de89c",
