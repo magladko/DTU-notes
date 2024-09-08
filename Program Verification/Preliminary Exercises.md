@@ -1,4 +1,4 @@
-[Source website](https://pv24.cmath.eu/00-preliminaries.html)
+[1. Preliminaries — Program Verification](https://pv24.cmath.eu/00-preliminaries.html)
 # Exercises
 
 ## Exercise 1.1
@@ -93,7 +93,6 @@ If $e = k$ where $k = const$, then
 2. $e \rightarrow m$ implies $k \rightarrow m$ by the (Const) rule, so $k = m$
 3. Hence $n = m$
 #### Inductive cases
-
 Inductive case 1: $e = e₁ ⊕ e₂$ 
 Induction hypothesis: The statement holds for $e₁$ and $e₂$.  
 Suppose $e → n$ and $e → m$. By the evaluation rule for addition:
@@ -109,4 +108,81 @@ Therefore, by structural induction, for all $e ∈ E$ and all integers n and m,
 if $e → n$ and $e → m$, then $n = m$.  
 This proves that the evaluation relation is deterministic.
 $$\blacksquare$$
+### Exercise 1.5
+Determine all models $\mathfrak{I}:{X,Y}→\set{true,false}$ of the following formulae:
+
+1. $(X→Y)→Y$
+2. $X∧¬Y∧(X→Y)$
+3. $(X \land (X \rightarrow Y)) \rightarrow Y$
+
+#### Answer
+##### 1. 
+| $X$ | $Y$ | $X \rightarrow Y$ | $(X \rightarrow Y) \rightarrow Y$ |
+| --- | --- | ----------------- | --------------------------------- |
+| 0   | 0   | 1                 | 0                                 |
+| 0   | 1   | 1                 | 1                                 |
+| 1   | 0   | 0                 | 1                                 |
+| 1   | 1   | 1                 | 1                                 |
+$$
+\begin{aligned}
+\frac{X,Y = false}{\mathfrak{I} \not \models (X→Y)→Y} \\\\
+\frac{\{(X, Y) \mid (X, Y) \in \{(\text{false}, \text{true}), (\text{true}, \text{false}), (\text{true}, \text{true})\}\}}{\mathfrak{I} \models (X→Y)→Y}
+\end{aligned}
+$$
+##### 2.
+| $X$ | $Y$ | $\lnot Y$ | $X \rightarrow Y$ | $X \land \lnot Y$ | $X \land \lnot Y \land (X \rightarrow Y)$ |
+| --- | --- | --------- | ----------------- | ----------------- | ----------------------------------------- |
+| 0   | 0   | 1         | 1                 | 0                 | 0                                         |
+| 0   | 1   | 0         | 1                 | 0                 | 0                                         |
+| 1   | 0   | 1         | 0                 | 1                 | 0                                         |
+| 1   | 1   | 0         | 1                 | 0                 | 0                                         |
+$$
+\frac{X,Y \in \textbf{Var}}{\mathfrak{I} \not \models X \land \lnot Y \land (X \rightarrow Y)}
+$$
+##### 3.
+| $X$ | $Y$ | $X \rightarrow Y$ | $X \land (X \rightarrow Y)$ | $(X \land (X \rightarrow Y)) \rightarrow Y$ |
+| --- | --- | ----------------- | --------------------------- | ------------------------------------------- |
+| 0   | 0   | 1                 | 0                           | 1                                           |
+| 0   | 1   | 1                 | 0                           | 1                                           |
+| 1   | 0   | 0                 | 0                           | 1                                           |
+| 1   | 1   | 1                 | 1                           | 1                                           |
+$$
+\frac{X,Y \in \textbf{Var}}{\mathfrak{I} \models (X \land (X \rightarrow Y)) \rightarrow Y}
+$$
+##### Probably better way of answering
+- For $(X→Y)→Y$: Models = {$\mathfrak{I}_1, \mathfrak{I}_2, \mathfrak{I}_3$} where: 
+	- $\mathfrak{I}_1 = \set{(X,false), (Y,true)}$ 
+	- $\mathfrak{I}_2 = \set{(X,true), (Y,false)}$ 
+	- $\mathfrak{I}_3 = \set{(X,true), (Y,true)}$
+- For $X∧¬Y∧(X→Y)$: Models = {} (empty set, as there are no models)
+- For $(X \land (X \rightarrow Y)) \rightarrow Y$: Models = {$\mathfrak{I}$ | $\mathfrak{I}:{X,Y}→\set{true,false}$} (All possible interpretations are models)
+### Exercise 1.6
+Consider the following formula F:
+$F \stackrel{\text{def}}{=} (X∨Y∨Z)∧(¬X∨Y)∧(¬Z∨Y)∧(¬Z∨¬Y)$
+Is $F$ satisfiable? Is $F$ valid? Justify your answer.
+
+#### Answer
+
+|     |     |     | $a$               | $b$              | $c$              | $d$                    |                             |
+| --- | --- | --- | ----------------- | ---------------- | ---------------- | ---------------------- | --------------------------- |
+| $X$ | $Y$ | $Z$ | $X \lor Y \lor Z$ | $\lnot X \lor Y$ | $\lnot Z \lor Y$ | $\lnot Z \lor \lnot Y$ | $a \land b \land c \land d$ |
+| 0   | 0   | 0   | 0                 | 1                | 1                | 1                      | 0                           |
+| 0   | 0   | 1   | 1                 | 1                | 0                | 1                      | 0                           |
+| 0   | 1   | 0   | 1                 | 1                | 1                | 1                      | 1                           |
+| 0   | 1   | 1   | 1                 | 1                | 1                | 0                      | 0                           |
+| 1   | 0   | 0   | 1                 | 0                | 1                | 1                      | 0                           |
+| 1   | 0   | 1   | 1                 | 0                | 0                | 1                      | 0                           |
+| 1   | 1   | 0   | 1                 | 1                | 1                | 1                      | 1                           |
+| 1   | 1   | 1   | 1                 | 1                | 1                | 0                      | 0                           |
+1. F is satisfiable as there exists an interpretation to satisfy $F$, for example $\mathfrak{I_1} \models F$, where $\mathfrak{I_1} = \set{(X, false), (Y, true), (Z, false)}$ 
+2. $F$ is not valid, as there exists a certain $\mathfrak{I_2} \not \models F$, i.e. $\mathfrak{I_2} = \set{(X, false), (Y, false), (Z, false)}$
+
+
+#### LLM Revised Answer
+Consider the following formula F: $F \stackrel{\text{def}}{=} (X∨Y∨Z)∧(¬X∨Y)∧(¬Z∨Y)∧(¬Z∨¬Y)$ Is $F$ satisfiable? Is $F$ valid? Justify your answer.
+
+1. F is satisfiable as there exists an interpretation that satisfies F. From the truth table, we can see that $\mathfrak{I_1} \models F$, where $\mathfrak{I_1} = \set{(X, false), (Y, true), (Z, false)}$. This interpretation makes all clauses of F true, resulting in F being true.
+2. F is not valid, as there exists an interpretation $\mathfrak{I_2}$ such that $\mathfrak{I_2} \not\models F$. From the truth table, we can see that $\mathfrak{I_2} = {(X, false), (Y, false), (Z, false)}$ makes F false. Specifically, this interpretation makes the first clause $(X∨Y∨Z)$ false, resulting in the entire formula being false.
+
+The truth table confirms these conclusions by showing that F is true for some rows (satisfiable) but not for all rows (not valid).
 
