@@ -94,41 +94,19 @@ If $e = k$ where $k = const$, then
 3. Hence $n = m$
 #### Inductive cases
 
+Inductive case 1: $e = e₁ ⊕ e₂$ 
+Induction hypothesis: The statement holds for $e₁$ and $e₂$.  
+Suppose $e → n$ and $e → m$. By the evaluation rule for addition:
+$e₁ → v₁$ and $e₂ → v₂$ and $n = v₁ + v₂$  
+$e₁ → v₁'$ and $e₂ → v₂'$ and $m = v₁' + v₂'$  
+By the induction hypothesis, $v₁ = v₁'$ and $v₂ = v₂'$  
+Therefore, $n = v₁ + v₂ = v₁' + v₂' = m$
 
-Certainly, I'd be happy to provide some hints and then give a full solution. Let's start with the hints:
+Inductive case 2: $e = e₁ ⊖ e₂$
+The proof is analogous to the addition case, using subtraction instead.
 
-1. Remember that structural induction follows the structure of the grammar. You'll need to consider three cases: constants, addition, and subtraction.
+Therefore, by structural induction, for all $e ∈ E$ and all integers n and m,  
+if $e → n$ and $e → m$, then $n = m$.  
+This proves that the evaluation relation is deterministic.
+$$\blacksquare$$
 
-2. For the base case (constants), think about how a constant evaluates and why it's deterministic.
-
-3. For the inductive cases (addition and subtraction), you'll need to use the induction hypothesis on the subexpressions.
-
-4. Consider what the evaluation rules tell you about the relationship between the values of subexpressions and the final result.
-
-5. You'll need to show that if two evaluations of the same expression yield different results, it leads to a contradiction with the induction hypothesis.
-
-Now, here's the full solution hidden as requested:
-
-> [!question]- Solution
-> We will prove this by structural induction on the expression e.
-> 
-> Base case: e = k (constant)
-> For any constant k, the only applicable rule is (Const), which states k → k.
-> Therefore, if e → n and e → m, we must have n = k and m = k, so n = m.
-> 
-> Inductive case 1: e = e₁ ⊕ e₂
-> Induction hypothesis: The statement holds for e₁ and e₂.
-> Suppose e → n and e → m. By the evaluation rule for addition:
-> e₁ → v₁ and e₂ → v₂ and n = v₁ + v₂
-> e₁ → v₁' and e₂ → v₂' and m = v₁' + v₂'
-> By the induction hypothesis, v₁ = v₁' and v₂ = v₂'
-> Therefore, n = v₁ + v₂ = v₁' + v₂' = m
-> 
-> Inductive case 2: e = e₁ ⊖ e₂
-> The proof is analogous to the addition case, using subtraction instead.
-> 
-> Therefore, by structural induction, for all e ∈ E and all integers n and m,
-> if e → n and e → m, then n = m.
-> This proves that the evaluation relation is deterministic.
-
-This proof demonstrates that no matter how we evaluate an expression, we always get the same result, which is the essence of determinism in this context.
