@@ -160,9 +160,7 @@ $$
 Consider the following formula F:
 $F \stackrel{\text{def}}{=} (X∨Y∨Z)∧(¬X∨Y)∧(¬Z∨Y)∧(¬Z∨¬Y)$
 Is $F$ satisfiable? Is $F$ valid? Justify your answer.
-
 #### Answer
-
 |     |     |     | $a$               | $b$              | $c$              | $d$                    |                             |
 | --- | --- | --- | ----------------- | ---------------- | ---------------- | ---------------------- | --------------------------- |
 | $X$ | $Y$ | $Z$ | $X \lor Y \lor Z$ | $\lnot X \lor Y$ | $\lnot Z \lor Y$ | $\lnot Z \lor \lnot Y$ | $a \land b \land c \land d$ |
@@ -174,10 +172,9 @@ Is $F$ satisfiable? Is $F$ valid? Justify your answer.
 | 1   | 0   | 1   | 1                 | 0                | 0                | 1                      | 0                           |
 | 1   | 1   | 0   | 1                 | 1                | 1                | 1                      | 1                           |
 | 1   | 1   | 1   | 1                 | 1                | 1                | 0                      | 0                           |
+
 1. F is satisfiable as there exists an interpretation to satisfy $F$, for example $\mathfrak{I_1} \models F$, where $\mathfrak{I_1} = \set{(X, false), (Y, true), (Z, false)}$ 
 2. $F$ is not valid, as there exists a certain $\mathfrak{I_2} \not \models F$, i.e. $\mathfrak{I_2} = \set{(X, false), (Y, false), (Z, false)}$
-
-
 #### LLM Revised Answer
 Consider the following formula F: $F \stackrel{\text{def}}{=} (X∨Y∨Z)∧(¬X∨Y)∧(¬Z∨Y)∧(¬Z∨¬Y)$ Is $F$ satisfiable? Is $F$ valid? Justify your answer.
 
