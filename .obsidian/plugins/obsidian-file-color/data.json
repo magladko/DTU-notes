@@ -1,0 +1,35 @@
+{
+  "cascadeColors": true,
+  "colorBackground": false,
+  "palette": [
+    {
+      "id": "gdn3ChXidzlTl-QpRWJ6a",
+      "name": "Applied AI for enrepreneours",
+      "value": "#e05252"
+    },
+    {
+      "id": "CtxNmapmHOJvMp_LIQI30",
+      "name": "Model Checking",
+      "value": "#e0b152"
+    },
+    {
+      "id": "31uS-MlbTEuMM2GSVaPJ8",
+      "name": "Program Verification",
+      "value": "#b1e052"
+    }
+  ],
+  "fileColors": [
+    {
+      "path": "Applied AI for entrepreneurs",
+      "color": "gdn3ChXidzlTl-QpRWJ6a"
+    },
+    {
+      "path": "Model Checking",
+      "color": "CtxNmapmHOJvMp_LIQI30"
+    },
+    {
+      "path": "Program Verification",
+      "color": "31uS-MlbTEuMM2GSVaPJ8"
+    }
+  ]
+}
