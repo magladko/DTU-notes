@@ -45,3 +45,20 @@ $$
 $$
 
 ![[fh-conditional.png]]
+
+### The assignment rule
+
+**Formal substitution** $H[x:=a]$: replace every (free) occurrence of $x$ in $H$ by $a$
+**Example**: $z==y+x+y[y:=x+x] \quad = \quad z==(x+x)+x+(x+x)$
+
+**Lemma (Substitution vs. State Update)**
+$$ 
+\mathfrak{m} \models F[x:=a] \quad \text{iff} \quad \mathfrak{m}[x \leftarrow [a](\mathfrak{m})] \models F
+$$
+---
+$$
+\frac{}{\vdash \set{\set{G[x:=a]}}x := a \set{\set{G}}}\text{ASSIGN}
+$$
+**Read backwards:** to end up in $G$ after executing $x:=a$, we have to start in $G[x:=a]$
+
+![[fh-assignment.png]]

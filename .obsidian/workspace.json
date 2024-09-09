@@ -11,9 +11,11 @@
             "id": "f953e5247774bfe2",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Program Verification/Figures/fh-conditional.png"
+                "file": "Program Verification/Module 2 - Floyd-Hoare logic.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Program Verification/Figures/fh-conditional.png",
+                "file": "Program Verification/Module 2 - Floyd-Hoare logic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Program Verification/Figures/fh-conditional.png",
+                "file": "Program Verification/Module 2 - Floyd-Hoare logic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Program Verification/Figures/fh-conditional.png"
+                "file": "Program Verification/Module 2 - Floyd-Hoare logic.md"
               }
             }
           },
@@ -164,23 +166,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f4ed663714496120",
+  "active": "f953e5247774bfe2",
   "lastOpenFiles": [
-    "Program Verification/Figures/fh-conditional.png",
-    "Program Verification/Figures/fh-conditional.png",
+    "Program Verification/Figures/fh-assignment.png",
     "Program Verification/Module 2 - Floyd-Hoare logic.md",
     "Program Verification/Module 2 - Overview.md",
+    "Program Verification/Figures/fh-conditional.png",
+    "Program Verification/Figures/fh-conditional.png",
+    "Program Verification/Preliminary Exercises.md",
+    "Program Verification/Figures/fh-consequence.png",
     "Program Verification/Figures/fh-sequence.png",
     "Program Verification/Figures/sel4-logo.png",
     "Program Verification/Figures/what is program verification.png",
-    "Program Verification/Preliminary Exercises.md",
     "Program Verification/Module 0  - Introduction.md",
     "Program Verification/Figures/fh-skip.png",
-    "Program Verification/Figures/fh-consequence.png",
     "Pasted image 20240909172005.png",
     "Model Checking/Figures/Modelling with transition sysmte.png",
     "Model Checking/Lecture 01 - Transition Systems.md",
-    "Model Checking/Figures/Transition system (lamp).png",
     "Model Checking/Figures",
     "Model Checking/Lecture 00.md",
     "Model Checking",
