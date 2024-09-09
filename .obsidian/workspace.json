@@ -15,7 +15,6 @@
               "state": {
                 "file": "Program Verification/Module 2 - Overview.md",
                 "mode": "source",
-                "backlinks": false,
                 "source": false
               }
             }
@@ -70,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 254.5086555480957
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -170,9 +168,13 @@
   },
   "active": "f953e5247774bfe2",
   "lastOpenFiles": [
-    "Program Verification/Module 0  - Introduction.md",
-    "Program Verification/Module 2 - Overview.md",
     "Program Verification/Preliminary Exercises.md",
+    "Program Verification/Figures/fh-skip.png",
+    "Program Verification/Figures/fh-sequence.png",
+    "Program Verification/Figures/fh-consequence.png",
+    "Pasted image 20240909172005.png",
+    "Program Verification/Module 2 - Overview.md",
+    "Program Verification/Module 0  - Introduction.md",
     "Model Checking/Figures/Modelling with transition sysmte.png",
     "Model Checking/Lecture 01 - Transition Systems.md",
     "Model Checking/Figures/Transition system (lamp).png",
@@ -187,8 +189,6 @@
     "Applied AI for entrepreneurs/Figures/GPT2-Transformer Explainer.png",
     "Program Verification/Figures/what is program verification.png",
     "Applied AI for entrepreneurs/Figures",
-    "Program Verification/Figures/sel4-logo.png",
-    "Program Verification/Figures/course outline.png",
     "Program Verification/Figures",
     "Welcome.md",
     "Applied AI for entrepreneurs/Lecture 1/Claude-Exploring GPT2 Simulator Components.md",
