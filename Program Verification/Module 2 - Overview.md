@@ -62,3 +62,6 @@ $$\
 
 Intuition: as discussed for each F-H rule
 Detailed proof: by rule induction, see lecture notes
+
+# Proof outlines
+
