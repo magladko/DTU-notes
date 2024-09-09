@@ -5,7 +5,7 @@
 - **The Ground-Truth**: what is a "correct" toy program $\models \set{\set{\quad F \quad}}\quad C \quad \set{\set{\quad G \quad}}$
 - **Floyd-Hoare (Program) Logic**: how do we write formal correctness proofs on paper? $\dashv \set{\set{F}} C \set{\set{G}}$
 - **Soundness**: why can we trust our proofs? $\dashv ... \text{implies} \models ...$
-- **Completeness**: what can we prove?
+- **Completeness**: what can we prove? Every valid triple
 - **Automation**: how do we systematically construct proofs?
 
 # Expressions, Formulae, and Commands
@@ -98,6 +98,12 @@ $$
 $$
 **Lemma**
 If $\mathfrak{m} \not\models wp[C](G)$ and $<C,\mathfrak{m}> \implies^* <done, \mathfrak{m'}>$ then $\mathfrak{m'} \not\models G$.
+
+**Theorem (Soundness and Completeness of Weakest Precondition)**
+$$
+F \models wp[C](G) \quad \text{iff} \quad \models \set{\set{F}} C \set{\set{G}}
+$$
+
 ## Weakest Precondition exercise
 
 ```
@@ -109,4 +115,18 @@ x:=y;
 y:=z
 {{ x == 7 & y == 3 }}
 ```
+
+# Automation of Program Verification
+
+- **Previously:** To prove $\models \set{\set{F}} C \set{\set{G}}$, it suffices to show $F \models wp[C](G)$
+- **Problem:** How do we prove entailments $F \models H$?
+- **Good news:** There are automated provers for *satisfiability* of logical formulae
+> $H$ is *satisfiable* iff there is a state $\mathfrak{m}$ such that $\mathfrak{m} \models H$
+- **Reduction:** 
+$$
+\begin{aligned}
+H \models H & \text{ iff} \quad \text{there is no } \mathfrak{m} \text{ such that } \mathfrak{m} \models F \land \lnot H \\
+& \text{ iff} \quad F \land \lnot H \text{ unsatisfiable}
+\end{aligned}
+$$
 
