@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "7971ffceaecf4bdf",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Program Verification/Quizes/Quiz 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
             "id": "6391c7ccdfb12d27",
             "type": "leaf",
             "state": {
@@ -32,9 +46,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "cb0253db946075e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Program Verification/Module 2 - Overview.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e2a77e951093ba85",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Program Verification/Quizes/Quiz 1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -84,7 +122,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 363.5086555480957
+    "width": 200
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -100,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Program Verification/CHEAT SHEETS.md",
+                "file": "Program Verification/Quizes/Quiz 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Program Verification/CHEAT SHEETS.md",
+                "file": "Program Verification/Quizes/Quiz 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Program Verification/CHEAT SHEETS.md"
+                "file": "Program Verification/Quizes/Quiz 1.md"
               }
             }
           },
@@ -181,28 +219,31 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6391c7ccdfb12d27",
+  "active": "e2a77e951093ba85",
   "lastOpenFiles": [
+    "Program Verification/Quizes/Figures/q1-4.png",
+    "Program Verification/Quizes/Figures/q1-3.png",
+    "Program Verification/Quizes/Figures/q1-2.png",
+    "Program Verification/Quizes/Figures/q1-1.png",
+    "Program Verification/Quizes/Figures",
+    "Pasted image 20240909221926.png",
+    "Program Verification/Quizes/Quiz 1.md",
     "Program Verification/Module 2 - Overview.md",
-    "Program Verification/Figures/01-operational-semantics.png",
-    "Program Verification/Figures/01-operational-semantics.png.crdownload",
     "Program Verification/Exercises/Module 2 - Overview (exercises).md",
-    "Program Verification/Figures/toy program execution.png",
     "Program Verification/CHEAT SHEETS.md",
+    "Program Verification/Figures/01-operational-semantics.png",
+    "Program Verification/Quizes",
+    "Program Verification/Exercises/Preliminary Exercises.md",
+    "Program Verification/Figures/01-operational-semantics.png.crdownload",
+    "Program Verification/Figures/toy program execution.png",
     "Program Verification/Figures/operational-semantics2.png",
     "Program Verification/Figures/operational-semantics1.png",
     "Program Verification/Module 2 - Floyd-Hoare logic.md",
-    "Program Verification/Exercises/Preliminary Exercises.md",
     "Program Verification/Exercises",
     "Program Verification/Exercises.md",
     "Program Verification/Figures/z3.png",
-    "Program Verification/Figures/smt-lib.png",
-    "Program Verification/Figures/weakest-precondition-cheatsheet.png",
     "Program Verification/Module 0  - Introduction.md",
-    "Program Verification/Figures/weakest-precondition.png",
-    "Program Verification/Figures/what is program verification.png",
     "Program Verification/obstacles-to-automation-slide.md",
-    "Program Verification/Figures/obstacles-to-automation-slide.png",
     "Model Checking/Lecture 01 - Transition Systems.md",
     "Model Checking/Figures",
     "Model Checking/Lecture 00.md",
@@ -218,8 +259,6 @@
     "Untitled.canvas",
     "Excalidraw/Drawing 2024-09-05 14.24.10.excalidraw.md",
     "Excalidraw/Drawing 2024-09-05 11.22.46.excalidraw.md",
-    "Program Verification",
-    "Excalidraw",
-    "Applied AI for entrepreneurs/Lecture 1"
+    "Program Verification"
   ]
 }

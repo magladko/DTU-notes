@@ -59,3 +59,61 @@ We extend our toy programming language by a command `alert(x,a)`, which waits f
 
 3. Give a toy command $C$ that simulates `alert(x,a)`, i.e. if $[a](m)>0$, then executions of $⟨C, m⟩$ and $⟨alert(x,a), m⟩$ should end up with the same final memory.
 
+## Answer
+
+### 1.
+$$
+\begin{aligned}
+\frac{[a](\mathfrak{m}) > 0}{\langle alert(x,a), \mathfrak{m}\rangle \implies \langle alert(x, a-1), \mathfrak{m}\rangle}\text{ALERT} \\\\
+\frac{[a](\mathfrak{m}) = 0}{\langle alert(x,a), \mathfrak{m}\rangle \implies \langle done, \mathfrak{m}[x\rightarrow 1]\rangle}\text{ALERT-DONE} \\\\
+\end{aligned}
+$$
+### 2.
+$$
+\begin{aligned}
+\frac{[a](\mathfrak{m}) > 0}{\langle alert(x,a), \mathfrak{m}\rangle \implies \langle alert(x, a-1), \mathfrak{m}\rangle}\text{ALERT} \\\\
+\frac{[a](\mathfrak{m}) = 0}{\langle alert(x,a), \mathfrak{m}\rangle \implies \langle done, \mathfrak{m}[x\rightarrow 1]\rangle}\text{ALERT-DONE} \\\\
+\frac{[a](\mathfrak{m}) < 0}{\langle alert(x,a), \mathfrak{m}\rangle \implies \langle error, \mathfrak{m}\rangle}\text{ALERT-ERROR} \\\\
+\end{aligned}
+$$
+### 3.
+```
+C ≡ if (a < 0) { 
+	skip 
+} else { 
+	if (a > 0) {
+		a := a - 1; 
+		C
+	} else { 
+		x := 1
+	}
+}
+```
+
+# 2.4
+Use [Definition 2.10](https://pv24.cmath.eu/01-overview.html#def-01-correctness) to argue that the triple below is valid.
+
+```
+{{ x == y }}
+if (x<y) {
+	z := x
+} else {
+	z := y
+}; 
+z := z+z
+{{ z == x+x }}
+```
+
+Consider all possible ways to execute the above command using the operational semantics. A rigorous proof is not required.
+
+## Answer
+
+Let $\mathfrak{m} \models (x == y)$, where $x = x_1$ and $y=y_1$, so that $x_1 = y_1$
+$$
+\begin{aligned}
+& \langle \text{if } (x<y) \set{z:=x}\text{ else}\set{z:=y};z:=z+z,\mathfrak{m}\rangle \\
+\implies^* & \langle z:=y;z:=z+z, \mathfrak{m} \rangle \\
+\implies^* & \langle z:=z+z, \mathfrak{m}[z \leftarrow y_1] \rangle \\
+\implies^* & \langle done, \mathfrak{m}[z \leftarrow y_1+y_1] \rangle \\
+\end{aligned}
+$$
