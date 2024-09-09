@@ -83,3 +83,30 @@ $wp[C](G)$: *all initial memories* $\mathfrak{m}$ such that $<C,\mathfrak{m}>$ t
 $$
 F \models wp[C](G) \text{ iff } \models \set{\set{F}} C \set{\set{G}}
 $$
+
+**The Weakest Precondition - Definition**
+
+| $C$                                                   | $wp[C](G)$                                                        |
+| ----------------------------------------------------- | ----------------------------------------------------------------- |
+| **skip**                                              | $G$                                                               |
+| $x:=a$                                                | $G[x:=a]$                                                         |
+| $C_1;C_2$                                             | $wp[C_1](wp[C_2](G))$                                             |
+| $\textbf{if } (b) \set{C_1} \textbf{ else} \set{C_2}$ | $(b \rightarrow wp[C_1](G))\land(\lnot b \rightarrow wp[C_2](G))$ |
+**Lemma (Soundness of wp)**
+$$
+\vdash \set{\set{wp[C(G)]}} C \set{\set{G}}
+$$
+**Lemma**
+If $\mathfrak{m} \not\models wp[C](G)$ and $<C,\mathfrak{m}> \implies^* <done, \mathfrak{m'}>$ then $\mathfrak{m'} \not\models G$.
+## Weakest Precondition exercise
+
+```
+{{ y == 7 & x == 3 }}
+z:=x;
+{{ y == 7 & z == 3 }}
+x:=y;
+{{ x == 7 & z == 3 }}
+y:=z
+{{ x == 7 & y == 3 }}
+```
+
