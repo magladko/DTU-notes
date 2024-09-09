@@ -53,3 +53,12 @@ for
 | $z$ | 0                 | 10                                 |
 
 [[Module 2 - Floyd-Hoare logic]]
+
+# Theorem (Soundness)
+
+$$
+\vdash \set{\set{F}} C \set{\set{G}} \text{ implies } \models \set{\set{F}} C \set{\set{G}}
+$$\
+
+Intuition: as discussed for each F-H rule
+Detailed proof: by rule induction, see lecture notes
