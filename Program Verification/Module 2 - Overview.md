@@ -30,6 +30,10 @@ F \rightarrow G & \stackrel{\text{def}}{=} & (\lnot F) \lor G
 \end{aligned}
 $$
 
+![[operational-semantics1.png]]
+![[operational-semantics2.png]]
+### Toy program execution
+![[toy program execution.png]]
 # 1-3 Valid Triples
 
 ## Exercise 

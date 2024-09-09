@@ -16,7 +16,11 @@ F \lor G & \stackrel{\text{def}}{=} & \lnot(\lnot F \land \lnot G) \\
 F \rightarrow G & \stackrel{\text{def}}{=} & (\lnot F) \lor G
 \end{aligned}
 $$
-# Floyd-Hoare Logic
+# Operational Semantics
+
+![[operational-semantics1.png]]
+![[operational-semantics2.png]]
+# Floyd-Hoare Logic for Toy Programs (execution steps)
 ![[fh-cheatsheet.png]]
 # Weakest Precondition
 ![[weakest-precondition-cheatsheet.png]]

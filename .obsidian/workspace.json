@@ -4,43 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "d848161f5191fa60",
+        "id": "5103cb769d120d57",
         "type": "tabs",
-        "dimension": 48.05531547104581,
         "children": [
           {
-            "id": "dc793c322c43cfeb",
+            "id": "0a6d55434d541722",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Program Verification/Exercises/Module 2 - Overview (exercises).md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "5103cb769d120d57",
-        "type": "tabs",
-        "dimension": 51.94468452895419,
-        "children": [
-          {
-            "id": "5e6cd136968842bc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Program Verification/CHEAT SHEETS.md",
-                "mode": "source",
-                "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
-            "id": "0a6d55434d541722",
+            "id": "6391c7ccdfb12d27",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -101,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 202.5086555480957
+    "width": 363.5086555480957
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -198,11 +180,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dc793c322c43cfeb",
+  "active": "0a6d55434d541722",
   "lastOpenFiles": [
-    "Program Verification/CHEAT SHEETS.md",
     "Program Verification/Module 2 - Overview.md",
+    "Program Verification/Figures/toy program execution.png",
+    "Program Verification/CHEAT SHEETS.md",
     "Program Verification/Exercises/Module 2 - Overview (exercises).md",
+    "Program Verification/Figures/operational-semantics2.png",
+    "Program Verification/Figures/operational-semantics1.png",
     "Program Verification/Module 2 - Floyd-Hoare logic.md",
     "Program Verification/Exercises/Preliminary Exercises.md",
     "Program Verification/Exercises",
@@ -216,9 +201,6 @@
     "Program Verification/obstacles-to-automation-slide.md",
     "Program Verification/Figures/obstacles-to-automation-slide.png",
     "Program Verification/Figures/proof-outlines.png",
-    "Program Verification/Figures/fh-cheatsheet.png",
-    "Program Verification/Figures/fh-assignment.png",
-    "Program Verification/Figures/fh-conditional.png",
     "Model Checking/Lecture 01 - Transition Systems.md",
     "Model Checking/Figures",
     "Model Checking/Lecture 00.md",
