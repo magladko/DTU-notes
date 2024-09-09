@@ -7,3 +7,45 @@
 - **Soundness**: why can we trust our proofs?
 - **Completeness**: what can we prove?
 - **Automation**: how do we systematically construct proofs?
+
+# Expressions, Formulae, and Commands
+
+## Definition (Syntax of Toy Language)
+$a ::= k \quad | \quad x \quad | \quad a + a$  (arithmetic expressions) | note: $k \in \mathbb{Z}$ and $x$ is a variable
+
+| def                                                                     | what                   | note                                     |
+| ----------------------------------------------------------------------- | ---------------------- | ---------------------------------------- |
+| $a ::= k \textbar x \textbar a + a$                                     | arithmetic expressions | $k \in \mathbb{Z}$ and $x$ is a variable |
+| $F ::= a > a \textbar \lnot F \textbar F \land F \textbar \exists x. F$ | logical formulae       |                                          |
+
+# 1-3 Valid Triples
+
+## Exercise 
+#### Definition (read $\models$ as the triple is **valid**)
+| $\models \set{\set{F}} C \set{\set{G}}$ iff<br>for all $\mathfrak{m}$, $m'$, if $m \models F$ and $<C, m> \implies^* <done, m'>$ then $m' \models G$.<br> |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+#### Task
+Argue whether the following triple is valid or not:
+$$
+\models \set{\set{y > 0}}\text{ if }(x ==0) \set{skip}\text{ else }\set{y := x + x}; z := y + x + y \set{\set{z == 5 * x}}
+$$
+##### Solution: the triple is *not* valid
+
+**Counterexample:** $\mathfrak{m} \models y > 0$ and 
+$$
+\begin{aligned}
+& (\text{if }(x == 0)\set{skip}\text{ else }\set{y := x+x};z := y + x + y, \mathfrak{m}) \\
+\implies & (\textbf{skip};z:=y+x+y, \mathfrak{m}) \\
+\implies & (z:=y+x+y, \mathfrak{m}) \\
+\implies & (\text{done}, \mathfrak{m}[z \leftarrow 10]) \\
+& \mathfrak{m}[z \leftarrow 10] \not\models z == 5*x \text{ since } \mathfrak{m}[z \leftarrow 10 ](z)
+\end{aligned}
+$$
+for
+
+| $x$ | $\mathfrak{m}(x)$ | $\mathfrak{m}[z \leftarrow 10](x)$ |
+| --- | ----------------- | ---------------------------------- |
+| $x$ | 0                 | 0                                  |
+| $y$ | 5                 | 5                                  |
+| $z$ | 0                 | 10                                 |
+
