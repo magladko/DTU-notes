@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5598a0e9f3763273",
+        "id": "d848161f5191fa60",
         "type": "tabs",
         "children": [
           {
-            "id": "f6c587d28cce308e",
+            "id": "7d8d35897b193022",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -166,13 +166,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f6c587d28cce308e",
+  "active": "7d8d35897b193022",
   "lastOpenFiles": [
-    "Program Verification/Module 0  - Introduction.md",
     "Program Verification/Module 2 - Floyd-Hoare logic.md",
+    "Program Verification/Module 2 - Overview.md",
+    "Program Verification/obstacles-to-automation-slide.md",
+    "Program Verification/Figures/obstacles-to-automation-slide.png",
+    "Program Verification/Figures/proof-outlines.png",
+    "Program Verification/Module 0  - Introduction.md",
     "Program Verification/Figures/fh-cheatsheet.png",
     "Program Verification/Figures/fh-assignment.png",
-    "Program Verification/Module 2 - Overview.md",
     "Program Verification/Figures/fh-conditional.png",
     "Program Verification/Figures/fh-conditional.png",
     "Program Verification/Preliminary Exercises.md",
@@ -180,8 +183,6 @@
     "Program Verification/Figures/fh-sequence.png",
     "Program Verification/Figures/sel4-logo.png",
     "Program Verification/Figures/what is program verification.png",
-    "Program Verification/Figures/fh-skip.png",
-    "Pasted image 20240909172005.png",
     "Model Checking/Lecture 01 - Transition Systems.md",
     "Model Checking/Figures",
     "Model Checking/Lecture 00.md",

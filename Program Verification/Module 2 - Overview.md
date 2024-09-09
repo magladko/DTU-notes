@@ -3,8 +3,8 @@
 # Goal: build a verifier for a toy programming language
 
 - **The Ground-Truth**: what is a "correct" toy program $\models \set{\set{\quad F \quad}}\quad C \quad \set{\set{\quad G \quad}}$
-- **Floyd-Hoare (Program) Logic**: how do we write formal correctness proofs on paper?
-- **Soundness**: why can we trust our proofs?
+- **Floyd-Hoare (Program) Logic**: how do we write formal correctness proofs on paper? $\dashv \set{\set{F}} C \set{\set{G}}$
+- **Soundness**: why can we trust our proofs? $\dashv ... \text{implies} \models ...$
 - **Completeness**: what can we prove?
 - **Automation**: how do we systematically construct proofs?
 
@@ -64,4 +64,9 @@ Intuition: as discussed for each F-H rule
 Detailed proof: by rule induction, see lecture notes
 
 # Proof outlines
+
+![[proof-outlines.png]]
+
+# Obstacles to Automation
+![[obstacles-to-automation-slide.png]]
 
