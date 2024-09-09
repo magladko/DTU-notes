@@ -595,6 +595,7 @@ ifg
 iHM
 idsY
 ikmC
+informal
 program
 permutation
 possible
@@ -2816,6 +2817,7 @@ edx
 evz
 ewy
 eSU
+equivalent
 Task
 The
 Testing
@@ -3137,6 +3139,7 @@ TZV
 TGk
 TUM
 TQA
+That
 determine
 does
 defined
@@ -3483,6 +3486,8 @@ dkrP
 dcc
 dYV
 dfe
+discharge
+denotes
 given
 good
 guarantees
@@ -4166,6 +4171,9 @@ sUD
 sVXU
 ssst
 sct
+solver
+syntactic
+sugar
 fully
 formal
 forward
@@ -5742,6 +5750,8 @@ mVRnXNn
 mzk
 mbyy
 mTTT
+min
+minimum
 not
 new
 note
@@ -6370,6 +6380,9 @@ ccLOM
 cILIe
 ciq
 cyyyC
+condition
+constraint
+commands
 runs
 returns
 requires
@@ -7567,6 +7580,7 @@ DLY
 DOo
 DBp
 DYF
+Define
 Verification
 Verified
 Very
@@ -14176,6 +14190,7 @@ BwQ
 BVbz
 BHp
 BAn
+Boolean
 KH
 KJP
 KR
