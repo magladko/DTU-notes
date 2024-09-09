@@ -11,11 +11,9 @@
             "id": "f953e5247774bfe2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Program Verification/Module 2 - Overview.md",
-                "mode": "source",
-                "source": false
+                "file": "Program Verification/Figures/fh-conditional.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Program Verification/Module 2 - Overview.md",
+                "file": "Program Verification/Figures/fh-conditional.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Program Verification/Module 2 - Overview.md",
+                "file": "Program Verification/Figures/fh-conditional.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Program Verification/Module 2 - Overview.md"
+                "file": "Program Verification/Figures/fh-conditional.png"
               }
             }
           },
@@ -166,28 +164,29 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f953e5247774bfe2",
+  "active": "f4ed663714496120",
   "lastOpenFiles": [
-    "Program Verification/Preliminary Exercises.md",
-    "Program Verification/Figures/fh-skip.png",
+    "Program Verification/Figures/fh-conditional.png",
+    "Program Verification/Figures/fh-conditional.png",
+    "Program Verification/Module 2 - Floyd-Hoare logic.md",
+    "Program Verification/Module 2 - Overview.md",
     "Program Verification/Figures/fh-sequence.png",
+    "Program Verification/Figures/sel4-logo.png",
+    "Program Verification/Figures/what is program verification.png",
+    "Program Verification/Preliminary Exercises.md",
+    "Program Verification/Module 0  - Introduction.md",
+    "Program Verification/Figures/fh-skip.png",
     "Program Verification/Figures/fh-consequence.png",
     "Pasted image 20240909172005.png",
-    "Program Verification/Module 2 - Overview.md",
-    "Program Verification/Module 0  - Introduction.md",
     "Model Checking/Figures/Modelling with transition sysmte.png",
     "Model Checking/Lecture 01 - Transition Systems.md",
     "Model Checking/Figures/Transition system (lamp).png",
-    "Model Checking/Figures/transition systems, formally.png",
     "Model Checking/Figures",
     "Model Checking/Lecture 00.md",
     "Model Checking",
     "Applied AI for entrepreneurs/Lecture 1/Project 1.canvas",
     "Applied AI for entrepreneurs/Lecture 1/Navigator.pdf",
     "Applied AI for entrepreneurs/Lecture 1/Lecture 1.md",
-    "Applied AI for entrepreneurs/Figures/Navigator-1.png",
-    "Applied AI for entrepreneurs/Figures/GPT2-Transformer Explainer.png",
-    "Program Verification/Figures/what is program verification.png",
     "Applied AI for entrepreneurs/Figures",
     "Program Verification/Figures",
     "Welcome.md",
