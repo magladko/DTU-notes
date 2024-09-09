@@ -70,3 +70,16 @@ Detailed proof: by rule induction, see lecture notes
 # Obstacles to Automation
 ![[obstacles-to-automation-slide.png]]
 
+# The Weakest Precondition
+## Main idea
+
+$wp[C](G)$: *all initial memories* $\mathfrak{m}$ such that $<C,\mathfrak{m}>$ terminates in memories satisfying $G$
+
+**Think:** input sanitization "In what inputs will the command behave correctly"
+
+![[weakest-precondition.png]]
+
+**We will show:** no choices need, using the rule of consequence once suffices
+$$
+F \models wp[C](G) \text{ iff } \models \set{\set{F}} C \set{\set{G}}
+$$
