@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "da32d4696b2439eb",
+        "id": "5598a0e9f3763273",
         "type": "tabs",
         "children": [
           {
-            "id": "f953e5247774bfe2",
+            "id": "f6c587d28cce308e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -166,10 +166,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f953e5247774bfe2",
+  "active": "f6c587d28cce308e",
   "lastOpenFiles": [
-    "Program Verification/Figures/fh-assignment.png",
+    "Program Verification/Figures/fh-cheatsheet.png",
     "Program Verification/Module 2 - Floyd-Hoare logic.md",
+    "Program Verification/Figures/fh-assignment.png",
     "Program Verification/Module 2 - Overview.md",
     "Program Verification/Figures/fh-conditional.png",
     "Program Verification/Figures/fh-conditional.png",
@@ -181,7 +182,6 @@
     "Program Verification/Module 0  - Introduction.md",
     "Program Verification/Figures/fh-skip.png",
     "Pasted image 20240909172005.png",
-    "Model Checking/Figures/Modelling with transition sysmte.png",
     "Model Checking/Lecture 01 - Transition Systems.md",
     "Model Checking/Figures",
     "Model Checking/Lecture 00.md",
