@@ -11,6 +11,16 @@
             "id": "7d8d35897b193022",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "Program Verification/Figures/z3.png"
+              }
+            }
+          },
+          {
+            "id": "dc793c322c43cfeb",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "Program Verification/Module 2 - Overview.md",
@@ -31,7 +41,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -178,13 +189,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7d8d35897b193022",
+  "active": "f4ed663714496120",
   "lastOpenFiles": [
+    "Program Verification/Module 2 - Floyd-Hoare logic.md",
+    "Program Verification/Figures/z3.png",
+    "Program Verification/Module 2 - Overview.md",
+    "Program Verification/Figures/smt-lib.png",
     "Program Verification/CHEAT SHEETS.md",
     "Program Verification/Figures/weakest-precondition-cheatsheet.png",
     "Program Verification/Module 0  - Introduction.md",
-    "Program Verification/Module 2 - Floyd-Hoare logic.md",
-    "Program Verification/Module 2 - Overview.md",
     "Program Verification/Figures/weakest-precondition.png",
     "Program Verification/Figures/what is program verification.png",
     "Program Verification/Preliminary Exercises.md",
@@ -194,8 +207,6 @@
     "Program Verification/Figures/fh-cheatsheet.png",
     "Program Verification/Figures/fh-assignment.png",
     "Program Verification/Figures/fh-conditional.png",
-    "Program Verification/Figures/fh-conditional.png",
-    "Program Verification/Figures/fh-consequence.png",
     "Model Checking/Lecture 01 - Transition Systems.md",
     "Model Checking/Figures",
     "Model Checking/Lecture 00.md",

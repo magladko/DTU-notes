@@ -6,7 +6,7 @@
 - **Floyd-Hoare (Program) Logic**: how do we write formal correctness proofs on paper? $\dashv \set{\set{F}} C \set{\set{G}}$
 - **Soundness**: why can we trust our proofs? $\dashv ... \text{implies} \models ...$
 - **Completeness**: what can we prove? Every valid triple
-- **Automation**: how do we systematically construct proofs?
+- **Automation**: how do we systematically construct proofs? Use SMT solver like Z3 to discharge the *verification condition* $F \models wp[C](G)$
 
 # Expressions, Formulae, and Commands
 
@@ -130,3 +130,10 @@ H \models H & \text{ iff} \quad \text{there is no } \mathfrak{m} \text{ such tha
 \end{aligned}
 $$
 
+## Languages and Tools
+### SMT-LIB
+
+![[smt-lib.png]]
+### Z3
+
+![[z3.png]]
