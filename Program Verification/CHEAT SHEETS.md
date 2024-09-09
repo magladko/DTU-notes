@@ -17,9 +17,8 @@ F \rightarrow G & \stackrel{\text{def}}{=} & (\lnot F) \lor G
 \end{aligned}
 $$
 # Operational Semantics
+![[01-operational-semantics.png]]
 
-![[operational-semantics1.png]]
-![[operational-semantics2.png]]
 # Floyd-Hoare Logic for Toy Programs (execution steps)
 ![[fh-cheatsheet.png]]
 # Weakest Precondition

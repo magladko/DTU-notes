@@ -27,13 +27,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Program Verification/Module 2 - Overview.md",
+                "file": "Program Verification/CHEAT SHEETS.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -99,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Program Verification/Exercises/Module 2 - Overview (exercises).md",
+                "file": "Program Verification/CHEAT SHEETS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Program Verification/Exercises/Module 2 - Overview (exercises).md",
+                "file": "Program Verification/CHEAT SHEETS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Program Verification/Exercises/Module 2 - Overview (exercises).md"
+                "file": "Program Verification/CHEAT SHEETS.md"
               }
             }
           },
@@ -180,12 +181,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0a6d55434d541722",
+  "active": "6391c7ccdfb12d27",
   "lastOpenFiles": [
     "Program Verification/Module 2 - Overview.md",
+    "Program Verification/Figures/01-operational-semantics.png",
+    "Program Verification/Figures/01-operational-semantics.png.crdownload",
+    "Program Verification/Exercises/Module 2 - Overview (exercises).md",
     "Program Verification/Figures/toy program execution.png",
     "Program Verification/CHEAT SHEETS.md",
-    "Program Verification/Exercises/Module 2 - Overview (exercises).md",
     "Program Verification/Figures/operational-semantics2.png",
     "Program Verification/Figures/operational-semantics1.png",
     "Program Verification/Module 2 - Floyd-Hoare logic.md",
@@ -200,7 +203,6 @@
     "Program Verification/Figures/what is program verification.png",
     "Program Verification/obstacles-to-automation-slide.md",
     "Program Verification/Figures/obstacles-to-automation-slide.png",
-    "Program Verification/Figures/proof-outlines.png",
     "Model Checking/Lecture 01 - Transition Systems.md",
     "Model Checking/Figures",
     "Model Checking/Lecture 00.md",
@@ -218,7 +220,6 @@
     "Excalidraw/Drawing 2024-09-05 11.22.46.excalidraw.md",
     "Program Verification",
     "Excalidraw",
-    "Applied AI for entrepreneurs/Lecture 1",
-    "Applied AI for entrepreneurs"
+    "Applied AI for entrepreneurs/Lecture 1"
   ]
 }
