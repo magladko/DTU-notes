@@ -122,7 +122,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -219,7 +220,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cb0253db946075e8",
+  "active": "f4ed663714496120",
   "lastOpenFiles": [
     "Program Verification/CHEAT SHEETS.md",
     "Program Verification/Module 2 - Overview.md",
