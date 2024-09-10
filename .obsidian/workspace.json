@@ -72,7 +72,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Program Verification/Quizes/Quiz 1.md",
+                "file": "Program Verification/Module 2 - Overview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Program Verification/Quizes/Quiz 1.md",
+                "file": "Program Verification/Module 2 - Overview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Program Verification/Quizes/Quiz 1.md"
+                "file": "Program Verification/Module 2 - Overview.md"
               }
             }
           },
@@ -219,18 +219,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e2a77e951093ba85",
+  "active": "cb0253db946075e8",
   "lastOpenFiles": [
+    "Program Verification/CHEAT SHEETS.md",
+    "Program Verification/Module 2 - Overview.md",
+    "Program Verification/Quizes/Quiz 1.md",
     "Program Verification/Quizes/Figures/q1-4.png",
     "Program Verification/Quizes/Figures/q1-3.png",
     "Program Verification/Quizes/Figures/q1-2.png",
     "Program Verification/Quizes/Figures/q1-1.png",
     "Program Verification/Quizes/Figures",
     "Pasted image 20240909221926.png",
-    "Program Verification/Quizes/Quiz 1.md",
-    "Program Verification/Module 2 - Overview.md",
     "Program Verification/Exercises/Module 2 - Overview (exercises).md",
-    "Program Verification/CHEAT SHEETS.md",
     "Program Verification/Figures/01-operational-semantics.png",
     "Program Verification/Quizes",
     "Program Verification/Exercises/Preliminary Exercises.md",

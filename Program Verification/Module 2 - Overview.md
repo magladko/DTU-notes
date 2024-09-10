@@ -108,7 +108,7 @@ $$
 | $\textbf{if } (b) \set{C_1} \textbf{ else} \set{C_2}$ | $(b \rightarrow wp[C_1](G))\land(\lnot b \rightarrow wp[C_2](G))$ |
 **Lemma (Soundness of wp)**
 $$
-\vdash \set{\set{wp[C(G)]}} C \set{\set{G}}
+\vdash \set{\set{wp[C](G)}} C \set{\set{G}}
 $$
 **Lemma**
 If $\mathfrak{m} \not\models wp[C](G)$ and $<C,\mathfrak{m}> \implies^* <done, \mathfrak{m'}>$ then $\mathfrak{m'} \not\models G$.
