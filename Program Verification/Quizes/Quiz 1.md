@@ -72,9 +72,64 @@ so x' < z'
 **(A) and (B) => VALID**
 
 ![[q1-3.png]]
+## 1. 
+```chip
+{ 0 < y & 0 < z }
+x := y + z;
+y := z + 1;
+z := x + 2;
+if x = y -> 
+    z := x + y + z
+[] !(x = y) ->
+    x := y + x
+fi
+{ x < z}
+```
+<span style="color:red;font-weight:bold">NOT VERIFIES</span>
+## 2.
+```chip
+{ 0 < y & 0 < z }
+x := y + z;
+y := z + 1;
+z := x + 2;
+if x = y -> 
+    z := x + y + z
+[] !(x = y) ->
+    x := y + x
+fi
+{ x < z | y < x }
+```
+<span style="color:green;font-weight:bold">VERIFIES</span>
+## 3. 
+```chip
+{ true }
+if (x < y) ->
+  y := 42
+[] !(x < y) ->
+  y := x;
+  if (0 < y) ->
+    skip
+  [] !(0 < y) ->
+    y := 23
+  fi
+fi;
+x := y
+{ 0 < y }
+```
+<span style="color:green;font-weight:bold">VERIFIES</span>
+## 4.
+```chip
+{ x = x0 & y = y0 }
+z := x;
+x := y;
+y := z
+{ x = y0 & y = x0 }
+```
+<span style="color:green;font-weight:bold">VERIFIES</span>
 
 # 4.
 ![[q1-4.png]]
+
 ```
 {{ y + x == 0 ∧ 0 <= x }}
 if (x == 0) {
@@ -115,3 +170,7 @@ fi
 { x = 0 & y <= 0 }
 ```
 
+# 5. 
+![[q1-5.png]]
+- It is possible to construct a proof tree for a toy Floyd-Hoare triple that is not valid.
+Let's try { true } skip { false }

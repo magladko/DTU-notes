@@ -22,20 +22,6 @@
             }
           },
           {
-            "id": "7971ffceaecf4bdf",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Program Verification/Quizes/Quiz 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
             "id": "6391c7ccdfb12d27",
             "type": "leaf",
             "state": {
@@ -63,6 +49,26 @@
             "id": "e2a77e951093ba85",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "Program Verification/Quizes/Figures/q1-4.png"
+              }
+            }
+          },
+          {
+            "id": "beaa5f0a4fa1987a",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Program Verification/Quizes/Figures/q1-4.png"
+              }
+            }
+          },
+          {
+            "id": "7612d9a5cbaff910",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "Program Verification/Quizes/Quiz 1.md",
@@ -72,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -122,8 +128,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -139,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Program Verification/Module 2 - Overview.md",
+                "file": "Program Verification/Quizes/Quiz 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Program Verification/Module 2 - Overview.md",
+                "file": "Program Verification/Quizes/Quiz 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Program Verification/Module 2 - Overview.md"
+                "file": "Program Verification/Quizes/Quiz 1.md"
               }
             }
           },
@@ -220,18 +225,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f4ed663714496120",
+  "active": "7612d9a5cbaff910",
   "lastOpenFiles": [
+    "Program Verification/Quizes/Figures/q1-5.png",
+    "Program Verification/Quizes/Quiz 1.md",
     "Program Verification/CHEAT SHEETS.md",
     "Program Verification/Module 2 - Overview.md",
-    "Program Verification/Quizes/Quiz 1.md",
+    "Program Verification/Exercises/Module 2 - Overview (exercises).md",
     "Program Verification/Quizes/Figures/q1-4.png",
     "Program Verification/Quizes/Figures/q1-3.png",
     "Program Verification/Quizes/Figures/q1-2.png",
     "Program Verification/Quizes/Figures/q1-1.png",
     "Program Verification/Quizes/Figures",
     "Pasted image 20240909221926.png",
-    "Program Verification/Exercises/Module 2 - Overview (exercises).md",
     "Program Verification/Figures/01-operational-semantics.png",
     "Program Verification/Quizes",
     "Program Verification/Exercises/Preliminary Exercises.md",
@@ -242,7 +248,6 @@
     "Program Verification/Module 2 - Floyd-Hoare logic.md",
     "Program Verification/Exercises",
     "Program Verification/Exercises.md",
-    "Program Verification/Figures/z3.png",
     "Program Verification/Module 0  - Introduction.md",
     "Program Verification/obstacles-to-automation-slide.md",
     "Model Checking/Lecture 01 - Transition Systems.md",
