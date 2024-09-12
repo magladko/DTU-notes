@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
+                "file": "Model Checking/Lecture 01 - Transition Systems.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
+                "file": "Model Checking/Lecture 01 - Transition Systems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
+                "file": "Model Checking/Lecture 01 - Transition Systems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md"
+                "file": "Model Checking/Lecture 01 - Transition Systems.md"
               }
             }
           },
@@ -168,12 +168,19 @@
   },
   "active": "9e0a404e48038292",
   "lastOpenFiles": [
-    "Program Verification/Figures/using-sat-solver-slide.png",
+    "Pasted image 20240912181857.png",
+    "Pasted image 20240912181826.png",
+    "Pasted image 20240912165009.png",
+    "Pasted image 20240912164914.png",
+    "Pasted image 20240912164810.png",
+    "Pasted image 20240912164559.png",
+    "Pasted image 20240912164523.png",
+    "Pasted image 20240912164436.png",
+    "Pasted image 20240912164259.png",
+    "Pasted image 20240912164055.png",
+    "Pasted image 20240912163958.png",
     "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
-    "Program Verification/Figures/sat-bpt-example.png",
-    "Program Verification/Figures/sat-slide.png",
     "Program Verification/CHEAT SHEETS.md",
-    "Program Verification/Figures/propositional-logic-cheatsheet.png",
     "Program Verification/Module 2 - Floyd-Hoare logic.md",
     "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer Market Opportunity.md",
     "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer for Manufacturing.md",
@@ -182,13 +189,7 @@
     "Program Verification/Exercises/Module 2 - Overview (exercises).md",
     "Program Verification/Module 2 - Overview.md",
     "Program Verification/Quizes/Quiz 1.md",
-    "Program Verification/Quizes/Figures/q1-5.png",
-    "Program Verification/Quizes/Figures/q1-4.png",
-    "Program Verification/Quizes/Figures/q1-3.png",
-    "Program Verification/Quizes/Figures/q1-2.png",
-    "Program Verification/Quizes/Figures/q1-1.png",
     "Program Verification/Quizes/Figures",
-    "Pasted image 20240909221926.png",
     "Program Verification/Quizes",
     "Program Verification/Exercises/Preliminary Exercises.md",
     "Program Verification/Figures/01-operational-semantics.png.crdownload",
