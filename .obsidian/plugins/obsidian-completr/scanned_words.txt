@@ -1774,6 +1774,7 @@ PHa
 PQZ
 Planning
 Partnerships
+Propositional
 that
 the
 to
@@ -6544,6 +6545,8 @@ Sector
 SUPER
 Simulator
 Significant
+Satisfiability
+SAT
 method
 memory
 modify

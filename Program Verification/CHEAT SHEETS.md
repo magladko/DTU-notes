@@ -1,3 +1,5 @@
+# Propositional Logic
+![[Pasted image 20240912142501.png]]
 # Syntax of Toy Language (Definition)
 
 | def                                                                                                      | what                              | note                                     |
