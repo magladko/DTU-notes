@@ -38,3 +38,34 @@ $F \stackrel{\text{def}}{=} (X \lor Y \lor Z) \land (\lnot X \lor Y) \land (\lno
 - Many interesting problems can be efficiently encoded as instances of **SAT** e.g circuit design, vehicle routing etc.
 ![[sat-slide.png]]
 ![[sat-bpt-example.png]]
+
+# Using SAT Solver
+
+![[using-sat-solver-slide.png]]
+
+**Example**
+```smt2
+; declare variables
+( declare-const X Bool )
+( declare-const Y Bool )
+( declare-const Z Bool )
+; define formula using
+; and , or , not , =>, =, xor
+( assert (=> X Y Z))
+( assert X) ; add and X
+( check-sat ); sat or unsat
+( get-model )
+```
+output:
+```txt
+$ z3 01-example.smt2
+sat
+ (model
+	(define-fun Z () Bool false)
+	(define-fun X () Bool true)
+	(define-fun Y () Bool false)
+)
+```
+
+# Continue: fol...
+[learn.inside.dtu.dk/d2l/le/lessons/215949/topics/867803](https://learn.inside.dtu.dk/d2l/le/lessons/215949/topics/867803)
