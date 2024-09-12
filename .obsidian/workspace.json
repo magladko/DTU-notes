@@ -65,12 +65,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 472.51103591918945
+    "width": 318.51103591918945
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -167,10 +166,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "23943eb3fa915a2e",
+  "active": "9e0a404e48038292",
   "lastOpenFiles": [
-    "Program Verification/CHEAT SHEETS.md",
+    "Program Verification/Figures/sat-bpt-example.png",
     "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
+    "Program Verification/Figures/sat-slide.png",
+    "Program Verification/CHEAT SHEETS.md",
     "Program Verification/Figures/propositional-logic-cheatsheet.png",
     "Program Verification/Module 2 - Floyd-Hoare logic.md",
     "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer Market Opportunity.md",
@@ -191,8 +192,6 @@
     "Program Verification/Quizes",
     "Program Verification/Exercises/Preliminary Exercises.md",
     "Program Verification/Figures/01-operational-semantics.png.crdownload",
-    "Program Verification/Figures/toy program execution.png",
-    "Program Verification/Figures/operational-semantics2.png",
     "Program Verification/Exercises",
     "Program Verification/Exercises.md",
     "Program Verification/Module 0  - Introduction.md",
