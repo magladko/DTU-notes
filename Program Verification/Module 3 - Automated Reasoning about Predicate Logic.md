@@ -11,4 +11,5 @@
 > **Example:** $X \land \lnot Y \land (X \rightarrow Y)$
 ---
 > $F$ is **valid** iff *every* interpretation is a model of $F$ (aka: $\lnot F$ is unsatisfiable)
+> **Example:** $X \land (X \rightarrow Y)) \rightarrow Y$
 
