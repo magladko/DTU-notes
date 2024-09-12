@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer Market Opportunity.md",
+                "file": "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 472.51103591918945
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer Market Opportunity.md",
+                "file": "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer Market Opportunity.md",
+                "file": "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer Market Opportunity.md"
+                "file": "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md"
               }
             }
           },
@@ -168,10 +168,12 @@
   },
   "active": "9e0a404e48038292",
   "lastOpenFiles": [
+    "Program Verification/Module 2 - Floyd-Hoare logic.md",
+    "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
+    "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer Market Opportunity.md",
     "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer for Manufacturing.md",
     "Applied AI for entrepreneurs/Claude-Translating GPT-2 Concepts to Digital Twin Capabilities.md",
     "Applied AI for entrepreneurs/Lecture 1/Claude-Exploring GPT2 Simulator Components.md",
-    "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer Market Opportunity.md",
     "Program Verification/Exercises/Module 2 - Overview (exercises).md",
     "Program Verification/CHEAT SHEETS.md",
     "Program Verification/Module 2 - Overview.md",
@@ -190,7 +192,6 @@
     "Program Verification/Figures/toy program execution.png",
     "Program Verification/Figures/operational-semantics2.png",
     "Program Verification/Figures/operational-semantics1.png",
-    "Program Verification/Module 2 - Floyd-Hoare logic.md",
     "Program Verification/Exercises",
     "Program Verification/Exercises.md",
     "Program Verification/Module 0  - Introduction.md",
