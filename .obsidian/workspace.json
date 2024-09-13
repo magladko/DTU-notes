@@ -11,11 +11,9 @@
             "id": "9e0a404e48038292",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
-                "mode": "source",
-                "source": false
+                "file": "Model Checking/Figures/Pasted image 20240912181857.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
+                "file": "Model Checking/Figures/Pasted image 20240912181857.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
+                "file": "Model Checking/Figures/Pasted image 20240912181857.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md"
+                "file": "Model Checking/Figures/Pasted image 20240912181857.png"
               }
             }
           },
@@ -166,20 +164,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9e0a404e48038292",
+  "active": "f4ed663714496120",
   "lastOpenFiles": [
-    "Model Checking/Lecture 01 - Transition Systems.md",
+    "Model Checking/Figures/Pasted image 20240912165009.png",
     "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
-    "Pasted image 20240912181857.png",
-    "Pasted image 20240912181826.png",
-    "Pasted image 20240912165009.png",
-    "Pasted image 20240912164914.png",
-    "Pasted image 20240912164810.png",
-    "Pasted image 20240912164559.png",
-    "Pasted image 20240912164523.png",
-    "Pasted image 20240912164436.png",
-    "Pasted image 20240912164259.png",
-    "Pasted image 20240912164055.png",
+    "Model Checking/Lecture 01 - Transition Systems.md",
+    "Model Checking/Figures/Pasted image 20240912181857.png",
+    "Model Checking/Figures/Pasted image 20240912181826.png",
+    "Model Checking/Figures/Pasted image 20240912164914.png",
+    "Model Checking/Figures/Pasted image 20240912164810.png",
+    "Model Checking/Figures/Pasted image 20240912164559.png",
+    "Model Checking/Figures/Pasted image 20240912164523.png",
+    "Model Checking/Figures/Pasted image 20240912164436.png",
+    "Model Checking/Figures/Pasted image 20240912164259.png",
+    "Model Checking/Figures/Pasted image 20240912164055.png",
     "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
     "Program Verification/CHEAT SHEETS.md",
     "Program Verification/Module 2 - Floyd-Hoare logic.md",
