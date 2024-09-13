@@ -16,9 +16,9 @@ CNF -> SAT | UNSAT
 | 2,1 | 2,2 | 2,3 | 2,4 |
 | 3,1 | 3,2 | 3,3 | 3,4 |
 | 4,1 | 4,2 | 4,3 | 4,4 |
+## Satellite problem
 $$
 \bigwedge_{0<i<i'\leq4}\biggl( \bigwedge_{j,j':i+j=i'+j'} \lnot(p_{ij} \land p_{i'j'}) \lor \bigwedge_{j,j':i-j=i'-j'}\lnot(p_{ij}\land p_{i'j'})\biggr)
-
 $$
 
 # 3 classical encodings
