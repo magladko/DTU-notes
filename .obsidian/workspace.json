@@ -13,11 +13,79 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Program Verification/Module 2 - Floyd-Hoare logic.md",
+                "file": "Program Verification/Module 2 - Overview.md",
+                "mode": "source",
+                "source": false
+              }
+            },
+            "group": "c790d3e73abb157d"
+          },
+          {
+            "id": "efef68023cf73d96",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Program Verification/Module 2 - Overview.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "2ae1fd4dcb7a91f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Program Verification/Module 2 - Overview.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "1933eca2d1eb03b7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4e3cecd8db42b1b6",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Program Verification/Module 2 - Overview.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": false
+                }
+              }
+            },
+            "group": "c790d3e73abb157d"
           }
         ]
       }
@@ -48,11 +116,11 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
+                "query": "G",
+                "matchingCase": true,
+                "explainSearch": true,
+                "collapseAll": true,
+                "extraContext": true,
                 "sortOrder": "alphabetical"
               }
             }
@@ -65,7 +133,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Program Verification/Module 2 - Floyd-Hoare logic.md",
+                "file": "Program Verification/Module 2 - Overview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Program Verification/Module 2 - Floyd-Hoare logic.md",
+                "file": "Program Verification/Module 2 - Overview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Program Verification/Module 2 - Floyd-Hoare logic.md"
+                "file": "Program Verification/Module 2 - Overview.md"
               }
             }
           },
@@ -166,11 +235,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6b474f6db45213f8",
+  "active": "efef68023cf73d96",
   "lastOpenFiles": [
+    "broken links output.md",
     "Program Verification/Module 2 - Overview.md",
-    "Program Verification/Figures/fh-consequence.png",
+    "Program Verification/Module 0  - Introduction.md",
+    "Program Verification/CHEAT SHEETS.md",
     "Program Verification/Module 2 - Floyd-Hoare logic.md",
+    "Program Verification/Figures/fh-consequence.png",
     "G.md",
     "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
     "Model Checking/Figures/dpll-fyi.png",
@@ -184,7 +256,6 @@
     "Model Checking/Figures/Pasted image 20240912164559.png",
     "Model Checking/Figures/Pasted image 20240912164523.png",
     "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
-    "Program Verification/CHEAT SHEETS.md",
     "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer Market Opportunity.md",
     "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer for Manufacturing.md",
     "Applied AI for entrepreneurs/Claude-Translating GPT-2 Concepts to Digital Twin Capabilities.md",
@@ -197,7 +268,6 @@
     "Program Verification/Figures/01-operational-semantics.png.crdownload",
     "Program Verification/Exercises",
     "Program Verification/Exercises.md",
-    "Program Verification/Module 0  - Introduction.md",
     "Program Verification/obstacles-to-automation-slide.md",
     "Model Checking/Figures",
     "Model Checking/Lecture 00.md",
