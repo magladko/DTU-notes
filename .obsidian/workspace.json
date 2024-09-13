@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Model Checking/Lecture 01 - Transition Systems.md",
+                "file": "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "def",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Model Checking/Lecture 01 - Transition Systems.md",
+                "file": "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Model Checking/Lecture 01 - Transition Systems.md",
+                "file": "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Model Checking/Lecture 01 - Transition Systems.md"
+                "file": "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md"
               }
             }
           },
@@ -168,6 +168,8 @@
   },
   "active": "9e0a404e48038292",
   "lastOpenFiles": [
+    "Model Checking/Lecture 01 - Transition Systems.md",
+    "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
     "Pasted image 20240912181857.png",
     "Pasted image 20240912181826.png",
     "Pasted image 20240912165009.png",
@@ -178,7 +180,6 @@
     "Pasted image 20240912164436.png",
     "Pasted image 20240912164259.png",
     "Pasted image 20240912164055.png",
-    "Pasted image 20240912163958.png",
     "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
     "Program Verification/CHEAT SHEETS.md",
     "Program Verification/Module 2 - Floyd-Hoare logic.md",
@@ -197,7 +198,6 @@
     "Program Verification/Exercises.md",
     "Program Verification/Module 0  - Introduction.md",
     "Program Verification/obstacles-to-automation-slide.md",
-    "Model Checking/Lecture 01 - Transition Systems.md",
     "Model Checking/Figures",
     "Model Checking/Lecture 00.md",
     "Model Checking",

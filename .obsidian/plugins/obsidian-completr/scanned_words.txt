@@ -925,6 +925,7 @@ iYZZ
 izV
 iRS
 izD
+intentionally
 program
 permutation
 possible
@@ -2695,6 +2696,7 @@ tTs
 tgR
 tssx
 tvtp
+terminals
 always
 as
 array
@@ -4729,6 +4731,8 @@ TMC
 TUczz
 TUcjt
 Ttc
+Terminal
+Traces
 determine
 does
 defined
@@ -5259,6 +5263,7 @@ dIN
 dgf
 dexG
 dUe
+determinism
 given
 good
 guarantees
@@ -6292,6 +6297,7 @@ sLi
 sgl
 ssD
 sgNs
+specified
 fully
 formal
 forward
@@ -7743,6 +7749,8 @@ Icm
 IgZZI
 IMC
 InL
+Interactions
+Interleaving
 Specifications
 Suffers
 Strengths
@@ -8268,6 +8276,7 @@ Sssg
 SZZFC
 SSSH
 Solver
+Synchronized
 method
 memory
 modify
@@ -9650,6 +9659,9 @@ clx
 cPd
 cGi
 cae
+compositions
+compose
+composed
 runs
 returns
 requires
@@ -10073,6 +10085,7 @@ rEr
 rmV
 rNw
 rYEN
+reachability
 of
 original
 ordering
@@ -11464,6 +11477,7 @@ DUT
 DPd
 Drc
 DBsD
+Deterministic
 Verification
 Verified
 Very
@@ -12354,6 +12368,7 @@ NcjY
 NjWV
 NHd
 NxN
+Non
 Good
 Group
 Give
@@ -13802,6 +13817,7 @@ EKS
 ErJ
 EQL
 EcS
+Executions
 lead
 library
 labor
@@ -14634,6 +14650,7 @@ uljm
 ujjjp
 uxh
 uWU
+uncertainty
 Model
 More
 May
@@ -15172,6 +15189,7 @@ MLw
 MIi
 MvF
 MCQ
+Modelling
 Automatic
 Automated
 Analogies
@@ -16158,6 +16176,7 @@ CQi
 COw
 CJB
 CTU
+Computation
 handle
 high
 hints
@@ -19734,6 +19753,7 @@ Fbtu
 FfN
 FCF
 FKS
+Forward
 OPTIONS
 Overview
 Out
@@ -21510,6 +21530,7 @@ Bvj
 BBZ
 BAG
 BAB
+Build
 KH
 KJP
 KR
