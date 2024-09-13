@@ -11,9 +11,11 @@
             "id": "9e0a404e48038292",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Model Checking/Figures/Pasted image 20240912181857.png"
+                "file": "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Model Checking/Figures/Pasted image 20240912181857.png",
+                "file": "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Model Checking/Figures/Pasted image 20240912181857.png",
+                "file": "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Model Checking/Figures/Pasted image 20240912181857.png"
+                "file": "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md"
               }
             }
           },
@@ -164,12 +166,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f4ed663714496120",
+  "active": "9e0a404e48038292",
   "lastOpenFiles": [
+    "Model Checking/Figures/Pasted image 20240912181857.png",
     "Model Checking/Figures/Pasted image 20240912165009.png",
     "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
     "Model Checking/Lecture 01 - Transition Systems.md",
-    "Model Checking/Figures/Pasted image 20240912181857.png",
     "Model Checking/Figures/Pasted image 20240912181826.png",
     "Model Checking/Figures/Pasted image 20240912164914.png",
     "Model Checking/Figures/Pasted image 20240912164810.png",
