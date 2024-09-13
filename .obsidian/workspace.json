@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f8395e3237f52ee3",
+        "id": "56068d78019820af",
         "type": "tabs",
         "children": [
           {
-            "id": "9e0a404e48038292",
+            "id": "6b474f6db45213f8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
+                "file": "Program Verification/Module 2 - Floyd-Hoare logic.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
+                "file": "Program Verification/Module 2 - Floyd-Hoare logic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
+                "file": "Program Verification/Module 2 - Floyd-Hoare logic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md"
+                "file": "Program Verification/Module 2 - Floyd-Hoare logic.md"
               }
             }
           },
@@ -166,10 +166,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9e0a404e48038292",
+  "active": "6b474f6db45213f8",
   "lastOpenFiles": [
-    "Model Checking/Figures/dpll-fyi.png",
+    "Program Verification/Module 2 - Overview.md",
+    "Program Verification/Figures/fh-consequence.png",
+    "Program Verification/Module 2 - Floyd-Hoare logic.md",
+    "G.md",
     "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
+    "Model Checking/Figures/dpll-fyi.png",
     "Model Checking/Figures/dpll-intro.png",
     "Model Checking/Figures/Pasted image 20240912181857.png",
     "Model Checking/Figures/Pasted image 20240912165009.png",
@@ -179,16 +183,13 @@
     "Model Checking/Figures/Pasted image 20240912164810.png",
     "Model Checking/Figures/Pasted image 20240912164559.png",
     "Model Checking/Figures/Pasted image 20240912164523.png",
-    "Model Checking/Figures/Pasted image 20240912164436.png",
     "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
     "Program Verification/CHEAT SHEETS.md",
-    "Program Verification/Module 2 - Floyd-Hoare logic.md",
     "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer Market Opportunity.md",
     "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer for Manufacturing.md",
     "Applied AI for entrepreneurs/Claude-Translating GPT-2 Concepts to Digital Twin Capabilities.md",
     "Applied AI for entrepreneurs/Lecture 1/Claude-Exploring GPT2 Simulator Components.md",
     "Program Verification/Exercises/Module 2 - Overview (exercises).md",
-    "Program Verification/Module 2 - Overview.md",
     "Program Verification/Quizes/Quiz 1.md",
     "Program Verification/Quizes/Figures",
     "Program Verification/Quizes",

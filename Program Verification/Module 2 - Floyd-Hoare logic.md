@@ -33,6 +33,7 @@ $$
 \frac{F \models F' \quad \vdash \set{\set{F}} C \set{\set{G'}} \quad G' \models G}{\vdash \set{\set{F}} C \set{\set{G}}}\text{CONSEQUENCE}
 $$
 ![[fh-consequence.png]]
+
 ## The sequential composition rule
 **Main idea**: decompose triples into smaller ones until we end up with obvious facts
 
