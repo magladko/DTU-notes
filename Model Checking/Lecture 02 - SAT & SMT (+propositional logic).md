@@ -4,8 +4,12 @@ Party problem
 4. $\lnot (Mo \land Ha)$
 5. $Le \land Pi$
 
+# DPLL
 
+CNF -> SAT | UNSAT
 
+![[dpll-intro.png]]
+![[dpll-fyi.png]]
 # 3 classical encodings
 
 $k \in \mathbb{Z}$
