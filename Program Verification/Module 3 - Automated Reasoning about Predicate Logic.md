@@ -151,3 +151,11 @@ Are these formulae satisfiable module EQ?
 	- for all $f/n \in \textbf{Fun}$:
 		- $\forall x_1. \forall y_1. \text{...} \forall x_n. \forall y_n. (x_1 == y_1 \land ... \land x_n == y_n) \rightarrow f(x_1, ..., x_n) == f(y_1, ..., y_n)$
 
+![[Pasted image 20240914144159.png]]
+
+## Exercise
+
+Consider the signature $\upsigma \stackrel{def}{=}\langle\emptyset, \set{E/2, ==/2}\rangle$
+Give axioms determining the theory of...
+1. undirected graphs with edge relation E and without self-loops
+2. structures whose universe contains more than two elements
