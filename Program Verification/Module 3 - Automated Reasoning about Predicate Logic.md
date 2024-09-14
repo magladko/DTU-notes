@@ -67,5 +67,36 @@ sat
 )
 ```
 
-# Continue: fol...
-[learn.inside.dtu.dk/d2l/le/lessons/215949/topics/867803](https://learn.inside.dtu.dk/d2l/le/lessons/215949/topics/867803)
+# Using SAT Solver for Program Verification
+
+![[Pasted image 20240914112504.png]]
+
+# First Order Predicate Logic (FOL)
+
+![[Pasted image 20240914134100.png]]
+
+## Ingredients:
+
+| WHAT                                          | EXAMPLE                                                              |
+| --------------------------------------------- | -------------------------------------------------------------------- |
+| 1. **Variables**                              | x, y, z, ...                                                         |
+| 2. **Function symbols**                       |                                                                      |
+| -- constants (arity 0)                        | 0, 1.5, $\pi$                                                        |
+| -- operators (arity > 0)                      | +, exp, *                                                            |
+| -- building blocks of **terms** (expressions) | 0, x, $x + \pi + 17 * (\exp(x)+1)$                                   |
+| 3. **Relation symbols**                       | <, prime, ==                                                         |
+| -- turn **terms** into logical propositions   | x<0, prime(y+17), x == x+1                                           |
+| 4. **Logical connectives and quantifiers**    | $\land, \lor, \lnot, \rightarrow, \leftrightarrow, \exists, \forall$ |
+| -- building blocks of **formulae**            | $x == y+1 \land \exists y. prime(y+17)$                              |
+
+## Signatures
+
+![[Pasted image 20240914135002.png]]
+## Terms
+and $\Upsigma$-terms
+![[Pasted image 20240914135211.png]]
+
+## Formulae
+
+![[Pasted image 20240914135338.png]]
+
