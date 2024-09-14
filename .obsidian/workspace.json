@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "56068d78019820af",
+        "id": "e1c9a5d37aafd3fa",
         "type": "tabs",
         "children": [
           {
-            "id": "2ae1fd4dcb7a91f5",
+            "id": "26b9579159ecd4cd",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -166,11 +166,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2ae1fd4dcb7a91f5",
+  "active": "26b9579159ecd4cd",
   "lastOpenFiles": [
+    "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
     "Pasted image 20240914150216.png",
     "Pasted image 20240914150014.png",
-    "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
     "Pasted image 20240914145628.png",
     "Pasted image 20240914144159.png",
     "Pasted image 20240914142216.png",
@@ -180,7 +180,6 @@
     "Pasted image 20240914140832.png",
     "Pasted image 20240914140807.png",
     "Pasted image 20240914140551.png",
-    "Pasted image 20240914135815.png",
     "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
     "Program Verification/Module 2 - Overview.md",
     "broken links output.md",

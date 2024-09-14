@@ -198,3 +198,15 @@ nothing new, just convenient syntax on top of FOL
 	- $\forall a: \text{Array}. \forall i: \text{Int}. \forall v: \text{Int}. \text{read}(\text{write}(a, i, v), i) == v$
 	- $\forall a: \text{Array}. \forall i: \text{Int}. \forall j: \text{Int}. \forall v: \text{Int}. \lnot (i == j) \rightarrow \text{read}(\text{write}(a,i,v),j) == \text{read}(a,j)$
 	- $\forall a: \text{Array}. \forall b: \text{Array}. (\forall i: \text{Int}. \text{read}(a,i) == \text{read}(b,i)) \rightarrow a == b$
+# Summary
+
+- $\Sigma$: **signature** that determines the symbols we are allkowed to use
+- Many-sorted setting: $\Sigma$ also defines available types; all symbols must be *well-typed*
+- t: **$\Sigma$-term**, i.e. expression over the allowed symbols
+- F: **$\Sigma$-formula**, i.e. logical formula over the allowed symbols
+- $\mathfrak{A}$: **$\Sigma$-structure** that determines the *meaning* of symbols
+	- Universe **A**: set of concrete values (of variables, that can be returned by functions, etc.)
+	- $f^\mathfrak{A}$: actual function assigned to the symbol $f$ by $\mathfrak{A}$
+- $\Sigma$-interpretation $\mathfrak{I}$: structure $+$ assignment of concrete values to variables 
+	- (*everything needed to evaluate terms and formulae*)
+- $\mathfrak{I}$ is a **model** of $F$ iff $F$ evaluates to true for interpretation $\mathfrak{I}$

@@ -8501,6 +8501,7 @@ IIIt
 IbR
 Idh
 IjX
+Int
 Specifications
 Suffers
 Strengths
@@ -9080,6 +9081,8 @@ Sö
 Systems
 Signature
 Sorted
+Sorts
+Selected
 method
 memory
 modify
@@ -17237,6 +17240,8 @@ Axiom
 Axioms
 Are
 Arithmetic
+Arrays
+Array
 Can
 CompCert
 Course
