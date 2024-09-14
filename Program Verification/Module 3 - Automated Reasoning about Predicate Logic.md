@@ -136,4 +136,9 @@ and $\Upsigma$-terms
 	- $\forall x. x == x$                                                (reflexivity)
 	- $\forall x. \forall y. x == y \rightarrow y == x$                          (symmetry)
 	- $\forall x. \forall y. \forall z. (x ==y \land y == z) \rightarrow x == z$   (transitivity)
+Are these formulae satisfiable module EQ?
+1. $x == y \land \lnot(y == z)$ **OK**
+2. $x == y \land \lnot (y == z) \land (z == x \lor x == z)$ **NOT**
+3.  $\exists x. \lnot(x==y)$ **OK**
+
 
