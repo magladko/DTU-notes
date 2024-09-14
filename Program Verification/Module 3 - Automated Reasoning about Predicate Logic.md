@@ -184,5 +184,17 @@ nothing new, just convenient syntax on top of FOL
 
 ![[Pasted image 20240914150216.png]]
 
+### Example
 
-
+**Theory of Arrays**
+- Sorts: Array, Int
+- Function symbols: 
+	- **read**: Array Int Int
+	- **write**: Array Int Int Array
+- Relation symbols: 
+	- == : Int Int
+	- == : Array Array
+- Selected **axioms**:
+	- $\forall a: \text{Array}. \forall i: \text{Int}. \forall v: \text{Int}. \text{read}(\text{write}(a, i, v), i) == v$
+	- $\forall a: \text{Array}. \forall i: \text{Int}. \forall j: \text{Int}. \forall v: \text{Int}. \lnot (i == j) \rightarrow \text{read}(\text{write}(a,i,v),j) == \text{read}(a,j)$
+	- $\forall a: \text{Array}. \forall b: \text{Array}. (\forall i: \text{Int}. \text{read}(a,i) == \text{read}(b,i)) \rightarrow a == b$
