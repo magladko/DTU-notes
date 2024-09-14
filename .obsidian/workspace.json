@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
+                "file": "Program Verification/CHEAT SHEETS.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
+                "file": "Program Verification/CHEAT SHEETS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
+                "file": "Program Verification/CHEAT SHEETS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md"
+                "file": "Program Verification/CHEAT SHEETS.md"
               }
             }
           },
@@ -168,6 +168,13 @@
   },
   "active": "2ae1fd4dcb7a91f5",
   "lastOpenFiles": [
+    "Pasted image 20240914140832.png",
+    "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
+    "Pasted image 20240914140807.png",
+    "Pasted image 20240914140551.png",
+    "Pasted image 20240914135815.png",
+    "Pasted image 20240914135552.png",
+    "Pasted image 20240914135532.png",
     "Pasted image 20240914135338.png",
     "Pasted image 20240914135211.png",
     "Pasted image 20240914135002.png",
@@ -180,14 +187,7 @@
     "Program Verification/Module 0  - Introduction.md",
     "Program Verification/CHEAT SHEETS.md",
     "Program Verification/Module 2 - Floyd-Hoare logic.md",
-    "Program Verification/Figures/fh-consequence.png",
-    "Model Checking/Figures/dpll-fyi.png",
-    "Model Checking/Figures/dpll-intro.png",
-    "Model Checking/Figures/Pasted image 20240912181857.png",
-    "Model Checking/Figures/Pasted image 20240912165009.png",
     "Model Checking/Lecture 01 - Transition Systems.md",
-    "Model Checking/Figures/Pasted image 20240912181826.png",
-    "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
     "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer Market Opportunity.md",
     "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer for Manufacturing.md",
     "Applied AI for entrepreneurs/Claude-Translating GPT-2 Concepts to Digital Twin Capabilities.md",

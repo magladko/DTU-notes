@@ -25,3 +25,7 @@ $$
 ![[fh-cheatsheet.png]]
 # Weakest Precondition
 ![[weakest-precondition-cheatsheet.png]]
+
+# Semantics of First-Order Predicate Logic (FOL)
+
+![[Pasted image 20240914140832.png]]

@@ -100,3 +100,20 @@ and $\Upsigma$-terms
 
 ![[Pasted image 20240914135338.png]]
 
+## Models of Formulae
+
+![[Pasted image 20240914135552.png]]
+
+## Structures
+
+![[Pasted image 20240914135815.png]]
+
+## Interpretations
+
+![[Pasted image 20240914140551.png]]
+
+## Semantics of First-Order Predicate Logic
+
+![[Pasted image 20240914140807.png]]
+
+
