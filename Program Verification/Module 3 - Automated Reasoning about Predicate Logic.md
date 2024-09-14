@@ -136,13 +136,13 @@ and $\Upsigma$-terms
 	- $\forall x. x == x$                                                (reflexivity)
 	- $\forall x. \forall y. x == y \rightarrow y == x$                          (symmetry)
 	- $\forall x. \forall y. \forall z. (x ==y \land y == z) \rightarrow x == z$   (transitivity)
+
 Are these formulae satisfiable module EQ?
 1. $x == y \land \lnot(y == z)$ **OK**
 2. $x == y \land \lnot (y == z) \land (z == x \lor x == z)$ **NOT**
 3.  $\exists x. \lnot(x==y)$ **OK**
 
-
-### Theory of Equality with Uninterpreted Functions (EUF)
+### Theory of Equality with Uninterpreted Functions EUF
 - **Signature:** $\upsigma \stackrel{def}{=}\langle \set{f_1/n_1,f_2/n_2,...}, \set{== /2}$
 - **Axioms** determining the theory:
 	- $\forall x. x ==x$
