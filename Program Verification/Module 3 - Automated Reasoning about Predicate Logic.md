@@ -116,4 +116,24 @@ and $\Upsigma$-terms
 
 ![[Pasted image 20240914140807.png]]
 
+# Satisfiability Modulo Theories (SMT)
+## FOL Satisfiability
+
+![[Pasted image 20240914141303.png]]
+
+## SMT
+
+![[Pasted image 20240914142039.png]]
+
+## Axiom Systems
+ ![[Pasted image 20240914142216.png]]
+
+## Example
+
+### Theory of Equality EQ
+- **Signature:** $\upsigma \stackrel{\text{def}}{=} \langle \emptyset, \set{ == /2}\rangle$
+- **Axioms** determining the theory:
+	- $\forall x. x == x$                                                (reflexivity)
+	- $\forall x. \forall y. x == y \rightarrow y == x$                          (symmetry)
+	- $\forall x. \forall y. \forall z. (x ==y \land y == z) \rightarrow x == z$   (transitivity)
 
