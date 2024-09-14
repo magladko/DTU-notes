@@ -180,5 +180,7 @@ $$
 
 ## Many-Sorted First-Order Predicate Logic
 **Working with multiple data types**
+nothing new, just convenient syntax on top of FOL
+![[Pasted image 20240914150014.png]]
 
 
