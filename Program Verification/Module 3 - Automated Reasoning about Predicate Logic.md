@@ -142,3 +142,12 @@ Are these formulae satisfiable module EQ?
 3.  $\exists x. \lnot(x==y)$ **OK**
 
 
+### Theory of Equality with Uninterpreted Functions (EUF)
+- **Signature:** $\upsigma \stackrel{def}{=}\langle \set{f_1/n_1,f_2/n_2,...}, \set{== /2}$
+- **Axioms** determining the theory:
+	- $\forall x. x ==x$
+	- $\forall x. \forall y. x == y \rightarrow y == x$
+	- $\forall x. \forall y. \forall z. (x == y \land y == z) \rightarrow x == z$
+	- for all $f/n \in \textbf{Fun}$:
+		- $\forall x_1. \forall y_1. \text{...} \forall x_n. \forall y_n. (x_1 == y_1 \land ... \land x_n == y_n) \rightarrow f(x_1, ..., x_n) == f(y_1, ..., y_n)$
+
