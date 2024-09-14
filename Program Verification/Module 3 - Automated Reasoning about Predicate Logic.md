@@ -154,8 +154,20 @@ Are these formulae satisfiable module EQ?
 ![[Pasted image 20240914144159.png]]
 
 ## Exercise
-
-Consider the signature $\upsigma \stackrel{def}{=}\langle\emptyset, \set{E/2, ==/2}\rangle$
+Consider the signature $\Sigma \stackrel{def}{=}\langle\emptyset, \set{E/2, ==/2}\rangle$
 Give axioms determining the theory of...
+
+starting from EQ axioms:
+$\forall x.x == x \quad \forall x. \forall y.x == y \rightarrow y == x \quad \forall x. \forall y. \forall z. (x == y \land y == z) \rightarrow x == z$
 1. undirected graphs with edge relation E and without self-loops
+$$
+\begin{aligned}
+\forall x. \forall y. E(x,y) \rightarrow E(y,x) \\
+\forall x. \forall y. E(x,y) \rightarrow \lnot (x == y)
+\end{aligned}
+$$
 2. structures whose universe contains more than two elements
+$$
+\exists x. \exists y. \exists z. \lnot (x == y) \land \lnot (x == z) \land \lnot (y == z)
+$$
+
