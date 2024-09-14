@@ -41,7 +41,7 @@ $F \stackrel{\text{def}}{=} (X \lor Y \lor Z) \land (\lnot X \lor Y) \land (\lno
 
 # Using SAT Solver
 
-![[using-sat-solver-slide.png]]
+![[Program Verification/Figures/using-sat-solver-slide.png]]
 
 **Example**
 ```smt2
@@ -69,11 +69,11 @@ sat
 
 # Using SAT Solver for Program Verification
 
-![[Pasted image 20240914112504.png]]
+![[using-sat-solver-slide 1.png]]
 
 # First Order Predicate Logic (FOL)
 
-![[Pasted image 20240914134100.png]]
+![[proplogic-not-enough-slide.png]]
 
 ## Ingredients:
 
@@ -91,42 +91,42 @@ sat
 
 ## Signatures
 
-![[Pasted image 20240914135002.png]]
+![[signatures-slide.png]]
 ## Terms
 and $\Upsigma$-terms
-![[Pasted image 20240914135211.png]]
+![[terms-slide.png]]
 
 ## Formulae
 
-![[Pasted image 20240914135338.png]]
+![[formulae-slide.png]]
 
 ## Models of Formulae
 
-![[Pasted image 20240914135552.png]]
+![[models-of-formulae-slide.png]]
 
 ## Structures
 
-![[Pasted image 20240914135815.png]]
+![[structures-slide.png]]
 
 ## Interpretations
 
-![[Pasted image 20240914140551.png]]
+![[interpretations-slide.png]]
 
 ## Semantics of First-Order Predicate Logic
 
-![[Pasted image 20240914140807.png]]
+![[semantics-of-fol-slide.png]]
 
 # Satisfiability Modulo Theories (SMT)
 ## FOL Satisfiability
 
-![[Pasted image 20240914141303.png]]
+![[fol-satisfiability-slide.png]]
 
 ## SMT
 
-![[Pasted image 20240914142039.png]]
+![[smt-slide.png]]
 
 ## Axiom Systems
- ![[Pasted image 20240914142216.png]]
+ ![[axioms-systems-slide.png]]
 
 ## Example
 
@@ -151,7 +151,7 @@ Are these formulae satisfiable module EQ?
 	- for all $f/n \in \textbf{Fun}$:
 		- $\forall x_1. \forall y_1. \text{...} \forall x_n. \forall y_n. (x_1 == y_1 \land ... \land x_n == y_n) \rightarrow f(x_1, ..., x_n) == f(y_1, ..., y_n)$
 
-![[Pasted image 20240914144159.png]]
+![[euf-example-slide.png]]
 
 ## Exercise
 Consider the signature $\Sigma \stackrel{def}{=}\langle\emptyset, \set{E/2, ==/2}\rangle$
@@ -176,13 +176,13 @@ $$
 	- Presburger arithmetic - decidable
 	- Peano arithmetic - undecidable
 	- Real arithmetic - decidable
-![[Pasted image 20240914145628.png]]
+![[smt-decidability.png]]
 
 ## Many-Sorted First-Order Predicate Logic
 **Working with multiple data types**
 nothing new, just convenient syntax on top of FOL
 
-![[Pasted image 20240914150216.png]]
+![[many-sorted-fol-slide.png]]
 
 ### Example
 
@@ -212,3 +212,4 @@ nothing new, just convenient syntax on top of FOL
 - $\mathfrak{I}$ is a **model** of $F$ iff $F$ evaluates to true for interpretation $\mathfrak{I}$
 - **$\Sigma$-theory Th**: set of formulae that constrain the interpretations of interest
 - **Satisfiability module theory Th**: Find a model of $F$ and all formulae in **Th**
+![[fol-smt-summary.png]]

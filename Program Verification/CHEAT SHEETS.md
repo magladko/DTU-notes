@@ -28,4 +28,7 @@ $$
 
 # Semantics of First-Order Predicate Logic (FOL)
 
-![[Pasted image 20240914140832.png]]
+![[semantics-of-fol-slide.png]]
+
+# FOL/SMT Summary
+![[fol-smt-summary.png]]
