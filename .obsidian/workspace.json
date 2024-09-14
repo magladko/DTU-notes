@@ -10,10 +10,24 @@
           {
             "id": "b4f2fcdd0fa4891f",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "0326c7aef502afab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Program Verification/CHEAT SHEETS.md",
                 "mode": "source",
                 "source": false
               }
@@ -168,19 +182,18 @@
   },
   "active": "b4f2fcdd0fa4891f",
   "lastOpenFiles": [
+    "Program Verification/CHEAT SHEETS.md",
+    "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
+    "Pasted image 20240914154323.png",
     "Pasted image 20240914154108.png",
     "Pasted image 20240914153946.png",
     "Program Verification/Figures/axioms-systems-slide.png",
-    "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
-    "Program Verification/CHEAT SHEETS.md",
     "Pasted image 20240914151647.png",
     "Program Verification/Figures/fol-smt-summary.png",
     "Program Verification/Figures/many-sorted-fol-slide.png",
     "Program Verification/Figures/models-of-formulae-slide.png",
     "Program Verification/Figures/smt-decidability.png",
     "Program Verification/Figures/euf-example-slide.png",
-    "Program Verification/Figures/smt-slide.png",
-    "Program Verification/Figures/fol-satisfiability-slide.png",
     "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
     "Program Verification/Module 2 - Overview.md",
     "broken links output.md",

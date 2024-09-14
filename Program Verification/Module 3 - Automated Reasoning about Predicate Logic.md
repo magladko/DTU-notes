@@ -220,6 +220,30 @@ nothing new, just convenient syntax on top of FOL
 
 ![[Pasted image 20240914153946.png]]
 
-## SMT-PY
+## Z3Py
 
 ![[Pasted image 20240914154108.png]]
+
+## Built-in Theories
+easiest -> hardest
+![[Pasted image 20240914154323.png]]
+- **(Qauntifier-Free) Linear Integer/Real Arithmetic**
+	- QF_LIA, LIA / QF_LRA, LRA **(Presburger \[for int\]/DECIDABLE)**
+	- 19*x + 2*y == 42
+- **Non-Linear Integer/Real Arithmetic**
+	- NIA / NRA **(Peano \[for int\]/UNDECIDABLE)**
+	- x * y + 2*x * y + 1 == (x + y) * (x + y)
+- **Quantifier-free fixed-size bitvector arithmetic**:
+	- QF_BV
+	- $x \& y \leq x \textbar y$
+
+```smt2
+(set-logic QF_LIA) ; prevent automatic logic selection
+```
+-> good to self-check if problem stays in the expected theory set
+
+```smt2
+(set-logic QF_NIA) ; UNDECIDABLE
+(set-option :timeout 5000) ; <- as undecidable, can consume all resources
+```
+

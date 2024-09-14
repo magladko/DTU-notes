@@ -5962,6 +5962,7 @@ eeeAy
 eLu
 eKJJJHn
 evaluate
+easiest
 Task
 The
 Testing
@@ -8758,6 +8759,7 @@ srss
 sqI
 slY
 symbol
+stays
 fully
 formal
 forward
@@ -10853,6 +10855,7 @@ Izz
 IRbA
 Idefc
 IIDAT
+Integer
 Specifications
 Suffers
 Strengths
@@ -17500,6 +17503,7 @@ NJM
 NBhb
 NzZ
 NYF
+NRA
 Good
 Group
 Give
@@ -23661,6 +23665,7 @@ hDHc
 hzl
 hZv
 hOs
+hardest
 Requires
 Rust
 Reading
@@ -26299,6 +26304,9 @@ LRZ
 LJiK
 Lnc
 LfT
+Linear
+LIA
+LRA
 justify
 jd
 jt
@@ -28221,6 +28229,7 @@ Fvl
 FSDL
 FFV
 Find
+Free
 OPTIONS
 Overview
 Out
@@ -30803,6 +30812,7 @@ Byi
 BZv
 BfR
 Bwr
+Built
 KH
 KJP
 KR
@@ -32576,6 +32586,7 @@ QkCF
 QUS
 QRn
 QWU
+Qauntifier
 xGG
 xR
 xr

@@ -32,3 +32,5 @@ $$
 
 # FOL/SMT Summary
 ![[fol-smt-summary.png]]
+# Decidability
+![[smt-decidability.png]]
