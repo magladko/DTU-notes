@@ -4,36 +4,64 @@
     "type": "split",
     "children": [
       {
-        "id": "f6c5ce591fab27bf",
-        "type": "tabs",
+        "id": "d5c7ffa7d9f2f318",
+        "type": "split",
         "children": [
           {
-            "id": "b4f2fcdd0fa4891f",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
-                "mode": "source",
-                "source": false
+            "id": "f6c5ce591fab27bf",
+            "type": "tabs",
+            "dimension": 32.45729303547964,
+            "children": [
+              {
+                "id": "0326c7aef502afab",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Program Verification/CHEAT SHEETS.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               },
-              "pinned": true
-            }
+              {
+                "id": "677b965330723656",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Program Verification/Quizes/Quiz 2.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
           },
           {
-            "id": "0326c7aef502afab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Program Verification/CHEAT SHEETS.md",
-                "mode": "source",
-                "source": false
+            "id": "dd8b6f163b0d6786",
+            "type": "tabs",
+            "dimension": 67.54270696452038,
+            "children": [
+              {
+                "id": "b4f2fcdd0fa4891f",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "pinned": true
+                }
               }
-            }
+            ]
           }
-        ]
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -83,7 +111,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 258.5086555480957
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -99,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
+                "file": "Program Verification/Quizes/Quiz 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +145,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
+                "file": "Program Verification/Quizes/Quiz 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +168,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md"
+                "file": "Program Verification/Quizes/Quiz 2.md"
               }
             }
           },
@@ -180,20 +209,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b4f2fcdd0fa4891f",
+  "active": "677b965330723656",
   "lastOpenFiles": [
-    "Program Verification/CHEAT SHEETS.md",
     "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
+    "Program Verification/CHEAT SHEETS.md",
+    "Program Verification/Quizes/Quiz 2.md",
     "Pasted image 20240914154323.png",
+    "Excalidraw/Drawing 2024-09-14 16.17.33.excalidraw.md",
+    "built-in-theories-marked-slide.png",
+    "Drawing 2024-09-14 16.18.00.excalidraw.md",
+    "Pasted Image 20240914161858_010.png",
     "Pasted image 20240914154108.png",
     "Pasted image 20240914153946.png",
+    "Excalidraw",
     "Program Verification/Figures/axioms-systems-slide.png",
     "Pasted image 20240914151647.png",
     "Program Verification/Figures/fol-smt-summary.png",
     "Program Verification/Figures/many-sorted-fol-slide.png",
     "Program Verification/Figures/models-of-formulae-slide.png",
-    "Program Verification/Figures/smt-decidability.png",
-    "Program Verification/Figures/euf-example-slide.png",
     "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
     "Program Verification/Module 2 - Overview.md",
     "broken links output.md",
@@ -225,8 +258,6 @@
     "Welcome.md",
     "create a link.md",
     "Untitled.canvas",
-    "Excalidraw/Drawing 2024-09-05 14.24.10.excalidraw.md",
-    "Excalidraw/Drawing 2024-09-05 11.22.46.excalidraw.md",
-    "Program Verification"
+    "Excalidraw/Drawing 2024-09-05 14.24.10.excalidraw.md"
   ]
 }

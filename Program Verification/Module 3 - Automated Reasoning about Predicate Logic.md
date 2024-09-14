@@ -88,30 +88,24 @@ sat
 | -- turn **terms** into logical propositions   | x<0, prime(y+17), x == x+1                                           |
 | 4. **Logical connectives and quantifiers**    | $\land, \lor, \lnot, \rightarrow, \leftrightarrow, \exists, \forall$ |
 | -- building blocks of **formulae**            | $x == y+1 \land \exists y. prime(y+17)$                              |
-
 ## Signatures
 
 ![[signatures-slide.png]]
 ## Terms
 and $\Upsigma$-terms
 ![[terms-slide.png]]
-
 ## Formulae
 
 ![[formulae-slide.png]]
-
 ## Models of Formulae
 
 ![[models-of-formulae-slide.png]]
-
 ## Structures
 
 ![[structures-slide.png]]
-
 ## Interpretations
 
 ![[interpretations-slide.png]]
-
 ## Semantics of First-Order Predicate Logic
 
 ![[semantics-of-fol-slide.png]]
@@ -219,14 +213,13 @@ nothing new, just convenient syntax on top of FOL
 ## SMT-LIB
 
 ![[Pasted image 20240914153946.png]]
-
 ## Z3Py
 
 ![[Pasted image 20240914154108.png]]
 
 ## Built-in Theories
 easiest -> hardest
-![[Pasted image 20240914154323.png]]
+![[built-in-theories-marked-slide.png]]
 - **(Quantifier-Free) Linear Integer/Real Arithmetic**
 	- QF_LIA, LIA / QF_LRA, LRA **(Presburger \[for int\]/DECIDABLE)**
 	- 19*x + 2*y == 42
