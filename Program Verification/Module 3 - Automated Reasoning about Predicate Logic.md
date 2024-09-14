@@ -210,3 +210,4 @@ nothing new, just convenient syntax on top of FOL
 - $\Sigma$-interpretation $\mathfrak{I}$: structure $+$ assignment of concrete values to variables 
 	- (*everything needed to evaluate terms and formulae*)
 - $\mathfrak{I}$ is a **model** of $F$ iff $F$ evaluates to true for interpretation $\mathfrak{I}$
+- **$\Sigma$-theory Th**: set of formulae that constrain the interpretations of interest
