@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "47933f12f25a6552",
+        "id": "f6c5ce591fab27bf",
         "type": "tabs",
         "children": [
           {
-            "id": "5d9f947e521c5950",
+            "id": "b4f2fcdd0fa4891f",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Program Verification/Figures/axioms-systems-slide.png"
+                "file": "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -67,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 258.5086555480957
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Program Verification/Figures/axioms-systems-slide.png",
+                "file": "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Program Verification/Figures/axioms-systems-slide.png",
+                "file": "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Program Verification/Figures/axioms-systems-slide.png"
+                "file": "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md"
               }
             }
           },
@@ -164,8 +166,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f4ed663714496120",
+  "active": "b4f2fcdd0fa4891f",
   "lastOpenFiles": [
+    "Pasted image 20240914154108.png",
+    "Pasted image 20240914153946.png",
+    "Program Verification/Figures/axioms-systems-slide.png",
     "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
     "Program Verification/CHEAT SHEETS.md",
     "Pasted image 20240914151647.png",
@@ -174,10 +179,8 @@
     "Program Verification/Figures/models-of-formulae-slide.png",
     "Program Verification/Figures/smt-decidability.png",
     "Program Verification/Figures/euf-example-slide.png",
-    "Program Verification/Figures/axioms-systems-slide.png",
     "Program Verification/Figures/smt-slide.png",
     "Program Verification/Figures/fol-satisfiability-slide.png",
-    "Pasted image 20240914140832.png",
     "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
     "Program Verification/Module 2 - Overview.md",
     "broken links output.md",

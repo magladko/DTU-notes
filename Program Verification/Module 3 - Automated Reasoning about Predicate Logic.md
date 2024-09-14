@@ -213,3 +213,13 @@ nothing new, just convenient syntax on top of FOL
 - **$\Sigma$-theory Th**: set of formulae that constrain the interpretations of interest
 - **Satisfiability module theory Th**: Find a model of $F$ and all formulae in **Th**
 ![[fol-smt-summary.png]]
+
+# First SMT Example
+
+## SMT-LIB
+
+![[Pasted image 20240914153946.png]]
+
+## SMT-PY
+
+![[Pasted image 20240914154108.png]]
