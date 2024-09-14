@@ -170,4 +170,15 @@ $$
 $$
 \exists x. \exists y. \exists z. \lnot (x == y) \land \lnot (x == z) \land \lnot (y == z)
 $$
+## Decidability of SMT
+- EUF: decidable for quantifier-free formulae
+- Arithmetic (with canonical axioms)
+	- Presburger arithmetic - decidable
+	- Peano arithmetic - undecidable
+	- Real arithmetic - decidable
+![[Pasted image 20240914145628.png]]
+
+## Many-Sorted First-Order Predicate Logic
+**Working with multiple data types**
+
 
