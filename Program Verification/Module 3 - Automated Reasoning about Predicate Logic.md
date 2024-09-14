@@ -227,7 +227,7 @@ nothing new, just convenient syntax on top of FOL
 ## Built-in Theories
 easiest -> hardest
 ![[Pasted image 20240914154323.png]]
-- **(Qauntifier-Free) Linear Integer/Real Arithmetic**
+- **(Quantifier-Free) Linear Integer/Real Arithmetic**
 	- QF_LIA, LIA / QF_LRA, LRA **(Presburger \[for int\]/DECIDABLE)**
 	- 19*x + 2*y == 42
 - **Non-Linear Integer/Real Arithmetic**
