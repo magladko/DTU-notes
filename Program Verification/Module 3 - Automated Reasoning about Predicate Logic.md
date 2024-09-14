@@ -200,7 +200,7 @@ nothing new, just convenient syntax on top of FOL
 	- $\forall a: \text{Array}. \forall b: \text{Array}. (\forall i: \text{Int}. \text{read}(a,i) == \text{read}(b,i)) \rightarrow a == b$
 # Summary
 
-- $\Sigma$: **signature** that determines the symbols we are allkowed to use
+- $\Sigma$: **signature** that determines the symbols we are allowed to use
 - Many-sorted setting: $\Sigma$ also defines available types; all symbols must be *well-typed*
 - t: **$\Sigma$-term**, i.e. expression over the allowed symbols
 - F: **$\Sigma$-formula**, i.e. logical formula over the allowed symbols
