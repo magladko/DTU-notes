@@ -211,3 +211,4 @@ nothing new, just convenient syntax on top of FOL
 	- (*everything needed to evaluate terms and formulae*)
 - $\mathfrak{I}$ is a **model** of $F$ iff $F$ evaluates to true for interpretation $\mathfrak{I}$
 - **$\Sigma$-theory Th**: set of formulae that constrain the interpretations of interest
+- **Satisfiability module theory Th**: Find a model of $F$ and all formulae in **Th**
