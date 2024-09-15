@@ -11,15 +11,24 @@
             "id": "1b33c7e4f4fc5c79",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Model Checking/Lecture 01 - Transition Systems.md",
-                "mode": "source",
-                "source": false
+                "file": "Program Verification/Figures/e-matching-def-slide.png"
+              }
+            }
+          },
+          {
+            "id": "32a5669ab5dcc28a",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Program Verification/Figures/universal-quantifier-instantiation-idea.png"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Model Checking/Lecture 01 - Transition Systems.md",
+                "file": "Program Verification/Figures/universal-quantifier-instantiation-idea.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Model Checking/Lecture 01 - Transition Systems.md",
+                "file": "Program Verification/Figures/universal-quantifier-instantiation-idea.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Model Checking/Lecture 01 - Transition Systems.md"
+                "file": "Program Verification/Figures/universal-quantifier-instantiation-idea.png"
               }
             }
           },
@@ -166,30 +175,32 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1b33c7e4f4fc5c79",
+  "active": "f4ed663714496120",
   "lastOpenFiles": [
+    "Program Verification/Figures/m3-wrap-up.png",
+    "Program Verification/Figures/e-matching-z3-slide.png",
+    "Program Verification/Figures/e-matching-def-slide.png",
+    "Program Verification/Figures/patterns-triggers-slide.png",
+    "Program Verification/Figures/search-space-explosion-slide.png",
+    "Program Verification/Figures/picking-terms-for-uq-slide.png",
+    "Program Verification/Figures/univ-quantifier-instantiation-problems-slide.png",
+    "Program Verification/Figures/limits-of-smt-solvers-slide.png",
+    "Program Verification/Figures/universal-quantifier-instantiation-idea.png",
+    "Program Verification/Figures/limits-of-smt-solvers-summary-slide.png",
+    "Program Verification/Figures/axioms-trustedcodebase-slide.png",
+    "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
+    "Drawing 2024-09-15 23.00.53.excalidraw.md",
+    "Model Checking/Lecture 01 - Transition Systems.md",
     "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
     "Model Checking/Lecture 00.md",
-    "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
     "Program Verification/Module 2 - Overview.md",
     "Program Verification/Module 2 - Floyd-Hoare logic.md",
     "Program Verification/Module 0  - Introduction.md",
-    "Model Checking/Lecture 01 - Transition Systems.md",
-    "Program Verification/Figures/smt-z3py-slide.png",
-    "Program Verification/Figures/smt-lib-slide.png",
-    "Program Verification/Figures/built-in-theories-marked-slide.png",
-    "Pasted image 20240914154323.png",
-    "Pasted Image 20240914161858_010.png",
     "Drawing 2024-09-14 16.18.00.excalidraw.md",
     "Program Verification/CHEAT SHEETS.md",
     "Program Verification/Quizes/Quiz 2.md",
     "Excalidraw/Drawing 2024-09-14 16.17.33.excalidraw.md",
     "Excalidraw",
-    "Program Verification/Figures/axioms-systems-slide.png",
-    "Pasted image 20240914151647.png",
-    "Program Verification/Figures/fol-smt-summary.png",
-    "Program Verification/Figures/many-sorted-fol-slide.png",
-    "Program Verification/Figures/models-of-formulae-slide.png",
     "broken links output.md",
     "G.md",
     "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer Market Opportunity.md",
@@ -213,7 +224,6 @@
     "Applied AI for entrepreneurs/Figures",
     "Program Verification/Figures",
     "Welcome.md",
-    "create a link.md",
     "Untitled.canvas"
   ]
 }

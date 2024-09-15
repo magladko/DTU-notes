@@ -240,3 +240,35 @@ easiest -> hardest
 (set-option :timeout 5000) ; <- as undecidable, can consume all resources
 ```
 
+# Incorporating Custom Theories in Program Verification
+
+![[custom-theories-in-PV-slide.png]]
+
+
+## Axioms as trusted codebase
+![[axioms-trustedcodebase-slide.png]]
+
+# Limitations of SMT Solvers
+
+![[limits-of-smt-solvers-slide.png]]
+
+![[limits-of-smt-solvers-summary-slide.png]]
+
+![[universal-quantifier-instantiation-idea.png]]
+
+![[univ-quantifier-instantiation-problems-slide.png]]\
+
+![[picking-terms-for-uq-slide.png]]
+
+**Problem: Search Space Explosion**
+![[search-space-explosion-slide.png]]
+
+![[patterns-triggers-slide.png]]
+
+![[e-matching-slide.png]]
+return unknown if no more terms e-match the quantifier's pattern
+
+
+![[e-matching-z3-slide.png]]
+
+![[m3-wrap-up.png]]
