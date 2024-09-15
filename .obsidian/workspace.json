@@ -4,64 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "d5c7ffa7d9f2f318",
-        "type": "split",
+        "id": "34c28486dddd2b3f",
+        "type": "tabs",
         "children": [
           {
-            "id": "f6c5ce591fab27bf",
-            "type": "tabs",
-            "dimension": 32.45729303547964,
-            "children": [
-              {
-                "id": "0326c7aef502afab",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Program Verification/CHEAT SHEETS.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "677b965330723656",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Program Verification/Quizes/Quiz 2.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
+            "id": "1b33c7e4f4fc5c79",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Model Checking/Lecture 01 - Transition Systems.md",
+                "mode": "source",
+                "source": false
               }
-            ],
-            "currentTab": 1
-          },
-          {
-            "id": "dd8b6f163b0d6786",
-            "type": "tabs",
-            "dimension": 67.54270696452038,
-            "children": [
-              {
-                "id": "b4f2fcdd0fa4891f",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "pinned": true
-                }
-              }
-            ]
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -111,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -128,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Program Verification/Quizes/Quiz 2.md",
+                "file": "Model Checking/Lecture 01 - Transition Systems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Program Verification/Quizes/Quiz 2.md",
+                "file": "Model Checking/Lecture 01 - Transition Systems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Program Verification/Quizes/Quiz 2.md"
+                "file": "Model Checking/Lecture 01 - Transition Systems.md"
               }
             }
           },
@@ -209,31 +166,32 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "677b965330723656",
+  "active": "1b33c7e4f4fc5c79",
   "lastOpenFiles": [
+    "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
+    "Model Checking/Lecture 00.md",
     "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
+    "Program Verification/Module 2 - Overview.md",
+    "Program Verification/Module 2 - Floyd-Hoare logic.md",
+    "Program Verification/Module 0  - Introduction.md",
+    "Model Checking/Lecture 01 - Transition Systems.md",
+    "Program Verification/Figures/smt-z3py-slide.png",
+    "Program Verification/Figures/smt-lib-slide.png",
+    "Program Verification/Figures/built-in-theories-marked-slide.png",
+    "Pasted image 20240914154323.png",
+    "Pasted Image 20240914161858_010.png",
+    "Drawing 2024-09-14 16.18.00.excalidraw.md",
     "Program Verification/CHEAT SHEETS.md",
     "Program Verification/Quizes/Quiz 2.md",
-    "Pasted image 20240914154323.png",
     "Excalidraw/Drawing 2024-09-14 16.17.33.excalidraw.md",
-    "built-in-theories-marked-slide.png",
-    "Drawing 2024-09-14 16.18.00.excalidraw.md",
-    "Pasted Image 20240914161858_010.png",
-    "Pasted image 20240914154108.png",
-    "Pasted image 20240914153946.png",
     "Excalidraw",
     "Program Verification/Figures/axioms-systems-slide.png",
     "Pasted image 20240914151647.png",
     "Program Verification/Figures/fol-smt-summary.png",
     "Program Verification/Figures/many-sorted-fol-slide.png",
     "Program Verification/Figures/models-of-formulae-slide.png",
-    "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
-    "Program Verification/Module 2 - Overview.md",
     "broken links output.md",
     "G.md",
-    "Program Verification/Module 0  - Introduction.md",
-    "Program Verification/Module 2 - Floyd-Hoare logic.md",
-    "Model Checking/Lecture 01 - Transition Systems.md",
     "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer Market Opportunity.md",
     "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer for Manufacturing.md",
     "Applied AI for entrepreneurs/Claude-Translating GPT-2 Concepts to Digital Twin Capabilities.md",
@@ -248,7 +206,6 @@
     "Program Verification/Exercises.md",
     "Program Verification/obstacles-to-automation-slide.md",
     "Model Checking/Figures",
-    "Model Checking/Lecture 00.md",
     "Model Checking",
     "Applied AI for entrepreneurs/Lecture 1/Project 1.canvas",
     "Applied AI for entrepreneurs/Lecture 1/Navigator.pdf",
@@ -257,7 +214,6 @@
     "Program Verification/Figures",
     "Welcome.md",
     "create a link.md",
-    "Untitled.canvas",
-    "Excalidraw/Drawing 2024-09-05 14.24.10.excalidraw.md"
+    "Untitled.canvas"
   ]
 }

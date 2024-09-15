@@ -212,10 +212,10 @@ nothing new, just convenient syntax on top of FOL
 
 ## SMT-LIB
 
-![[Pasted image 20240914153946.png]]
+![[smt-lib-slide.png]]
 ## Z3Py
 
-![[Pasted image 20240914154108.png]]
+![[smt-z3py-slide.png]]
 
 ## Built-in Theories
 easiest -> hardest
