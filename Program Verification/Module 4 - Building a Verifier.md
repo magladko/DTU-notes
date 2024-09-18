@@ -27,5 +27,6 @@
 ```
 
 2. Based on (1.) determine assertions that do not hold.
-
+**None of the formulae is valid, so no assertion holds.**
 3. For each assertion that do not hold determine a counterexample.
+**Counterexamples: x == 7 fails for x == 2, x == 2 fails for x == 7**
