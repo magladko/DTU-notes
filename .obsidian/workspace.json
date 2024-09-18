@@ -13,17 +13,19 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "Program Verification/Figures/e-matching-def-slide.png"
+                "file": "Program Verification/Figures/swp.png"
               }
             }
           },
           {
-            "id": "32a5669ab5dcc28a",
+            "id": "6de93572a325d057",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Program Verification/Figures/universal-quantifier-instantiation-idea.png"
+                "file": "Program Verification/Module 4 - Building a Verifier.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -94,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Program Verification/Figures/universal-quantifier-instantiation-idea.png",
+                "file": "Program Verification/Module 4 - Building a Verifier.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Program Verification/Figures/universal-quantifier-instantiation-idea.png",
+                "file": "Program Verification/Module 4 - Building a Verifier.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Program Verification/Figures/universal-quantifier-instantiation-idea.png"
+                "file": "Program Verification/Module 4 - Building a Verifier.md"
               }
             }
           },
@@ -175,19 +177,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f4ed663714496120",
+  "active": "6de93572a325d057",
   "lastOpenFiles": [
+    "Program Verification/Figures/swp.png",
+    "Program Verification/Module 4 - Building a Verifier.md",
+    "Program Verification/CHEAT SHEETS.md",
+    "Program Verification/Figures/e-matching-def-slide.png",
+    "Program Verification/Figures/universal-quantifier-instantiation-idea.png",
     "Program Verification/Figures/m3-wrap-up.png",
     "Program Verification/Figures/e-matching-z3-slide.png",
-    "Program Verification/Figures/e-matching-def-slide.png",
     "Program Verification/Figures/patterns-triggers-slide.png",
     "Program Verification/Figures/search-space-explosion-slide.png",
     "Program Verification/Figures/picking-terms-for-uq-slide.png",
     "Program Verification/Figures/univ-quantifier-instantiation-problems-slide.png",
     "Program Verification/Figures/limits-of-smt-solvers-slide.png",
-    "Program Verification/Figures/universal-quantifier-instantiation-idea.png",
-    "Program Verification/Figures/limits-of-smt-solvers-summary-slide.png",
-    "Program Verification/Figures/axioms-trustedcodebase-slide.png",
     "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
     "Drawing 2024-09-15 23.00.53.excalidraw.md",
     "Model Checking/Lecture 01 - Transition Systems.md",
@@ -197,7 +200,6 @@
     "Program Verification/Module 2 - Floyd-Hoare logic.md",
     "Program Verification/Module 0  - Introduction.md",
     "Drawing 2024-09-14 16.18.00.excalidraw.md",
-    "Program Verification/CHEAT SHEETS.md",
     "Program Verification/Quizes/Quiz 2.md",
     "Excalidraw/Drawing 2024-09-14 16.17.33.excalidraw.md",
     "Excalidraw",
@@ -223,7 +225,6 @@
     "Applied AI for entrepreneurs/Lecture 1/Lecture 1.md",
     "Applied AI for entrepreneurs/Figures",
     "Program Verification/Figures",
-    "Welcome.md",
     "Untitled.canvas"
   ]
 }

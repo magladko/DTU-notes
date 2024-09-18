@@ -34,3 +34,6 @@ $$
 ![[fol-smt-summary.png]]
 # Decidability
 ![[smt-decidability.png]]
+
+# Sets of preconditions
+![[swp.png]]
