@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Program Verification/Module 4 - Building a Verifier.md",
+                "file": "Applied AI for entrepreneurs/Lecture 3 - project forming.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Program Verification/Module 4 - Building a Verifier.md",
+                "file": "Applied AI for entrepreneurs/Lecture 3 - project forming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Program Verification/Module 4 - Building a Verifier.md",
+                "file": "Applied AI for entrepreneurs/Lecture 3 - project forming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Program Verification/Module 4 - Building a Verifier.md"
+                "file": "Applied AI for entrepreneurs/Lecture 3 - project forming.md"
               }
             }
           },
@@ -179,8 +179,11 @@
   },
   "active": "6de93572a325d057",
   "lastOpenFiles": [
-    "Program Verification/Figures/swp.png",
+    "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer Market Opportunity.md",
+    "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer for Manufacturing.md",
+    "Applied AI for entrepreneurs/Lecture 3 - project forming.md",
     "Program Verification/Module 4 - Building a Verifier.md",
+    "Program Verification/Figures/swp.png",
     "Program Verification/CHEAT SHEETS.md",
     "Program Verification/Figures/e-matching-def-slide.png",
     "Program Verification/Figures/universal-quantifier-instantiation-idea.png",
@@ -205,8 +208,6 @@
     "Excalidraw",
     "broken links output.md",
     "G.md",
-    "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer Market Opportunity.md",
-    "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer for Manufacturing.md",
     "Applied AI for entrepreneurs/Claude-Translating GPT-2 Concepts to Digital Twin Capabilities.md",
     "Applied AI for entrepreneurs/Lecture 1/Claude-Exploring GPT2 Simulator Components.md",
     "Program Verification/Exercises/Module 2 - Overview (exercises).md",

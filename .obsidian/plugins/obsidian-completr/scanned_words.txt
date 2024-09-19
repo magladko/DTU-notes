@@ -844,6 +844,7 @@ WHI
 WHMM
 WJM
 WPB
+Worksheet
 is
 its
 in
@@ -1971,6 +1972,9 @@ iddd
 imH
 iDEE
 iVu
+immediate
+independent
+interventions
 program
 permutation
 possible
@@ -2816,6 +2820,8 @@ psS
 pPG
 pdDx
 pUa
+pick
+prevent
 verification
 verified
 verify
@@ -3683,6 +3689,7 @@ voy
 vxw
 vlt
 vMY
+venture
 Prove
 Program
 Proving
@@ -4598,6 +4605,10 @@ PRQQ
 PtPtJv
 PTU
 PYV
+Prediction
+Patient
+Population
+Portfolio
 that
 the
 to
@@ -5532,6 +5543,10 @@ tbg
 tRi
 tPiDM
 tsrr
+timelines
+technological
+too
+together
 always
 as
 array
@@ -6608,6 +6623,10 @@ aTM
 aEW
 aEZ
 aFKR
+assertions
+assertion
+addresses
+anticipate
 works
 whether
 where
@@ -7472,6 +7491,7 @@ wnPZ
 wDc
 wdS
 wJM
+worst
 expected
 errors
 error
@@ -8568,6 +8588,10 @@ eDD
 eGC
 ecccccccccccccccccccccc
 eNON
+effectiveness
+envisioned
+exactly
+enhanced
 Task
 The
 Testing
@@ -9599,6 +9623,7 @@ TMw
 TkUj
 TVLK
 TQN
+Trend
 determine
 does
 defined
@@ -10607,6 +10632,9 @@ dwv
 dRr
 dKv
 ddYv
+don
+detail
+disruptions
 given
 good
 guarantees
@@ -11572,6 +11600,7 @@ grh
 gsai
 gBZZ
 gYa
+give
 satisfies
 specification
 seL
@@ -12683,6 +12712,7 @@ sNg
 stZ
 sem
 shm
+short
 fully
 formal
 forward
@@ -13662,6 +13692,9 @@ fccccccccccccccccccccccc
 fzr
 fWA
 fyT
+fails
+face
+factor
 kernel
 knowledge
 known
@@ -15699,6 +15732,8 @@ IxH
 IKr
 IIIAI
 Idr
+Integration
+Intervention
 Specifications
 Suffers
 Strengths
@@ -16765,6 +16800,9 @@ Sxu
 SNPB
 SYYi
 SHu
+Sensor
+Schedule
+Stress
 method
 memory
 modify
@@ -17678,6 +17716,7 @@ mGq
 mDU
 mfdn
 moP
+manner
 not
 new
 note
@@ -18461,6 +18500,7 @@ nJJg
 nqtxL
 nUtT
 nkd
+near
 crash
 can
 correctness
@@ -19583,6 +19623,8 @@ cVgcXd
 cSd
 cTQV
 cqJ
+counterexample
+choice
 runs
 returns
 requires
@@ -21366,6 +21408,9 @@ oXX
 otc
 ojU
 obf
+option
+others
+optimization
 How
 Hence
 Hi
@@ -23450,6 +23495,8 @@ DuM
 DEW
 Due
 DFC
+Describe
+Demand
 Verification
 Verified
 Very
@@ -25395,6 +25442,7 @@ Nyg
 NUT
 NYp
 NBq
+Network
 Good
 Group
 Give
@@ -27274,6 +27322,8 @@ bfw
 bDz
 bqE
 bDMI
+broad
+briefly
 Even
 EveryCrypt
 Engineering
@@ -28370,6 +28420,8 @@ ERpy
 EqU
 EZL
 EKu
+Equipment
+Engine
 lead
 library
 labor
@@ -29361,6 +29413,9 @@ lcg
 lcS
 laY
 lDG
+list
+leverages
+leave
 unexpected
 use
 undecidability
@@ -31301,6 +31356,8 @@ MbB
 MSo
 MKX
 MBr
+Modeling
+Multi
 Automatic
 Automated
 Analogies
@@ -32285,6 +32342,10 @@ Aixb
 AYU
 AMC
 ARy
+Analysis
+Argument
+Adaptive
+Allocation
 Can
 CompCert
 Course
@@ -33334,6 +33395,9 @@ CnR
 Cbh
 Cho
 CHf
+Counterexamples
+Choose
+Characterize
 handle
 high
 hints
@@ -34269,6 +34333,7 @@ hIp
 hbJ
 hMvfzT
 hfMA
+hold
 Requires
 Rust
 Reading
@@ -35385,6 +35450,7 @@ RBuU
 RUZJ
 RAa
 RnUU
+Recommendation
 years
 your
 you
@@ -38110,6 +38176,8 @@ LVVV
 Lmv
 LBHh
 LHa
+List
+Lifespan
 justify
 jd
 jt
@@ -40909,6 +40977,8 @@ Flt
 FFz
 FaI
 FNn
+Failure
+Forecasting
 OPTIONS
 Overview
 Out
@@ -41803,6 +41873,7 @@ OPt
 OnP
 OAK
 OCqE
+Optimization
 You
 Yes
 YE
@@ -44698,6 +44769,7 @@ BLNN
 BbsI
 Bzz
 BBX
+Based
 KH
 KJP
 KR
