@@ -1999,6 +1999,8 @@ ikkSFT
 ihhxD
 iUOH
 imc
+improvement
+interaction
 program
 permutation
 possible
@@ -2862,6 +2864,9 @@ pvw
 pau
 pfo
 pEU
+prioritize
+propose
+positioning
 verification
 verified
 verify
@@ -5650,6 +5655,7 @@ tUjik
 twLo
 tnqN
 tau
+teams
 always
 as
 array
@@ -6751,6 +6757,10 @@ atuu
 allL
 ajjJ
 awu
+acquisition
+analytics
+agile
+adherence
 works
 whether
 where
@@ -8752,6 +8762,7 @@ eII
 edW
 eBzo
 eDC
+ensures
 Task
 The
 Testing
@@ -9801,6 +9812,7 @@ TWVH
 TReA
 Tggi
 Ths
+Two
 determine
 does
 defined
@@ -10831,6 +10843,9 @@ dKF
 dIm
 dPn
 doRS
+deployment
+developed
+dedicated
 given
 good
 guarantees
@@ -12958,6 +12973,12 @@ ssIP
 ssuF
 sLmPLGs
 sIc
+sources
+subjective
+stability
+security
+sprints
+successful
 fully
 formal
 forward
@@ -13955,6 +13976,9 @@ fqK
 fQW
 fNZ
 fGH
+focuses
+feedback
+flexible
 kernel
 knowledge
 known
@@ -17105,6 +17129,7 @@ SswbZ
 Szi
 STTD
 SAAW
+Selenium
 method
 memory
 modify
@@ -18040,6 +18065,7 @@ mjy
 mDk
 mVc
 mKE
+measures
 not
 new
 note
@@ -19980,6 +20006,11 @@ ckj
 cGm
 cZZZ
 cccTVV
+covers
+consistent
+categories
+comparability
+customer
 runs
 returns
 requires
@@ -20919,6 +20950,7 @@ rUSY
 rhg
 rphObK
 rGA
+robust
 of
 original
 ordering
@@ -22823,6 +22855,7 @@ HKd
 HNThA
 HDcl
 HsX
+HITRUST
 Different
 Deductive
 Dafny
@@ -23905,6 +23938,7 @@ DBJ
 DQdpp
 DEQ
 Dhb
+Docker
 Verification
 Verified
 Very
@@ -25884,6 +25918,7 @@ Nmu
 NkT
 NAGc
 NbquQ
+NIST
 Good
 Group
 Give
@@ -26859,6 +26894,7 @@ GyL
 GijjZ
 Ggw
 GGiU
+GitLab
 bugs
 behavior
 be
@@ -28898,6 +28934,7 @@ EBa
 EEEkz
 Ewz
 Eyv
+Ensure
 lead
 library
 labor
@@ -30798,6 +30835,7 @@ uuuTWWc
 upp
 udH
 uvPM
+user
 Model
 More
 May
@@ -31886,6 +31924,7 @@ MZZZx
 MXuv
 MbeK
 Msj
+Mention
 Automatic
 Automated
 Analogies
@@ -33948,6 +33987,7 @@ CpV
 Cbr
 CVD
 CEB
+Cybersecurity
 handle
 high
 hints
@@ -37805,6 +37845,7 @@ JJEI
 Jssl
 JRX
 JGr
+Jira
 Less
 Lesson
 Let
@@ -41668,6 +41709,7 @@ Frd
 FZe
 FkmK
 Fty
+Framework
 OPTIONS
 Overview
 Out
@@ -42582,6 +42624,7 @@ OwS
 Oav
 Opys
 OgO
+Our
 You
 Yes
 YE
@@ -46502,6 +46545,7 @@ KJo
 KEkc
 Kjf
 KnrQ
+Kubernetes
 zd
 ze
 zs
