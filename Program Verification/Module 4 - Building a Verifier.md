@@ -33,10 +33,10 @@
 
 # IVL0
 
-![[Pasted image 20240919160353.png]]
+![[summary-ivl0-slide.png]]
 
 # Error localization
 ## swp
-![[Pasted image 20240919160448.png]]
+![[swp-slide.png]]
 ## Verification Condition for Error Localization in IVL0
-![[Pasted image 20240919160532.png]]
+![[ver-cond-err-loc-ivl0-slide.png]]

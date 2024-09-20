@@ -11,11 +11,9 @@
             "id": "6de93572a325d057",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Program Verification/Module 4 - Building a Verifier.md",
-                "mode": "source",
-                "source": false
+                "file": "summary-ivl0-slide.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Program Verification/Module 4 - Building a Verifier.md",
+                "file": "summary-ivl0-slide.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Program Verification/Module 4 - Building a Verifier.md",
+                "file": "summary-ivl0-slide.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Program Verification/Module 4 - Building a Verifier.md"
+                "file": "summary-ivl0-slide.png"
               }
             }
           },
@@ -168,13 +166,14 @@
   },
   "active": "6de93572a325d057",
   "lastOpenFiles": [
-    "Pasted image 20240919160532.png",
-    "Pasted image 20240919160448.png",
-    "Pasted image 20240919160353.png",
+    "Program Verification/Figures/swp-slide.png",
+    "Program Verification/Figures/ver-cond-err-loc-ivl0-slide.png",
+    "summary-ivl0-slide.png",
+    "Model Checking/Lecture 03 - Temporal Logics.md",
+    "Program Verification/Module 4 - Building a Verifier.md",
     "Applied AI for entrepreneurs/Lecture 3 - project forming.md",
     "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer Market Opportunity.md",
     "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer for Manufacturing.md",
-    "Program Verification/Module 4 - Building a Verifier.md",
     "Program Verification/Figures/swp.png",
     "Program Verification/CHEAT SHEETS.md",
     "Program Verification/Figures/e-matching-def-slide.png",
@@ -183,7 +182,6 @@
     "Program Verification/Figures/e-matching-z3-slide.png",
     "Program Verification/Figures/patterns-triggers-slide.png",
     "Program Verification/Figures/search-space-explosion-slide.png",
-    "Program Verification/Figures/picking-terms-for-uq-slide.png",
     "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
     "Drawing 2024-09-15 23.00.53.excalidraw.md",
     "Model Checking/Lecture 01 - Transition Systems.md",
@@ -208,7 +206,6 @@
     "Program Verification/Figures/01-operational-semantics.png.crdownload",
     "Program Verification/Exercises",
     "Program Verification/Exercises.md",
-    "Program Verification/obstacles-to-automation-slide.md",
     "Model Checking/Figures",
     "Model Checking",
     "Applied AI for entrepreneurs/Lecture 1/Project 1.canvas",
