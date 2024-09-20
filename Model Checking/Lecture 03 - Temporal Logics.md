@@ -7,3 +7,8 @@ $$
 \end{aligned}
 $$
 
+
+# Exercises
+## Exercise 03.1
+![[ex03-1.png]]
+1. 
