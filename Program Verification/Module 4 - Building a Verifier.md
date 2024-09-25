@@ -40,3 +40,5 @@
 ![[swp-slide.png]]
 ## Verification Condition for Error Localization in IVL0
 ![[ver-cond-err-loc-ivl0-slide.png]]
+
+**ASSERT FALSE TO DEBUG**
