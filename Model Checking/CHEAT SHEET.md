@@ -2,4 +2,4 @@
 - [PRISM Manual | Property Specification / Introduction](https://www.prismmodelchecker.org/manual/PropertySpecification/Introduction)
 # LTL Grammar
 ![[ltl-grammar.png]]
-
+**+ until: $\cup$**
