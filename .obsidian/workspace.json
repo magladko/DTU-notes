@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Applied AI for entrepreneurs/Week 4 - ReAct Framework.md",
+                "file": "Model Checking/CHEAT SHEET.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Applied AI for entrepreneurs/Week 4 - ReAct Framework.md",
+                "file": "Model Checking/CHEAT SHEET.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Applied AI for entrepreneurs/Week 4 - ReAct Framework.md",
+                "file": "Model Checking/CHEAT SHEET.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Applied AI for entrepreneurs/Week 4 - ReAct Framework.md"
+                "file": "Model Checking/CHEAT SHEET.md"
               }
             }
           },
@@ -168,8 +168,9 @@
   },
   "active": "9b6a76441415af71",
   "lastOpenFiles": [
-    "Program Verification/Module 4 - Building a Verifier.md",
     "Applied AI for entrepreneurs/Week 4 - ReAct Framework.md",
+    "Model Checking/CHEAT SHEET.md",
+    "Program Verification/Module 4 - Building a Verifier.md",
     "Applied AI for entrepreneurs/Lecture 3 - project forming.md",
     "Model Checking/Lecture 03 - Temporal Logics.md",
     "Model Checking/new.md",
@@ -206,7 +207,6 @@
     "Program Verification/Quizes/Quiz 1.md",
     "Program Verification/Quizes/Figures",
     "Program Verification/Quizes",
-    "Program Verification/Exercises/Preliminary Exercises.md",
     "Program Verification/Figures/01-operational-semantics.png.crdownload",
     "Program Verification/Exercises",
     "Model Checking/Figures",
