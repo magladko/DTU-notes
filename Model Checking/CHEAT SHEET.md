@@ -6,3 +6,5 @@
 # CTL Grammar
 ![[Pasted image 20240926193453.png]]
 
+# LTL, CTL in PRISM
+![[Pasted image 20240926202513.png]]
