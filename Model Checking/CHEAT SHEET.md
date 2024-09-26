@@ -3,3 +3,6 @@
 # LTL Grammar
 ![[ltl-grammar.png]]
 **+ until: $\cup$**
+# CTL Grammar
+![[Pasted image 20240926193453.png]]
+
