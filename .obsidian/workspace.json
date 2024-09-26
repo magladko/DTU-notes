@@ -18,6 +18,16 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "fc401a62db9d25f3",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Model Checking/Figures/ltl-grammar.png"
+              }
+            }
           }
         ]
       }
@@ -69,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 485.51103591918945
+    "width": 200
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -168,8 +178,12 @@
   },
   "active": "9b6a76441415af71",
   "lastOpenFiles": [
-    "Applied AI for entrepreneurs/Week 4 - ReAct Framework.md",
+    "Model Checking/Figures/ltl-grammar.png",
+    "Drawing 2024-09-26 18.54.56.excalidraw.md",
     "Model Checking/CHEAT SHEET.md",
+    "Pasted Image 20240926185633_051.png",
+    "Pasted image 20240926185426.png",
+    "Applied AI for entrepreneurs/Week 4 - ReAct Framework.md",
     "Program Verification/Module 4 - Building a Verifier.md",
     "Applied AI for entrepreneurs/Lecture 3 - project forming.md",
     "Model Checking/Lecture 03 - Temporal Logics.md",
@@ -184,9 +198,6 @@
     "Program Verification/CHEAT SHEETS.md",
     "Program Verification/Figures/e-matching-def-slide.png",
     "Program Verification/Figures/universal-quantifier-instantiation-idea.png",
-    "Program Verification/Figures/m3-wrap-up.png",
-    "Program Verification/Figures/e-matching-z3-slide.png",
-    "Program Verification/Figures/patterns-triggers-slide.png",
     "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
     "Drawing 2024-09-15 23.00.53.excalidraw.md",
     "Model Checking/Lecture 01 - Transition Systems.md",
@@ -203,8 +214,6 @@
     "G.md",
     "Applied AI for entrepreneurs/Claude-Translating GPT-2 Concepts to Digital Twin Capabilities.md",
     "Applied AI for entrepreneurs/Lecture 1/Claude-Exploring GPT2 Simulator Components.md",
-    "Program Verification/Exercises/Module 2 - Overview (exercises).md",
-    "Program Verification/Quizes/Quiz 1.md",
     "Program Verification/Quizes/Figures",
     "Program Verification/Quizes",
     "Program Verification/Figures/01-operational-semantics.png.crdownload",
