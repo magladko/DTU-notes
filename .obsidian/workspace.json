@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Model Checking/CHEAT SHEET.md",
+                "file": "QS/QS temp.md",
                 "mode": "source",
                 "source": false
               }
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Model Checking/CHEAT SHEET.md",
+                "file": "QS/QS temp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Model Checking/CHEAT SHEET.md",
+                "file": "QS/QS temp.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Model Checking/CHEAT SHEET.md"
+                "file": "QS/QS temp.md"
               }
             }
           },
@@ -178,11 +178,13 @@
   },
   "active": "9b6a76441415af71",
   "lastOpenFiles": [
+    "Model Checking/CHEAT SHEET.md",
+    "QS/QS temp.md",
+    "QS",
     "Pasted image 20240926202513.png",
     "Pasted image 20240926193453.png",
     "Model Checking/Figures/ltl-grammar.png",
     "Drawing 2024-09-26 18.54.56.excalidraw.md",
-    "Model Checking/CHEAT SHEET.md",
     "Pasted Image 20240926185633_051.png",
     "Pasted image 20240926185426.png",
     "Applied AI for entrepreneurs/Week 4 - ReAct Framework.md",
@@ -198,7 +200,6 @@
     "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer for Manufacturing.md",
     "Program Verification/Figures/swp.png",
     "Program Verification/CHEAT SHEETS.md",
-    "Program Verification/Figures/e-matching-def-slide.png",
     "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
     "Drawing 2024-09-15 23.00.53.excalidraw.md",
     "Model Checking/Lecture 01 - Transition Systems.md",
@@ -224,7 +225,6 @@
     "Applied AI for entrepreneurs/Lecture 1/Project 1.canvas",
     "Applied AI for entrepreneurs/Lecture 1/Navigator.pdf",
     "Applied AI for entrepreneurs/Figures",
-    "Program Verification/Figures",
     "Untitled.canvas"
   ]
 }
