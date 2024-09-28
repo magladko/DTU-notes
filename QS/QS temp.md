@@ -63,3 +63,10 @@ b) Add a brief discussion of potential policy measures or industry initiatives t
 
 c) Conclude with a stronger synthesis of the key points, summarizing the challenges and opportunities in meeting future protein demands for salmon aquaculture while improving sustainability. This could include potential trade-offs and areas requiring further research or innovation.
 ```
+
+
+1. Heat only as much water as you need (~18% decrease)
+2. If drinking arabica, drink "Coffee bean (Robusta), depulped, Brazil, at farm gate {BR} U" (~35% decrease)
+3. Arabica has generally less carbon footprint (~24% decrease)
+
+![[Pasted image 20240928170907.png]]

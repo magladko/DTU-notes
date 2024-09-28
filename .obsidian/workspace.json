@@ -4,28 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "76d9bb29b9388ab2",
+        "id": "aace1ce6f90b1ecf",
         "type": "tabs",
         "children": [
           {
-            "id": "9b6a76441415af71",
+            "id": "2b83194b6066839e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "QS/QS temp.md",
+                "file": "Model Checking/Lecture 01 - Transition Systems.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "fc401a62db9d25f3",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Model Checking/Figures/ltl-grammar.png"
               }
             }
           }
@@ -95,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "QS/QS temp.md",
+                "file": "Model Checking/Lecture 01 - Transition Systems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "QS/QS temp.md",
+                "file": "Model Checking/Lecture 01 - Transition Systems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "QS/QS temp.md"
+                "file": "Model Checking/Lecture 01 - Transition Systems.md"
               }
             }
           },
@@ -176,14 +166,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9b6a76441415af71",
+  "active": "2b83194b6066839e",
   "lastOpenFiles": [
+    "Model Checking/Lecture 00.md",
     "Model Checking/CHEAT SHEET.md",
-    "QS/QS temp.md",
-    "QS",
+    "Pasted image 20240928170907.png",
     "Pasted image 20240926202513.png",
     "Pasted image 20240926193453.png",
     "Model Checking/Figures/ltl-grammar.png",
+    "QS/QS temp.md",
+    "QS",
     "Drawing 2024-09-26 18.54.56.excalidraw.md",
     "Pasted Image 20240926185633_051.png",
     "Pasted image 20240926185426.png",
@@ -198,13 +190,11 @@
     "Program Verification/Figures/ver-cond-err-loc-ivl0-slide.png",
     "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer Market Opportunity.md",
     "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer for Manufacturing.md",
-    "Program Verification/Figures/swp.png",
     "Program Verification/CHEAT SHEETS.md",
     "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
     "Drawing 2024-09-15 23.00.53.excalidraw.md",
     "Model Checking/Lecture 01 - Transition Systems.md",
     "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
-    "Model Checking/Lecture 00.md",
     "Program Verification/Module 2 - Overview.md",
     "Program Verification/Module 2 - Floyd-Hoare logic.md",
     "Program Verification/Module 0  - Introduction.md",
@@ -215,7 +205,6 @@
     "broken links output.md",
     "G.md",
     "Applied AI for entrepreneurs/Claude-Translating GPT-2 Concepts to Digital Twin Capabilities.md",
-    "Applied AI for entrepreneurs/Lecture 1/Claude-Exploring GPT2 Simulator Components.md",
     "Program Verification/Quizes/Figures",
     "Program Verification/Quizes",
     "Program Verification/Figures/01-operational-semantics.png.crdownload",
