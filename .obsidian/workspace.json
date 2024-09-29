@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Model Checking/Lecture 01 - Transition Systems.md",
+                "file": "Model Checking/Lecture 03 - Temporal Logics.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Model Checking/Lecture 01 - Transition Systems.md",
+                "file": "Model Checking/Lecture 03 - Temporal Logics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Model Checking/Lecture 01 - Transition Systems.md",
+                "file": "Model Checking/Lecture 03 - Temporal Logics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Model Checking/Lecture 01 - Transition Systems.md"
+                "file": "Model Checking/Lecture 03 - Temporal Logics.md"
               }
             }
           },
@@ -168,6 +168,8 @@
   },
   "active": "2b83194b6066839e",
   "lastOpenFiles": [
+    "Pasted image 20240929124257.png",
+    "Model Checking/Lecture 01 - Transition Systems.md",
     "Model Checking/Lecture 00.md",
     "Model Checking/CHEAT SHEET.md",
     "Pasted image 20240928170907.png",
@@ -193,7 +195,6 @@
     "Program Verification/CHEAT SHEETS.md",
     "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
     "Drawing 2024-09-15 23.00.53.excalidraw.md",
-    "Model Checking/Lecture 01 - Transition Systems.md",
     "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
     "Program Verification/Module 2 - Overview.md",
     "Program Verification/Module 2 - Floyd-Hoare logic.md",

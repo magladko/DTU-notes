@@ -11,4 +11,8 @@ $$
 # Exercises
 ## Exercise 03.1
 ![[ex03-1.png]]
-1. 
+
+
+
+
+![[Pasted image 20240929124257.png]]
