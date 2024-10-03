@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Model Checking/CHEAT SHEET.md",
+                "file": "Applied AI for entrepreneurs/Week 5.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Model Checking/CHEAT SHEET.md",
+                "file": "Applied AI for entrepreneurs/Week 5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Model Checking/CHEAT SHEET.md",
+                "file": "Applied AI for entrepreneurs/Week 5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Model Checking/CHEAT SHEET.md"
+                "file": "Applied AI for entrepreneurs/Week 5.md"
               }
             }
           },
@@ -180,11 +180,15 @@
   },
   "active": "c5b7bb0cb1faa7db",
   "lastOpenFiles": [
+    "Applied AI for entrepreneurs/diff/b.md",
+    "Applied AI for entrepreneurs/diff/a.md",
+    "Applied AI for entrepreneurs/diff",
+    "Model Checking/CHEAT SHEET.md",
+    "Applied AI for entrepreneurs/Week 5.md",
     "Model Checking/Lecture 01 - Transition Systems.md",
     "Model Checking/Lecture 00.md",
     "Model Checking/Lecture 03 - Temporal Logics.md",
     "Pasted image 20240929124257.png",
-    "Model Checking/CHEAT SHEET.md",
     "Pasted image 20240928170907.png",
     "Pasted image 20240926202513.png",
     "Pasted image 20240926193453.png",
@@ -215,8 +219,6 @@
     "Excalidraw/Drawing 2024-09-14 16.17.33.excalidraw.md",
     "Excalidraw",
     "broken links output.md",
-    "G.md",
-    "Applied AI for entrepreneurs/Claude-Translating GPT-2 Concepts to Digital Twin Capabilities.md",
     "Program Verification/Quizes/Figures",
     "Program Verification/Quizes",
     "Program Verification/Figures/01-operational-semantics.png.crdownload",
@@ -225,7 +227,6 @@
     "Model Checking",
     "Applied AI for entrepreneurs/Lecture 1/Project 1.canvas",
     "Applied AI for entrepreneurs/Lecture 1/Navigator.pdf",
-    "Applied AI for entrepreneurs/Figures",
     "Untitled.canvas"
   ]
 }
