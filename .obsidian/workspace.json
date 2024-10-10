@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Applied AI for entrepreneurs/Week 5.md",
+                "file": "Applied AI for entrepreneurs/Week 6.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Applied AI for entrepreneurs/Week 5.md",
+                "file": "Applied AI for entrepreneurs/Week 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Applied AI for entrepreneurs/Week 5.md",
+                "file": "Applied AI for entrepreneurs/Week 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Applied AI for entrepreneurs/Week 5.md"
+                "file": "Applied AI for entrepreneurs/Week 6.md"
               }
             }
           },
@@ -180,8 +180,11 @@
   },
   "active": "c5b7bb0cb1faa7db",
   "lastOpenFiles": [
-    "Applied AI for entrepreneurs/Worksheet 2 - answer template.md",
     "Applied AI for entrepreneurs/Week 5.md",
+    "Applied AI for entrepreneurs/Week 6.md",
+    "Applied AI for entrepreneurs/Week 4 - ReAct Framework.md",
+    "Applied AI for entrepreneurs/Figures/Pasted image 20241010100441.png",
+    "Applied AI for entrepreneurs/Worksheet 2 - answer template.md",
     "Applied AI for entrepreneurs/dt-with-agents.png",
     "Applied AI for entrepreneurs/dt-with-agents.png.crdownload",
     "Applied AI for entrepreneurs/py/langraph.ipynb",
@@ -204,12 +207,10 @@
     "Drawing 2024-09-26 18.54.56.excalidraw.md",
     "Pasted Image 20240926185633_051.png",
     "Pasted image 20240926185426.png",
-    "Applied AI for entrepreneurs/Week 4 - ReAct Framework.md",
     "Program Verification/Module 4 - Building a Verifier.md",
     "Applied AI for entrepreneurs/Lecture 3 - project forming.md",
     "Model Checking/new.md",
     "Model Checking/Figures/ex03-1.png",
-    "Program Verification/Figures/summary-ivl0-slide.png",
     "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer Market Opportunity.md",
     "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer for Manufacturing.md",
     "Program Verification/CHEAT SHEETS.md",

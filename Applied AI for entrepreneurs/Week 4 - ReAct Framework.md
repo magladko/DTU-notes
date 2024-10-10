@@ -17,3 +17,4 @@
 2. **Act**: Optimize resource allocation to meet current and predicted demands.
 3. **Adapt**: Revise strategies dynamically based on real-time patient inflow and resource effectiveness data.
 
+![[Pasted image 20241010100441.png]]
