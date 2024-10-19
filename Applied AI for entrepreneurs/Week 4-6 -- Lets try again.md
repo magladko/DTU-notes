@@ -33,7 +33,6 @@ Knowledge graphs can provide rich context for digital twin data, map complex rel
 4. Scenario testing Explanation: Running various "what-if" scenarios without affecting the physical system.
 
 These abilities form the foundation of a digital twin as a sequence predictor, which can be further enhanced with additional layers like LLMs, ReAct agents, and knowledge graphs. They provide a starting point for considering the potential value proposition in a business model context.
-
 #### Summary
 
 | ReAct Agent              | Team of ReAct Agents            | Knowledge Graphs (GraphRAG)      | Digital Twin         |
