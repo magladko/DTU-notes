@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Applied AI for entrepreneurs/Week 4-6 -- Lets try again.md",
+                "file": "Model Checking/CHEAT SHEET.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Week 4-6 -- Lets try again"
+              "title": "CHEAT SHEET"
             }
           }
         ]
@@ -201,9 +201,9 @@
   },
   "active": "c5b7bb0cb1faa7db",
   "lastOpenFiles": [
+    "Applied AI for entrepreneurs/Week 4-6 -- Lets try again.md",
     "Applied AI for entrepreneurs/s242908_langgraph.py",
     "Applied AI for entrepreneurs/Week 6.md",
-    "Applied AI for entrepreneurs/Week 4-6 -- Lets try again.md",
     "Applied AI for entrepreneurs/Week 5.md",
     "Applied AI for entrepreneurs/Week 4 - ReAct Framework.md",
     "Applied AI for entrepreneurs/Figures/Pasted image 20241010100441.png",
@@ -246,7 +246,6 @@
     "Excalidraw",
     "Program Verification/Quizes/Figures",
     "Program Verification/Quizes",
-    "Program Verification/Figures/01-operational-semantics.png.crdownload",
     "Applied AI for entrepreneurs/Lecture 1/Project 1.canvas",
     "Untitled.canvas"
   ]

@@ -2993,6 +2993,8 @@ party
 preprocesses
 perspective
 predictor
+plants
+providers
 verification
 verified
 verify
@@ -13528,6 +13530,8 @@ standardizes
 stakeholder
 sectors
 specialize
+sized
+service
 fully
 formal
 forward
@@ -14559,6 +14563,7 @@ fST
 fÜ
 fvYQv
 foundation
+firms
 kernel
 knowledge
 known
@@ -17846,6 +17851,7 @@ Secure
 Some
 Specialization
 Synergistic
+Small
 method
 memory
 modify
@@ -20822,6 +20828,7 @@ communication
 continuously
 counterpart
 considering
+complexes
 runs
 returns
 requires
@@ -21818,6 +21825,7 @@ retrieving
 roles
 rich
 replica
+rental
 of
 original
 ordering
@@ -22729,6 +22737,7 @@ ood
 oSSS
 oIDATB
 oversight
+office
 How
 Hence
 Hi
@@ -23799,6 +23808,7 @@ Hyd
 HcKh
 Heavy
 Hierarchical
+Hotel
 Different
 Deductive
 Dafny
@@ -27998,6 +28008,7 @@ GOP
 Generates
 Graphs
 GraphRAG
+Global
 bugs
 behavior
 be
@@ -35400,6 +35411,8 @@ Collaboration
 Costs
 Collaborative
 Contextual
+Consumption
+Commercial
 handle
 high
 hints
@@ -43467,6 +43480,7 @@ FGGC
 Fvt
 FCq
 Funding
+Facilities
 OPTIONS
 Overview
 Out

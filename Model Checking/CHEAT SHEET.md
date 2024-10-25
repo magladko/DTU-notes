@@ -1,5 +1,7 @@
 - [PRISM Manual | The PRISM Language / Introduction](https://www.prismmodelchecker.org/manual/ThePRISMLanguage/Introduction)
 - [PRISM Manual | Property Specification / Introduction](https://www.prismmodelchecker.org/manual/PropertySpecification/Introduction)
+Important for the exam: BISIMULATION
+
 # LTL Grammar
 ![[ltl-grammar.png]]
 **+ until: $\cup$**
