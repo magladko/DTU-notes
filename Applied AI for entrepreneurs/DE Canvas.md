@@ -1,0 +1,13 @@
+# DE Canvas
+
+Project name:
+Iteration:
+
+
+
+| **1. Raison d'Etre**<br><br>Why are you in business?                           | **4. Competitive Advantage**<br><br>Why you?                              | **e 5. Customer Acquisition**<br><br>How does your customer acquire your product?                                                                             | **8. Overall Economics**<br><br>Does your product make money at the company level?                           | **9. Design & Build**<br><br>How do you produce the product?                                |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| - Mission:<br>- Passions:<br>- Values:<br>- Initial assets:<br>- Initial idea: | - Moats:<br>- Core:<br>- Competetive positioning                          | - DMU:<br>- DMP:<br>- WoOs:<br>- Possible Triggers:                                                                                                           | - Revenue:<br>-COGS Expenses:<br>-R&D Expenses:<br>- G&A Expenses:<br>- LTV/CoCA Ratio:                      | - Key Assumptions:<br>-Key Assumption Test:<br>- MVBP:<br>- Tracking Metrics:               |
+| **2. Initial Market**<br><br>Who is your customer?                             | **3. Value Creation**<br><br>What can you do for your customer?           | **5. Customer Acquisition**<br><br>Can you make money at the product level?                                                                                   | **7. Sales**<br><br>How do you sell your product?                                                            | **10. Scaling**<br><br>How do you scale your business?                                      |
+| - BHM:<br>- End-User Profile:<br>- TAM:<br>- Presona:<br>- First 10 Customers: | - Use Case:<br>- Problem Being Solved:<br>- Product Description<br>- QVP: | - Biz Model:<br>- Pricing:<br>- Short Term LTV: <br>- Short Term CoCA:<br>- Medium Term LTV: <br>- Medium Term CoCA:<br>- Long Term LTV:<br>- Long Term CoCA: | - Preferred Sales Channel:<br>- Sales Funnel:<br>- Short Term Mix:<br>- Medium Term Mix:<br>- Long Term Mix: | - Product Plan for BHM:<br>- Next Market:<br>- Product Plan Beyond BHM:<br>- Follow-on TAM: |
+

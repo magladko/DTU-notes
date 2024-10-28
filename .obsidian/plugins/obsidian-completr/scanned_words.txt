@@ -9140,6 +9140,7 @@ eTrP
 entrepreneurial
 entrepreneurs
 entities
+exam
 Task
 The
 Testing
@@ -16705,6 +16706,8 @@ Interpreter
 Interprets
 Information
 Identifying
+Important
+Iteration
 Specifications
 Suffers
 Strengths
@@ -19656,6 +19659,7 @@ ngllLn
 nbzm
 ngMk
 nlH
+name
 crash
 can
 correctness
@@ -34290,6 +34294,7 @@ Agents
 Agent
 Analyst
 Adaptation
+AETHENA
 Can
 CompCert
 Course
@@ -35413,6 +35418,8 @@ Collaborative
 Contextual
 Consumption
 Commercial
+Canvas
+CLAUDE
 handle
 high
 hints
@@ -47466,6 +47473,7 @@ BCi
 BDDD
 BWb
 Better
+BISIMULATION
 KH
 KJP
 KR
