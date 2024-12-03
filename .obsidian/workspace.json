@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Program Verification/EXAM NOTES/3. Automated Reasoning.md",
+                "file": "Program Verification/EXAM NOTES/4. Building an Automated Verifier.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3. Automated Reasoning"
+              "title": "4. Building an Automated Verifier"
             }
           }
         ]
@@ -163,10 +163,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Program Verification/EXAM NOTES/3. Automated Reasoning.md"
+                "file": "Program Verification/EXAM NOTES/4. Building an Automated Verifier.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 3. Automated Reasoning"
+              "title": "Outline of 4. Building an Automated Verifier"
             }
           }
         ],
@@ -191,7 +191,9 @@
   },
   "active": "0749ce9eab8a6804",
   "lastOpenFiles": [
+    "Program Verification/EXAM NOTES/attachments/inference rules for execution relations.png",
     "Program Verification/EXAM NOTES/3. Automated Reasoning.md",
+    "Program Verification/EXAM NOTES/4. Building an Automated Verifier.md",
     "Program Verification/EXAM NOTES/2. Overview.md",
     "Program Verification/Module 4 - Building a Verifier.md",
     "Program Verification/EXAM NOTES/attachments/characterization of wp.png",
@@ -234,8 +236,6 @@
     "Drawing 2024-09-26 18.54.56.excalidraw.md",
     "Applied AI for entrepreneurs/Lecture 3 - project forming.md",
     "Model Checking/new.md",
-    "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer Market Opportunity.md",
-    "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer for Manufacturing.md",
     "Excalidraw",
     "Applied AI for entrepreneurs/Lecture 1/Project 1.canvas",
     "Untitled.canvas"
