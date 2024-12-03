@@ -1,12 +1,11 @@
 [
-  "obsidian-excalidraw-plugin",
-  "table-editor-obsidian",
   "obsidian-git",
-  "obsidian-completr",
   "obsidian-file-color",
-  "obsidian-multi-cursor",
   "obsidian-auto-link-title",
   "find-unlinked-files",
   "obsidian-paste-image-rename",
-  "github-copilot"
+  "obsidian-excalidraw-plugin",
+  "table-editor-obsidian",
+  "obsidian-completr",
+  "obsidian-multi-cursor"
 ]

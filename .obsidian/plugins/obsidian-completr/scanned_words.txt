@@ -2125,6 +2125,9 @@ institutional
 improves
 imsa
 ittvp
+introduced
+intuition
+imports
 program
 permutation
 possible
@@ -3056,6 +3059,10 @@ protocols
 preserving
 pxpx
 pPA
+piece
+postcondition
+particular
+provability
 verification
 verified
 verify
@@ -6036,6 +6043,9 @@ times
 trails
 tVV
 tuup
+took
+tour
+teq
 always
 as
 array
@@ -7214,6 +7224,11 @@ architecture
 agld
 aRm
 ajC
+automating
+aways
+advantage
+automate
+annotated
 works
 whether
 where
@@ -8141,6 +8156,8 @@ wobbb
 workflows
 wto
 wId
+whenever
+weakest
 expected
 errors
 error
@@ -9333,6 +9350,10 @@ eUG
 exr
 eQCg
 ePmh
+executable
+ensure
+entails
+employ
 Task
 The
 Testing
@@ -10452,6 +10473,8 @@ Traditional
 TDDDD
 Tdrr
 TAZ
+Trees
+Triple
 determine
 does
 defined
@@ -11566,6 +11589,7 @@ dJZ
 dml
 diiiG
 drrj
+defining
 given
 good
 guarantees
@@ -13822,6 +13846,11 @@ scalability
 sbu
 scML
 sYf
+specify
+sound
+studying
+satisfied
+soundness
 fully
 formal
 forward
@@ -14876,6 +14905,9 @@ framework
 fusion
 fsR
 fsLLL
+foundational
+formalizes
+fairly
 kernel
 knowledge
 known
@@ -17056,6 +17088,10 @@ Impact
 InM
 Iru
 IVR
+Intuitively
+Ideally
+Inference
+Ite
 Specifications
 Suffers
 Strengths
@@ -18224,6 +18260,7 @@ SAM
 Strategic
 Solutions
 Siff
+Skip
 method
 memory
 modify
@@ -19217,6 +19254,8 @@ mid
 mdVr
 mos
 mtn
+main
+mathematical
 not
 new
 note
@@ -20071,6 +20110,8 @@ nkc
 neK
 nBAVm
 nNV
+notions
+negation
 crash
 can
 correctness
@@ -21270,6 +21311,11 @@ caqc
 cla
 cvar
 cbFA
+chapter
+constructing
+connect
+completeness
+computation
 runs
 returns
 requires
@@ -22290,6 +22336,9 @@ rUc
 rJgS
 rdcgy
 rWOpnj
+results
+refers
+right
 of
 original
 ordering
@@ -30790,6 +30839,8 @@ Effects
 Expertise
 Emergency
 Enterprise
+Execution
+Entails
 lead
 library
 labor
@@ -31868,6 +31919,7 @@ leee
 loss
 levels
 lSt
+logics
 unexpected
 use
 undecidability
@@ -32815,6 +32867,7 @@ uDDD
 uVU
 uHB
 uqrr
+unsat
 Model
 More
 May
@@ -33967,6 +34020,7 @@ MoH
 MVQ
 MDY
 Mxk
+Memory
 Automatic
 Automated
 Analogies
@@ -35048,6 +35102,8 @@ AutoFlow
 Audit
 Advanced
 AzS
+Assign
+Annotated
 Can
 CompCert
 Course
@@ -36200,6 +36256,8 @@ CDV
 Czq
 CtuvR
 CCkl
+Configurations
+Characterization
 handle
 high
 hints
@@ -37216,6 +37274,7 @@ hbiii
 htP
 hvF
 hyr
+hard
 Requires
 Rust
 Reading
@@ -38430,6 +38489,7 @@ Rayu
 RPQ
 RdE
 RNy
+Reachable
 years
 your
 you
@@ -40312,6 +40372,7 @@ Jug
 JWg
 Jefg
 JxWW
+JudgeSyn
 Less
 Lesson
 Let
@@ -41397,6 +41458,7 @@ LyD
 Ltl
 LFC
 Lms
+Latex
 justify
 jd
 jt
@@ -42268,6 +42330,9 @@ jTq
 jkkUYY
 jwn
 jff
+judging
+judgement
+judges
 Using
 Use
 Uncertainty
@@ -43321,6 +43386,7 @@ Uxq
 UVr
 UPa
 UqO
+Updated
 For
 Forecaster
 Financial
@@ -44427,6 +44493,9 @@ Funnel
 FzzzIJrr
 Flexible
 FJv
+Final
+Foundational
+Fully
 OPTIONS
 Overview
 Out

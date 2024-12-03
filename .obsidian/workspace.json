@@ -148,7 +148,17 @@
             }
           },
           {
-            "id": "9d51caec032f3780",
+            "id": "2e676db0f0dc5b36",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "069a0a657e14e76c",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -158,33 +168,13 @@
               "icon": "lucide-list",
               "title": "Outline of 2. Overview"
             }
-          },
-          {
-            "id": "cb6783a8c4426cf7",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
-            }
-          },
-          {
-            "id": "2e676db0f0dc5b36",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 371.5
+    "width": 355.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -201,6 +191,10 @@
   },
   "active": "a7bed6d1a1110bae",
   "lastOpenFiles": [
+    "Program Verification/Module 4 - Building a Verifier.md",
+    "Program Verification/EXAM NOTES/2. Overview.md",
+    "Program Verification/EXAM NOTES/attachments/characterization of wp.png",
+    "Program Verification/EXAM NOTES/attachments/theorem wp.png",
     "Program Verification/EXAM NOTES/attachments/wp example 2.png",
     "Program Verification/EXAM NOTES/attachments/weakest precondition example.png",
     "Program Verification/EXAM NOTES/attachments/weakest precondition def.png",
@@ -209,11 +203,7 @@
     "Program Verification/EXAM NOTES/attachments/fully annotated commands.png",
     "Program Verification/EXAM NOTES/attachments/annotated commands def.png",
     "Program Verification/EXAM NOTES/attachments/substitution lemmas.png",
-    "Program Verification/EXAM NOTES/attachments/entailment relationship formulae.png",
-    "Program Verification/EXAM NOTES/attachments/characterization of proof trees theorem.png",
-    "Program Verification/EXAM NOTES/attachments/Proof trees.png",
     "Program Verification/EXAM NOTES/attachments",
-    "Program Verification/EXAM NOTES/2. Overview.md",
     "Program Verification/Module 2 - Floyd-Hoare logic.md",
     "Program Verification/EXAM NOTES",
     "Program Verification/Module 0  - Introduction.md",
@@ -241,7 +231,6 @@
     "QS/QS temp.md",
     "QS",
     "Drawing 2024-09-26 18.54.56.excalidraw.md",
-    "Program Verification/Module 4 - Building a Verifier.md",
     "Applied AI for entrepreneurs/Lecture 3 - project forming.md",
     "Model Checking/new.md",
     "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer Market Opportunity.md",
