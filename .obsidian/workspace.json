@@ -189,13 +189,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0749ce9eab8a6804",
+  "active": "f4ed663714496120",
   "lastOpenFiles": [
-    "Program Verification/EXAM NOTES/4. Building an Automated Verifier.md",
-    "Program Verification/EXAM NOTES/5. Encoding Verification Problems.md",
     "Program Verification/EXAM NOTES/3. Automated Reasoning.md",
-    "Program Verification/EXAM NOTES/attachments/inference rules for execution relations.png",
+    "Program Verification/EXAM NOTES/4. Building an Automated Verifier.md",
     "Program Verification/EXAM NOTES/2. Overview.md",
+    "Program Verification/EXAM NOTES/5. Encoding Verification Problems.md",
+    "Program Verification/EXAM NOTES/attachments/inference rules for execution relations.png",
     "Program Verification/Module 4 - Building a Verifier.md",
     "Program Verification/EXAM NOTES/attachments/characterization of wp.png",
     "Program Verification/EXAM NOTES/attachments/theorem wp.png",
