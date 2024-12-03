@@ -1,0 +1,22 @@
+{
+  "nodePath": "/home/kornel/.nvm/versions/node/v20.12.0/bin/node",
+  "enabled": true,
+  "hotkeys": {
+    "accept": "Tab",
+    "cancel": "Escape",
+    "request": "Ctrl-Shift-?",
+    "partial": "Cmd-Shift-.Ctrl-Shift->",
+    "next": "Cmd-Shift-ArrowDownCtrl-Shift-ArrowDown",
+    "disable": "Cmd-Shift-ArrowRightCtrl-Shift-ArrowRight"
+  },
+  "suggestionDelay": 500,
+  "debug": false,
+  "onlyOnHotkey": false,
+  "onlyInCodeBlock": false,
+  "exclude": [],
+  "deviceSpecificSettings": [
+    "nodePath"
+  ],
+  "useDeviceSpecificSettings": false,
+  "proxy": ""
+}
