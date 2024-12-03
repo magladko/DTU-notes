@@ -153,10 +153,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Applied AI for entrepreneurs/Week 4-6 -- Lets try again.md"
+                "file": "Program Verification/EXAM NOTES/2. Overview.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Week 4-6 -- Lets try again"
+              "title": "Outline of 2. Overview"
             }
           },
           {
@@ -180,12 +180,11 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 371.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -202,23 +201,23 @@
   },
   "active": "a7bed6d1a1110bae",
   "lastOpenFiles": [
+    "Program Verification/EXAM NOTES/attachments/entailment relationship formulae.png",
+    "Program Verification/EXAM NOTES/attachments/characterization of proof trees theorem.png",
+    "Program Verification/EXAM NOTES/attachments/Proof trees.png",
+    "Program Verification/EXAM NOTES/attachments/Toy Program Logic (triples.png",
+    "Program Verification/EXAM NOTES/attachments/Foundational Judgement for Toy Triples.png",
+    "Program Verification/EXAM NOTES/attachments/reachable computation.png",
     "Program Verification/EXAM NOTES/attachments/inference rules - execution relation.png",
     "Program Verification/EXAM NOTES/attachments/Execution Relation.png",
     "Program Verification/EXAM NOTES/attachments/Toy Configurations and Final Configurations.png",
     "Program Verification/EXAM NOTES/attachments/fn over memory.png",
     "Program Verification/EXAM NOTES/attachments/Updated memory.png",
-    "Program Verification/EXAM NOTES/attachments/Toy Memories Definition.png",
     "Program Verification/EXAM NOTES/attachments",
     "Program Verification/EXAM NOTES/2. Overview.md",
     "Program Verification/Module 2 - Floyd-Hoare logic.md",
     "Program Verification/EXAM NOTES",
     "Program Verification/Module 0  - Introduction.md",
-    "Model Checking/Pasted image 20240926193453.png",
-    "Model Checking/Pasted image 20240929124257.png",
-    "Model Checking/Pasted image 20240928170907.png",
-    "Model Checking/Pasted image 20240926202513.png",
     "Applied AI for entrepreneurs/Week 7.md",
-    "Applied AI for entrepreneurs/dt-with-agents.png",
     "Applied AI for entrepreneurs/DE Canvas.md",
     "Model Checking/CHEAT SHEET.md",
     "Program Verification/CHEAT SHEETS.md",
