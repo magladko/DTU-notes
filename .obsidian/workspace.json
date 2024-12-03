@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "77896c86794b54b5",
+        "id": "27a2a6db68195c66",
         "type": "tabs",
         "children": [
           {
-            "id": "37f14af2f8db9a81",
+            "id": "a7bed6d1a1110bae",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Applied AI for entrepreneurs/DE Canvas.md",
+                "file": "Program Verification/EXAM NOTES/2. Overview.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DE Canvas"
-            }
-          },
-          {
-            "id": "d5c89c414936243c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Applied AI for entrepreneurs/Week 7.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Week 7"
+              "title": "2. Overview"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.51103591918945
+    "width": 200
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -199,7 +184,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -214,22 +200,37 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d5c89c414936243c",
+  "active": "a7bed6d1a1110bae",
   "lastOpenFiles": [
+    "Program Verification/EXAM NOTES/attachments/inference rules - execution relation.png",
+    "Program Verification/EXAM NOTES/attachments/Execution Relation.png",
+    "Program Verification/EXAM NOTES/attachments/Toy Configurations and Final Configurations.png",
+    "Program Verification/EXAM NOTES/attachments/fn over memory.png",
+    "Program Verification/EXAM NOTES/attachments/Updated memory.png",
+    "Program Verification/EXAM NOTES/attachments/Toy Memories Definition.png",
+    "Program Verification/EXAM NOTES/attachments",
+    "Program Verification/EXAM NOTES/2. Overview.md",
+    "Program Verification/Module 2 - Floyd-Hoare logic.md",
+    "Program Verification/EXAM NOTES",
+    "Program Verification/Module 0  - Introduction.md",
+    "Model Checking/Pasted image 20240926193453.png",
+    "Model Checking/Pasted image 20240929124257.png",
+    "Model Checking/Pasted image 20240928170907.png",
+    "Model Checking/Pasted image 20240926202513.png",
     "Applied AI for entrepreneurs/Week 7.md",
+    "Applied AI for entrepreneurs/dt-with-agents.png",
     "Applied AI for entrepreneurs/DE Canvas.md",
+    "Model Checking/CHEAT SHEET.md",
+    "Program Verification/CHEAT SHEETS.md",
     "Applied AI for entrepreneurs/Course contents.md",
     "Model Checking/Lecture 01 - Transition Systems.md",
     "Model Checking/Lecture 00.md",
-    "Model Checking/CHEAT SHEET.md",
     "Applied AI for entrepreneurs/Week 4-6 -- Lets try again.md",
     "Applied AI for entrepreneurs/s242908_langgraph.py",
     "Applied AI for entrepreneurs/Week 6.md",
     "Applied AI for entrepreneurs/Week 5.md",
     "Applied AI for entrepreneurs/Week 4 - ReAct Framework.md",
-    "Applied AI for entrepreneurs/Figures/Pasted image 20241010100441.png",
     "Applied AI for entrepreneurs/Worksheet 2 - answer template.md",
-    "Applied AI for entrepreneurs/dt-with-agents.png",
     "Applied AI for entrepreneurs/dt-with-agents.png.crdownload",
     "Applied AI for entrepreneurs/py/langraph.ipynb",
     "Applied AI for entrepreneurs/py",
@@ -238,30 +239,15 @@
     "Applied AI for entrepreneurs/diff/a.md",
     "Applied AI for entrepreneurs/diff",
     "Model Checking/Lecture 03 - Temporal Logics.md",
-    "Pasted image 20240929124257.png",
-    "Pasted image 20240928170907.png",
-    "Pasted image 20240926202513.png",
-    "Pasted image 20240926193453.png",
-    "Model Checking/Figures/ltl-grammar.png",
     "QS/QS temp.md",
     "QS",
     "Drawing 2024-09-26 18.54.56.excalidraw.md",
-    "Pasted Image 20240926185633_051.png",
-    "Pasted image 20240926185426.png",
     "Program Verification/Module 4 - Building a Verifier.md",
     "Applied AI for entrepreneurs/Lecture 3 - project forming.md",
     "Model Checking/new.md",
-    "Model Checking/Figures/ex03-1.png",
     "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer Market Opportunity.md",
     "Applied AI for entrepreneurs/Claude-Predictive Maintenance Optimizer for Manufacturing.md",
-    "Program Verification/CHEAT SHEETS.md",
-    "Program Verification/Module 3 - Automated Reasoning about Predicate Logic.md",
-    "Drawing 2024-09-15 23.00.53.excalidraw.md",
-    "Model Checking/Lecture 02 - SAT & SMT (+propositional logic).md",
-    "Program Verification/Module 2 - Overview.md",
     "Excalidraw",
-    "Program Verification/Quizes/Figures",
-    "Program Verification/Quizes",
     "Applied AI for entrepreneurs/Lecture 1/Project 1.canvas",
     "Untitled.canvas"
   ]
