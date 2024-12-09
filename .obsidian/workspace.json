@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e7400a3381e9fc1c",
+        "id": "1fe53c33c33307c4",
         "type": "tabs",
         "children": [
           {
-            "id": "0749ce9eab8a6804",
+            "id": "a45e2ec9cc8ca314",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Program Verification/EXAM NOTES/2. Overview.md",
-                "mode": "preview",
+                "file": "Program Verification/EXAM NOTES/7. Loops.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2. Overview"
+              "title": "7. Loops"
             }
           }
         ]
@@ -54,9 +54,9 @@
               "state": {
                 "query": "",
                 "matchingCase": false,
-                "explainSearch": true,
-                "collapseAll": true,
-                "extraContext": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
@@ -72,26 +72,13 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
-          },
-          {
-            "id": "2b83194b6066839e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Model Checking/Lecture 03 - Temporal Logics.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Lecture 03 - Temporal Logics"
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 292.5086555480957
+    "width": 292.5086555480957,
+    "collapsed": true
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -163,10 +150,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Program Verification/EXAM NOTES/2. Overview.md"
+                "file": "Program Verification/EXAM NOTES/7. Loops.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 2. Overview"
+              "title": "Outline of 7. Loops"
             }
           }
         ],
@@ -189,22 +176,28 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0749ce9eab8a6804",
+  "active": "a45e2ec9cc8ca314",
   "lastOpenFiles": [
-    "Program Verification/EXAM NOTES/3. Automated Reasoning.md",
+    "Program Verification/EXAM NOTES/6. Methods.md",
     "Program Verification/EXAM NOTES/2. Overview.md",
+    "Program Verification/EXAM NOTES/3. Automated Reasoning.md",
+    "Program Verification/EXAM NOTES/4. Building an Automated Verifier.md",
+    "Program Verification/EXAM NOTES/5. Encoding Verification Problems.md",
+    "Program Verification/EXAM NOTES/5. Encoding Verification Problems1.md",
+    "Program Verification/EXAM NOTES/13. Front-end Verifiers & Outlook.md",
+    "Program Verification/EXAM NOTES/12. Concurrency.md",
+    "Program Verification/EXAM NOTES/11. Advanced Permission Models.md",
     "Program Verification/EXAM NOTES/10. Abstraction.md",
     "Program Verification/EXAM NOTES/9. Heaps and Objects.md",
     "Program Verification/EXAM NOTES/8. Verification Pragmatics.md",
     "Program Verification/EXAM NOTES/7. Loops.md",
-    "Program Verification/EXAM NOTES/6. Methods.md",
-    "Program Verification/EXAM NOTES/5. Encoding Verification Problems1.md",
-    "Program Verification/EXAM NOTES/5. Encoding Verification Problems.md",
-    "Program Verification/EXAM NOTES/4. Building an Automated Verifier.md",
-    "Program Verification/EXAM NOTES/12. Concurrency.md",
-    "Program Verification/EXAM NOTES/11. Advanced Permission Models.md",
-    "Program Verification/EXAM NOTES/13. Front-end Verifiers & Outlook.md",
+    "Untitled 1.canvas",
     "Untitled.canvas",
+    "2024-12-09.md",
+    "Model Checking/Lecture 03 - Temporal Logics.md",
+    "Untitled 2.canvas",
+    "Program Verification/CHEAT SHEETS.md",
+    "Program Verification/EXAM NOTES.zip",
     "Program Verification/EXAM NOTES/attachments/inference rules for execution relations.png",
     "Program Verification/Module 4 - Building a Verifier.md",
     "Program Verification/EXAM NOTES/attachments/characterization of wp.png",
@@ -223,20 +216,16 @@
     "Applied AI for entrepreneurs/Week 7.md",
     "Applied AI for entrepreneurs/DE Canvas.md",
     "Model Checking/CHEAT SHEET.md",
-    "Program Verification/CHEAT SHEETS.md",
     "Applied AI for entrepreneurs/Course contents.md",
     "Model Checking/Lecture 01 - Transition Systems.md",
     "Model Checking/Lecture 00.md",
-    "Applied AI for entrepreneurs/Week 4-6 -- Lets try again.md",
     "Applied AI for entrepreneurs/s242908_langgraph.py",
-    "Applied AI for entrepreneurs/Week 6.md",
     "Applied AI for entrepreneurs/dt-with-agents.png.crdownload",
     "Applied AI for entrepreneurs/py/langraph.ipynb",
     "Applied AI for entrepreneurs/py",
     "Applied AI for entrepreneurs/Worksheet 2 - answer template",
     "Applied AI for entrepreneurs/diff",
     "QS",
-    "Excalidraw",
     "Applied AI for entrepreneurs/Lecture 1/Project 1.canvas"
   ]
 }
