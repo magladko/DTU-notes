@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Program Verification/EXAM NOTES/9. Heaps and Objects.md",
-                "mode": "source",
+                "file": "Program Verification/EXAM NOTES/11. Advanced Permission Models.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "9. Heaps and Objects"
+              "title": "11. Advanced Permission Models"
             }
           }
         ]
@@ -149,10 +149,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Program Verification/EXAM NOTES/9. Heaps and Objects.md"
+                "file": "Program Verification/EXAM NOTES/11. Advanced Permission Models.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 9. Heaps and Objects"
+              "title": "Outline of 11. Advanced Permission Models"
             }
           }
         ],
@@ -177,8 +177,9 @@
   },
   "active": "a45e2ec9cc8ca314",
   "lastOpenFiles": [
-    "Program Verification/EXAM NOTES/8. Verification Pragmatics.md",
+    "Program Verification/EXAM NOTES/10. Abstraction.md",
     "Program Verification/EXAM NOTES/9. Heaps and Objects.md",
+    "Program Verification/EXAM NOTES/8. Verification Pragmatics.md",
     "Program Verification/EXAM NOTES/5. Encoding Verification Problems.md",
     "Program Verification/EXAM NOTES/4. Building an Automated Verifier.md",
     "Program Verification/EXAM NOTES/2. Overview.md",
@@ -189,7 +190,6 @@
     "Program Verification/EXAM NOTES/13. Front-end Verifiers & Outlook.md",
     "Program Verification/EXAM NOTES/12. Concurrency.md",
     "Program Verification/EXAM NOTES/11. Advanced Permission Models.md",
-    "Program Verification/EXAM NOTES/10. Abstraction.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "2024-12-09.md",
