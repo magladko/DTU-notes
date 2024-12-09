@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Program Verification/EXAM NOTES/7. Loops.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 292.5086555480957,
-    "collapsed": true
+    "width": 292.5086555480957
   },
   "right": {
     "id": "e41b1fdf766de89c",
