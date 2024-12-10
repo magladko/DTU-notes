@@ -2165,6 +2165,7 @@ immutable
 inspection
 ideal
 identification
+iterations
 program
 permutation
 possible
@@ -3142,6 +3143,12 @@ placeholders
 placement
 promotes
 practicality
+protected
+prevention
+procedures
+programmers
+per
+passed
 verification
 verified
 verify
@@ -5158,6 +5165,7 @@ Proper
 Performance
 Parallelism
 Package
+Passive
 that
 the
 to
@@ -6204,6 +6212,9 @@ traversal
 trade
 tracks
 tricky
+tracked
+three
+tail
 always
 as
 array
@@ -7427,6 +7438,7 @@ asked
 answers
 amount
 architectural
+annotation
 works
 whether
 where
@@ -8359,6 +8371,8 @@ weakest
 wedge
 wildcard
 wildcards
+wait
+weaker
 expected
 errors
 error
@@ -9579,6 +9593,7 @@ evalE
 entry
 exit
 examination
+exposure
 Task
 The
 Testing
@@ -10720,6 +10735,8 @@ Trying
 Tracks
 Takeaways
 Trade
+Tradeoff
+Trusted
 determine
 does
 defined
@@ -11858,6 +11875,9 @@ declarations
 destructive
 distinguish
 details
+decomposition
+datatypes
+disposal
 given
 good
 guarantees
@@ -12906,6 +12926,7 @@ goal
 guaranteed
 global
 guard
+getter
 satisfies
 specification
 seL
@@ -14162,6 +14183,9 @@ shared
 solve
 supported
 scoped
+sections
+simplicity
+specs
 fully
 formal
 forward
@@ -15245,6 +15269,7 @@ fractions
 fraction
 finish
 fail
+feature
 kernel
 knowledge
 known
@@ -17452,6 +17477,8 @@ Inherit
 Introduces
 Incomplete
 Include
+Innovations
+Iso
 Specifications
 Suffers
 Strengths
@@ -18667,6 +18694,9 @@ Sharing
 Studies
 Study
 Split
+Structured
+Simplified
+Scale
 method
 memory
 modify
@@ -19693,6 +19723,9 @@ mPost
 methodical
 mutable
 matter
+mutation
+major
+modularity
 not
 new
 note
@@ -21810,6 +21843,8 @@ completes
 callable
 compilers
 calculation
+compute
+challenge
 runs
 returns
 requires
@@ -22859,6 +22894,11 @@ recombination
 recombine
 receiver
 reorganization
+reading
+release
+race
+reentrant
+result
 of
 original
 ordering
@@ -23801,6 +23841,9 @@ offs
 overhead
 overlap
 organization
+obligations
+ownership
+owner
 How
 Hence
 Hi
@@ -29271,6 +29314,7 @@ Gries
 Grained
 Gain
 Graph
+Gobra
 bugs
 behavior
 be
@@ -30256,6 +30300,7 @@ boolean
 basic
 bounds
 block
+burden
 Even
 EveryCrypt
 Engineering
@@ -31467,6 +31512,9 @@ Encode
 Execute
 Equivalences
 Enable
+Evolution
+Explicit
+Exposes
 lead
 library
 labor
@@ -32565,6 +32613,7 @@ ldots
 limitations
 location
 localized
+lending
 unexpected
 use
 undecidability
@@ -33533,6 +33582,9 @@ unshared
 unspecified
 unsuccessful
 usability
+unsupported
+unverified
+uniformly
 Model
 More
 May
@@ -34719,6 +34771,8 @@ Methods
 Match
 Motivation
 Marking
+Moving
+Move
 Automatic
 Automated
 Analogies
@@ -37031,6 +37085,9 @@ Contracts
 Cases
 Counting
 Complexity
+Characteristics
+Clear
+Clean
 handle
 high
 hints
@@ -39297,6 +39354,8 @@ Random
 Require
 Remarks
 Recursion
+Reduced
+Remaining
 years
 your
 you
@@ -42283,6 +42342,9 @@ Lemmas
 Layout
 Loops
 Libraries
+Locks
+Labeled
+Leverages
 justify
 jd
 jt
@@ -43158,6 +43220,7 @@ judging
 judgement
 judges
 justifying
+join
 Using
 Use
 Uncertainty
@@ -45359,6 +45422,7 @@ Finite
 Full
 Fresh
 Fractional
+Frontend
 OPTIONS
 Overview
 Out
@@ -46343,6 +46407,7 @@ Outsource
 Objects
 Obtains
 Old
+Ownership
 You
 Yes
 YE
@@ -48375,6 +48440,7 @@ qyJ
 quantified
 qopStep
 quad
+qualification
 Byte
 BPE
 By
@@ -49454,6 +49520,8 @@ BlockBegin
 BlockEnd
 Binary
 Balance
+Boundary
+Borrowing
 KH
 KJP
 KR
