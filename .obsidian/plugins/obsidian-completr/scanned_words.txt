@@ -2166,6 +2166,8 @@ inspection
 ideal
 identification
 iterations
+instructions
+instruction
 program
 permutation
 possible
@@ -4109,6 +4111,7 @@ variant
 variants
 validity
 varies
+val
 Prove
 Program
 Proving
@@ -5166,6 +5169,7 @@ Performance
 Parallelism
 Package
 Passive
+Pseudo
 that
 the
 to
@@ -6215,6 +6219,9 @@ tricky
 tracked
 three
 tail
+thead
+tbody
+temporaries
 always
 as
 array
@@ -7439,6 +7446,8 @@ answers
 amount
 architectural
 annotation
+alternate
+absolute
 works
 whether
 where
@@ -8373,6 +8382,7 @@ wildcard
 wildcards
 wait
 weaker
+wired
 expected
 errors
 error
@@ -9595,6 +9605,7 @@ exit
 examination
 exposure
 exhale
+extension
 Task
 The
 Testing
@@ -10738,6 +10749,9 @@ Takeaways
 Trade
 Tradeoff
 Trusted
+Table
+Temporary
+Temporaries
 determine
 does
 defined
@@ -11881,6 +11895,9 @@ datatypes
 disposal
 dangling
 duplicated
+division
+docutils
+destination
 given
 good
 guarantees
@@ -17482,6 +17499,9 @@ Incomplete
 Include
 Innovations
 Iso
+Instruction
+ISA
+IMF
 Specifications
 Suffers
 Strengths
@@ -18700,6 +18720,9 @@ Split
 Structured
 Simplified
 Scale
+Symbolic
+Saved
+Store
 method
 memory
 modify
@@ -20593,6 +20616,7 @@ null
 never
 neg
 nonlinear
+notranslate
 crash
 can
 correctness
@@ -21850,6 +21874,12 @@ calculation
 compute
 challenge
 classes
+class
+caption
+colgroup
+col
+contained
+computed
 runs
 returns
 requires
@@ -22904,6 +22934,10 @@ release
 race
 reentrant
 result
+registers
+riscv
+row
+register
 of
 original
 ordering
@@ -23849,6 +23883,7 @@ organization
 obligations
 ownership
 owner
+offset
 How
 Hence
 Hi
@@ -30306,6 +30341,8 @@ basic
 bounds
 block
 burden
+bit
+bits
 Even
 EveryCrypt
 Engineering
@@ -32619,6 +32656,10 @@ limitations
 location
 localized
 lending
+literal
+link
+longtable
+label
 unexpected
 use
 undecidability
@@ -37095,6 +37136,8 @@ Characteristics
 Clear
 Clean
 Created
+Caller
+Callee
 handle
 high
 hints
@@ -38122,6 +38165,9 @@ highlighting
 holder
 heuristics
 hopeless
+headerlink
+href
+head
 Requires
 Rust
 Reading
@@ -39366,6 +39412,7 @@ Remaining
 Record
 References
 Ref
+RISC
 years
 your
 you
@@ -42355,6 +42402,7 @@ Libraries
 Locks
 Labeled
 Leverages
+Load
 justify
 jd
 jt
@@ -45433,6 +45481,7 @@ Full
 Fresh
 Fractional
 Frontend
+Floating
 OPTIONS
 Overview
 Out

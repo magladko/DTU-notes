@@ -20,6 +20,18 @@
               "icon": "lucide-file",
               "title": "Module 1 - Intro to RISC-V"
             }
+          },
+          {
+            "id": "26349070dd63262f",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.4"
+            }
           }
         ]
       }
@@ -40,7 +52,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -178,6 +191,11 @@
   },
   "active": "f89fd8a9cc500c55",
   "lastOpenFiles": [
+    "CompilerConstruction/Tasks/module1-task4.asm",
+    "CompilerConstruction/Tasks/module1-task3.asm",
+    "CompilerConstruction/Tasks/module1-task2.asm",
+    "CompilerConstruction/Tasks/module1-task1.asm",
+    "CompilerConstruction/Tasks",
     "CompilerConstruction/attachments/riscv_fp_register_table.png",
     "CompilerConstruction/attachments/RV32I_instruction_set_table.png",
     "CompilerConstruction/attachments",
@@ -213,7 +231,6 @@
     "1st semester/Program Verification/EXAM NOTES/attachments/weakest precondition def.png",
     "1st semester/Program Verification/EXAM NOTES/attachments/weakest precondition definition.png",
     "1st semester/Program Verification/EXAM NOTES/attachments/toy program logic soundess theorem.png",
-    "1st semester/Program Verification/EXAM NOTES/attachments/fully annotated commands.png",
     "1st semester/Program Verification/EXAM NOTES/attachments",
     "1st semester/Program Verification/Module 2 - Floyd-Hoare logic.md",
     "1st semester/Program Verification/EXAM NOTES",
@@ -223,10 +240,6 @@
     "1st semester/Model Checking/CHEAT SHEET.md",
     "1st semester/Applied AI for entrepreneurs/Course contents.md",
     "1st semester/Model Checking/Lecture 01 - Transition Systems.md",
-    "1st semester/Applied AI for entrepreneurs/s242908_langgraph.py",
-    "Applied AI for entrepreneurs/dt-with-agents.png.crdownload",
-    "Applied AI for entrepreneurs/py/langraph.ipynb",
-    "Applied AI for entrepreneurs/py",
     "1st semester/Applied AI for entrepreneurs/Lecture 1/Project 1.canvas"
   ]
 }
