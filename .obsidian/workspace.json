@@ -177,6 +177,9 @@
   },
   "active": "f89fd8a9cc500c55",
   "lastOpenFiles": [
+    "CompilerConstruction/attachments/riscv_fp_register_table.png",
+    "CompilerConstruction/attachments/RV32I_instruction_set_table.png",
+    "CompilerConstruction/attachments",
     "CompilerConstruction/Module 1 - Intro to RISC-V.md",
     "CompilerConstruction",
     "1st semester",
@@ -210,7 +213,6 @@
     "1st semester/Program Verification/EXAM NOTES/attachments/weakest precondition definition.png",
     "1st semester/Program Verification/EXAM NOTES/attachments/toy program logic soundess theorem.png",
     "1st semester/Program Verification/EXAM NOTES/attachments/fully annotated commands.png",
-    "1st semester/Program Verification/EXAM NOTES/attachments/annotated commands def.png",
     "1st semester/Program Verification/EXAM NOTES/attachments",
     "1st semester/Program Verification/Module 2 - Floyd-Hoare logic.md",
     "1st semester/Program Verification/EXAM NOTES",
@@ -220,12 +222,10 @@
     "1st semester/Model Checking/CHEAT SHEET.md",
     "1st semester/Applied AI for entrepreneurs/Course contents.md",
     "1st semester/Model Checking/Lecture 01 - Transition Systems.md",
-    "1st semester/Model Checking/Lecture 00.md",
     "1st semester/Applied AI for entrepreneurs/s242908_langgraph.py",
     "Applied AI for entrepreneurs/dt-with-agents.png.crdownload",
     "Applied AI for entrepreneurs/py/langraph.ipynb",
     "Applied AI for entrepreneurs/py",
-    "Applied AI for entrepreneurs/Worksheet 2 - answer template",
     "1st semester/Applied AI for entrepreneurs/Lecture 1/Project 1.canvas"
   ]
 }
