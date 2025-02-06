@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "1fe53c33c33307c4",
+        "id": "7b2e93273b50a57f",
         "type": "tabs",
         "children": [
           {
-            "id": "a45e2ec9cc8ca314",
+            "id": "f89fd8a9cc500c55",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Program Verification/EXAM NOTES/2. Overview.md",
-                "mode": "preview",
+                "file": "CompilerConstruction/RISC-V.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2. Overview"
+              "title": "RISC-V"
             }
           }
         ]
@@ -149,10 +149,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Program Verification/EXAM NOTES/2. Overview.md"
+                "file": "CompilerConstruction/RISC-V.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 2. Overview"
+              "title": "Outline of RISC-V"
             }
           }
         ],
@@ -175,56 +175,57 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a45e2ec9cc8ca314",
+  "active": "f89fd8a9cc500c55",
   "lastOpenFiles": [
-    "Program Verification/EXAM NOTES/12. Concurrency.md",
-    "Program Verification/EXAM NOTES/13. Front-end Verifiers & Outlook.md",
-    "Program Verification/EXAM NOTES/9. Heaps and Objects.md",
-    "Program Verification/EXAM NOTES/8. Verification Pragmatics.md",
-    "Program Verification/EXAM NOTES/7. Loops.md",
-    "Program Verification/EXAM NOTES/6. Methods.md",
-    "Program Verification/EXAM NOTES/5. Encoding Verification Problems.md",
-    "Program Verification/EXAM NOTES/4. Building an Automated Verifier.md",
-    "Program Verification/EXAM NOTES/3. Automated Reasoning.md",
-    "Program Verification/EXAM NOTES/2. Overview.md",
-    "Program Verification/EXAM NOTES/5. Encoding Verification Problems1.md",
-    "Program Verification/EXAM NOTES/10. Abstraction.md",
-    "Program Verification/EXAM NOTES/11. Advanced Permission Models.md",
+    "CompilerConstruction/RISC-V.md",
+    "CompilerConstruction",
+    "1st semester",
+    "1st semester/Program Verification/EXAM NOTES/2. Overview.md",
+    "1st semester/Program Verification/EXAM NOTES/12. Concurrency.md",
+    "1st semester/Program Verification/EXAM NOTES/13. Front-end Verifiers & Outlook.md",
+    "1st semester/Program Verification/EXAM NOTES/9. Heaps and Objects.md",
+    "1st semester/Program Verification/EXAM NOTES/8. Verification Pragmatics.md",
+    "1st semester/Program Verification/EXAM NOTES/7. Loops.md",
+    "1st semester/Program Verification/EXAM NOTES/6. Methods.md",
+    "1st semester/Program Verification/EXAM NOTES/5. Encoding Verification Problems.md",
+    "1st semester/Program Verification/EXAM NOTES/4. Building an Automated Verifier.md",
+    "1st semester/Program Verification/EXAM NOTES/3. Automated Reasoning.md",
+    "1st semester/Program Verification/EXAM NOTES/5. Encoding Verification Problems1.md",
+    "1st semester/Program Verification/EXAM NOTES/10. Abstraction.md",
+    "1st semester/Program Verification/EXAM NOTES/11. Advanced Permission Models.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "2024-12-09.md",
-    "Model Checking/Lecture 03 - Temporal Logics.md",
+    "1st semester/Model Checking/Lecture 03 - Temporal Logics.md",
     "Untitled 2.canvas",
-    "Program Verification/CHEAT SHEETS.md",
+    "1st semester/Program Verification/CHEAT SHEETS.md",
     "Program Verification/EXAM NOTES.zip",
-    "Program Verification/EXAM NOTES/attachments/inference rules for execution relations.png",
-    "Program Verification/Module 4 - Building a Verifier.md",
-    "Program Verification/EXAM NOTES/attachments/characterization of wp.png",
-    "Program Verification/EXAM NOTES/attachments/theorem wp.png",
-    "Program Verification/EXAM NOTES/attachments/wp example 2.png",
-    "Program Verification/EXAM NOTES/attachments/weakest precondition example.png",
-    "Program Verification/EXAM NOTES/attachments/weakest precondition def.png",
-    "Program Verification/EXAM NOTES/attachments/weakest precondition definition.png",
-    "Program Verification/EXAM NOTES/attachments/toy program logic soundess theorem.png",
-    "Program Verification/EXAM NOTES/attachments/fully annotated commands.png",
-    "Program Verification/EXAM NOTES/attachments/annotated commands def.png",
-    "Program Verification/EXAM NOTES/attachments",
-    "Program Verification/Module 2 - Floyd-Hoare logic.md",
-    "Program Verification/EXAM NOTES",
-    "Program Verification/Module 0  - Introduction.md",
-    "Applied AI for entrepreneurs/Week 7.md",
-    "Applied AI for entrepreneurs/DE Canvas.md",
-    "Model Checking/CHEAT SHEET.md",
-    "Applied AI for entrepreneurs/Course contents.md",
-    "Model Checking/Lecture 01 - Transition Systems.md",
-    "Model Checking/Lecture 00.md",
-    "Applied AI for entrepreneurs/s242908_langgraph.py",
+    "1st semester/Program Verification/EXAM NOTES/attachments/inference rules for execution relations.png",
+    "1st semester/Program Verification/Module 4 - Building a Verifier.md",
+    "1st semester/Program Verification/EXAM NOTES/attachments/characterization of wp.png",
+    "1st semester/Program Verification/EXAM NOTES/attachments/theorem wp.png",
+    "1st semester/Program Verification/EXAM NOTES/attachments/wp example 2.png",
+    "1st semester/Program Verification/EXAM NOTES/attachments/weakest precondition example.png",
+    "1st semester/Program Verification/EXAM NOTES/attachments/weakest precondition def.png",
+    "1st semester/Program Verification/EXAM NOTES/attachments/weakest precondition definition.png",
+    "1st semester/Program Verification/EXAM NOTES/attachments/toy program logic soundess theorem.png",
+    "1st semester/Program Verification/EXAM NOTES/attachments/fully annotated commands.png",
+    "1st semester/Program Verification/EXAM NOTES/attachments/annotated commands def.png",
+    "1st semester/Program Verification/EXAM NOTES/attachments",
+    "1st semester/Program Verification/Module 2 - Floyd-Hoare logic.md",
+    "1st semester/Program Verification/EXAM NOTES",
+    "1st semester/Program Verification/Module 0  - Introduction.md",
+    "1st semester/Applied AI for entrepreneurs/Week 7.md",
+    "1st semester/Applied AI for entrepreneurs/DE Canvas.md",
+    "1st semester/Model Checking/CHEAT SHEET.md",
+    "1st semester/Applied AI for entrepreneurs/Course contents.md",
+    "1st semester/Model Checking/Lecture 01 - Transition Systems.md",
+    "1st semester/Model Checking/Lecture 00.md",
+    "1st semester/Applied AI for entrepreneurs/s242908_langgraph.py",
     "Applied AI for entrepreneurs/dt-with-agents.png.crdownload",
     "Applied AI for entrepreneurs/py/langraph.ipynb",
     "Applied AI for entrepreneurs/py",
     "Applied AI for entrepreneurs/Worksheet 2 - answer template",
-    "Applied AI for entrepreneurs/diff",
-    "QS",
-    "Applied AI for entrepreneurs/Lecture 1/Project 1.canvas"
+    "1st semester/Applied AI for entrepreneurs/Lecture 1/Project 1.canvas"
   ]
 }

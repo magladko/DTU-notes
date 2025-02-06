@@ -41,7 +41,7 @@ $F \stackrel{\text{def}}{=} (X \lor Y \lor Z) \land (\lnot X \lor Y) \land (\lno
 
 # Using SAT Solver
 
-![[Program Verification/Figures/using-sat-solver-slide.png]]
+![[using-sat-solver-slide.png]]
 
 **Example**
 ```smt2
