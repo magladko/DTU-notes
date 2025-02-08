@@ -19,23 +19,28 @@ new_line:
     li t1, 0
 	ble t0, t1, return # exit if not positive
 
-    li t2, 1 # initialize temporary result
+	li t1, 0
+	fmv.w.x ft0, t1 # initialize result
 loop_guard:
-	li t1, 1
+	li t1, 0
 	bgt t0, t1, loop_body
     
     j loop_end
 	loop_body:
-	    mul t2, t2, t0
+	    li a7, 6 # ReadFloat
+	    ecall    # ReadFloat
+	    
+	    fadd.s ft0, ft0, fa0
+	    
 	    li t1, -1
-	    add t0, t0, t1
+	    add t0, t0, t1 # decrement counter
 
 	    j loop_guard
 loop_end:
 
-    li a7, 1
-    mv a0, t2 # Move result to console output arg
-    ecall         # PrintInt
+    li a7, 2   # PrintFloat
+    fmv.s fa0, ft0 # Move result to console output arg
+    ecall      # PrintFloat
 
 return:
     li a7, 10  # Load the immediate value 10 in register a7
