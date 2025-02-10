@@ -20,18 +20,6 @@
               "icon": "lucide-file",
               "title": "Module 1 - Intro to RISC-V"
             }
-          },
-          {
-            "id": "26349070dd63262f",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.4"
-            }
           }
         ]
       }
@@ -191,6 +179,7 @@
   },
   "active": "f89fd8a9cc500c55",
   "lastOpenFiles": [
+    "CompilerConstruction/Module 1 - Intro to RISC-V.md",
     "CompilerConstruction/Tasks/module1-task9.asm",
     "CompilerConstruction/Tasks/module1-task8.asm",
     "CompilerConstruction/Tasks/module1-task7.asm",
@@ -204,8 +193,6 @@
     "AutomatedReasoning/src/#Untitled-1#",
     "AutomatedReasoning/src/tutorial.thy~",
     "AutomatedReasoning/src/tutorial.thy",
-    "AutomatedReasoning/src",
-    "CompilerConstruction/Module 1 - Intro to RISC-V.md",
     "CompilerConstruction/Untitled.md",
     "CompilerConstruction/attachments/riscv_fp_register_table.png",
     "CompilerConstruction/attachments/RV32I_instruction_set_table.png",
