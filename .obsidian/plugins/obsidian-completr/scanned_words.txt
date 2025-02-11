@@ -18723,6 +18723,7 @@ Scale
 Symbolic
 Saved
 Store
+Sequent
 method
 memory
 modify
@@ -26195,6 +26196,7 @@ Doubly
 Demonstrated
 Details
 Dimensional
+Deduction
 Verification
 Verified
 Very
@@ -35934,6 +35936,7 @@ Allow
 Adjusted
 Advantages
 Allows
+Assistant
 Can
 CompCert
 Course
@@ -37138,6 +37141,7 @@ Clean
 Created
 Caller
 Callee
+Calculus
 handle
 high
 hints

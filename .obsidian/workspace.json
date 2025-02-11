@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CompilerConstruction/Module 1 - Intro to RISC-V.md",
+                "file": "AutomatedReasoning/Module 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Module 1 - Intro to RISC-V"
+              "title": "Module 1"
             }
           }
         ]
@@ -177,7 +177,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f89fd8a9cc500c55",
+  "active": "f4ed663714496120",
   "lastOpenFiles": [
     "CompilerConstruction/Module 1 - Intro to RISC-V.md",
     "CompilerConstruction/Tasks/module1-task9.asm",
