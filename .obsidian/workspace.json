@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7b2e93273b50a57f",
+        "id": "a741219c095ee53c",
         "type": "tabs",
         "children": [
           {
-            "id": "f89fd8a9cc500c55",
+            "id": "39ac5271ee2da2a3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AutomatedReasoning/Module 1.md",
+                "file": "CompilerConstruction/Module 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Module 1"
+              "title": "Module 2"
             }
           }
         ]
@@ -179,22 +179,25 @@
   },
   "active": "f4ed663714496120",
   "lastOpenFiles": [
+    "CompilerConstruction/attachments/Module 2 2025-02-13 11.31.15.excalidraw.md",
+    "CompilerConstruction/Module 2.md",
     "CompilerConstruction/Module 1 - Intro to RISC-V.md",
+    "CompilerConstruction/attachments/riscv_fp_register_table.png",
+    "CompilerConstruction/attachments/CC_exercise10.excalidraw.md",
+    "Excalidraw",
+    "attachments/CC_exercise10.md",
+    "attachments",
+    "Excalidraw",
+    "CompilerConstruction/attachments/Ink/Drawing/2025.2.13 - 10.51am.drawing",
+    "CompilerConstruction/attachments/Ink/Drawing",
+    "CompilerConstruction/attachments/Ink/Writing/2025.2.13 - 10.51am.writing",
+    "CompilerConstruction/attachments/Ink/Writing",
+    "CompilerConstruction/attachments/Ink",
+    "AutomatedReasoning/Module 1.md",
     "CompilerConstruction/Tasks/module1-task9.asm",
     "CompilerConstruction/Tasks/module1-task8.asm",
-    "CompilerConstruction/Tasks/module1-task7.asm",
     "ComputerVision/Intro.md",
     "DistributedRTSystems/1. Intro.md",
-    "ComputerVision",
-    "AutomatedReasoning/Module 1.md",
-    "DistributedRTSystems",
-    "AutomatedReasoning/src/#Scratch.thy#",
-    "AutomatedReasoning/src/Scratch.thy",
-    "AutomatedReasoning/src/#Untitled-1#",
-    "AutomatedReasoning/src/tutorial.thy~",
-    "AutomatedReasoning/src/tutorial.thy",
-    "CompilerConstruction/Untitled.md",
-    "CompilerConstruction/attachments/riscv_fp_register_table.png",
     "CompilerConstruction/attachments/RV32I_instruction_set_table.png",
     "1st semester/Program Verification/EXAM NOTES/2. Overview.md",
     "1st semester/Program Verification/EXAM NOTES/12. Concurrency.md",
@@ -225,8 +228,6 @@
     "1st semester/Program Verification/EXAM NOTES/attachments/weakest precondition definition.png",
     "1st semester/Program Verification/EXAM NOTES/attachments/toy program logic soundess theorem.png",
     "1st semester/Program Verification/Module 2 - Floyd-Hoare logic.md",
-    "1st semester/Program Verification/Module 0  - Introduction.md",
-    "1st semester/Applied AI for entrepreneurs/Week 7.md",
     "1st semester/Applied AI for entrepreneurs/Lecture 1/Project 1.canvas"
   ]
 }
