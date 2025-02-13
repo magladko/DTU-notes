@@ -4,6 +4,11 @@ fun add :: "nat \<Rightarrow> nat \<Rightarrow> nat" where
 "add 0 n = n" |
 "add (Suc m) n = Suc(add m n)"
 
+theorem add_assoc: "add a (add b c) = add (add a b) c"
+  apply(induction a)
+   apply(auto)
+  done
+
 lemma add_1 [simp]: "Suc (add m n) = add m (Suc n)"
   apply(induction m)
   apply(auto)
