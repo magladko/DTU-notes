@@ -76,6 +76,5 @@ println
 ```
 
 ![[CC_exercise10.excalidraw]]
-
 ## exercise 11
 

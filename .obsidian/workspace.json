@@ -11,10 +11,14 @@
             "id": "37f195f3f0914a8a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "AutomatedReasoning/Module 2.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Module 2"
             }
           }
         ]
@@ -176,10 +180,12 @@
   "active": "37f195f3f0914a8a",
   "lastOpenFiles": [
     "CompilerConstruction/Module 2.md",
+    "AutomatedReasoning/Module 2.md",
+    "CompilerConstruction/Module 1 - Intro to RISC-V.md",
     "CompilerConstruction/Latex def.md",
+    "preamble.sty",
     "1st semester/Program Verification/EXAM NOTES/2. Overview.md",
     "CompilerConstruction/attachments/Module 2 2025-02-13 11.31.15.excalidraw.md",
-    "CompilerConstruction/Module 1 - Intro to RISC-V.md",
     "CompilerConstruction/attachments/riscv_fp_register_table.png",
     "CompilerConstruction/attachments/CC_exercise10.excalidraw.md",
     "Excalidraw",
@@ -193,7 +199,6 @@
     "CompilerConstruction/attachments/Ink",
     "AutomatedReasoning/Module 1.md",
     "CompilerConstruction/Tasks/module1-task9.asm",
-    "CompilerConstruction/Tasks/module1-task8.asm",
     "ComputerVision/Intro.md",
     "DistributedRTSystems/1. Intro.md",
     "CompilerConstruction/attachments/RV32I_instruction_set_table.png",
@@ -216,7 +221,6 @@
     "Untitled 2.canvas",
     "1st semester/Program Verification/CHEAT SHEETS.md",
     "1st semester/Program Verification/EXAM NOTES/attachments/inference rules for execution relations.png",
-    "1st semester/Program Verification/Module 4 - Building a Verifier.md",
     "1st semester/Program Verification/EXAM NOTES/attachments/characterization of wp.png",
     "1st semester/Program Verification/EXAM NOTES/attachments/theorem wp.png",
     "1st semester/Program Verification/EXAM NOTES/attachments/wp example 2.png",
