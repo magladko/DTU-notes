@@ -65,6 +65,131 @@ $$
 \end{array}
 \end{split}
 $$
+
+## Structural Operational Semantics of Hygge0
+
+$$
+\begin{split}
+\begin{array}{c}
+  \begin{prooftree}
+    \AxiomC{$\hygEvalConf{R}{e} \to \hygEvalConf{R'}{e'}$}
+    \UnaryInfCLab{R-Add-L}{$\hygEvalConf{R}{e + e_2} \;\to\; \hygEvalConf{R'}{e' + e_2}$}
+  \end{prooftree}
+  \;\;
+  \begin{prooftree}
+    \AxiomC{$\hygEvalConf{R}{e} \to \hygEvalConf{R'}{e'}$}
+    \UnaryInfCLab{R-Add-R}{$\hygEvalConf{R}{v + e} \;\to\; \hygEvalConf{R'}{v + e'}$}
+  \end{prooftree}
+  \\\\
+  \begin{prooftree}
+    \AxiomC{$v_1 + v_2 = v_3$}
+    \UnaryInfCLab{R-Add-Res}{$\hygEvalConf{R}{v_1 + v_2} \;\to\; \hygEvalConf{R}{v_3}$}
+  \end{prooftree}
+  \\\\
+  \begin{prooftree}
+    \AxiomC{$\hygEvalConf{R}{e} \to \hygEvalConf{R'}{e'}$}
+    \UnaryInfCLab{R-Mul-L}{$\hygEvalConf{R}{e * e_2} \;\to\; \hygEvalConf{R'}{e' * e_2}$}
+  \end{prooftree}
+  \quad
+  \begin{prooftree}
+    \AxiomC{$\hygEvalConf{R}{e} \to \hygEvalConf{R'}{e'}$}
+    \UnaryInfCLab{R-Mul-R}{$\hygEvalConf{R}{v * e} \;\to\; \hygEvalConf{R'}{v * e'}$}
+  \end{prooftree}
+  \\\\
+  \begin{prooftree}
+    \AxiomC{$v_1 \times v_2 = v_3$}
+    \UnaryInfCLab{R-Mul-Res}{$\hygEvalConf{R}{v_1 * v_2} \;\to\; \hygEvalConf{R}{v_3}$}
+  \end{prooftree}
+  \\[2mm]
+  \vdots
+  \\[2mm]
+  \begin{prooftree}
+    \AxiomC{$\hygEvalConf{R}{e} \to \hygEvalConf{R'}{e'}$}
+    \UnaryInfCLab{R-Par-Eval}{$\hygEvalConf{R}{(e)} \;\to\; \hygEvalConf{R'}{(e')}$}
+  \end{prooftree}
+  \quad
+  \begin{prooftree}
+    \AxiomC{}
+    \UnaryInfCLab{R-Par-Res}{$\hygEvalConf{R}{(v)} \;\to\; \hygEvalConf{R}{v}$}
+  \end{prooftree}
+  \\\\
+  \begin{prooftree}
+    \AxiomC{$\hygEvalConf{R}{e} \to \hygEvalConf{R'}{e'}$}
+    \UnaryInfCLab{R-Curly-Eval}{$\hygEvalConf{R}{\{e\}} \;\to\; \hygEvalConf{R'}{\{e'\}}$}
+  \end{prooftree}
+  \quad
+  \begin{prooftree}
+    \AxiomC{}
+    \UnaryInfCLab{R-Curly-Res}{$\hygEvalConf{R}{\{v\}} \;\to\; \hygEvalConf{R}{v}$}
+  \end{prooftree}
+  \\\\
+  \begin{prooftree}
+    \AxiomC{$\hygEvalConf{R}{e} \to \hygEvalConf{R'}{e'}$}
+    \UnaryInfCLab{R-Seq-Eval}{$\hygEvalConf{R}{e;\,e_2} \;\to\; \hygEvalConf{R'}{e';\,e_2}$}
+  \end{prooftree}
+  \quad
+  \begin{prooftree}
+    \AxiomC{}
+    \UnaryInfCLab{R-Seq-Res}{$\hygEvalConf{R}{v;\,e} \;\to\; \hygEvalConf{R}{e}$}
+  \end{prooftree}
+  \\\\
+  \begin{prooftree}
+    \AxiomC{$\hygEvalConf{R}{e} \to \hygEvalConf{R'}{e'}$}
+    \UnaryInfCLab{R-Let-Eval-Init}{$\hygEvalConf{R}{\hygLetU{x}{e}{e_2}} \;\to\; \hygEvalConf{R'}{\hygLetU{x}{e'}{e_2}}$}
+  \end{prooftree}
+  \\\\
+  \begin{prooftree}
+    \AxiomC{}
+    \UnaryInfCLab{R-Let-Subst}{$\hygEvalConf{R}{\hygLetU{x}{v}{e}} \;\to\; \hygEvalConf{R}{\subst{e}{x}{v}}$}
+  \end{prooftree}
+  \\\\
+  \begin{prooftree}
+    \AxiomC{}
+    \UnaryInfCLab{R-Type-Res}{$\hygEvalConf{R}{\hygType{x}{t}{e}} \;\to\; \hygEvalConf{R}{e}$}
+  \end{prooftree}
+  \\\\
+  \begin{prooftree}
+    \AxiomC{}
+    \UnaryInfCLab{R-Ascr-Res}{$\hygEvalConf{R}{e:t} \;\to\; \hygEvalConf{R}{e}$}
+  \end{prooftree}
+  \\\\
+  \begin{prooftree}
+    \AxiomC{$\hygEvalConf{R}{e} \to \hygEvalConf{R'}{e'}$}
+    \UnaryInfCLab{R-Assert-Eval-Arg}{$\hygEvalConf{R}{\hygAssert{e}} \;\to\; \hygEvalConf{R'}{\hygAssert{e'}}$}
+  \end{prooftree}
+  \\\\
+  \begin{prooftree}
+    \AxiomC{}
+    \UnaryInfCLab{R-Assert-Res}{$\hygEvalConf{R}{\hygAssert{\text{true}}} \;\to\; \hygEvalConf{R}{()}$}
+  \end{prooftree}
+  \\[2mm]
+  \vdots
+  \\[2mm]
+  \begin{prooftree}
+    \AxiomC{$\hygEvalConf{R}{e} \to \hygEvalConf{R'}{e'}$}
+    \UnaryInfCLab{R-Print-Eval-Arg}{$\hygEvalConf{R}{\hygPrint{e}} \;\to\; \hygEvalConf{R'}{\hygPrint{e'}}$}
+  \end{prooftree}
+  \\\\
+  \begin{prooftree}
+    \AxiomC{$\envField{R}{Printer}$ is defined}
+    \UnaryInfCLab{R-Print-Res}{$\hygEvalConf{R}{\hygPrint{v}} \;\to\; \hygEvalConf{R}{()}$}
+  \end{prooftree}
+  \\\\
+  \begin{prooftree}
+    \AxiomC{$\envField{R}{Reader}$ is defined}
+    \AxiomC{$\envField{R}{Reader}$ yields $v$}
+    \BinaryInfCLab{R-Read-Int}{$\hygEvalConf{R}{\hygReadInt} \;\to\; \hygEvalConf{R}{v}$}
+  \end{prooftree}
+  \\\\
+  \begin{prooftree}
+    \AxiomC{$\envField{R}{Reader}$ is defined}
+    \AxiomC{$\envField{R}{Reader}$ yields $v$}
+    \BinaryInfCLab{R-Read-Float}{$\hygEvalConf{R}{\hygReadFloat} \;\to\; \hygEvalConf{R}{v}$}
+  \end{prooftree}
+\end{array}
+\end{split}
+$$
+
 ## exercise 10
 
 ```hygge0
@@ -136,3 +261,195 @@ $$
 \end{array}
 \end{split}
 $$
+## exercise 13
+
+$$
+\newcommand{\hygStrucRed}[4]{
+\begin{prooftree}
+  \AxiomC{#1}
+  \UnaryInfCLab{#2}{$
+    \hygEvalConf{R}{\boxed{
+      \begin{array}{l}
+        #3
+      \end{array}
+    }} \;\to\;
+    \hygEvalConf{R}{\boxed{
+      \begin{array}{l}
+        #4
+      \end{array}
+    }}
+  $}
+\end{prooftree}
+}
+$$
+- $\hygLetU{x}{3 + 2}{\;x + 1}$
+
+$$
+\begin{prooftree}
+  \AxiomC{}
+  \UnaryInfCLab{R-Let-Eval-Init}{$
+    \hygEvalConf{R}{\boxed{
+      \begin{array}{l}
+        \hygLetUInit{x}{3 + 2} \\
+        x + 1
+      \end{array}
+    }} \;\to\;
+    \hygEvalConf{R}{\boxed{
+      \begin{array}{l}
+        \hygLetUInit{x}{5} \\
+        x + 1
+      \end{array}
+    }}
+  $}
+\end{prooftree}
+$$
+$$
+\begin{prooftree}
+  \AxiomC{}
+  \UnaryInfCLab{R-Let-Eval-Subst}{$
+    \hygEvalConf{R}{\boxed{
+      \begin{array}{l}
+        \hygLetUInit{x}{5} \\
+        x + 1
+      \end{array}
+    }} \;\to\;
+    \hygEvalConf{R}{\boxed{
+      \begin{array}{l}
+        5 + 1
+      \end{array}
+    }}
+  $}
+\end{prooftree}
+$$
+$$
+\begin{prooftree}
+  \AxiomC{5 + 1 = 6}
+  \UnaryInfCLab{R-Add-Res}{$
+    \hygEvalConf{R}{\boxed{
+      \begin{array}{l}
+        5 + 1
+      \end{array}
+    }} \;\to\;
+    \hygEvalConf{R}{\boxed{
+      \begin{array}{l}
+        6
+      \end{array}
+    }}
+  $}
+\end{prooftree}
+$$
+
+- $\hygLetU{x}{3 + 2}{\;\hygPrint{x + 1}}$
+$$
+\begin{prooftree}
+  \AxiomC{}
+  \UnaryInfCLab{R-Let-Eval-Init}{$
+    \hygEvalConf{R}{\boxed{
+      \begin{array}{l}
+        \hygLetUInit{x}{3 + 2} \\
+        \hygPrint{x+1}
+      \end{array}
+    }} \;\to\;
+    \hygEvalConf{R}{\boxed{
+      \begin{array}{l}
+        \hygLetUInit{x}{5} \\
+        \hygPrint{x+1}
+      \end{array}
+    }}
+  $}
+\end{prooftree}
+$$
+$$
+\begin{prooftree}
+  \AxiomC{}
+  \UnaryInfCLab{R-Let-Eval-Subst}{$
+    \hygEvalConf{R}{\boxed{
+      \begin{array}{l}
+        \hygLetUInit{x}{5} \\
+        \hygPrint{x+1}
+      \end{array}
+    }} \;\to\;
+    \hygEvalConf{R}{\boxed{
+      \begin{array}{l}
+        \hygPrint{5+1}
+      \end{array}
+    }}
+  $}
+\end{prooftree}
+$$
+$$
+\begin{prooftree}
+  \AxiomC{}
+  \UnaryInfCLab{R-Print-Eval-Arg}{$
+    \hygEvalConf{R}{\boxed{
+      \begin{array}{l}
+        \hygPrint{5+1}
+      \end{array}
+    }} \;\to\;
+    \hygEvalConf{R}{\boxed{
+      \begin{array}{l}
+        \hygPrint{6}
+      \end{array}
+    }}
+  $}
+\end{prooftree}
+$$
+$$
+\hygStrucRed{$\envField{R}{Printer}$ is defined}{R-Print-Res}{\hygPrint{6}}{\hygEvalConf{R}{()}}
+$$
+
+- $\hygLetU{x}{3 + 2}{\;\hygPrint{x + 1}; \;\hygPrint{x + 2}}$
+
+$$
+\hygStrucRed{}{R-Let-Eval-Init}{
+  \hygLetUInit{x}{3+2} \\
+  \hygPrint{x+1}; \\
+  \hygPrint{x+2}
+}{
+  \hygLetUInit{x}{5} \\
+  \hygPrint{x+1}; \\
+  \hygPrint{x+2}
+}
+$$
+$$
+\hygStrucRed{}{R-Let-Subst}{
+  \hygLetUInit{x}{5} \\
+  \hygPrint{x+1}; \\
+  \hygPrint{x+2}
+}{
+  \hygPrint{5+1}; \\
+  \hygPrint{5+2}
+}
+$$
+$$
+\hygStrucRed{}{R-Print-Eval-Arg}{
+  \hygPrint{5+1}; \\
+  \hygPrint{5+2}
+}{
+  \hygPrint{6}; \\
+  \hygPrint{5+2}
+}
+$$
+$$
+\hygStrucRed{$\envField{R}{Printer}$ is defined}{R-Print-Res}{
+  \hygPrint{6}; \\
+  \hygPrint{5+2}
+}{
+  \hygPrint{5+2}
+}
+$$
+$$
+\hygStrucRed{}{R-Print-Eval-Arg}{
+  \hygPrint{5+2}
+}{
+  \hygPrint{7}
+}
+$$
+$$
+\hygStrucRed{$\envField{R}{Printer}$ is defined}{R-Print-Res}{
+  \hygPrint{7}
+}{
+  ()
+}
+$$
+
