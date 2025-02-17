@@ -1402,4 +1402,232 @@ $$
 $$
 
 
-## exercise 1
+## exercise 16
+
+$$
+\begin{split}
+\begin{array}{l}
+  \hygLetUInit{x}{2} \\
+  y + x * \text{"Hello"}
+\end{array}
+\end{split}
+$$
+
+Answer: **The multiplication operation only supports numbers - not strings (deduced from T-Add rule).**
+
+## exercise 17
+
+$$
+\begin{array}{c}
+  \begin{prooftree}
+    \AxiomC{$v$ is an integer value}
+    \UnaryInfCLab{T-Val-Int}{$\Gamma \vdash v : \text{int}$}
+  \end{prooftree}
+  \quad
+  \begin{prooftree}
+    \AxiomC{$v$ is a string value}
+    \UnaryInfCLab{T-Val-String}{$\Gamma \vdash v : \text{string}$}
+  \end{prooftree}
+  \\\\
+  \begin{prooftree}
+    \AxiomC{$v \in \{\text{true}, \text{false}\}$}
+    \UnaryInfCLab{T-Val-Bool}{$\Gamma \vdash v : \text{bool}$}
+  \end{prooftree}
+  \quad
+  \begin{prooftree}
+    \AxiomC{}
+    \UnaryInfCLab{T-Val-Unit}{$\Gamma \vdash () : \text{unit}$}
+  \end{prooftree}
+  \\\\
+  \begin{prooftree}
+    \AxiomC{$v$ is a single-precision float value}
+    \UnaryInfCLab{T-Val-Float}{$\Gamma \vdash v : \text{float}$}
+  \end{prooftree}
+\end{array}
+$$
+$$
+\begin{array}{c}
+  \begin{prooftree}
+    \AxiomC{$\envField{\Gamma}{Vars}(x) = T$}
+    \UnaryInfCLab{T-Var}{$\Gamma \vdash x : T$}
+  \end{prooftree}
+\end{array}
+$$
+$$
+\begin{array}{c}
+  \begin{prooftree}
+    \AxiomC{$T \in \{\text{int}, \text{float}\}$}
+    \AxiomC{$\Gamma \vdash e_1 : T$}
+    \AxiomC{$\Gamma \vdash e_2 : T$}
+    \TrinaryInfCLab{T-Add}{$\Gamma \vdash e_1 + e_2 : T$}
+  \end{prooftree}
+\end{array}
+$$
+$$
+\begin{array}{c}
+  \begin{prooftree}
+    \AxiomC{$T \in \{\text{int}, \text{float}\}$}
+    \AxiomC{$\Gamma \vdash e_1 : T$}
+    \AxiomC{$\Gamma \vdash e_2 : T$}
+    \TrinaryInfCLab{T-Mul}{$\Gamma \vdash e_1 * e_2 : T$}
+  \end{prooftree}
+\end{array}
+$$
+$$
+\begin{array}{c}
+  \begin{prooftree}
+    \AxiomC{$\Gamma \vdash e_1 : \text{bool}$}
+    \AxiomC{$\Gamma \vdash e_2 : T$}
+    \AxiomC{$\Gamma \vdash e_3 : T$}
+    \TrinaryInfCLab{T-Cond}{$\Gamma \vdash \hygCond{e_1}{e_2}{e_3} : T$}
+  \end{prooftree}
+\end{array} $$ $$ \begin{array}{c}
+  \begin{prooftree}
+    \AxiomC{$\Gamma \vdash e_1 : T$}
+    \AxiomC{$\Gamma \vdash e_2 : T'$}
+    \BinaryInfCLab{T-Seq}{$\Gamma \vdash e_1; e_2 : T'$}
+  \end{prooftree}
+\end{array} $$ $$ \begin{array}{c}
+  \begin{prooftree}
+    \AxiomC{$\Gamma \vdash e_1 : T$}
+    \AxiomC{$\left\{\Gamma \text{ with } \text{Vars} + (x \mapsto T)\right\} \vdash e_2 : T'$}
+    \BinaryInfCLab{T-Let}{$\Gamma \vdash \hygLetU{x}{e_1}{e_2} : T'$}
+  \end{prooftree}
+\end{array} $$ $$ \begin{array}{c}
+  \begin{prooftree}
+    \AxiomC{$\hygTypeResJ{\Gamma}{t}{T}$}
+    \AxiomC{$\Gamma \vdash e_1 : T$}
+    \AxiomC{$\left\{\Gamma \text{ with } \text{Vars} + (x \mapsto T)\right\} \vdash e_2 : T'$}
+    \TrinaryInfCLab{T-Let-T}{$\Gamma \vdash \hygLet{x}{t}{e_1}{e_2} : T'$}
+  \end{prooftree}
+\end{array} $$ $$ \begin{array}{c}
+  \begin{prooftree}
+    \AxiomC{$
+      \begin{array}{c}
+        x \not\in \{\text{bool}, \text{int}, \text{float}, \text{string}, \text{unit}\}
+        \qquad
+        x \not\in \envField{\Gamma}{TypeVars}
+        \qquad
+        \hygTypeResJ{\Gamma}{t}{T}
+        \\
+        \left\{\Gamma \text{ with } \text{TypeVars} + (x \mapsto T)\right\} \vdash e : T'
+        \qquad
+        x \not\in T'
+      \end{array}
+    $}
+    \UnaryInfCLab{T-Type}{$\Gamma \vdash \hygType{x}{t}{e} : T'$}
+  \end{prooftree}
+\end{array} $$ $$ \begin{array}{c}
+  \begin{prooftree}
+    \AxiomC{$\hygTypeResJ{\Gamma}{t}{T}$}
+    \AxiomC{$\Gamma \vdash e : T$}
+    \BinaryInfCLab{T-Ascr}{$\Gamma \vdash (e:t) : T$}
+  \end{prooftree}
+\end{array} $$ $$ \begin{array}{c}
+  \begin{prooftree}
+    \AxiomC{$\Gamma \vdash e : \text{bool}$}
+    \UnaryInfCLab{T-Assert}{$\Gamma \vdash \hygAssert{e} : \text{unit}$}
+  \end{prooftree}
+\end{array} $$ $$ \begin{array}{c}
+  \begin{prooftree}
+    \AxiomC{$T \in \{\text{bool}, \text{int}, \text{float}, \text{string}\}$}
+    \AxiomC{$\Gamma \vdash e : T$}
+    \BinaryInfCLab{T-Print}{$\Gamma \vdash \hygPrint{e} : \text{unit}$}
+  \end{prooftree}
+\end{array}
+$$
+$$ \begin{array}{c}
+  \begin{prooftree}
+    \AxiomC{$T \in \{\text{bool}, \text{int}, \text{float}, \text{string}\}$}
+    \AxiomC{$\Gamma \vdash e : T$}
+    \BinaryInfCLab{T-Println}{$\Gamma \vdash \hygPrintln{e} : \text{unit}$}
+  \end{prooftree}
+\end{array}
+$$
+$$ \begin{array}{c}
+  \begin{prooftree}
+    \AxiomC{$\Gamma \vdash e : T$}
+    \UnaryInfCLab{T-Par}{$
+      \hygTypeCheckJ{\Gamma}{(e)}{T}
+    $}
+  \end{prooftree}
+\end{array}
+$$
+$$ \begin{array}{c}
+  \begin{prooftree}
+    \AxiomC{}
+    \UnaryInfCLab{T-Par}{$
+      \hygTypeCheckJ{\Gamma}{\{ e \}}{\tUnit}
+    $}
+  \end{prooftree}
+\end{array}
+$$
+$$ \begin{array}{c}
+  \begin{prooftree}
+    \AxiomC{}
+    \UnaryInfCLab{T-ReadInt}{$
+      \hygTypeCheckJ{\Gamma}{\hygReadInt}{\tInt}
+    $}
+  \end{prooftree}
+\end{array}
+$$
+$$ \begin{array}{c}
+  \begin{prooftree}
+    \AxiomC{}
+    \UnaryInfCLab{T-ReadFloat}{$
+      \hygTypeCheckJ{\Gamma}{\hygReadFloat}{\tFloat}
+    $}
+  \end{prooftree}
+\end{array}
+$$
+$$ \begin{array}{c}
+  \begin{prooftree}
+    \AxiomC{$\hygTypeCheckJ{\Gamma}{e}{\tBool}$}
+    \UnaryInfCLab{T-Neg}{$
+      \hygTypeCheckJ{\Gamma}{\text{not } e}{\tBool}
+    $}
+  \end{prooftree}
+\end{array}
+$$
+$$ \begin{array}{c}
+  \begin{prooftree}
+    \AxiomC{$\hygTypeCheckJ{\Gamma}{e_{1}}{\tBool}$}
+    \AxiomC{$\hygTypeCheckJ{\Gamma}{e_{2}}{\tBool}$}
+    \BinaryInfCLab{T-And}{$
+      \hygTypeCheckJ{\Gamma}{\hygAnd{e_{1}}{e_{2}} }{\tBool}
+    $}
+  \end{prooftree}
+\end{array}
+$$
+$$ \begin{array}{c}
+  \begin{prooftree}
+    \AxiomC{$\hygTypeCheckJ{\Gamma}{e_{1}}{\tBool}$}
+    \AxiomC{$\hygTypeCheckJ{\Gamma}{e_{2}}{\tBool}$}
+    \BinaryInfCLab{T-Or}{$
+      \hygTypeCheckJ{\Gamma}{\hygOr{e_{1}}{e_{2}} }{\tBool}
+    $}
+  \end{prooftree}
+\end{array}
+$$
+$$ \begin{array}{c}
+  \begin{prooftree}
+    \AxiomC{$\hygTypeCheckJ{\Gamma}{e_{1}}{T}$}
+    \AxiomC{$\hygTypeCheckJ{\Gamma}{e_{2}}{T'}$}
+    \AxiomC{$T=T'$}
+    \TrinaryInfCLab{T-Or}{$
+      \hygTypeCheckJ{\Gamma}{e_{1} < e_{2}}{\tBool}
+    $}
+  \end{prooftree}
+\end{array}
+$$
+$$ \begin{array}{c}
+  \begin{prooftree}
+    \AxiomC{$\hygTypeCheckJ{\Gamma}{e_{1}}{T}$}
+    \AxiomC{$\hygTypeCheckJ{\Gamma}{e_{2}}{T'}$}
+    \AxiomC{$T=T'$}
+    \TrinaryInfCLab{T-Eq}{$
+      \hygTypeCheckJ{\Gamma}{e_{1} = e_{2}}{\tBool}
+    $}
+  \end{prooftree}
+\end{array}
+$$
