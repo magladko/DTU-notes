@@ -897,6 +897,19 @@ $$
 $$
 \begin{array}{c}
   \begin{prooftree}
+    \AxiomC{$\hygEvalConf{R}{e} \to \hygEvalConf{R'}{e'}$}
+    \UnaryInfCLab{R-Println-Eval-Arg}{$\hygEvalConf{R}{\hygPrintln{e}} \;\to\; \hygEvalConf{R'}{\hygPrintln{e'}}$}
+  \end{prooftree}
+  \\\\
+  \begin{prooftree}
+    \AxiomC{$\envField{R}{Printer}$ is defined}
+    \UnaryInfCLab{R-Println-Res}{$\hygEvalConf{R}{\hygPrintln{v}} \;\to\; \hygEvalConf{R}{()}$}
+  \end{prooftree}
+\end{array}
+$$
+$$
+\begin{array}{c}
+  \begin{prooftree}
     \AxiomC{$\envField{R}{Reader}$ is defined}
     \AxiomC{$\envField{R}{Reader}$ yields $v$}
     \BinaryInfCLab{R-Read-Int}{$\hygEvalConf{R}{\hygReadInt} \;\to\; \hygEvalConf{R}{v}$}
@@ -909,3 +922,5 @@ $$
   \end{prooftree}
 \end{array}
 $$
+TODO: What about $x$ and $v$?
+
