@@ -34081,6 +34081,7 @@ bqQ
 beM
 bEb
 boxed
+bfbdf
 Even
 EveryCrypt
 Engineering
@@ -43023,6 +43024,11 @@ hygPrint
 hygReadInt
 hygReadFloat
 hygLetUInit
+hygCond
+hygLet
+hygOr
+hygAnd
+hygNot
 Requires
 Rust
 Reading

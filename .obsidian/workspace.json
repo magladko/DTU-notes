@@ -6,7 +6,7 @@
       {
         "id": "5166247841f7bb15",
         "type": "tabs",
-        "dimension": 69.77225672877847,
+        "dimension": 51.89786059351277,
         "children": [
           {
             "id": "a4df1fa921656687",
@@ -27,7 +27,7 @@
       {
         "id": "56f79b2be36ae2f4",
         "type": "tabs",
-        "dimension": 30.22774327122153,
+        "dimension": 48.10213940648723,
         "children": [
           {
             "id": "f468f0251910910d",
@@ -42,8 +42,21 @@
               "icon": "lucide-file",
               "title": "Module 2"
             }
+          },
+          {
+            "id": "61759c63a24c5c91",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2025-02-17 18.50.57.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-02-17 18.50.57.excalidraw"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -201,8 +214,11 @@
   },
   "active": "a4df1fa921656687",
   "lastOpenFiles": [
-    "CompilerConstruction/Untitled.canvas",
+    "Excalidraw/Drawing 2025-02-17 18.50.57.excalidraw.md",
     "CompilerConstruction/Module 2.md",
+    "Excalidraw/attachments/Pasted Image 20250217185112_205.png",
+    "Excalidraw/attachments",
+    "CompilerConstruction/Untitled.canvas",
     "CompilerConstruction/attachments/CC_exercise10.excalidraw.md",
     "Excalidraw/Drawing 2025-02-14 08.44.21.excalidraw.md",
     "Excalidraw/Drawing 2025-02-14 08.44.21.excalidraw.png",
@@ -226,7 +242,6 @@
     "CompilerConstruction/attachments/riscv_fp_register_table.png",
     "Excalidraw",
     "attachments/CC_exercise10.md",
-    "attachments",
     "AutomatedReasoning/Module 1.md",
     "ComputerVision/Intro.md",
     "CompilerConstruction/attachments/RV32I_instruction_set_table.png",
@@ -239,7 +254,6 @@
     "1st semester/Program Verification/EXAM NOTES/5. Encoding Verification Problems.md",
     "1st semester/Program Verification/EXAM NOTES/4. Building an Automated Verifier.md",
     "1st semester/Program Verification/EXAM NOTES/3. Automated Reasoning.md",
-    "1st semester/Program Verification/EXAM NOTES/5. Encoding Verification Problems1.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "Untitled 2.canvas",
@@ -249,7 +263,6 @@
     "1st semester/Program Verification/EXAM NOTES/attachments/wp example 2.png",
     "1st semester/Program Verification/EXAM NOTES/attachments/weakest precondition example.png",
     "1st semester/Program Verification/EXAM NOTES/attachments/weakest precondition def.png",
-    "1st semester/Program Verification/EXAM NOTES/attachments/weakest precondition definition.png",
     "1st semester/Applied AI for entrepreneurs/Lecture 1/Project 1.canvas"
   ]
 }
