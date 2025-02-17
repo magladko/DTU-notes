@@ -5776,6 +5776,7 @@ PpBa
 Ppzw
 Ppr
 PHd
+Printer
 that
 the
 to
@@ -8321,6 +8322,7 @@ abf
 aiiYc
 ahP
 arJ
+ambiguities
 works
 whether
 where
@@ -10770,6 +10772,7 @@ eWb
 eTsr
 efN
 eLUm
+envField
 Task
 The
 Testing
@@ -28081,6 +28084,7 @@ HPvH
 HfA
 HDP
 HJz
+Hygge
 Different
 Deductive
 Dafny
@@ -34076,6 +34080,7 @@ bmI
 bqQ
 beM
 bEb
+boxed
 Even
 EveryCrypt
 Engineering
@@ -43010,6 +43015,14 @@ hYZ
 hsC
 hFA
 hAq
+hygEvalConf
+hygLetU
+hygType
+hygAssert
+hygPrint
+hygReadInt
+hygReadFloat
+hygLetUInit
 Requires
 Rust
 Reading
@@ -44376,6 +44389,7 @@ RaE
 RmFC
 RDHq
 RBq
+Reader
 years
 your
 you
