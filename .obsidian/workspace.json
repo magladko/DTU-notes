@@ -42,21 +42,8 @@
               "icon": "lucide-file",
               "title": "Module 2"
             }
-          },
-          {
-            "id": "61759c63a24c5c91",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2025-02-17 18.50.57.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-02-17 18.50.57.excalidraw"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"

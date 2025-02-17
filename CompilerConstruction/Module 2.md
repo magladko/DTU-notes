@@ -924,3 +924,25 @@ $$
 $$
 TODO: What about $x$ and $v$?
 
+$$
+\hygStrucRed{}{R-If-Cond}{
+  \hygCond{5+8 = 3}{\hygPrint{\text{"A"}}}{\hygPrintln{\text{"B"}}}
+}{
+  \hygCond{\text{false}}{\hygPrint{\text{"A"}}}{\hygPrintln{\text{"B"}}}
+}
+$$
+$$
+\hygStrucRed{}{R-If-Else}{
+  \hygCond{5+8 = 3}{\hygPrint{\text{"A"}}}{\hygPrintln{\text{"B"}}}
+}{
+  \hygPrintln{\text{"B"}}
+}
+$$
+$$
+\hygStrucRed{$\envField{R}{Printer}$ is defined}{R-Println-Res}{
+  \hygCond{5+8 = 3}{\hygPrint{\text{"A"}}}{\hygPrintln{\text{"B"}}}
+}{
+  ()
+}
+$$
+
