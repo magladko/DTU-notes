@@ -946,3 +946,93 @@ $$
 }
 $$
 
+## exercise 15
+
+$$
+\hygTypeCheckJ{
+ \left\{\text{Vars} = \emptyset;\; \text{TypeVars} = \emptyset\right\}
+\;}{\;(4 + 2) + 1\;}{\;\tInt}
+$$
+
+$$
+\begin{split}
+    \begin{array}{c}
+      \begin{prooftree}
+        \AxiomC{$
+          \begin{prooftree}
+            \AxiomC{}
+            \UnaryInfCLab{T-Val-Int}{$
+              \hygTypeCheckJ{
+                \left\{
+                  \begin{array}{@{}l@{}}
+                    \text{Vars} = \emptyset \\
+                    \text{TypeVars} = \emptyset
+                  \end{array}
+                \right\}
+              }{4}{\tInt}
+            $}
+            \AxiomC{}
+            \UnaryInfCLab{T-Val-Int}{$
+              \hygTypeCheckJ{
+                \left\{
+                  \begin{array}{@{}l@{}}
+                    \text{Vars} = \emptyset \\
+                    \text{TypeVars} = \emptyset
+                  \end{array}
+                \right\}
+              }{2}{\tInt}
+            $}
+            \BinaryInfCLab{T-Add}{$
+            \hygTypeCheckJ{
+              \left\{
+                \begin{array}{@{}l@{}}
+                  \text{Vars} = \emptyset \\
+                  \text{TypeVars} = \emptyset
+                \end{array}
+              \right\}
+            }{4+2}{\tInt}
+            $}
+          \end{prooftree}$}
+        \UnaryInfCLab{T-Par}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \emptyset \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          }{(4+2)}{\tInt}
+        $}
+        \AxiomC{}
+        \UnaryInfCLab{T-Val-Int}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \emptyset \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          }{1}{\tInt}
+        $}
+        \BinaryInfCLab{T-Add}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \emptyset \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          \;}{\;
+            %\left(
+              \boxed{
+              \begin{array}{@{}l@{}}
+                (4+2)+1
+              \end{array}
+              }
+            %\right)
+          \;}{\;\tInt}
+        $}
+      \end{prooftree}
+    \end{array}
+\end{split}
+$$
