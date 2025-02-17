@@ -207,6 +207,7 @@ $2*3 < 2+5$ - possible ambiguities
 3. $((2*3)<2)+5$
 
 ## exercise 12
+### Substitution of a Variable in an Hygge0 Expression
 $$
 \begin{split}
 \begin{array}{rcl}
@@ -453,7 +454,7 @@ $$
 $$
 
 ## exercise 14
-
+### Structural Operational Semantics of Hygge0
 $$
 %\begin{split}
 \begin{array}{c}
@@ -1557,7 +1558,7 @@ $$ \begin{array}{c}
 $$
 $$ \begin{array}{c}
   \begin{prooftree}
-    \AxiomC{}
+    \AxiomC{$\Gamma \vdash e : T$}
     \UnaryInfCLab{T-Par}{$
       \hygTypeCheckJ{\Gamma}{\{ e \}}{\tUnit}
     $}
@@ -1633,3 +1634,5 @@ $$ \begin{array}{c}
   \end{prooftree}
 \end{array}
 $$
+## exercise 18
+[Module 2: The Hygge0 Language Specification — 02247 Compiler Construction — Spring 2025](https://courses.compute.dtu.dk/02247/f25/hygge0-spec.html#hygge0-spec-exercise-34)

@@ -4,33 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "56f79b2be36ae2f4",
+        "id": "14b71c6600b5fb80",
         "type": "tabs",
-        "dimension": 54.83425414364641,
         "children": [
           {
-            "id": "f468f0251910910d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CompilerConstruction/Module 2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Module 2"
-            }
-          }
-        ]
-      },
-      {
-        "id": "d806353816796fc9",
-        "type": "tabs",
-        "dimension": 45.16574585635359,
-        "children": [
-          {
-            "id": "ff202c6680a9cf2e",
+            "id": "e60c0fd73f8d91d6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -199,10 +177,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f4ed663714496120",
+  "active": "e60c0fd73f8d91d6",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2025-02-17 18.50.57.excalidraw.md",
     "CompilerConstruction/Module 2.md",
+    "Excalidraw/Drawing 2025-02-17 18.50.57.excalidraw.md",
     "Excalidraw/attachments/Pasted Image 20250217185112_205.png",
     "Excalidraw/attachments",
     "CompilerConstruction/Untitled.canvas",
