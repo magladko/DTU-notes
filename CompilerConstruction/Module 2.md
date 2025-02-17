@@ -960,7 +960,7 @@ $$
       \begin{prooftree}
         \AxiomC{$
           \begin{prooftree}
-            \AxiomC{}
+            \AxiomC{$4 \text{ is an integer value}$}
             \UnaryInfCLab{T-Val-Int}{$
               \hygTypeCheckJ{
                 \left\{
@@ -971,7 +971,7 @@ $$
                 \right\}
               }{4}{\tInt}
             $}
-            \AxiomC{}
+            \AxiomC{$2 \text{ is an integer value}$}
             \UnaryInfCLab{T-Val-Int}{$
               \hygTypeCheckJ{
                 \left\{
@@ -1003,7 +1003,7 @@ $$
             \right\}
           }{(4+2)}{\tInt}
         $}
-        \AxiomC{}
+        \AxiomC{$1 \text{ is an integer value}$}
         \UnaryInfCLab{T-Val-Int}{$
           \hygTypeCheckJ{
             \left\{
@@ -1044,9 +1044,141 @@ $$
 $$
 
 $$
+\begin{split}
+    \begin{array}{c}
+      \begin{prooftree}
+        \AxiomC{$\text{true} \in \{ \text{true}, \text{false} \}$}
+        \UnaryInfCLab{T-Val-Bool}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \emptyset \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          }{\text{true}}{\tBool}
+        $}
+        \AxiomC{$\text{"Hello" is a string value}$}
+        \UnaryInfCLab{T-Val-String}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \emptyset \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          }{\text{"Hello"}}{\tString}
+        $}
+        \AxiomC{$\text{"World" is a string value}$}
+        \UnaryInfCLab{T-Val-String}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \emptyset \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          }{\text{"World"}}{\tString}
+        $}
+        \TrinaryInfCLab{T-Cond}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \emptyset \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          \;}{\;
+            %\left(
+              \boxed{
+              \begin{array}{@{}l@{}}
+                \hygCond{\text{true}}{\text{"Hello"}}{\text{"World"}}
+              \end{array}
+              }
+            %\right)
+          \;}{\;\tString}
+        $}
+      \end{prooftree}
+    \end{array}
+\end{split}
+$$
+
+
+$$
 \hygTypeCheckJ{
  \left\{\text{Vars} = \{x \mapsto \tInt\};\; \text{TypeVars} = \emptyset\right\}
 \;}{\;(x + 2) + 1\;}{\;\tInt}
+$$
+> [!note] skipped parenthesis in analysis for simplicity
+
+$$
+\begin{split}
+    \begin{array}{c}
+      \begin{prooftree}
+        \AxiomC{$\envField{\Gamma}{Vars}(x) = T$}
+        \UnaryInfCLab{T-Var}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \{ x \mapsto \tInt \} \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          }{x}{\tInt}
+        $}
+        \AxiomC{$2 \text{ is an integer value}$}
+        \UnaryInfCLab{T-Val-Int}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \{ x \mapsto \tInt \} \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          }{2}{\tInt}
+        $}
+        \BinaryInfCLab{T-Add}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \{ x \mapsto \tInt \} \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          }{x+2}{\tInt}
+        $}
+        \AxiomC{$1 \text{ is an integer value}$}
+        \UnaryInfCLab{T-Val-Int}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \{ x \mapsto \tInt \} \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          }{1}{\tInt}
+        $}
+        \BinaryInfCLab{T-Add}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \{ x \mapsto \tInt \} \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          \;}{\;
+            %\left(
+              \boxed{
+              \begin{array}{@{}l@{}}
+                (x+2) + 1
+              \end{array}
+              }
+            %\right)
+          \;}{\;\tInt}
+        $}
+      \end{prooftree}
+    \end{array}
+\end{split}
 $$
 
 $$
@@ -1056,8 +1188,216 @@ $$
 $$
 
 $$
+\begin{split}
+    \begin{array}{c}
+      \begin{prooftree}
+        \AxiomC{}
+        \UnaryInfCLab{TRes-Int}{$
+          \hygTypeResJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \emptyset \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          }{\text{"int"}}{\tInt}
+        $}
+        \AxiomC{$42 \text{ is an integer value}$}
+        \UnaryInfCLab{T-Val-Int}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \emptyset \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          }{42}{\tInt}
+        $}
+        \AxiomC{$\dots$}
+        \UnaryInfCLab{T-Add}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \{ x \mapsto \tInt \} \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          }{(x+2)+1}{\tInt}
+        $}
+        \TrinaryInfCLab{T-Let-T}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \emptyset \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          \;}{\;
+            %\left(
+              \boxed{
+              \begin{array}{@{}l@{}}
+                \hygLetInit{x}{\tInt}{42} \\
+                (x+2)+1
+              \end{array}
+              }
+            %\right)
+          \;}{\;\tInt}
+        $}
+      \end{prooftree}
+    \end{array}
+\end{split}
+$$
+
+$$
 \hygTypeCheckJ{
  \left\{\text{Vars} = \emptyset;\; \text{TypeVars} = \emptyset\right\}
 \,}{\,\hygLet{x}{\tInt}{2 + 1}{\,\hygPrint{x + 2}};\, \hygStr{Bye!}\,}{\,\tString}
+$$
+
+$$
+\begin{split}
+    \begin{array}{c}
+      \begin{prooftree}
+        \AxiomC{}
+        \UnaryInfCLab{TRes-Int}{$
+          \hygTypeResJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \emptyset \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          }{\text{"int"}}{\tInt}
+        $}
+        \AxiomC{$2 \text{ is an integer value}$}
+        \UnaryInfCLab{T-Val-Int}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \emptyset \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          }{2}{\tInt}
+        $}
+        \AxiomC{$1 \text{ is an integer value}$}
+        \UnaryInfCLab{T-Val-Int}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \emptyset \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          }{1}{\tInt}
+        $}
+        \BinaryInfCLab{T-Add}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \emptyset \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          }{2+1}{\tInt}
+        $}
+        \AxiomC{$\tInt \in \{ \tBool, \tInt, \tFloat, \tString \}$}
+        \AxiomC{$\Gamma \vdash x : \tInt$}
+        \UnaryInfCLab{T-Var}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \{ x \mapsto \tInt \} \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          }{x}{\tInt}
+        $}
+        \AxiomC{$2 \text{ is an integer value}$}
+        \UnaryInfCLab{T-Val-Int}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \{ x \mapsto \tInt \} \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          }{2}{\tInt}
+        $}
+        \BinaryInfCLab{T-Add}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \{ x \mapsto \tInt \} \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          }{\;
+              x+2
+          }{\tInt}
+        $}
+        \BinaryInfCLab{T-Print}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \{ x \mapsto \tInt \} \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          }{\;
+              \hygPrint{x+2}
+          }{\tUnit}
+        $}
+        \AxiomC{!!!}
+        \UnaryInfCLab{???}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \{ x \mapsto \tInt \} \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          }{\;
+              \text{"Bye!"}
+          }{\tString}
+        $}
+        \BinaryInfCLab{T-Seq}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \{ x \mapsto \tInt \} \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          }{\;
+            \begin{array}{@{}l@{}}
+              \hygPrint{x+2}; \\
+              \text{"Bye!"}
+            \end{array}
+          }{\tString}
+        $}
+        \TrinaryInfCLab{T-Let-T}{$
+          \hygTypeCheckJ{
+            \left\{
+              \begin{array}{@{}l@{}}
+                \text{Vars} = \emptyset \\
+                \text{TypeVars} = \emptyset
+              \end{array}
+            \right\}
+          \;}{\;
+            %\left(
+              \boxed{
+              \begin{array}{@{}l@{}}
+                \hygLetInit{x}{\tInt}{2+1} \\
+                \hygPrint{x+2};  \\
+                \text{"Bye!"}
+              \end{array}
+              }
+            %\right)
+          \;}{\;\tString}
+        $}
+      \end{prooftree}
+    \end{array}
+\end{split}
 $$
 
