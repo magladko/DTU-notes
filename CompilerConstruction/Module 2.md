@@ -1348,8 +1348,8 @@ $$
               \hygPrint{x+2}
           }{\tUnit}
         $}
-        \AxiomC{!!!}
-        \UnaryInfCLab{???}{$
+        \AxiomC{"Bye!" is as string value}
+        \UnaryInfCLab{T-Val-String}{$
           \hygTypeCheckJ{
             \left\{
               \begin{array}{@{}l@{}}
@@ -1401,3 +1401,5 @@ $$
 \end{split}
 $$
 
+
+## exercise 1
