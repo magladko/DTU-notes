@@ -1036,3 +1036,28 @@ $$
     \end{array}
 \end{split}
 $$
+
+$$
+\hygTypeCheckJ{
+ \left\{\text{Vars} = \emptyset;\; \text{TypeVars} = \emptyset\right\}
+\;}{\;\hygCond{\hygTrue}{\hygStr{Hello}}{\hygStr{World}}\;}{\;\tString}
+$$
+
+$$
+\hygTypeCheckJ{
+ \left\{\text{Vars} = \{x \mapsto \tInt\};\; \text{TypeVars} = \emptyset\right\}
+\;}{\;(x + 2) + 1\;}{\;\tInt}
+$$
+
+$$
+\hygTypeCheckJ{
+ \left\{\text{Vars} = \emptyset;\; \text{TypeVars} = \emptyset\right\}
+\;}{\;\hygLet{x}{\tInt}{42}{\;(x + 2) + 1}\;}{\;\tInt}
+$$
+
+$$
+\hygTypeCheckJ{
+ \left\{\text{Vars} = \emptyset;\; \text{TypeVars} = \emptyset\right\}
+\,}{\,\hygLet{x}{\tInt}{2 + 1}{\,\hygPrint{x + 2}};\, \hygStr{Bye!}\,}{\,\tString}
+$$
+
