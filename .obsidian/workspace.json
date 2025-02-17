@@ -42,21 +42,8 @@
               "icon": "lucide-file",
               "title": "Module 2"
             }
-          },
-          {
-            "id": "9215b88c0930eb70",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2025-02-17 18.50.57.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-02-17 18.50.57.excalidraw"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -212,7 +199,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f468f0251910910d",
+  "active": "f4ed663714496120",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2025-02-17 18.50.57.excalidraw.md",
     "CompilerConstruction/Module 2.md",

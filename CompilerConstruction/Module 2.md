@@ -1417,6 +1417,8 @@ Answer: **The multiplication operation only supports numbers - not strings (dedu
 
 ## exercise 17
 
+### Type System of Hygge0
+
 $$
 \begin{array}{c}
   \begin{prooftree}
