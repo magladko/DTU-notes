@@ -6,6 +6,7 @@
       {
         "id": "5166247841f7bb15",
         "type": "tabs",
+        "dimension": 69.77225672877847,
         "children": [
           {
             "id": "a4df1fa921656687",
@@ -26,6 +27,7 @@
       {
         "id": "56f79b2be36ae2f4",
         "type": "tabs",
+        "dimension": 30.22774327122153,
         "children": [
           {
             "id": "f468f0251910910d",
@@ -73,7 +75,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "pattern",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,8 +100,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -198,7 +199,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f468f0251910910d",
+  "active": "a4df1fa921656687",
   "lastOpenFiles": [
     "CompilerConstruction/Untitled.canvas",
     "CompilerConstruction/Module 2.md",
