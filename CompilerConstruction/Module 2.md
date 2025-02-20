@@ -1560,7 +1560,7 @@ $$ \begin{array}{c}
   \begin{prooftree}
     \AxiomC{$\Gamma \vdash e : T$}
     \UnaryInfCLab{T-Par}{$
-      \hygTypeCheckJ{\Gamma}{\{ e \}}{\tUnit}
+      \hygTypeCheckJ{\Gamma}{\{ e \}}{T}
     $}
   \end{prooftree}
 \end{array}
