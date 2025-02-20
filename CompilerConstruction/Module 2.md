@@ -1586,7 +1586,7 @@ $$
 $$ \begin{array}{c}
   \begin{prooftree}
     \AxiomC{$\hygTypeCheckJ{\Gamma}{e}{\tBool}$}
-    \UnaryInfCLab{T-Neg}{$
+    \UnaryInfCLab{T-Not}{$
       \hygTypeCheckJ{\Gamma}{\text{not } e}{\tBool}
     $}
   \end{prooftree}
