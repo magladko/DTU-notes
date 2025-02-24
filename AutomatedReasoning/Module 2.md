@@ -34,9 +34,9 @@ theorem NegNeg: ‹⊩ Neg (Neg p) # z› if ‹⊩ p # z›
 ```
 
 There are a few functions in the definition of the sequent calculus. 
-- `member` which ensures that some element is a member of a list. 
-- `inst` essentially instantiates a variable into a function in some formula, 
-- `news` ensures that the function is not previously seen anywhere else in a sequent. 
-- `subt` ensures that the some variable was substituted in the sequent. 
+- `member` - ensures that some element is a member of a list
+- `inst` - instantiates a variable into a function in some formula
+- `news` ensures that the function is not previously seen anywhere else in a sequent
+- `subt` ensures that the some variable was substituted in the sequent
 
 There is more to these functions than it seems at first, in particular to what variables are substituted, so the full definitions of these functions can be found in MainProof.thy (to navigate quickly to a definition, search the rule with “:” at the end).
