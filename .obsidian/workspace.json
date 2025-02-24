@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ComputerVision/Lecture 3.md",
+                "file": "AutomatedReasoning/Module 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 3"
+              "title": "Module 2"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"  \\\\\\\\\\\"",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -179,8 +179,12 @@
   },
   "active": "cda5d171a4e6b884",
   "lastOpenFiles": [
-    "DistributedRTSystems/Lecture 3.md",
+    "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf",
+    "AutomatedReasoning/Module 2.md",
+    "AutomatedReasoning/Module 1.md",
+    "AutomatedReasoning/assignments/Assignment2.pdf",
     "ComputerVision/Lecture 3.md",
+    "DistributedRTSystems/Lecture 3.md",
     "DistributedRTSystems/w2a-scheduling.pdf",
     "DistributedRTSystems/Lecture 2.md",
     "CompilerConstruction/Module 2.md",
@@ -191,8 +195,6 @@
     "AutomatedReasoning/MiniCalc/#Example2.thy#",
     "AutomatedReasoning/MiniCalc/Example2.thy",
     "AutomatedReasoning/MiniCalc/Example1.thy",
-    "AutomatedReasoning/MiniCalc/#Example.thy#",
-    "AutomatedReasoning/MiniCalc/Example.thy",
     "Excalidraw/Drawing 2025-02-17 18.50.57.excalidraw.md",
     "Excalidraw/attachments/Pasted Image 20250217185112_205.png",
     "CompilerConstruction/Untitled.canvas",
@@ -203,13 +205,11 @@
     "DistributedRTSystems/1. Intro.md",
     "Excalidraw/Drawing 2025-02-14 08.34.45.excalidraw.md",
     "Excalidraw/w2a-scheduling.excalidraw.md",
-    "AutomatedReasoning/Module 2.md",
     "CompilerConstruction/Latex def.md",
     "1st semester/Program Verification/EXAM NOTES/2. Overview.md",
     "CompilerConstruction/attachments/Module 2 2025-02-13 11.31.15.excalidraw.md",
     "CompilerConstruction/attachments/riscv_fp_register_table.png",
     "attachments/CC_exercise10.md",
-    "AutomatedReasoning/Module 1.md",
     "ComputerVision/Intro.md",
     "CompilerConstruction/attachments/RV32I_instruction_set_table.png",
     "1st semester/Program Verification/EXAM NOTES/12. Concurrency.md",
@@ -219,7 +219,6 @@
     "1st semester/Program Verification/EXAM NOTES/7. Loops.md",
     "1st semester/Program Verification/EXAM NOTES/6. Methods.md",
     "1st semester/Program Verification/EXAM NOTES/5. Encoding Verification Problems.md",
-    "1st semester/Program Verification/EXAM NOTES/4. Building an Automated Verifier.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "Untitled 2.canvas",
