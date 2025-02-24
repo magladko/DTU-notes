@@ -39,4 +39,4 @@ There are a few functions in the definition of the sequent calculus.
 - `news` ensures that the function is not previously seen anywhere else in a sequent
 - `subt` ensures that the some variable was substituted in the sequent
 
-There is more to these functions than it seems at first, in particular to what variables are substituted, so the full definitions of these functions can be found in MainProof.thy (to navigate quickly to a definition, search the rule with “:” at the end).
+There is more to these functions than it seems at first, in particular to what variables are substituted, so the full definitions of these functions can be found in `MainProof.thy` (to navigate quickly to a definition, search the rule with “:” at the end).

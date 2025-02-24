@@ -20,30 +20,6 @@
               "icon": "lucide-file",
               "title": "Module 2"
             }
-          },
-          {
-            "id": "9aa0f56282ca5498",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "AutomatedReasoning/assignments/Assignment2.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Assignment2"
-            }
-          },
-          {
-            "id": "2b51227781b45f6a",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "MiniCalc_Tutorial"
-            }
           }
         ]
       }
@@ -204,22 +180,23 @@
   },
   "active": "cda5d171a4e6b884",
   "lastOpenFiles": [
-    "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf",
-    "AutomatedReasoning/Module 2.md",
+    "AutomatedReasoning/prog-prove.pdf",
     "AutomatedReasoning/assignments/Assignment2.pdf",
+    "AutomatedReasoning/assignments/Assignment2_2.thy~",
+    "AutomatedReasoning/assignments/Assignment2_2.thy",
+    "AutomatedReasoning/MiniCalc/Assignment2_1.thy~",
+    "AutomatedReasoning/MiniCalc/Assignment2_1.thy",
+    "AutomatedReasoning/assignments/#Assignment2.thy#",
+    "AutomatedReasoning/src/#Exercise2_5.thy#",
+    "AutomatedReasoning/src/#Exercise2_2.thy#",
+    "AutomatedReasoning/assignments/Assignment2.thy",
+    "AutomatedReasoning/MiniCalc/Assignment2MiniCalc.thy~",
+    "AutomatedReasoning/Module 2.md",
     "AutomatedReasoning/Module 1.md",
     "ComputerVision/Lecture 3.md",
     "DistributedRTSystems/Lecture 3.md",
-    "DistributedRTSystems/w2a-scheduling.pdf",
     "DistributedRTSystems/Lecture 2.md",
     "CompilerConstruction/Module 2.md",
-    "AutomatedReasoning/MiniCalc/#Exercises03.thy#",
-    "AutomatedReasoning/MiniCalc/Exercises03.thy",
-    "AutomatedReasoning/MiniCalc/Example3.thy",
-    "AutomatedReasoning/MiniCalc/#Untitled-1#",
-    "AutomatedReasoning/MiniCalc/#Example2.thy#",
-    "AutomatedReasoning/MiniCalc/Example2.thy",
-    "AutomatedReasoning/MiniCalc/Example1.thy",
     "Excalidraw/Drawing 2025-02-17 18.50.57.excalidraw.md",
     "Excalidraw/attachments/Pasted Image 20250217185112_205.png",
     "CompilerConstruction/Untitled.canvas",
