@@ -1,6 +1,10 @@
 **Essential matrix (E)** - world coords
 $$
-p_{2}^T E p_{1} = 0
+\begin{align}
+p_{2}^T E p_{1} = 0 \\
+E = [t]_{\times}R \\
+n \text{ (normal) } = t \times (R p_{1} + t) = t \times (Rp_{1}) = Ep_{1}
+\end{align}
 $$
 
 **Fundamental matrix (F)** - image coords

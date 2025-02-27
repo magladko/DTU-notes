@@ -1,4 +1,4 @@
-theory Assignment2 imports Main begin
+theory Assignment2_2 imports Main begin
 
 (* Exercise 2.8 *)
 
