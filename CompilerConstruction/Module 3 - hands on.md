@@ -43,9 +43,21 @@ using API from `RISCV.fs`
 3. `Typechecker.fs`
 4. `Interpreter.fs` / `RISCVCodegen.fs`
 ---
-1. Add new operator in the `Lexer.fsl`
-2. Register new token in `Parser.fsy`
-3. Write tests in `tests/lexer/`
-4. Create an expression in `Parser.fsy` (modify the closest)
-5. Add new `Expr` type to `AST.fs` (modify the closest)
-6. 
+1. **LEXER**
+	1. Add new operator in the `Lexer.fsl`
+	2. Register new token in `Parser.fsy`
+	3. Write tests in `tests/lexer/`
+2. **PARSER**
+	1. Create an expression in `Parser.fsy` (modify the closest)
+	2. Add new `Expr` type to `AST.fs` (modify the closest)
+	3. Create `tests/parser/` test cases
+	4. Adjust `PrettyPrinter.fs`
+3. **TYPE CHECKER**
+	1. Add type checker record in `Typechecker.fsy` (modify the closest)
+	2. Create `tests/typechecker/` test cases
+4. **INTERPRETER**
+	1. Adjust `Interpreter.fs` + `ASTUtil.fs`
+	2. Create `tests/interpreter/` test cases
+5. **CODE GENERATION**
+	1. Adjust `RISCVCodegen.fs` records
+	2. Create `tests/codegen/` test cases
