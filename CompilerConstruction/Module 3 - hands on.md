@@ -15,7 +15,7 @@ Add (1:1-1:6)
 ┗╾rhs: Var x (1:6-1:6)
 ```
 
-### Type checking - untyped AST -> AST
+### Type checking - untyped AST -> AST (Typechecker.fs)
 
 ```
 Add (1:1-1:6)
@@ -32,3 +32,6 @@ Add (1:1-1:6)
        ┗╾Type: int
 ```
 
+### RISCV codegen (RISCVCodegen.fs)
+
+using API from `RISCV.fs`
