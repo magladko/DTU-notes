@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -177,7 +178,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f4ed663714496120",
+  "active": "aff36af618c016ff",
   "lastOpenFiles": [
     "CompilerConstruction/attachments/hyggec_compiler_phases.png",
     "DistributedRTSystems/Lecture 4.md",
