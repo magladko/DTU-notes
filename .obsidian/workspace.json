@@ -4,12 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "e1126251b55b5cac",
+        "id": "7211fec6aad02d00",
         "type": "tabs",
         "children": [
           {
-            "id": "aff36af618c016ff",
+            "id": "e9ef0b6bbdc0a4b6",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -17,6 +18,7 @@
                 "mode": "source",
                 "source": false
               },
+              "pinned": true,
               "icon": "lucide-file",
               "title": "Module 3 - hands on"
             }
@@ -178,11 +180,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "aff36af618c016ff",
+  "active": "e9ef0b6bbdc0a4b6",
   "lastOpenFiles": [
+    "CompilerConstruction/attachments/hyggec_compiler_phases_interpreter.png",
     "CompilerConstruction/attachments/hyggec_compiler_phases.png",
-    "DistributedRTSystems/Lecture 4.md",
     "CompilerConstruction/Module 3 - hands on.md",
+    "DistributedRTSystems/Lecture 4.md",
     "DistributedRTSystems/Lecture 3.md",
     "DistributedRTSystems/Lecture 2.md",
     "DistributedRTSystems/w2a-scheduling.pdf",
@@ -228,8 +231,6 @@
     "1st semester/Program Verification/EXAM NOTES/attachments/characterization of wp.png",
     "1st semester/Program Verification/EXAM NOTES/attachments/theorem wp.png",
     "1st semester/Program Verification/EXAM NOTES/attachments/wp example 2.png",
-    "1st semester/Program Verification/EXAM NOTES/attachments/weakest precondition example.png",
-    "1st semester/Program Verification/EXAM NOTES/attachments/weakest precondition def.png",
     "1st semester/Applied AI for entrepreneurs/Lecture 1/Project 1.canvas"
   ]
 }

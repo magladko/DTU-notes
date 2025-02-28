@@ -3,5 +3,6 @@
   "newFileLocation": "current",
   "readableLineLength": false,
   "propertiesInDocument": "visible",
-  "attachmentFolderPath": "./attachments"
+  "attachmentFolderPath": "./attachments",
+  "promptDelete": false
 }
