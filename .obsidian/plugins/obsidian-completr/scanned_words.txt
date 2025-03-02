@@ -6071,6 +6071,7 @@ PbA
 PaY
 Parsing
 Parser
+PARSER
 that
 the
 to
@@ -7313,6 +7314,8 @@ tFB
 taY
 tvvbY
 tokenize
+tests
+test
 always
 as
 array
@@ -12618,6 +12621,8 @@ Thc
 TDk
 TZs
 TxD
+Typechecker
+TYPE
 determine
 does
 defined
@@ -20565,6 +20570,7 @@ IrKIl
 IKpD
 ITNM
 IFy
+INTERPRETER
 Specifications
 Suffers
 Strengths
@@ -25739,6 +25745,8 @@ csiL
 cctI
 ctX
 cCg
+codegen
+closest
 runs
 returns
 requires
@@ -27006,6 +27014,8 @@ rQTTDuu
 rGY
 rOj
 rBkkkq
+record
+records
 of
 original
 ordering
@@ -34574,6 +34584,7 @@ Gvwwc
 GVi
 GVt
 Gki
+GENERATION
 bugs
 behavior
 be
@@ -39644,6 +39655,7 @@ uwg
 uvD
 uuuTWW
 udemV
+untyped
 Model
 More
 May
@@ -42526,6 +42538,7 @@ ACA
 ABfZ
 Awk
 AST
+Adjust
 Can
 CompCert
 Course
@@ -43943,6 +43956,8 @@ CKLib
 CPzS
 CPI
 Cen
+CHECKER
+CODE
 handle
 high
 hints
@@ -46610,6 +46625,9 @@ RZc
 RJJKKQJQUUE
 RRo
 RQi
+RISCV
+RISCVCodegen
+Register
 years
 your
 you
@@ -50218,6 +50236,7 @@ LNNv
 Lnd
 Lexing
 Lexer
+LEXER
 justify
 jd
 jt
