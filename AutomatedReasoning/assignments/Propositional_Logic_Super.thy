@@ -140,6 +140,8 @@ proof -
     by force
 qed
 
+abbreviation Neg (\<open>\<sim>\<close>) where \<open>\<sim> p \<equiv> p \<rightarrow> \<bottom>\<close>
+
 proposition \<open>I \<Turnstile> \<sim> p = (\<not> I \<Turnstile> p)\<close> 
   by simp 
 

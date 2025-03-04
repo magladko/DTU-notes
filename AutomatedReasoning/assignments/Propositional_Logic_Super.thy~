@@ -3,21 +3,21 @@ theory Propositional_Logic_Super imports Main begin
 datatype form =
   Falsity (\<open>\<bottom>\<close>) |
   Pro nat (\<open>\<cdot>\<close>) |
-  Neg form (\<open>\<sim>\<close>) |
+  (* Neg form (\<open>\<sim>\<close>) | *)
   Imp form form (infixr \<open>\<rightarrow>\<close> 100)
 
 primrec semantics (infix \<open>\<Turnstile>\<close> 50) where
   \<open>I \<Turnstile> \<bottom> = False\<close> |
   \<open>I \<Turnstile> \<cdot>n = I n\<close> |
-  \<open>I \<Turnstile> \<sim> p = (\<not> I \<Turnstile> p)\<close> |
+  (* \<open>I \<Turnstile> \<sim> p = (\<not> I \<Turnstile> p)\<close> | *)
   \<open>I \<Turnstile> p \<rightarrow> q = (I \<Turnstile> p \<longrightarrow> I \<Turnstile> q)\<close>
 
 abbreviation sc (\<open>\<lbrakk>_\<rbrakk>\<close>) where \<open>\<lbrakk>I\<rbrakk> X Y \<equiv> (\<forall>p \<in> set X. I \<Turnstile> p) \<longrightarrow> (\<exists>q \<in> set Y. I \<Turnstile> q)\<close>
 
 inductive SC (infix \<open>\<then>\<close> 50) where
   Fls_L: \<open>\<bottom> # _ \<then> _\<close> |
-  Neg_L: \<open>\<sim> p # X \<then> Y\<close> if \<open>X \<then> p # Y\<close> |
-  Neg_R: \<open>X \<then> \<sim> p # Y\<close> if \<open>p # X \<then> Y\<close> |
+  (* Neg_L: \<open>\<sim> p # X \<then> Y\<close> if \<open>X \<then> p # Y\<close> | *)
+  (* Neg_R: \<open>X \<then> \<sim> p # Y\<close> if \<open>p # X \<then> Y\<close> | *)
   Imp_L: \<open>p \<rightarrow> q # X \<then> Y\<close> if \<open>X \<then> p # Y\<close> and \<open>q # X \<then> Y\<close> |
   Imp_R: \<open>X \<then> p \<rightarrow> q # Y\<close> if \<open>p # X \<then> q # Y\<close> |
   Set_L: \<open>X' \<then> Y\<close> if \<open>X \<then> Y\<close> and \<open>set X' = set X\<close> |
@@ -27,8 +27,8 @@ inductive SC (infix \<open>\<then>\<close> 50) where
 function mp where
   \<open>mp _ _ (\<bottom> # _) [] = True\<close> |
   \<open>mp A B C (\<bottom> # D) = mp A B C D\<close> |
-  \<open>mp A B (\<sim> p # C) [] = mp A B C [p]\<close> |
-  \<open>mp A B C (\<sim> p # D) = mp A B (p # C) D\<close> |
+  (* \<open>mp A B (\<sim> p # C) [] = mp A B C [p]\<close> | *)
+  (* \<open>mp A B C (\<sim> p # D) = mp A B (p # C) D\<close> | *)
   \<open>mp A B (p \<rightarrow> q # C) [] = (mp A B C [p] \<and> mp A B (q # C) [])\<close> |
   \<open>mp A B C (p \<rightarrow> q # D) = mp A B (p # C) (q # D)\<close> |
   \<open>mp A B [] [] = (set A \<inter> set B \<noteq> {})\<close> |
@@ -50,10 +50,11 @@ theorem prover_correct: \<open>\<turnstile> p \<longleftrightarrow> (\<forall>I.
 export_code \<turnstile> in SML
 
 lemma MP: \<open>mp A B C D \<Longrightarrow> set X \<supseteq> set (map \<cdot> A @ C) \<Longrightarrow> set Y \<supseteq> set (map \<cdot> B @ D) \<Longrightarrow> X \<then> Y\<close>
-proof (induct A B C D arbitrary: X Y rule: mp.induct[case_names Fls_L Fls_R Neg_L Neg_R Imp_L Imp_R Basic])
+proof (induct A B C D arbitrary: X Y rule: mp.induct[case_names Fls_L Fls_R (* Neg_L Neg_R *) Imp_L Imp_R Basic])
   case Fls_L
   then show ?case
     using SC.Fls_L Set_L by fastforce
+(*
 next
   case (Neg_L A B p C)
   have \<open>set (map \<cdot> A @ C) \<subseteq> set X\<close> \<open>set (map \<cdot> B) \<subseteq> set (p # Y)\<close>
@@ -70,6 +71,7 @@ next
     using Neg_R(1,2) SC.Neg_R by simp
   then show ?case
     using Neg_R(4) Set_R by fastforce
+*)
 next
   case (Imp_L A B p q C)
   have \<open>set (map \<cdot> A @ C) \<subseteq> set X\<close> \<open>set (map \<cdot> B) \<subseteq> set Y\<close>
@@ -137,5 +139,23 @@ proof -
   with Basic show ?thesis
     by force
 qed
+
+proposition \<open>I \<Turnstile> \<sim> p = (\<not> I \<Turnstile> p)\<close> 
+  by simp 
+
+lemma *: \<open>(\<forall>I. \<lbrakk>I\<rbrakk> X Y) \<longleftrightarrow> (\<forall>I. \<lbrakk>I\<rbrakk> X (\<bottom> # Y))\<close> 
+  by simp 
+
+lemma Fls_R: \<open>X \<then> p # Y\<close> if \<open>X \<then> Y\<close> 
+  using that * OK list.set_intros 
+  by meson 
+
+lemma Neg_L: \<open>\<sim> p # X \<then> Y\<close> if \<open>X \<then> p # Y\<close> 
+  using that Fls_L Imp_L 
+  by simp
+
+lemma Neg_R: \<open>X \<then> \<sim> p # Y\<close> if \<open>p # X \<then> Y\<close> 
+  using that Fls_R Imp_R 
+  by simp
 
 end

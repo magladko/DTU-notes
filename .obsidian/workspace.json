@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "AutomatedReasoning/prog-prove.pdf"
+                "file": "AutomatedReasoning/assignments/Exercises04.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "prog-prove"
+              "title": "Exercises04"
             }
           }
         ]
@@ -76,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -178,6 +177,7 @@
   },
   "active": "c6a83dfeacdf46da",
   "lastOpenFiles": [
+    "AutomatedReasoning/prog-prove.pdf",
     "AutomatedReasoning/src/#Exercise3_1.thy#",
     "AutomatedReasoning/src/Exercise3_1.thy",
     "AutomatedReasoning/src/#Exercise2_9.thy#",
@@ -188,7 +188,6 @@
     "AutomatedReasoning/src/Exercise2_7.thy",
     "AutomatedReasoning/src/#Exercise2_6.thy#",
     "AutomatedReasoning/src/Exercise2_6.thy",
-    "AutomatedReasoning/prog-prove.pdf",
     "AutomatedReasoning/Module 2.md",
     "AutomatedReasoning/Module 1.md",
     "CompilerConstruction/Module 3 - hands on.md",
