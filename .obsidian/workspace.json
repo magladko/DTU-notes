@@ -4,23 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "7211fec6aad02d00",
+        "id": "9c6d687a3ec1019d",
         "type": "tabs",
         "children": [
           {
-            "id": "e9ef0b6bbdc0a4b6",
+            "id": "c6a83dfeacdf46da",
             "type": "leaf",
-            "pinned": true,
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "CompilerConstruction/Module 3 - hands on.md",
-                "mode": "source",
-                "source": false
+                "file": "AutomatedReasoning/prog-prove.pdf"
               },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "Module 3 - hands on"
+              "icon": "lucide-file-text",
+              "title": "prog-prove"
             }
           }
         ]
@@ -80,7 +76,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -179,28 +176,29 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e9ef0b6bbdc0a4b6",
+  "active": "c6a83dfeacdf46da",
   "lastOpenFiles": [
+    "AutomatedReasoning/src/#Exercise3_1.thy#",
+    "AutomatedReasoning/src/Exercise3_1.thy",
+    "AutomatedReasoning/src/#Exercise2_9.thy#",
+    "AutomatedReasoning/src/Exercise2_9.thy",
+    "AutomatedReasoning/src/#Exercise2_8.thy#",
+    "AutomatedReasoning/src/Exercise2_8.thy",
+    "AutomatedReasoning/src/#Exercise2_7.thy#",
+    "AutomatedReasoning/src/Exercise2_7.thy",
+    "AutomatedReasoning/src/#Exercise2_6.thy#",
+    "AutomatedReasoning/src/Exercise2_6.thy",
+    "AutomatedReasoning/prog-prove.pdf",
+    "AutomatedReasoning/Module 2.md",
+    "AutomatedReasoning/Module 1.md",
+    "CompilerConstruction/Module 3 - hands on.md",
     "CompilerConstruction/attachments/hyggec_compiler_phases_interpreter.png",
     "CompilerConstruction/attachments/hyggec_compiler_phases.png",
-    "CompilerConstruction/Module 3 - hands on.md",
     "DistributedRTSystems/Lecture 4.md",
     "DistributedRTSystems/Lecture 3.md",
     "DistributedRTSystems/Lecture 2.md",
-    "DistributedRTSystems/w2a-scheduling.pdf",
     "DistributedRTSystems/1. Intro.md",
     "ComputerVision/Lecture 3.md",
-    "AutomatedReasoning/assignments/Exercises04.pdf",
-    "AutomatedReasoning/assignments/#Propositional_Logic_Super.thy#",
-    "AutomatedReasoning/assignments/Propositional_Logic_Super.thy~",
-    "AutomatedReasoning/assignments/Assignment2.pdf",
-    "AutomatedReasoning/assignments/Propositional_Logic_Super.thy",
-    "AutomatedReasoning/prog-prove.pdf",
-    "AutomatedReasoning/assignments/#Assignment2_2.thy#",
-    "AutomatedReasoning/TutorialFunctionalProgrammer.pdf",
-    "AutomatedReasoning/TutorialFunctionalProgrammer.pdf.crdownload",
-    "AutomatedReasoning/Module 2.md",
-    "AutomatedReasoning/Module 1.md",
     "CompilerConstruction/Module 2.md",
     "Excalidraw/Drawing 2025-02-17 18.50.57.excalidraw.md",
     "Excalidraw/attachments/Pasted Image 20250217185112_205.png",
