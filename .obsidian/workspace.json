@@ -4,19 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "9c6d687a3ec1019d",
+        "id": "533f82c2e8242fa6",
         "type": "tabs",
         "children": [
           {
-            "id": "c6a83dfeacdf46da",
+            "id": "02011e4b1f0b01c8",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "AutomatedReasoning/assignments/Exercises04.pdf"
+                "file": "AutomatedReasoning/prog-prove.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Exercises04"
+              "title": "prog-prove"
             }
           }
         ]
@@ -175,22 +175,26 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c6a83dfeacdf46da",
+  "active": "02011e4b1f0b01c8",
   "lastOpenFiles": [
-    "AutomatedReasoning/prog-prove.pdf",
-    "AutomatedReasoning/src/#Exercise3_1.thy#",
-    "AutomatedReasoning/src/Exercise3_1.thy",
-    "AutomatedReasoning/src/#Exercise2_9.thy#",
-    "AutomatedReasoning/src/Exercise2_9.thy",
-    "AutomatedReasoning/src/#Exercise2_8.thy#",
-    "AutomatedReasoning/src/Exercise2_8.thy",
-    "AutomatedReasoning/src/#Exercise2_7.thy#",
-    "AutomatedReasoning/src/Exercise2_7.thy",
-    "AutomatedReasoning/src/#Exercise2_6.thy#",
-    "AutomatedReasoning/src/Exercise2_6.thy",
+    "AutomatedReasoning/TutorialFunctionalProgrammer.pdf",
+    "CompilerConstruction/Module 3 - hands on.md",
+    "AutomatedReasoning/module5/#Pure_I_Exercises.thy#",
+    "AutomatedReasoning/module5/Pure_I.thy~",
+    "AutomatedReasoning/module5/#Pure_I.thy#",
+    "AutomatedReasoning/module5/Pure_I_Exercises.thy~",
+    "AutomatedReasoning/module5/Pure_I.thy",
+    "AutomatedReasoning/module5/Pure_I_Examples.thy",
+    "AutomatedReasoning/module5/Pure_I_Exercises.thy",
+    "AutomatedReasoning/module5/Pure_I_Verbose.thy",
+    "AutomatedReasoning/module5",
+    "CompilerConstruction/Module 2.md",
+    "CompilerConstruction/Module 5.md",
+    "CompilerConstruction/Module 1 - Intro to RISC-V.md",
+    "CompilerConstruction/Latex def.md",
+    "AutomatedReasoning/assignments/Exercises04.pdf",
     "AutomatedReasoning/Module 2.md",
     "AutomatedReasoning/Module 1.md",
-    "CompilerConstruction/Module 3 - hands on.md",
     "CompilerConstruction/attachments/hyggec_compiler_phases_interpreter.png",
     "CompilerConstruction/attachments/hyggec_compiler_phases.png",
     "DistributedRTSystems/Lecture 4.md",
@@ -198,17 +202,14 @@
     "DistributedRTSystems/Lecture 2.md",
     "DistributedRTSystems/1. Intro.md",
     "ComputerVision/Lecture 3.md",
-    "CompilerConstruction/Module 2.md",
     "Excalidraw/Drawing 2025-02-17 18.50.57.excalidraw.md",
     "Excalidraw/attachments/Pasted Image 20250217185112_205.png",
     "CompilerConstruction/Untitled.canvas",
     "CompilerConstruction/attachments/CC_exercise10.excalidraw.md",
     "Excalidraw/Drawing 2025-02-14 08.44.21.excalidraw.md",
     "Excalidraw/Drawing 2025-02-14 08.44.21.excalidraw.png",
-    "CompilerConstruction/Module 1 - Intro to RISC-V.md",
     "Excalidraw/Drawing 2025-02-14 08.34.45.excalidraw.md",
     "Excalidraw/w2a-scheduling.excalidraw.md",
-    "CompilerConstruction/Latex def.md",
     "1st semester/Program Verification/EXAM NOTES/2. Overview.md",
     "CompilerConstruction/attachments/Module 2 2025-02-13 11.31.15.excalidraw.md",
     "CompilerConstruction/attachments/riscv_fp_register_table.png",
@@ -219,7 +220,6 @@
     "1st semester/Program Verification/EXAM NOTES/13. Front-end Verifiers & Outlook.md",
     "1st semester/Program Verification/EXAM NOTES/9. Heaps and Objects.md",
     "1st semester/Program Verification/EXAM NOTES/8. Verification Pragmatics.md",
-    "1st semester/Program Verification/EXAM NOTES/7. Loops.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "Untitled 2.canvas",

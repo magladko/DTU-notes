@@ -1,0 +1,18 @@
+theory Pure_I_Exercises imports Pure_I begin
+
+(* Solutions must be entered directly in this file by replacing the "oops" with a proper proof *)
+
+(* The crucial test: Please change Pure_I to Main and uncomment the following notation command *)
+
+(* notation False (\<open>\<bottom>\<close>) and True (\<open>\<top>\<close>) *)
+
+proposition \<open>p \<and> q \<longrightarrow> q\<close>
+  oops
+
+proposition \<open>p \<longrightarrow> q \<longrightarrow> p\<close>
+  oops
+
+proposition \<open>(p \<longrightarrow> q \<longrightarrow> r) \<longrightarrow> (p \<longrightarrow> q) \<longrightarrow> p \<longrightarrow> r\<close>
+  oops
+
+end
