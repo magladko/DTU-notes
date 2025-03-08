@@ -10,16 +10,31 @@
           {
             "id": "02011e4b1f0b01c8",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "pdf",
               "state": {
-                "file": "AutomatedReasoning/prog-prove.pdf"
+                "file": "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf"
+              },
+              "pinned": true,
+              "icon": "lucide-file-text",
+              "title": "MiniCalc_Tutorial"
+            }
+          },
+          {
+            "id": "24f4438c5794cbf2",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "AutomatedReasoning/assignments/Assignment3.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "prog-prove"
+              "title": "Assignment3"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -175,25 +190,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "02011e4b1f0b01c8",
+  "active": "24f4438c5794cbf2",
   "lastOpenFiles": [
+    "AutomatedReasoning/assignments/Assignment3_minicalc.thy~",
+    "AutomatedReasoning/assignments/Assignment3_minicalc.thy",
+    "AutomatedReasoning/assignments/Assignment2.pdf",
     "AutomatedReasoning/assignments/Assignment3.pdf",
-    "AutomatedReasoning/src/#Exercise3_2.thy#",
-    "AutomatedReasoning/src/Exercise3_2.thy",
-    "AutomatedReasoning/TutorialFunctionalProgrammer.pdf",
+    "AutomatedReasoning/MiniCalc/Assignment3_minicalc.thy~",
+    "AutomatedReasoning/MiniCalc/Assignment3_minicalc.thy",
+    "AutomatedReasoning/MiniCalc/#Assignment4_minicalc.thy#",
+    "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf",
+    "AutomatedReasoning/assignments/Exercises04.pdf",
+    "AutomatedReasoning/MiniCalc/Assignment4_minicalc.thy",
+    "AutomatedReasoning/Module 2.md",
+    "AutomatedReasoning/prog-prove.pdf",
     "CompilerConstruction/Module 3 - hands on.md",
-    "AutomatedReasoning/module5/#Pure_I_Exercises.thy#",
-    "AutomatedReasoning/module5/Pure_I.thy~",
-    "AutomatedReasoning/module5/#Pure_I.thy#",
-    "AutomatedReasoning/module5/Pure_I_Exercises.thy~",
-    "AutomatedReasoning/module5/Pure_I.thy",
-    "AutomatedReasoning/module5/Pure_I_Examples.thy",
-    "AutomatedReasoning/module5/Pure_I_Exercises.thy",
     "CompilerConstruction/Module 2.md",
     "CompilerConstruction/Module 5.md",
     "CompilerConstruction/Module 1 - Intro to RISC-V.md",
     "CompilerConstruction/Latex def.md",
-    "AutomatedReasoning/Module 2.md",
     "AutomatedReasoning/Module 1.md",
     "CompilerConstruction/attachments/hyggec_compiler_phases_interpreter.png",
     "CompilerConstruction/attachments/hyggec_compiler_phases.png",
