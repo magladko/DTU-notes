@@ -38,7 +38,7 @@ fun evalp :: "int list \<Rightarrow> int \<Rightarrow> int" where
 (* "simplify Var = Var" | *)
 (* "simplify (Const a) = Const a" | *)
 (* "simplify (Const a) = Const a" | *)
- 
+
 fun coeffs :: "exp \<Rightarrow> int list" where
 "coeffs Var = []" |
 "coeffs (Const a) = [a]" |
@@ -46,17 +46,6 @@ fun coeffs :: "exp \<Rightarrow> int list" where
 "coeffs (Add e1 e2) = []" |
 (* "coeffs (Mult (Const a) (Const b)) = coeffs (Const (a * b))" | *)
 "coeffs (Mult e1 e2) = []"
-
-(* Add (Const a0)
-       (Add (Mult (Const a1) Var) 
-            (Add (Mult (Const a2) (Mult Var Var)) 
-                 (Add (Mult (Const a3) (Mult (Mult Var Var) Var))
-                      (Add ...)))) *)
-
-value "eval (Add (Const 1)
-       (Add (Mult (Const 0) Var) 
-            (Add (Mult (Const 0) (Mult Var Var)) 
-                 ((Mult (Const 0) (Mult (Mult Var Var) Var)))))) 100::int"
 
 theorem coeffs_preserve: "evalp (coeffs e) x = eval e x"
   oops
