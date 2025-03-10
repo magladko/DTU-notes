@@ -24,11 +24,13 @@
           {
             "id": "24f4438c5794cbf2",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "pdf",
               "state": {
                 "file": "AutomatedReasoning/prog-prove.pdf"
               },
+              "pinned": true,
               "icon": "lucide-file-text",
               "title": "prog-prove"
             }
@@ -194,11 +196,11 @@
   "active": "24f4438c5794cbf2",
   "lastOpenFiles": [
     "AutomatedReasoning/assignments/#Assignment3_progprove.thy#",
+    "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf",
+    "AutomatedReasoning/prog-prove.pdf",
     "AutomatedReasoning/assignments/Assignment3_progprove.thy~",
     "AutomatedReasoning/assignments/Assignment3.pdf",
     "AutomatedReasoning/assignments/Assignment3_progprove.thy",
-    "AutomatedReasoning/prog-prove.pdf",
-    "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf",
     "AutomatedReasoning/module5/#Assignment3_Pure_I.thy#",
     "AutomatedReasoning/module5/Assignment3_Pure_I.thy",
     "AutomatedReasoning/assignments/Assignment3_Pure_I.thy",
