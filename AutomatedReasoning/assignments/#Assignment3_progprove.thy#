@@ -98,10 +98,11 @@ lemma star_trans: "star r x y \<Longrightarrow> star r y z \<Longrightarrow> sta
    apply(assumption)
   by(metis step)
 
-lemma start'_trans: "star' r x y \<Longrightarrow> star' r y z \<Longrightarrow> star' r x z"
+lemma star'_trans: "star' r x y \<Longrightarrow> star' r y z \<Longrightarrow> star' r x z"
   apply(induction rule: star'.induct)
    apply(assumption)
-  apply(auto)
+  
+  (*apply(auto)*)
 
   oops
   (*by(metis step)*)
