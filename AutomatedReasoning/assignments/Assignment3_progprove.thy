@@ -80,6 +80,8 @@ lemma sum: "evalp (coeffs_rec (Add e1 e2) (max (degree e1) (degree e2)) 0) x =
 
 theorem coeffs_preserve: "evalp (coeffs e) x = eval e x"
   apply(induction e arbitrary: x)
+  (*apply(simp_all)*)
+  (*apply(induction e rule: coeffs.induct)*)
      apply(auto)
   oops
 
