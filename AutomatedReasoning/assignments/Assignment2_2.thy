@@ -4,11 +4,13 @@ theory Assignment2_2 imports Main begin
 
 fun intersperse :: "'a \<Rightarrow> 'a list \<Rightarrow> 'a list" where
   "intersperse a [] = []" |
+  "intersperse a [b] = [b]" |
   "intersperse a (b # xs) = b # a # intersperse a xs"
 
 theorem map_intersperse_commute:
   "map f (intersperse a xs) = intersperse (f a) (map f xs)"
-  by (induction xs) auto
+  apply (induction xs rule: intersperse.induct)
+  by auto
 
 (* Exercise 2.9 *)
 
