@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "533f82c2e8242fa6",
+        "id": "4c047fbd264e2a68",
         "type": "tabs",
         "children": [
           {
-            "id": "02011e4b1f0b01c8",
+            "id": "ed7e7aaa593f56a0",
             "type": "leaf",
-            "pinned": true,
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf"
+                "file": "CompilerConstruction/Module 5.md",
+                "mode": "source",
+                "source": false
               },
-              "pinned": true,
-              "icon": "lucide-file-text",
-              "title": "MiniCalc_Tutorial"
-            }
-          },
-          {
-            "id": "24f4438c5794cbf2",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "AutomatedReasoning/prog-prove.pdf"
-              },
-              "pinned": true,
-              "icon": "lucide-file-text",
-              "title": "prog-prove"
+              "icon": "lucide-file",
+              "title": "Module 5"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -193,11 +177,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "24f4438c5794cbf2",
+  "active": "ed7e7aaa593f56a0",
   "lastOpenFiles": [
-    "AutomatedReasoning/assignments/#Assignment3_progprove.thy#",
-    "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf",
     "AutomatedReasoning/prog-prove.pdf",
+    "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf",
+    "AutomatedReasoning/assignments/#Assignment3_progprove.thy#",
     "AutomatedReasoning/assignments/Assignment3_progprove.thy~",
     "AutomatedReasoning/assignments/Assignment3.pdf",
     "AutomatedReasoning/assignments/Assignment3_progprove.thy",
