@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "Module 5"
             }
+          },
+          {
+            "id": "f0569a96cad4608f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CompilerConstruction/Module 6.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Module 6"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -177,8 +192,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ed7e7aaa593f56a0",
+  "active": "f0569a96cad4608f",
   "lastOpenFiles": [
+    "CompilerConstruction/Module 5.md",
+    "CompilerConstruction/Module 6.md",
     "AutomatedReasoning/prog-prove.pdf",
     "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf",
     "AutomatedReasoning/assignments/#Assignment3_progprove.thy#",
@@ -189,11 +206,9 @@
     "AutomatedReasoning/module5/Assignment3_Pure_I.thy",
     "AutomatedReasoning/assignments/Assignment3_Pure_I.thy",
     "AutomatedReasoning/assignments/Assignment3_minicalc.thy~",
-    "AutomatedReasoning/assignments/Assignment3_minicalc.thy",
     "AutomatedReasoning/Module 2.md",
     "CompilerConstruction/Module 3 - hands on.md",
     "CompilerConstruction/Module 2.md",
-    "CompilerConstruction/Module 5.md",
     "CompilerConstruction/Module 1 - Intro to RISC-V.md",
     "CompilerConstruction/Latex def.md",
     "AutomatedReasoning/Module 1.md",
