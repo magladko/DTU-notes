@@ -80,6 +80,8 @@ lemma sum: "evalp (coeffs_rec (Add e1 e2) (max (degree e1) (degree e2)) 0) x =
 
 theorem coeffs_preserve: "evalp (coeffs e) x = eval e x"
   apply(induction e arbitrary: x)
+  (*apply(simp_all)*)
+  (*apply(induction e rule: coeffs.induct)*)
      apply(auto)
   oops
 
@@ -96,29 +98,53 @@ step': "star' r x y \<Longrightarrow> r y z \<Longrightarrow> star' r x z"
 lemma star_trans: "star r x y \<Longrightarrow> star r y z \<Longrightarrow> star r x z"
   apply(induction rule: star.induct)
    apply(assumption)
-  by(metis step)
-
-(*
-\<And>x y za.       r x y \<Longrightarrow>  star  r y za                   \<Longrightarrow> (star  r za z  \<Longrightarrow> star r y z) \<Longrightarrow> star  r za z \<Longrightarrow> star  r x z
-\<And>x y za. star' r x y \<Longrightarrow> (star' r y z  \<Longrightarrow>  star' r x z) \<Longrightarrow>        r y  za                 \<Longrightarrow> star' r za z \<Longrightarrow> star' r x z
-*)
+  apply(metis step)
+  done
 
 lemma star'_trans: "star' r x y \<Longrightarrow> star' r y z \<Longrightarrow> star' r x z"
   apply(induction rule: star'.induct)
    apply(assumption)
+
+
+  apply(erule step')
+  try
+
+
+  (*apply(rule step')*)
+   (*apply(assumption)*)
+  (*apply(rule step')*)
+
+
+  (*apply(erule star_trans)*)
+  (*apply(assumption)*)
+
   
-  (*apply(auto)*)
+    (*apply(auto)*)
+
+ (*1. \<And>x y za. (star' r y z \<Longrightarrow> star' r x z) \<Longrightarrow> r y za \<Longrightarrow> star' r za z \<Longrightarrow> r y z*)
+  (*apply (metis step')*)
 
   oops
-  (*by(metis step)*)
 
 theorem star1: "star' r x y \<Longrightarrow> star r x y"
   apply(induction rule: star'.induct)
-  oops
+   apply(rule refl)
+  apply(erule star_trans)
+  apply(rule step)
+   apply(assumption)
+  by (rule refl)
 
 theorem star2: "star r x y \<Longrightarrow> star' r x y"
   apply(induction rule: star.induct)
+   apply(rule refl')
+  (*apply(simp)*)
   oops
+  (*apply(rule step')*)
+   (*apply(assumption)*)
+  (*apply(assumption)*)
+  (*oops*)
+  (*done*)
+
 
 (* Exercise 3.4 *)
 
