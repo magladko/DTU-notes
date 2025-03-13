@@ -31,96 +31,49 @@ fun evalp :: "int list \<Rightarrow> int \<Rightarrow> int" where
   "evalp [] x = 0" |
   "evalp (a # xs) x = a + x * evalp xs x"
 
-(* (f+g)' = f' + g' *)
-(* (f*g)' = f'*g + f*g' *)
-
-(*fun deriv :: "exp \<Rightarrow> exp" where
-  "deriv (Const _) = Const 0" |
-  "deriv Var = Const 1" |
-  "deriv (Add e1 e2) = Add (deriv e1) (deriv e2)" | 
-  "deriv (Mult e1 e2) = Add (Mult (deriv e1) e2) (Mult e1 (deriv e2))" 
-*)
-
-
-(*fun is_zero :: "exp \<Rightarrow> bool" where
-  "is_zero (Const r) = (r = 0)" |
-  "is_zero Var = False" |
-  "is_zero (Add e1 e2) = (is_zero e1 \<and> is_zero e2)" |
-  "is_zero (Mult e1 e2) = (is_zero e1 \<or> is_zero e2)"
-*)
-(*fun degree :: "exp \<Rightarrow> nat" where
-  "degree (Const _) = 0" |
-  "degree Var = 1" |
-  "degree (Add e1 e2) = max (degree e1) (degree e2)" |
-  "degree (Mult e1 e2) = (if is_zero e1 \<or> is_zero e2 then 0 else degree e1 + degree e2)"
-*)
-(* (expression, degree, counter) \<Rightarrow> coefficient list *)
-(*fun coeffs_rec :: "exp \<Rightarrow> nat \<Rightarrow> nat \<Rightarrow> int list" where
-  "coeffs_rec e 0 f = [(eval e 0) div fact f]" |
-  "coeffs_rec e d f = ((eval e 0) div (fact f)) # (coeffs_rec (deriv e) (d-1) (Suc f))"
-*)
-
-(*fun coeffs_rec :: "exp \<Rightarrow> nat \<Rightarrow> int list" where
-"coeffs_rec (Const _) _ = [0]" |
-"coeffs_rec e f = ((eval e 0) div (fact f)) # (coeffs_rec (deriv e) (Suc f))"
-*)
-
 fun addp :: "int list \<Rightarrow> int list \<Rightarrow> int list" where
-"addp xs [] = xs" |
-"addp [] ys = ys" |
-"addp (x # xs) (y # ys) = (x + y) # (addp xs ys)"
+  "addp xs [] = xs" |
+  "addp [] ys = ys" |
+  "addp (x # xs) (y # ys) = (x + y) # (addp xs ys)"
 
 fun multp :: "int list \<Rightarrow> int list \<Rightarrow> int list" where
 "multp [] _ = []" |
 "multp (x # xs) ys = addp (map (\<lambda>y. x * y) ys) (0 # multp xs ys)"
 
 fun coeffs :: "exp \<Rightarrow> int list" where
-  (*"coeffs e = map (\<lambda>i. (eval (iterate i deriv e) 0 div (fact i))) [0..<Suc (degree e)]"*)
-  (*"coeffs e = coeffs_rec e (degree e) 0"*)
-  (*"coeffs e = coeffs_rec e 0"*)
+
   "coeffs (Const c) = [c]" |
   "coeffs Var = [0, 1]" |
   "coeffs (Add e1 e2) = addp (coeffs e1) (coeffs e2)" |
   "coeffs (Mult e1 e2) = multp (coeffs e1) (coeffs e2)"
 
-
-(* test *)
-value "coeffs (Add (Const 1)
-       (Add (Mult (Const 2) Var) 
-            (Add (Mult (Const 3) (Mult Var Var)) 
-                 ((Mult (Const 4) (Mult (Mult Var Var) Var))))))"
-value "coeffs (Mult (Add (Mult Var (Const 2)) (Const 1)) (Const 2))"
-
 lemma add_evalp: "evalp (addp xs ys) x = evalp xs x + evalp ys x"
   apply(induction ys arbitrary: xs)
+   apply simp
+  apply(case_tac xs)
    apply simp_all
-   apply(case_tac xs)
-  apply simp
   by (simp add: algebra_simps)
 
-lemma mult_evalp: "evalp (multp xs ys) x = evalp xs x * evalp ys x"
-  (*apply (induction xs ys rule: multp.induct)*)
-  apply(induction ys arbitrary: xs)
+lemma evalp_map_mult: "evalp (map (\<lambda>y. a * y) ys) x = a * evalp ys x"
+  apply(induction ys)
    apply simp_all
-   apply(case_tac xs)
-  apply(auto)
-  
-  (*by (simp add: algebra_simps)*)
-(*  apply (induction xs ys rule: multp.induct)
-   apply simp
-  by (simp add: algebra_simps)*)
+  by (simp add: algebra_simps)
+
+lemma mult_evalp: "evalp (multp xs ys) x = evalp xs x * evalp ys x"  
+  apply(induction xs)
+   apply simp_all
+  apply(subst add_evalp)
+  apply simp
+  apply(subst evalp_map_mult)
+  by (simp add: algebra_simps)
 
 theorem coeffs_preserve: "evalp (coeffs e) x = eval e x"
   apply(induction e arbitrary: x)
      apply(auto)
   using add_evalp
-  apply presburger
-  (*apply(simp_all)*)
-  (*apply(induction e rule: coeffs.induct)*)
-  (*apply(simp add: algebra_simps)*)
-     (*apply(auto)*)
-  (*using sum*)
-  sorry
+   apply presburger
+  using mult_evalp
+  by simp
 
 section \<open>Exercise 3.3\<close>
 
