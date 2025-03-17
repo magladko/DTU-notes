@@ -1,0 +1,10 @@
+theory Exercise4_2 imports Main begin
+
+lemma "\<exists> ys zs. xs = ys @ zs \<and>
+      (length ys = length zs \<or> length ys = length zs + 1)"
+proof
+  
+qed
+  
+
+end

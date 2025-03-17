@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "88c847fada8dd92d",
+        "id": "73303d084650cdfe",
         "type": "tabs",
         "children": [
           {
-            "id": "c2c175eb31ff3893",
+            "id": "f6f55e49e3d13b5c",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -76,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -176,19 +175,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c2c175eb31ff3893",
+  "active": "f6f55e49e3d13b5c",
   "lastOpenFiles": [
+    "AutomatedReasoning/src/#Exercise4_1.thy#",
+    "AutomatedReasoning/src/#Exercise4_2.thy#",
+    "AutomatedReasoning/src/Exercise4_2.thy",
+    "AutomatedReasoning/src/Exercise4_1.thy",
+    "AutomatedReasoning/prog-prove.pdf",
     "AutomatedReasoning/assignments/#Assignment3_progprove.thy#",
     "AutomatedReasoning/assignments/assignment3_magazine.txt",
     "AutomatedReasoning/pure/#Pure_I_Exercises_Propositional.thy#",
     "AutomatedReasoning/pure/Pure_I_Exercises_Propositional.thy~",
     "AutomatedReasoning/pure/Pure_I_Special.thy",
     "AutomatedReasoning/pure/Pure_I_Exercises_Propositional.thy",
-    "AutomatedReasoning/pure/Pure_I_Examples_Propositional.thy",
-    "AutomatedReasoning/pure/Pure_I_Verbose.thy",
-    "AutomatedReasoning/pure/Pure_I_Experiments.thy",
-    "AutomatedReasoning/pure/Pure_I_Exercises_Solutions.thy",
-    "AutomatedReasoning/pure/Pure_I_Exercises.thy~",
     "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/LargeIcon.imageset/icon128.png",
     "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/AppIcon.appiconset/universal-icon-1024@1x.png",
     "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/AppIcon.appiconset/mac-icon-512@2x.png",
