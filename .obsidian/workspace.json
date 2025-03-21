@@ -10,16 +10,45 @@
           {
             "id": "f6f55e49e3d13b5c",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "pdf",
               "state": {
-                "file": "AutomatedReasoning/prog-prove.pdf"
+                "file": "AutomatedReasoning/assignments/Assignment4.pdf"
+              },
+              "pinned": true,
+              "icon": "lucide-file-text",
+              "title": "Assignment4"
+            }
+          },
+          {
+            "id": "2b526d043b0211e0",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf"
+              },
+              "pinned": true,
+              "icon": "lucide-file-text",
+              "title": "MiniCalc_Tutorial"
+            }
+          },
+          {
+            "id": "b4b5c3d7c879adc3",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "AutomatedReasoning/assignments/Assignment2.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "prog-prove"
+              "title": "Assignment2"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -175,19 +204,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f6f55e49e3d13b5c",
+  "active": "2b526d043b0211e0",
   "lastOpenFiles": [
+    "AutomatedReasoning/assignments/Assignment4.pdf",
+    "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf",
+    "AutomatedReasoning/assignments/Assignment2.pdf",
+    "AutomatedReasoning/MiniCalc/#Assignment4_minicalc.thy#",
+    "AutomatedReasoning/MiniCalc/Assignment4_minicalc.thy",
+    "AutomatedReasoning/assignments/Assignment3.pdf",
+    "AutomatedReasoning/assignments/Exercises04.pdf",
+    "AutomatedReasoning/prog-prove.pdf",
     "AutomatedReasoning/src/#Exercise4_2.thy#",
     "AutomatedReasoning/src/Exercise4_1.thy~",
     "AutomatedReasoning/hol/#Pure_HOL_Exercises.thy#",
-    "AutomatedReasoning/hol/Pure_HOL_Exercises.thy~",
-    "AutomatedReasoning/hol/Pure_HOL_Examples.thy~",
-    "AutomatedReasoning/hol/Pure_HOL.thy",
-    "AutomatedReasoning/hol/Pure_HOL_Exercises.thy",
-    "AutomatedReasoning/hol/Pure_HOL_Examples.thy",
-    "AutomatedReasoning/hol/Main_HOL.thy",
-    "AutomatedReasoning/hol",
-    "AutomatedReasoning/assignments/hol",
     "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/LargeIcon.imageset/icon128.png",
     "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/AppIcon.appiconset/universal-icon-1024@1x.png",
     "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/AppIcon.appiconset/mac-icon-512@2x.png",

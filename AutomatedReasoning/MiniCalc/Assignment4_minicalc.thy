@@ -1,4 +1,4 @@
-theory Assignment2_1 imports MiniCalc begin
+theory Assignment4_minicalc imports MiniCalc begin
 
 term \<open>((\<not> p) \<longrightarrow> p) \<longrightarrow> ((p \<longrightarrow> (\<not> p)) \<longrightarrow> q)\<close>
 
@@ -99,9 +99,94 @@ lemma \<open>\<tturnstile>
   ]
   \<close>
 proof -
-  from Imp_R show ?thesis
+  from Imp_R have ?thesis if \<open>\<tturnstile>
+    [
+      Neg (Uni (Pre 0 [Var 0])),
+      Con (Pre 0 [Fun 0 []]) (Pre 0 [Fun 1 [Fun 0 []]])
+    ]
+    \<close>
+    using that by simp
+  with Ext have ?thesis if \<open>\<tturnstile>
+    [
+      Con (Pre 0 [Fun 0 []]) (Pre 0 [Fun 1 [Fun 0 []]]),
+      Neg (Uni (Pre 0 [Var 0]))
+    ]
+    \<close>
+    using that by simp
+  with Con_R have ?thesis if \<open>\<tturnstile>
+    [
+      Pre 0 [Fun 0 []],
+      Neg (Uni (Pre 0 [Var 0]))
+    ]
+    \<close> and \<open>\<tturnstile>
+    [
+      Pre 0 [Fun 1 [Fun 0 []]],
+      Neg (Uni (Pre 0 [Var 0]))
+    ]
+    \<close>
+    using that by simp
+  with Ext have ?thesis if \<open>\<tturnstile>
+    [
+      Neg (Uni (Pre 0 [Var 0])),
+      Pre 0 [Fun 0 []]
+    ]
+    \<close> and \<open>\<tturnstile>
+    [
+      Pre 0 [Fun 1 [Fun 0 []]],
+      Neg (Uni (Pre 0 [Var 0]))
+    ]
+    \<close>
+    using that by simp
+  with Uni_L[where t=\<open>Fun 0 []\<close>] have ?thesis if \<open>\<tturnstile>
+    [
+      Neg (Pre 0 [Fun 0 []]),
+      Pre 0 [Fun 0 []]
+    ]
+    \<close> and \<open>\<tturnstile>
+    [
+      Pre 0 [Fun 1 [Fun 0 []]],
+      Neg (Uni (Pre 0 [Var 0]))
+    ]
+    \<close>
+    using that by simp
+  with Ext have ?thesis if \<open>\<tturnstile>
+    [
+      Pre 0 [Fun 0 []],
+      Neg (Pre 0 [Fun 0 []])
+    ]
+    \<close> and \<open>\<tturnstile>
+    [
+      Neg (Uni (Pre 0 [Var 0])),
+      Pre 0 [Fun 1 [Fun 0 []]]
+    ]
+    \<close>
+    using that by simp
+  with Basic have ?thesis if \<open>\<tturnstile>
+    [
+      Neg (Uni (Pre 0 [Var 0])),
+      Pre 0 [Fun 1 [Fun 0 []]]
+    ]
+    \<close>
+    using that by simp
+  with Uni_L[where t=\<open>Fun 1 [Fun 0 []]\<close>] have ?thesis if \<open>\<tturnstile>
+    [
+      Neg (Pre 0 [Fun 1 [Fun 0 []]]),
+      Pre 0 [Fun 1 [Fun 0 []]]
+    ]
+    \<close>
+    using that by simp
+  with Ext have ?thesis if \<open>\<tturnstile>
+    [
+      Pre 0 [Fun 1 [Fun 0 []]],
+      Neg (Pre 0 [Fun 1 [Fun 0 []]])
+    ]
+    \<close>
+    using that by simp
+  with Basic show ?thesis
     by simp
 qed
+
+section \<open>Formula 3\<close>
 
 (*
 
@@ -151,6 +236,45 @@ Imp (Uni p[0]) (Con p[a] p[f[a]])
 Imp_R
   Neg (Uni p[0])
   Con p[a] p[f[a]]
+Ext
+  Con p[a] p[f[a]]
+  Neg (Uni p[0])
+Con_R
+  p[a]
+  Neg (Uni p[0])
++
+  p[f[a]]
+  Neg (Uni p[0])
+Ext
+  Neg (Uni p[0])
+  p[a]
++
+  p[f[a]]
+  Neg (Uni p[0])
+Uni_L[a]
+  Neg p[a]
+  p[a]
++
+  p[f[a]]
+  Neg (Uni p[0])
+Ext
+  p[a]
+  Neg p[a]
++
+  Neg (Uni p[0])
+  p[f[a]]
+Basic
+  Neg (Uni p[0])
+  p[f[a]]
+Uni_L[f[a]]
+  Neg p[f[a]]
+  p[f[a]]
+Ext
+  p[f[a]]
+  Neg p[f[a]]
+Basic
+
+# "Formula 3"
 
 *)
 
