@@ -47,8 +47,7 @@
               "title": "Assignment2"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -204,12 +203,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2b526d043b0211e0",
+  "active": "f6f55e49e3d13b5c",
   "lastOpenFiles": [
-    "AutomatedReasoning/assignments/Assignment4.pdf",
     "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf",
-    "AutomatedReasoning/assignments/Assignment2.pdf",
     "AutomatedReasoning/MiniCalc/#Assignment4_minicalc.thy#",
+    "AutomatedReasoning/assignments/Assignment4.pdf",
+    "AutomatedReasoning/assignments/Assignment2.pdf",
     "AutomatedReasoning/MiniCalc/Assignment4_minicalc.thy",
     "AutomatedReasoning/assignments/Assignment3.pdf",
     "AutomatedReasoning/assignments/Exercises04.pdf",
