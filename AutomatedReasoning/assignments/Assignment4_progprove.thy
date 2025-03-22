@@ -17,9 +17,10 @@ lemma T_S: "T w \<Longrightarrow> S w"
   by (simp add: S_con S_wrap)
 
 lemma t_con: "T w1 \<Longrightarrow> T w2 \<Longrightarrow> T (w1 @ w2)"
+  (*apply(induction rule: T.induct)*)
   apply(induction w1 arbitrary: w2 rule: T.induct)
-   apply simp
-
+   apply simp_all
+  
   sorry
 
 lemma S_T: "S w \<Longrightarrow> T w"
