@@ -2,7 +2,7 @@ theory Assignment4_pureHOL imports Pure_HOL begin
 
 section "Formula 1"
 
-proposition "(\<not> p \<longrightarrow> p) \<longrightarrow> (p \<longrightarrow> \<not> p) \<longrightarrow> q"
+proposition \<open>(\<not> p \<longrightarrow> p) \<longrightarrow> (p \<longrightarrow> \<not> p) \<longrightarrow> q\<close>
 proof
   assume \<open>\<not> p \<longrightarrow> p\<close>
   show \<open>(p \<longrightarrow> \<not> p) \<longrightarrow> q\<close>
@@ -15,9 +15,9 @@ proof
         assume \<open>\<not> p\<close>
         with \<open>\<not> p \<longrightarrow> p\<close> show \<open>p\<close> ..
       qed
-      with \<open>p \<longrightarrow> \<not> p\<close> have "\<not> p" ..
-      from this and \<open>p\<close> have "\<bottom>" ..
-      thus "q" ..
+      with \<open>p \<longrightarrow> \<not> p\<close> have \<open>\<not> p\<close> ..
+      from this and \<open>p\<close> have \<open>\<bottom>\<close> ..
+      thus \<open>q\<close> ..
     qed
   qed
 qed

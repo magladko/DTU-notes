@@ -16,12 +16,10 @@ lemma T_S: "T w \<Longrightarrow> S w"
    apply(rule S.S_empty)
   by (simp add: S_con S_wrap)
 
-lemma t_con: "T w1 \<Longrightarrow> T w2 \<Longrightarrow> T (w1 @ w2)"
-  (*apply(induction rule: T.induct)*)
-  apply(induction w1 arbitrary: w2 rule: T.induct)
+lemma t_con: "T w2 \<Longrightarrow> T w1 \<Longrightarrow> T (w1 @ w2)"
+  apply(induction w2 arbitrary: w1 rule: T.induct)
    apply simp_all
-  
-  sorry
+  by (metis T_case append.left_neutral append_Cons append_assoc)
 
 lemma S_T: "S w \<Longrightarrow> T w"
   apply(induction rule: S.induct)
