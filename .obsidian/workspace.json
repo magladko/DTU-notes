@@ -53,10 +53,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "AutomatedReasoning/prog-prove.pdf"
+                "file": "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "prog-prove"
+              "title": "MiniCalc_Tutorial"
             }
           },
           {
@@ -231,6 +231,7 @@
   },
   "active": "30b61adc799d3d49",
   "lastOpenFiles": [
+    "AutomatedReasoning/prog-prove.pdf",
     "AutomatedReasoning/src/#Exercise4_5.thy#",
     "AutomatedReasoning/src/Exercise4_5.thy",
     "AutomatedReasoning/src/#Exercise4_3.thy#",
@@ -239,7 +240,6 @@
     "AutomatedReasoning/src/Exercise4_3.thy",
     "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf",
     "AutomatedReasoning/exam2024/#Exam_file_1_of_3.thy#",
-    "AutomatedReasoning/prog-prove.pdf",
     "AutomatedReasoning/pure_C/#Pure_C_Exercises.thy#",
     "AutomatedReasoning/assignments/Assignment2.pdf",
     "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/LargeIcon.imageset/icon128.png",
