@@ -4,75 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "73303d084650cdfe",
+        "id": "de8c38c84eb3199c",
         "type": "tabs",
         "children": [
           {
-            "id": "f6f55e49e3d13b5c",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "AutomatedReasoning/assignments/Assignment4.pdf"
-              },
-              "pinned": true,
-              "icon": "lucide-file-text",
-              "title": "Assignment4"
-            }
-          },
-          {
-            "id": "2b526d043b0211e0",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf"
-              },
-              "pinned": true,
-              "icon": "lucide-file-text",
-              "title": "MiniCalc_Tutorial"
-            }
-          },
-          {
-            "id": "b4b5c3d7c879adc3",
+            "id": "a4fef89be8841bb1",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "AutomatedReasoning/assignments/Assignment2.pdf"
+                "file": "DistributedRTSystems/Periodic resource model for compositional real-time guarantees--RTSS2003.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Assignment2"
-            }
-          },
-          {
-            "id": "30b61adc799d3d49",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "MiniCalc_Tutorial"
-            }
-          },
-          {
-            "id": "1e5c65acc64da252",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "MiniCalc_Tutorial"
+              "title": "Periodic resource model for compositional real-time guarantees--RTSS2003"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -129,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 377.5004348754883
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -229,19 +175,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "30b61adc799d3d49",
+  "active": "f4ed663714496120",
   "lastOpenFiles": [
+    "DistributedRTSystems/Hierarchical Scheduling--Handbook of Real-Time Computing 2022.corrected.pdf",
+    "DistributedRTSystems/General and Efficient Response Time Analysis for EDF Scheduling--DATE2014.pdf",
+    "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf",
+    "AutomatedReasoning/assignments/Assignment2.pdf",
+    "AutomatedReasoning/assignments/Assignment4.pdf",
     "AutomatedReasoning/prog-prove.pdf",
     "AutomatedReasoning/src/#Exercise4_5.thy#",
     "AutomatedReasoning/src/Exercise4_5.thy",
     "AutomatedReasoning/src/#Exercise4_3.thy#",
     "AutomatedReasoning/src/#Exercise4_4.thy#",
     "AutomatedReasoning/src/Exercise4_4.thy",
-    "AutomatedReasoning/src/Exercise4_3.thy",
-    "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf",
-    "AutomatedReasoning/exam2024/#Exam_file_1_of_3.thy#",
-    "AutomatedReasoning/pure_C/#Pure_C_Exercises.thy#",
-    "AutomatedReasoning/assignments/Assignment2.pdf",
     "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/LargeIcon.imageset/icon128.png",
     "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/AppIcon.appiconset/universal-icon-1024@1x.png",
     "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/AppIcon.appiconset/mac-icon-512@2x.png",
