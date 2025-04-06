@@ -1,27 +1,22 @@
-smart k m
-
-
-| k      | m        |
-| ------ | -------- |
-| 0      | 100      |
-| 1      | 100-1=99 |
-| 2      | 99-2=97  |
-| 3      | 97-3=94  |
-| 4      | 94-4=90  |
-| 5      | 85       |
-| 6      | 79       |
-| 7      | 72       |
-| 8      | 64       |
-| 9      | 55       |
-| 10     | 45       |
-| 11     | 34       |
-| 12     | 22       |
-| **13** | 9        |
-|        |          |
-
-
-
-| 0   | $\frac{((k+m)*(k+m+1))}{2}$ |
-| --- | --------------------------- |
-|     |                             |
-
+```
+  proof (*(rule Dis_I2)*)
+    (*assume ‹p ∧ q›*)
+    (*then have ‹q› ..*)
+    (*from ‹p ∧ q› have ‹p› ..*)
+    (*from ‹¬ (p ∧ q)› and ‹p ∧ q› have ‹⊥› ..*)
+    show ‹¬ q›
+    proof (rule Neg_I)
+      (*assume ‹p ∧ q›*)
+      assume ‹q›
+      show ‹⊥› sorry
+      (*proof
+        case 
+        show ‹⊥› sorry
+      next
+        assume ‹¬ p›
+        show ‹⊥› sorry
+      qed*)
+      (*from ‹¬ (p ∧ q)› and ‹p ∧ q› have ‹⊥› ..*)
+    qed
+  qed
+```

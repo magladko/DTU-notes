@@ -15,10 +15,6 @@ fun dummy :: \<open>nat \<Rightarrow> nat\<close>
 fun smart :: \<open>nat \<Rightarrow> nat \<Rightarrow> nat\<close>
   where \<open>smart k m = (if k \<ge> m then m else smart (Suc k) (m - Suc k))\<close>
 
-value "dummy 10"
-value "smart 0 10"
-value "smart 23 100"
-
 lemma \<open>smart 0 (dummy k + m) = smart k m\<close>
 proof (induct k arbitrary: m)
   case 0
