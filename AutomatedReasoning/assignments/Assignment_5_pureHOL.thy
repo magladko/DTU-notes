@@ -94,7 +94,18 @@ proof
   then show \<open>\<exists>x. r x \<and> r (f (f x))\<close>
   proof
     assume \<open>r c\<close>
-    show \<open>\<exists>x. r x \<and> r (f (f x))\<close> sorry
+    show \<open>\<exists>x. r x \<and> r (f (f x))\<close> 
+    proof
+      show \<open>r c \<and> r (f (f c))\<close>
+      proof
+        from \<open>r c\<close> show \<open>r c\<close> .
+      next
+        show \<open>r (f (f c))\<close> sorry
+        (*proof (rule ccontr)
+          
+        qed*)
+      qed
+    qed
   next
     assume \<open>\<not> r c\<close>
     show \<open>\<exists>x. r x \<and> r (f (f x))\<close> sorry
