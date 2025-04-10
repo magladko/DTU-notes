@@ -1,56 +1,27 @@
 theory Assignment_5_pureHOL imports Pure_HOL begin
 
-lemma "\<not> (p \<and> q) \<longleftrightarrow> \<not> p \<or> \<not> q"
+proposition \<open>\<not> (p \<and> q) \<longleftrightarrow> \<not> p \<or> \<not> q\<close>
 proof
   assume \<open>\<not> (p \<and> q)\<close>
   then have \<open>(p \<and> q) \<longrightarrow> \<bottom>\<close>  unfolding Neg_def .
   show \<open>\<not> p \<or> \<not> q\<close>
-  proof
-    show \<open>\<not> q\<close>
-    proof
-      assume \<open>q\<close>
-      (*from \<open>(p \<and> q) \<longrightarrow> \<bottom>\<close> and \<open>q\<close> have \<open>p \<longrightarrow> \<bottom>\<close> ..*)
-      (*from \<open>\<not> (p \<and> q)\<close> and \<open>q\<close> have \<open>\<not> p\<close> unfolding Neg_def*)
-      
-      
-      show \<open>\<bottom>\<close> sorry
-      (*proof (rule Neg_E)
-        show \<open>\<not> p\<close>
-        proof
-          assume \<open>p\<close>
-          from \<open>p\<close> and \<open>q\<close> have \<open>p \<and> q\<close> ..
-          from \<open>\<not> (p \<and> q)\<close> and \<open>p \<and> q\<close> show \<open>\<bottom>\<close> ..
-        qed
-      next
-        show \<open>p\<close>
-        proof (rule Con_E1)
-          show \<open>p \<and> q\<close> sorry
-        qed
-      qed*)
+  proof (rule ccontr)
+    assume \<open>\<not> (\<not> p \<or> \<not> q)\<close>
+    have \<open>p\<close>
+    proof (rule ccontr)
+      assume \<open>\<not> p\<close>
+      then have \<open>\<not> p \<or> \<not> q\<close> ..
+      from  \<open>\<not> (\<not> p \<or> \<not> q)\<close> and this show \<open>\<bottom>\<close> ..
     qed
-    (*proof (rule Neg_E)
-      show \<open>\<not> p\<close>
-      proof
-        assume \<open>p\<close>
-      qed
-    next
-      show \<open>p\<close> sorry
-    qed*)
+    have \<open>q\<close>
+    proof (rule ccontr)
+      assume \<open>\<not> q\<close>
+      then have \<open>\<not> p \<or> \<not> q\<close> ..
+      from  \<open>\<not> (\<not> p \<or> \<not> q)\<close> and this show \<open>\<bottom>\<close> ..
+    qed
+    from \<open>p\<close> and \<open>q\<close> have \<open>p \<and> q\<close> ..
+    from \<open>\<not> (p \<and> q)\<close> and this show \<open>\<bottom>\<close> ..
   qed
-  (*proof (rule Neg_E)*)
-    (*assume \<open>p\<close>*)
-    (*show \<open>\<not> p\<close>*)
-    (*proof*)
-      (*assume \<open>p\<close>*)
-      
-    (*qed*)
-  (*next*)
-    (*show \<open>p\<close> sorry*)
-  (*next*)
-    (*assume \<open>\<not> p\<close>*)
-    (*from \<open>\<not> p\<close> have \<open>\<not> p \<or> \<not> q\<close> ..*)
-    (*then show \<open>\<not> p \<or> \<not> q\<close> .*)
-  (*qed*)
 next
   assume \<open>\<not> p \<or> \<not> q\<close>
   show \<open>\<not> (p \<and> q)\<close>
@@ -58,12 +29,52 @@ next
     assume \<open>p \<and> q\<close>
     then have \<open>p\<close> ..
     from \<open>p \<and> q\<close> have \<open>q\<close> ..
-    (*from \<open>p\<close> have \<open>\<not> \<not> p\<close> .. (rule not_not)*)
-    show \<open>\<bottom>\<close> sorry
+    from \<open>\<not> p \<or> \<not> q\<close> show \<open>\<bottom>\<close>
+    proof
+      assume \<open>\<not> p\<close>
+      from this and \<open>p\<close> show \<open>\<bottom>\<close> ..
+    next
+      assume \<open>\<not> q\<close>
+      from this and \<open>q\<close> show \<open>\<bottom>\<close> ..
+    qed
   qed
 qed
 
-lemma "(\<forall>x. p x) \<longrightarrow> (\<exists>x. p x)"
+proposition \<open>\<not> (p \<or> q) \<longleftrightarrow> \<not> p \<and> \<not> q\<close>
+proof
+  assume \<open>\<not> (p \<or> q)\<close>
+  have \<open>\<not> p\<close>
+  proof
+    assume \<open>p\<close>
+    then have \<open>p \<or> q\<close> ..
+    from \<open>\<not> (p \<or> q)\<close> and this show \<open>\<bottom>\<close> ..
+  qed
+  have \<open>\<not> q\<close>
+  proof
+    assume \<open>q\<close>
+    then have \<open>p \<or> q\<close> ..
+    from \<open>\<not> (p \<or> q)\<close> and this show \<open>\<bottom>\<close> ..
+  qed
+  from \<open>\<not> p\<close> and \<open>\<not> q\<close> show \<open>\<not> p \<and> \<not> q\<close> ..
+next
+  assume \<open>\<not> p \<and> \<not> q\<close>
+  then have \<open>\<not> p\<close> ..
+  from \<open>\<not> p \<and> \<not> q\<close> have \<open>\<not> q\<close> ..
+  show \<open>\<not> (p \<or> q)\<close>
+  proof
+    assume \<open>p \<or> q\<close>
+    then show \<open>\<bottom>\<close>
+    proof
+      assume \<open>p\<close>
+      from \<open>\<not> p\<close> and this show \<open>\<bottom>\<close> ..
+    next
+      assume \<open>q\<close>
+      from \<open>\<not> q\<close> and this show \<open>\<bottom>\<close> ..
+    qed
+  qed
+qed
+
+proposition \<open>(\<forall>x. p x) \<longrightarrow> (\<exists>x. p x)\<close>
 proof
   assume \<open>\<forall>x. p x\<close>
   show \<open>\<exists>x. p x\<close>
@@ -76,11 +87,17 @@ qed
 lemma "(\<forall>x. \<not> r x \<longrightarrow> r (f x)) \<longrightarrow> (\<exists>x. r x \<and> r (f (f x)))"
 proof
   assume \<open>\<forall>x. \<not> r x \<longrightarrow> r (f x)\<close>
-  show \<open>\<exists>x. r x \<and> r (f (f x))\<close>
+  have *: \<open>r x \<Longrightarrow> \<not> r (f x) \<Longrightarrow> (\<exists>x. r x \<and> r (f (f x)))\<close> for x
+    sorry
+  fix c
+  have \<open>r c \<or> \<not> r c\<close> by (rule LEM)
+  then show \<open>\<exists>x. r x \<and> r (f (f x))\<close>
   proof
-    fix c
-    from \<open>\<forall>x. \<not> r x \<longrightarrow> r (f x)\<close> have \<open>\<not> r c \<longrightarrow> r (f c)\<close> ..
-    show \<open>r c \<and> r (f (f c))\<close> sorry
+    assume \<open>r c\<close>
+    show \<open>\<exists>x. r x \<and> r (f (f x))\<close> sorry
+  next
+    assume \<open>\<not> r c\<close>
+    show \<open>\<exists>x. r x \<and> r (f (f x))\<close> sorry
   qed
 qed
 
