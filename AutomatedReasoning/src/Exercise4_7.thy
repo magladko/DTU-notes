@@ -39,6 +39,11 @@ section \<open>4.7\<close>
 (* define recursive fn - check
 induction on assumption
  *)
+fun balanced :: "nat \<Rightarrow> alpha list \<Rightarrow> bool" where
+"balanced 0 [] = False"
 
+
+lemma "balanced n w = S (replicate n a @ w )"
+  sorry
 
 end
