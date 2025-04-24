@@ -31,7 +31,7 @@ next
     by (metis diff_add_inverse le_imp_less_Suc not_add_less1 smart.simps)
   then have \<open>smart 0 (dummy k + Suc k + m) = smart (Suc k) m\<close>
     using add.assoc by metis
-  with \<open>dummy (Suc k) = dummy k + Suc k\<close> show ?case try
+  with \<open>dummy (Suc k) = dummy k + Suc k\<close> show ?case
     by argo
 qed
 

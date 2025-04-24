@@ -31,8 +31,8 @@ next
     by (metis diff_add_inverse le_imp_less_Suc not_add_less1 smart.simps)
   then have \<open>smart 0 (dummy k + Suc k + m) = smart (Suc k) m\<close>
     using add.assoc by metis
-  with \<open>dummy (Suc k) = dummy k + Suc k\<close> show ?case try
-    by argo
+  with \<open>dummy (Suc k) = dummy k + Suc k\<close> show ?case
+    by metis
 qed
 
 
@@ -49,7 +49,7 @@ proof (induct x)
   then show ?case
     by auto
 next
-  case (Cons a)
+  case (Cons a x)
   then show ?case
   proof cases
     assume \<open>p a\<close>

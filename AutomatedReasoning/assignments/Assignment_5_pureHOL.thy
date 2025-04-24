@@ -86,29 +86,54 @@ qed
 
 lemma "(\<forall>x. \<not> r x \<longrightarrow> r (f x)) \<longrightarrow> (\<exists>x. r x \<and> r (f (f x)))"
 proof
-  assume \<open>\<forall>x. \<not> r x \<longrightarrow> r (f x)\<close>
+  assume 1: \<open>\<forall>x. \<not> r x \<longrightarrow> r (f x)\<close>
   have *: \<open>r x \<Longrightarrow> \<not> r (f x) \<Longrightarrow> (\<exists>x. r x \<and> r (f (f x)))\<close> for x
-    sorry
-  fix c
-  have \<open>r c \<or> \<not> r c\<close> by (rule LEM)
+  proof
+    assume \<open>r x\<close> and \<open>\<not> r (f x)\<close>
+    show \<open>r x \<and> r (f (f x))\<close>
+    proof
+      from \<open>r x\<close> show \<open>r x\<close> .
+    next
+      from \<open>\<forall>x. \<not> r x \<longrightarrow> r (f x)\<close> have \<open>\<not> r (f x) \<longrightarrow> r (f (f x))\<close> ..
+      from \<open>\<not> r (f x) \<longrightarrow> r (f (f x))\<close> and \<open>\<not> r (f x)\<close> show \<open>r (f (f x))\<close> ..
+    qed
+  qed
+  fix c 
+  have \<open>\<exists>x. r x\<close>
+  proof -
+    have \<open>r c \<or> \<not> r c\<close> by (rule LEM)
+    then show \<open>\<exists>x. r x\<close>
+    proof
+      assume \<open>r c\<close>
+      then show ?thesis ..
+    next
+      assume \<open>\<not> r c\<close>
+      from 1 have \<open>\<not> r c \<longrightarrow> r (f c)\<close> ..
+      from this and \<open>\<not> r c\<close> have \<open>r (f c)\<close> ..
+      then show ?thesis ..
+    qed
+  qed
+  from \<open>\<exists>x. r x\<close> obtain x where \<open>r x\<close> ..
+  have \<open>r (f x) \<or> \<not> r (f x)\<close> by (rule LEM)
   then show \<open>\<exists>x. r x \<and> r (f (f x))\<close>
   proof
-    assume \<open>r c\<close>
-    show \<open>\<exists>x. r x \<and> r (f (f x))\<close> 
+    assume \<open>r (f x)\<close>
+    have \<open>r (f (f x)) \<or> \<not> r (f (f x))\<close> by (rule LEM)
+    then show \<open>\<exists>x. r x \<and> r (f (f x))\<close>
     proof
-      show \<open>r c \<and> r (f (f c))\<close>
-      proof
-        from \<open>r c\<close> show \<open>r c\<close> .
-      next
-        show \<open>r (f (f c))\<close> sorry
-        (*proof (rule ccontr)
-          
-        qed*)
-      qed
+      assume \<open>r (f (f x))\<close>
+      from \<open>r x\<close> and this have \<open>r x \<and> r (f (f x))\<close> ..
+      then show ?thesis ..
+    next
+      assume \<open>\<not> r (f (f x))\<close>
+      from 1 have \<open>\<not> r (f (f x)) \<longrightarrow> r (f (f (f x)))\<close> ..
+      from this and \<open>\<not> r (f (f x))\<close> have \<open>r (f (f (f x)))\<close> ..
+      from \<open>r (f x)\<close> and this have \<open>r (f x) \<and> r (f (f (f x)))\<close> ..
+      then show ?thesis ..
     qed
   next
-    assume \<open>\<not> r c\<close>
-    show \<open>\<exists>x. r x \<and> r (f (f x))\<close> sorry
+    assume \<open>\<not> r (f x)\<close>
+    from * and \<open>r x\<close> and this show \<open>\<exists>x. r x \<and> r (f (f x))\<close> .
   qed
 qed
 
