@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b35de40560421a46",
+        "id": "6c465d6bcd5f3249",
         "type": "tabs",
         "children": [
           {
-            "id": "d015ebfa4df82fc6",
+            "id": "29ad9908e4e77331",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -175,21 +175,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d015ebfa4df82fc6",
+  "active": "29ad9908e4e77331",
   "lastOpenFiles": [
+    "AutomatedReasoning/assignments/#Assignment_5_progprov.thy#",
+    "AutomatedReasoning/assignments/Assignment_5_progprov.thy~",
+    "AutomatedReasoning/assignments/#Assignment_5.thy#",
+    "DistributedRTSystems/Hierarchical Scheduling--Handbook of Real-Time Computing 2022.corrected.pdf",
+    "DistributedRTSystems/General and Efficient Response Time Analysis for EDF Scheduling--DATE2014.pdf",
+    "AutomatedReasoning/assignments/Assignment5.pdf",
     "AutomatedReasoning/assignments/#Assignment_5_pureHOL.thy#",
     "AutomatedReasoning/prog-prove.pdf",
-    "AutomatedReasoning/assignments/Assignment5.pdf",
     "AutomatedReasoning/src/Exercise4_5.thy~",
     "AutomatedReasoning/pure_HOL/#Pure_HOL_Important.thy#",
     "AutomatedReasoning/pure_HOL/Pure_HOL_Important.thy~",
-    "AutomatedReasoning/pure_HOL/Pure_HOL_Important.thy",
-    "AutomatedReasoning/assignments/#Assignment_5_progprov.thy#",
-    "AutomatedReasoning/assignments/Assignment_5_progprov.thy",
     "AutomatedReasoning/assignment notes.md",
     "AutomatedReasoning/Module 1.md",
-    "AutomatedReasoning/assignments/#Assignment_5.thy#",
-    "AutomatedReasoning/pure_HOL/Pure_HOL.thy~",
     "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/LargeIcon.imageset/icon128.png",
     "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/AppIcon.appiconset/universal-icon-1024@1x.png",
     "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/AppIcon.appiconset/mac-icon-512@2x.png",
