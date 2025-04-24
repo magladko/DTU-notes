@@ -27,7 +27,7 @@ proof
   qed
 qed
 
-(*
+(* also works, but first is better
 lemma assumes a: "ev n" shows "\<not> ev (Suc (Suc (Suc 0)))"
   using assms
 proof cases

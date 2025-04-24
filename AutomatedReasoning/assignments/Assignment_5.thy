@@ -32,7 +32,7 @@ next
   then have \<open>smart 0 (dummy k + Suc k + m) = smart (Suc k) m\<close>
     using add.assoc by metis
   with \<open>dummy (Suc k) = dummy k + Suc k\<close> show ?case
-    by metis
+    by argo
 qed
 
 

@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "AutomatedReasoning/assignments/Assignment5.pdf"
+                "file": "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Assignment5"
+              "title": "MiniCalc_Tutorial"
             }
           }
         ]
@@ -177,17 +177,17 @@
   },
   "active": "29ad9908e4e77331",
   "lastOpenFiles": [
-    "AutomatedReasoning/assignments/#Assignment_5_pureHOL.thy#",
-    "AutomatedReasoning/assignments/#Assignment_5.thy#",
-    "AutomatedReasoning/assignments/#Assignment_5_progprov.thy#",
-    "AutomatedReasoning/assignments/Assignment_5_progprov.thy~",
-    "DistributedRTSystems/Hierarchical Scheduling--Handbook of Real-Time Computing 2022.corrected.pdf",
-    "DistributedRTSystems/General and Efficient Response Time Analysis for EDF Scheduling--DATE2014.pdf",
-    "AutomatedReasoning/assignments/Assignment5.pdf",
-    "AutomatedReasoning/prog-prove.pdf",
-    "AutomatedReasoning/src/Exercise4_5.thy~",
-    "AutomatedReasoning/pure_HOL/#Pure_HOL_Important.thy#",
-    "AutomatedReasoning/pure_HOL/Pure_HOL_Important.thy~",
+    "AutomatedReasoning/src/#Cantor_2_Exercises.thy#",
+    "AutomatedReasoning/src/Cantor_2_Exercises.thy~",
+    "AutomatedReasoning/src/Cantor_1_Exercises.thy~",
+    "AutomatedReasoning/src/#Cantor_1_Exercises.thy#",
+    "AutomatedReasoning/src/Simple_Main",
+    "AutomatedReasoning/sample_exam/Sample_Exam_file_3_of_3.thy",
+    "AutomatedReasoning/sample_exam/Sample_Exam_file_2_of_3.thy",
+    "AutomatedReasoning/sample_exam/Sample_Exam_file_1_of_3.thy",
+    "AutomatedReasoning/sample_exam",
+    "AutomatedReasoning/src/sample_exam",
+    "AutomatedReasoning/src/Sample_Exam_file_2_of_3.thy",
     "AutomatedReasoning/assignment notes.md",
     "AutomatedReasoning/Module 1.md",
     "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/LargeIcon.imageset/icon128.png",
