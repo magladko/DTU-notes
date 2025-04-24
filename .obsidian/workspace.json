@@ -13,10 +13,10 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf"
+                "file": "AutomatedReasoning/prog-prove.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "MiniCalc_Tutorial"
+              "title": "prog-prove"
             }
           }
         ]
@@ -177,6 +177,9 @@
   },
   "active": "29ad9908e4e77331",
   "lastOpenFiles": [
+    "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf",
+    "AutomatedReasoning/sample_exam/#Sample_Exam_file_3_of_3.thy#",
+    "AutomatedReasoning/sample_exam/Sample_Exam_file_3_of_3.thy~",
     "AutomatedReasoning/src/#Cantor_2_Exercises.thy#",
     "AutomatedReasoning/src/Cantor_2_Exercises.thy~",
     "AutomatedReasoning/src/Cantor_1_Exercises.thy~",
@@ -185,9 +188,6 @@
     "AutomatedReasoning/sample_exam/Sample_Exam_file_3_of_3.thy",
     "AutomatedReasoning/sample_exam/Sample_Exam_file_2_of_3.thy",
     "AutomatedReasoning/sample_exam/Sample_Exam_file_1_of_3.thy",
-    "AutomatedReasoning/sample_exam",
-    "AutomatedReasoning/src/sample_exam",
-    "AutomatedReasoning/src/Sample_Exam_file_2_of_3.thy",
     "AutomatedReasoning/assignment notes.md",
     "AutomatedReasoning/Module 1.md",
     "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/LargeIcon.imageset/icon128.png",

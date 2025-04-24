@@ -15,6 +15,21 @@ adds 1 (one) to each number in the list and prove \<open>sum_list (inc_list l) =
 
 \<close>
 
+fun inc_list :: \<open>nat list \<Rightarrow> nat list\<close> where
+  \<open>inc_list [] = []\<close> |
+  \<open>inc_list (a # xs) = (a + 1) # inc_list xs\<close>
+
+lemma \<open>sum_list (inc_list l) = sum_list l + length l\<close>
+proof (induction l)
+  case Nil
+  then show ?case 
+    by simp
+next
+  case (Cons a l)
+  then show ?case
+    by simp
+qed
+
 
 datatype T = Leaf | Node T nat nat nat
 
