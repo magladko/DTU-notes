@@ -4,19 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "6c465d6bcd5f3249",
+        "id": "6475c64b87355769",
         "type": "tabs",
         "children": [
           {
-            "id": "29ad9908e4e77331",
+            "id": "ff5a9aa1fd1d3f99",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "AutomatedReasoning/prog-prove.pdf"
+                "file": "DistributedRTSystems/Hierarchical Scheduling--Handbook of Real-Time Computing 2022.corrected.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "prog-prove"
+              "title": "Hierarchical Scheduling--Handbook of Real-Time Computing 2022.corrected"
             }
           }
         ]
@@ -175,8 +175,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "29ad9908e4e77331",
+  "active": "ff5a9aa1fd1d3f99",
   "lastOpenFiles": [
+    "DistributedRTSystems/General and Efficient Response Time Analysis for EDF Scheduling--DATE2014.pdf",
+    "DistributedRTSystems/Hierarchical Scheduling--Handbook of Real-Time Computing 2022.corrected.pdf",
+    "DistributedRTSystems/w2a-scheduling.pdf",
+    "AutomatedReasoning/prog-prove.pdf",
     "AutomatedReasoning/src/#Exercise4_7.thy#",
     "AutomatedReasoning/src/Exercise4_7.thy",
     "AutomatedReasoning/src/#Exercise4_6.thy#",
@@ -184,10 +188,6 @@
     "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf",
     "AutomatedReasoning/sample_exam/#Sample_Exam_file_3_of_3.thy#",
     "AutomatedReasoning/sample_exam/Sample_Exam_file_3_of_3.thy~",
-    "AutomatedReasoning/src/#Cantor_2_Exercises.thy#",
-    "AutomatedReasoning/src/Cantor_2_Exercises.thy~",
-    "AutomatedReasoning/src/Cantor_1_Exercises.thy~",
-    "AutomatedReasoning/src/#Cantor_1_Exercises.thy#",
     "AutomatedReasoning/assignment notes.md",
     "AutomatedReasoning/Module 1.md",
     "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/LargeIcon.imageset/icon128.png",
