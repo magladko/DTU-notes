@@ -27,14 +27,26 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "AutomatedReasoning/exam2024/Exam.pdf"
+                "file": "AutomatedReasoning/assignments/Assignment6.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "Exam"
+              "title": "Assignment6"
+            }
+          },
+          {
+            "id": "780aa74283e7bd3a",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "AutomatedReasoning/prog-prove.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "prog-prove"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -190,19 +202,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2d358f44d06a516a",
+  "active": "780aa74283e7bd3a",
   "lastOpenFiles": [
+    "AutomatedReasoning/assignments/#Assignment6_progprov.thy#",
+    "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf",
+    "AutomatedReasoning/assignments/Assignment6_progprov.thy",
+    "AutomatedReasoning/assignments/Assignment6.pdf",
+    "AutomatedReasoning/assignments/#Assignment6_minicalc.thy#",
+    "AutomatedReasoning/assignments/Assignment6_minicalc.thy",
+    "AutomatedReasoning/exam2024/Exam.pdf",
     "AutomatedReasoning/exam2024/#Exam_file_3_of_3.thy#",
     "AutomatedReasoning/exam2024/Exam_file_3_of_3.thy~",
     "AutomatedReasoning/exam2024/#Exam_file_2_of_3.thy#",
-    "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf",
     "AutomatedReasoning/exam2024/#Exam_file_1_of_3.thy#",
-    "AutomatedReasoning/exam2024/Exam.pdf",
-    "AutomatedReasoning/assignments/Sample_Exam.pdf",
-    "AutomatedReasoning/assignments/Assignment6.pdf",
-    "DistributedRTSystems/Hierarchical Scheduling--Handbook of Real-Time Computing 2022.corrected.pdf",
-    "DistributedRTSystems/General and Efficient Response Time Analysis for EDF Scheduling--DATE2014.pdf",
-    "DistributedRTSystems/w2a-scheduling.pdf",
     "AutomatedReasoning/assignment notes.md",
     "AutomatedReasoning/Module 1.md",
     "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/LargeIcon.imageset/icon128.png",
