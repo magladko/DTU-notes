@@ -24,10 +24,56 @@ proof
 qed
 
 proposition \<open>(\<forall>x. p x \<and> q x) \<longrightarrow> (\<exists>x. q x \<or> r x)\<close>
-  oops
+proof
+  assume *: \<open>\<forall>x. p x \<and> q x\<close>
+  show \<open>\<exists>x. q x \<or> r x\<close>
+  proof
+    fix c
+    show \<open>q c \<or> r c\<close>
+    proof (rule Dis_I1)
+      from * have \<open>p c \<and> q c\<close> ..
+      then show \<open>q c\<close> ..
+    qed
+  qed
+qed
 
 proposition \<open>(p (f a b c) \<longrightarrow> q) \<or> (q \<longrightarrow> (\<exists>x. \<forall>y. r x y))\<close>
-  oops
+proof -
+  have \<open>q \<or> \<not> q\<close> by (rule LEM)
+  then show \<open>(p (f a b c) \<longrightarrow> q) \<or> (q \<longrightarrow> (\<exists>x. \<forall>y. r x y))\<close>
+  proof
+    assume \<open>q\<close>
+    show \<open>(p (f a b c) \<longrightarrow> q) \<or> (q \<longrightarrow> (\<exists>x. \<forall>y. r x y))\<close>
+    proof (rule Dis_I1)
+      have \<open>p (f a b c) \<or> \<not> p (f a b c)\<close> by (rule LEM)
+      then show \<open>p (f a b c) \<longrightarrow> q\<close>
+      proof
+        assume \<open>p (f a b c)\<close>
+        show \<open>p (f a b c) \<longrightarrow> q\<close>
+        proof
+          from \<open>q\<close> show \<open>q\<close> .
+        qed
+      next
+        assume \<open>\<not> p (f a b c)\<close>
+        show \<open>p (f a b c) \<longrightarrow> q\<close>
+        proof
+          from \<open>q\<close> show \<open>q\<close> .
+        qed
+      qed
+    qed
+  next
+    assume \<open>\<not> q\<close>
+    show \<open>(p (f a b c) \<longrightarrow> q) \<or> (q \<longrightarrow> (\<exists>x. \<forall>y. r x y))\<close>
+    proof
+      show \<open>q \<longrightarrow> (\<exists>x. \<forall>y. r x y)\<close>
+      proof
+        assume \<open>q\<close>
+        from \<open>\<not> q\<close> and this have \<open>\<bottom>\<close> ..
+        then show \<open>\<exists>x. \<forall>y. r x y\<close> ..
+      qed
+    qed
+  qed
+qed
 
 \<comment> \<open>Please keep the "end" command and ensure that Isabelle/HOL does not indicate any errors at all\<close>
 
