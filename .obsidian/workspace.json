@@ -45,8 +45,7 @@
               "title": "prog-prove"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -202,19 +201,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "780aa74283e7bd3a",
+  "active": "ff5a9aa1fd1d3f99",
   "lastOpenFiles": [
     "AutomatedReasoning/assignments/#Assignment6_progprov.thy#",
+    "AutomatedReasoning/assignments/Assignment6_progprov.thy~",
+    "AutomatedReasoning/assignments/Assignment6_minicalc.thy~",
+    "AutomatedReasoning/prog-prove.pdf",
     "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf",
-    "AutomatedReasoning/assignments/Assignment6_progprov.thy",
     "AutomatedReasoning/assignments/Assignment6.pdf",
+    "AutomatedReasoning/exam2024/Exam.pdf",
+    "AutomatedReasoning/assignments/Assignment6_progprov.thy",
     "AutomatedReasoning/assignments/#Assignment6_minicalc.thy#",
     "AutomatedReasoning/assignments/Assignment6_minicalc.thy",
-    "AutomatedReasoning/exam2024/Exam.pdf",
     "AutomatedReasoning/exam2024/#Exam_file_3_of_3.thy#",
-    "AutomatedReasoning/exam2024/Exam_file_3_of_3.thy~",
-    "AutomatedReasoning/exam2024/#Exam_file_2_of_3.thy#",
-    "AutomatedReasoning/exam2024/#Exam_file_1_of_3.thy#",
     "AutomatedReasoning/assignment notes.md",
     "AutomatedReasoning/Module 1.md",
     "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/LargeIcon.imageset/icon128.png",

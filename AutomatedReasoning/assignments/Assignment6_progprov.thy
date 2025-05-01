@@ -40,11 +40,59 @@ section \<open>4.7\<close>
 induction on assumption
  *)
 fun balanced :: "nat \<Rightarrow> alpha list \<Rightarrow> bool" where
-"balanced 0 [] = False"
+"balanced 0 [] = True" |
+"balanced n (a # w) = balanced (n+1) w" |
+"balanced (Suc n) (b # w) = balanced (n) w" |
+"balanced n w = False"
 
 
-lemma "balanced n w = S (replicate n a @ w )"
-  sorry
+lemma BSrep: "balanced n w \<Longrightarrow> S (replicate n a @ w)"
+proof (induct n w rule: balanced.induct)
+  case 1
+  then show ?case
+    using S_empty by auto
+next
+  case (2 n w)
+  then show ?case
+    by (simp add: replicate_app_Cons_same)
+next
+  case (3 n w)
+  then show ?case sorry
+next
+  case ("4_1" v)
+  then show ?case sorry
+next
+  case ("4_2" va)
+  then show ?case sorry
+qed
 
+(*balanced used like S and reversed*)
+(*insert a,b into a balanced word \<rightarrow> balanced word*)
+(* a#w@[b] = u@v \<rightarrow> if u is not empty, then starts with a; if v is not empty it ends with b*)
+(* w@w' = u@v \<rightarrow> split before/after *)
+
+lemma SrepB: "S (replicate n a @ w) \<Longrightarrow> balanced n w"
+proof (induct \<open>replicate n a @ w\<close> arbitrary: n w rule: balanced.induct)
+  case 1
+  then show ?case by simp
+next
+  case (2 n w)
+  then show ?case sorry
+next
+  case (3 n w)
+  then show ?case sorry
+next
+  case ("4_1" v)
+  then show ?case sorry
+next
+  case ("4_2" va)
+  then show ?case sorry
+qed
+
+lemma "balanced n w = S (replicate n a @ w)"
+proof -
+  show ?thesis using SrepB BSrep
+    by blast
+qed
 
 end
