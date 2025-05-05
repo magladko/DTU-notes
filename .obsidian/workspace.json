@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ff5a9aa1fd1d3f99",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf"
-              },
-              "pinned": true,
-              "icon": "lucide-file-text",
-              "title": "MiniCalc_Tutorial"
-            }
-          },
-          {
             "id": "2d358f44d06a516a",
             "type": "leaf",
             "state": {
@@ -39,13 +25,14 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "AutomatedReasoning/prog-prove.pdf"
+                "file": "AutomatedReasoning/assignments/Assignment6.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "prog-prove"
+              "title": "Assignment6"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -201,19 +188,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ff5a9aa1fd1d3f99",
+  "active": "780aa74283e7bd3a",
   "lastOpenFiles": [
+    "AutomatedReasoning/assignments/Sample_Exam.pdf",
+    "AutomatedReasoning/exam2024/#Exam_file_1_of_3.thy#",
+    "AutomatedReasoning/assignments/Assignment6.pdf",
+    "AutomatedReasoning/prog-prove.pdf",
     "AutomatedReasoning/assignments/#Assignment6_progprov.thy#",
+    "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf",
     "AutomatedReasoning/assignments/Assignment6_progprov.thy~",
     "AutomatedReasoning/assignments/Assignment6_minicalc.thy~",
-    "AutomatedReasoning/prog-prove.pdf",
-    "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf",
-    "AutomatedReasoning/assignments/Assignment6.pdf",
     "AutomatedReasoning/exam2024/Exam.pdf",
     "AutomatedReasoning/assignments/Assignment6_progprov.thy",
     "AutomatedReasoning/assignments/#Assignment6_minicalc.thy#",
-    "AutomatedReasoning/assignments/Assignment6_minicalc.thy",
-    "AutomatedReasoning/exam2024/#Exam_file_3_of_3.thy#",
     "AutomatedReasoning/assignment notes.md",
     "AutomatedReasoning/Module 1.md",
     "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/LargeIcon.imageset/icon128.png",
