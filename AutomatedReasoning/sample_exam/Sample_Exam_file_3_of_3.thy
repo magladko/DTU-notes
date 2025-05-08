@@ -72,24 +72,19 @@ lemma dummy_lemma: \<open>x # tl (dummy (x # xs)) = dummy (x # xs)\<close>
   by (induct xs rule: dummy.induct) auto
 
 lemma \<open>dummy (xs @ x # xs') = dummy (xs @ [x]) @ tl (dummy (x # xs'))\<close>
-  \<proof>
-
-(*
-
-proof (induct x)
+proof (induct xs rule: dummy.induct)
   case 1
-  show ?case
-    by simp
-next
-  show ?case
+  then show ?case
     by (simp add: dummy_lemma)
 next
-  case 1
-  show ?case
-    by -
+  case (2 x)
+  then show ?case
+    by (simp add: dummy_lemma)
+next
+  case (3 x y xs)
+  then show ?case
+    by auto
 qed
-
-*)
 
 
 text \<open>
@@ -108,17 +103,16 @@ fun smart :: \<open>'a list \<Rightarrow> 'a list\<close> where
   \<open>smart (x # xs) = smart xs @ [x]\<close>
 
 lemma \<open>smart xs = smart ys \<Longrightarrow> xs = ys\<close>
-  \<proof>
-
-(*
-
-proof (induct xs)
+proof (induct xs arbitrary: ys)
   case Nil
-  show ?case
+  then show ?case 
     using smart.cases smart.simps snoc_eq_iff_butlast by metis
+next
+  case (Cons a xs)
+  then show ?case
+    by (metis smart.elims smart.simps(2) snoc_eq_iff_butlast)
 qed
 
-*)
 
 \<comment> \<open>Please keep the "end" command and ensure that Isabelle/HOL does not indicate any errors at all\<close>
 
