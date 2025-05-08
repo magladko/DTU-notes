@@ -4,35 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "6475c64b87355769",
+        "id": "22042c33257f696e",
         "type": "tabs",
         "children": [
           {
-            "id": "2d358f44d06a516a",
+            "id": "777772b1104a6e2c",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "AutomatedReasoning/assignments/Assignment6.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Assignment6"
-            }
-          },
-          {
-            "id": "780aa74283e7bd3a",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "AutomatedReasoning/assignments/Assignment6.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Assignment6"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -188,11 +173,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "780aa74283e7bd3a",
+  "active": "777772b1104a6e2c",
   "lastOpenFiles": [
+    "AutomatedReasoning/assignments/Assignment6.pdf",
     "AutomatedReasoning/assignments/Sample_Exam.pdf",
     "AutomatedReasoning/exam2024/#Exam_file_1_of_3.thy#",
-    "AutomatedReasoning/assignments/Assignment6.pdf",
     "AutomatedReasoning/prog-prove.pdf",
     "AutomatedReasoning/assignments/#Assignment6_progprov.thy#",
     "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf",

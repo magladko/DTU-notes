@@ -45,20 +45,10 @@ proof -
     assume \<open>q\<close>
     show \<open>(p (f a b c) \<longrightarrow> q) \<or> (q \<longrightarrow> (\<exists>x. \<forall>y. r x y))\<close>
     proof (rule Dis_I1)
-      have \<open>p (f a b c) \<or> \<not> p (f a b c)\<close> by (rule LEM)
-      then show \<open>p (f a b c) \<longrightarrow> q\<close>
+      show \<open>p (f a b c) \<longrightarrow> q\<close>
       proof
         assume \<open>p (f a b c)\<close>
-        show \<open>p (f a b c) \<longrightarrow> q\<close>
-        proof
-          from \<open>q\<close> show \<open>q\<close> .
-        qed
-      next
-        assume \<open>\<not> p (f a b c)\<close>
-        show \<open>p (f a b c) \<longrightarrow> q\<close>
-        proof
-          from \<open>q\<close> show \<open>q\<close> .
-        qed
+        from \<open>q\<close> show \<open>q\<close> .
       qed
     qed
   next
