@@ -1636,3 +1636,41 @@ $$ \begin{array}{c}
 $$
 ## exercise 18
 [Module 2: The Hygge0 Language Specification — 02247 Compiler Construction — Spring 2025](https://courses.compute.dtu.dk/02247/f25/hygge0-spec.html#hygge0-spec-exercise-34)
+
+
+## free Vars definition
+$$
+\begin{split}
+\begin{array}{rcl}
+  \fv{x} & = & \{x\}
+  \\
+  \fv{v} & = & \emptyset \qquad \text{(when $v$ is not a lambda term)}
+  \\
+  \fv{\hygLambda{x_1: t_1, \ldots, x_n: t_n}{e}} & = & \fv{e} \setminus \{x_1, \ldots, x_n\}
+  \\
+  \fv{e_1 + e_2} & = & \fv{e_1} \cup \fv{e_2}
+  \\
+  \fv{e_1 * e_2} & = & \fv{e_1} \cup \fv{e_2}
+  \\
+  \fv{e_1;\, e_2} & = & \fv{e_1} \cup \fv{e_2}
+  \\
+  & \vdots &
+  \\
+  \fv{\hygStruct{f_1 {=} e_1; \ldots; f_n {=} e_n}} & = & \fv{e_1} \cup \ldots \cup \fv{e_n}
+  \\
+  \fv{\hygApp{e}{e_1, \ldots, e_n}} & = & \fv{e} \cup \fv{e_1} \cup \ldots \cup \fv{e_n}
+  \\
+  & \vdots &
+  \\
+  \fv{\hygLetU{x}{e_1}{e_2}} & = & \fv{e_1} \cup \left(\fv{e_2} \setminus \{x\}\right)
+  \\
+  \fv{\hygLet{x}{t}{e_1}{e_2}} & = & \fv{e_1} \cup \left(\fv{e_2} \setminus \{x\}\right)
+  \\
+  \fv{\hygLetMut{x}{e_1}{e_2}} & = & \fv{e_1} \cup \left(\fv{e_2} \setminus \{x\}\right)
+  \\
+  & \vdots &
+  \\
+  \fv{\hygType{x}{t}{e}} & = & \fv{e}
+\end{array}
+\end{split}
+$$

@@ -11,12 +11,14 @@
             "id": "777772b1104a6e2c",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf"
+                "file": "CompilerConstruction/Module 2.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "MiniCalc_Tutorial"
+              "icon": "lucide-file",
+              "title": "Module 2"
             }
           }
         ]
@@ -76,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.50043487548828,
-    "collapsed": true
+    "width": 230.50043487548828
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -178,6 +179,12 @@
   },
   "active": "777772b1104a6e2c",
   "lastOpenFiles": [
+    "CompilerConstruction/Module 1 - Intro to RISC-V.md",
+    "CompilerConstruction/Module 2.md",
+    "CompilerConstruction/Module 6.md",
+    "CompilerConstruction/Module 5.md",
+    "CompilerConstruction/Module 3 - hands on.md",
+    "AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf",
     "AutomatedReasoning/sample_exam/#Sample_Exam_file_2_of_3.thy#",
     "AutomatedReasoning/sample_exam/#Sample_Exam_file_3_of_3.thy#",
     "AutomatedReasoning/sample_exam/Sample_Exam_file_2_of_3.thy~",
@@ -187,8 +194,6 @@
     "AutomatedReasoning/assignments/Assignment6.pdf",
     "AutomatedReasoning/assignments/Sample_Exam.pdf",
     "AutomatedReasoning/exam2024/#Exam_file_1_of_3.thy#",
-    "AutomatedReasoning/prog-prove.pdf",
-    "AutomatedReasoning/assignments/#Assignment6_progprov.thy#",
     "AutomatedReasoning/assignment notes.md",
     "AutomatedReasoning/Module 1.md",
     "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/LargeIcon.imageset/icon128.png",
@@ -215,12 +220,7 @@
     "AutomatedReasoning/Module6/Downloads/04-encoding.md",
     "AutomatedReasoning/Module6/Downloads/04-encoding (1).md",
     "AutomatedReasoning/Module6/Downloads/03-verifier.md",
-    "CompilerConstruction/Module 5.md",
     "AutomatedReasoning/Module 2.md",
-    "CompilerConstruction/Module 6.md",
-    "CompilerConstruction/Module 3 - hands on.md",
-    "CompilerConstruction/Module 2.md",
-    "CompilerConstruction/Module 1 - Intro to RISC-V.md",
     "CompilerConstruction/Latex def.md",
     "DistributedRTSystems/Lecture 4.md",
     "DistributedRTSystems/Lecture 3.md",

@@ -4050,6 +4050,7 @@ pNB
 pNxxxtxBxr
 plc
 puj
+printError
 verification
 verified
 verify
@@ -5295,6 +5296,7 @@ vEj
 vZe
 vrX
 vck
+vars
 Prove
 Program
 Proving
@@ -18141,6 +18143,7 @@ sXa
 smDG
 sHm
 swz
+src
 fully
 formal
 forward
@@ -20812,6 +20815,7 @@ kTA
 ksO
 kvV
 kMIL
+keyExpr
 Informal
 Impossible
 Interactive
@@ -25350,6 +25354,7 @@ mbe
 mge
 moi
 mPMO
+mathsf
 not
 new
 note
