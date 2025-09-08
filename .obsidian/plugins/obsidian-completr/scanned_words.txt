@@ -2780,6 +2780,8 @@ irc
 inC
 ikp
 isF
+inserting
+impossible
 program
 permutation
 possible
@@ -4053,6 +4055,7 @@ pNxxxtxBxr
 plc
 puj
 printError
+python
 verification
 verified
 verify
@@ -5300,6 +5303,7 @@ vrX
 vck
 vars
 vBr
+void
 Prove
 Program
 Proving
@@ -8046,6 +8050,7 @@ tpn
 tjq
 tWm
 tYwY
+tricks
 always
 as
 array
@@ -9558,6 +9563,8 @@ aji
 acasaKaka
 aEV
 aNb
+already
+assertPositive
 works
 whether
 where
@@ -12372,6 +12379,7 @@ efL
 eQJ
 eXM
 evC
+extract
 Task
 The
 Testing
@@ -15267,6 +15275,7 @@ dAi
 dSj
 dhD
 dIno
+div
 given
 good
 guarantees
@@ -16600,6 +16609,7 @@ gnpkp
 gFE
 gRf
 gSr
+groups
 satisfies
 specification
 seL
@@ -18151,6 +18161,7 @@ sHm
 swz
 src
 sNC
+static
 fully
 formal
 forward
@@ -19544,6 +19555,7 @@ fZs
 fdr
 fVdVg
 fxQ
+flavor
 kernel
 knowledge
 known
@@ -22441,6 +22453,7 @@ IISj
 IJy
 IOI
 IWvj
+Insert
 Specifications
 Suffers
 Strengths
@@ -23978,6 +23991,7 @@ SZT
 SqO
 SnmI
 SkVy
+String
 method
 memory
 modify
@@ -25365,6 +25379,8 @@ mge
 moi
 mPMO
 mathsf
+match
+mname
 not
 new
 note
@@ -26552,6 +26568,7 @@ nfe
 nWc
 nar
 noe
+nested
 crash
 can
 correctness
@@ -29511,6 +29528,9 @@ rng
 rWf
 rOME
 rjjjfjNj
+recognized
+remember
+retype
 of
 original
 ordering
@@ -32180,6 +32200,8 @@ HKdw
 HjqSfE
 HPKUCC
 HObE
+Hint
+Hover
 Different
 Deductive
 Dafny
@@ -39039,6 +39061,7 @@ bymy
 bQv
 bwP
 bOo
+big
 Even
 EveryCrypt
 Engineering
@@ -40589,6 +40612,7 @@ EQeQL
 EPA
 EmE
 EDr
+Extract
 lead
 library
 labor
@@ -41975,6 +41999,7 @@ lIX
 lXS
 lCl
 lFa
+little
 unexpected
 use
 undecidability
@@ -46433,6 +46458,7 @@ ASn
 Ajw
 AWq
 AqX
+Activity
 Can
 CompCert
 Course
@@ -49281,6 +49307,9 @@ hgj
 hmt
 hgI
 hDFe
+hint
+hljs
+highlighted
 Requires
 Rust
 Reading
@@ -56056,6 +56085,7 @@ jeD
 jCZ
 jhs
 jNV
+jpamb
 Using
 Use
 Uncertainty
@@ -62851,6 +62881,7 @@ qeELs
 qsE
 qcU
 qoy
+quick
 Byte
 BPE
 By
