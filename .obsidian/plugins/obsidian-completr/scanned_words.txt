@@ -1235,6 +1235,7 @@ WQwm
 Wqd
 WOW
 Wac
+Wildcards
 is
 its
 in
@@ -2782,6 +2783,8 @@ ikp
 isF
 inserting
 impossible
+injectivity
+index
 program
 permutation
 possible
@@ -5304,6 +5307,7 @@ vck
 vars
 vBr
 void
+verifiability
 Prove
 Program
 Proving
@@ -6677,6 +6681,7 @@ PMl
 Prw
 PsP
 PCp
+Provided
 that
 the
 to
@@ -12382,6 +12387,7 @@ eQJ
 eXM
 evC
 extract
+exceed
 Task
 The
 Testing
@@ -18168,6 +18174,7 @@ swz
 src
 sNC
 static
+sums
 fully
 formal
 forward
@@ -19564,6 +19571,7 @@ fxQ
 flavor
 farm
 footprint
+formedness
 kernel
 knowledge
 known
@@ -22462,6 +22470,8 @@ IJy
 IOI
 IWvj
 Insert
+Injectivity
+Implementations
 Specifications
 Suffers
 Strengths
@@ -24000,6 +24010,7 @@ SqO
 SnmI
 SkVy
 String
+Supporting
 method
 memory
 modify
@@ -26577,6 +26588,7 @@ nWc
 nar
 noe
 nested
+node
 crash
 can
 correctness
@@ -29540,6 +29552,10 @@ rjjjfjNj
 recognized
 remember
 retype
+recombined
+requirement
+receivers
+requiring
 of
 original
 ordering
@@ -44809,6 +44825,9 @@ MFX
 Mem
 MQYm
 MlXg
+Mechanism
+Modeled
+Maintaining
 Automatic
 Automated
 Analogies
@@ -46471,6 +46490,7 @@ AWq
 AqX
 Activity
 Arabica
+Address
 Can
 CompCert
 Course
@@ -47989,6 +48009,7 @@ CNT
 CNpO
 CrH
 Coffee
+Cyclic
 handle
 high
 hints
@@ -50878,6 +50899,7 @@ RFp
 RWS
 RSZ
 Robusta
+Represents
 years
 your
 you
@@ -62896,6 +62918,7 @@ qsE
 qcU
 qoy
 quick
+quantification
 Byte
 BPE
 By
@@ -64287,6 +64310,7 @@ BLe
 BRo
 Box
 Brazil
+Bounds
 KH
 KJP
 KR
