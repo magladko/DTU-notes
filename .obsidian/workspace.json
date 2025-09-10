@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1st semester/Program Verification/TA/1. Introduction - Warm up excercises.md",
+                "file": "1st semester/Program Verification/TA/2. Overview.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "1. Introduction - Warm up excercises"
+              "title": "2. Overview"
             }
           }
         ]
@@ -180,8 +180,9 @@
   },
   "active": "0b51499b7cc43624",
   "lastOpenFiles": [
-    "1st semester/Program Verification/Exercises/Module 2 - Overview (exercises).md",
     "1st semester/Program Verification/TA/1. Introduction - Warm up excercises.md",
+    "1st semester/Program Verification/TA/2. Overview.md",
+    "1st semester/Program Verification/Exercises/Module 2 - Overview (exercises).md",
     "1st semester/Program Verification/TA",
     "1st semester/Program Verification/EXAM NOTES/2. Overview.md",
     "1st semester/Program Verification/EXAM NOTES/13. Front-end Verifiers & Outlook.md",
@@ -209,7 +210,6 @@
     "2nd semester/CompilerConstruction/Module 5.md",
     "2nd semester/CompilerConstruction/Module 2.md",
     "2nd semester/CompilerConstruction/Latex def.md",
-    "2nd semester/CompilerConstruction/Module 1 - Intro to RISC-V.md",
     "Program Analysis",
     "2nd semester",
     "2nd semester/AutomatedReasoning/EXAM/Exam.pdf",
