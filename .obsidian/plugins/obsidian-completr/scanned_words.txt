@@ -9565,6 +9565,7 @@ aEV
 aNb
 already
 assertPositive
+arabica
 works
 whether
 where
@@ -10836,6 +10837,7 @@ wuqXP
 wOJ
 wpJ
 wqm
+water
 expected
 errors
 error
@@ -15276,6 +15278,9 @@ dSj
 dhD
 dIno
 div
+drinking
+drink
+depulped
 given
 good
 guarantees
@@ -16610,6 +16615,7 @@ gFE
 gRf
 gSr
 groups
+gate
 satisfies
 specification
 seL
@@ -19556,6 +19562,8 @@ fdr
 fVdVg
 fxQ
 flavor
+farm
+footprint
 kernel
 knowledge
 known
@@ -28153,6 +28161,7 @@ cFd
 cMm
 cvm
 cAn
+carbon
 runs
 returns
 requires
@@ -32202,6 +32211,7 @@ HPKUCC
 HObE
 Hint
 Hover
+Heat
 Different
 Deductive
 Dafny
@@ -39062,6 +39072,7 @@ bQv
 bwP
 bOo
 big
+bean
 Even
 EveryCrypt
 Engineering
@@ -46459,6 +46470,7 @@ Ajw
 AWq
 AqX
 Activity
+Arabica
 Can
 CompCert
 Course
@@ -47976,6 +47988,7 @@ CigP
 CNT
 CNpO
 CrH
+Coffee
 handle
 high
 hints
@@ -50864,6 +50877,7 @@ Rix
 RFp
 RWS
 RSZ
+Robusta
 years
 your
 you
@@ -64272,6 +64286,7 @@ BMa
 BLe
 BRo
 Box
+Brazil
 KH
 KJP
 KR
