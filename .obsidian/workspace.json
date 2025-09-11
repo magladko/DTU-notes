@@ -6,7 +6,7 @@
       {
         "id": "9360468d8ff2706f",
         "type": "tabs",
-        "dimension": 76.07204116638079,
+        "dimension": 47.16981132075472,
         "children": [
           {
             "id": "0b51499b7cc43624",
@@ -27,7 +27,7 @@
       {
         "id": "1b029297ed7e1593",
         "type": "tabs",
-        "dimension": 23.92795883361921,
+        "dimension": 52.83018867924528,
         "children": [
           {
             "id": "2d2c55bdbf869af2",
@@ -200,10 +200,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0b51499b7cc43624",
+  "active": "2d2c55bdbf869af2",
   "lastOpenFiles": [
-    "1st semester/Program Verification/TA/Claude.md",
     "1st semester/Program Verification/TA/2. Overview.md",
+    "1st semester/Program Verification/TA/Claude.md",
     "1st semester/Program Verification/TA/attachments/2. Overview - Definition 2-11 Toy Program Logic.png",
     "1st semester/Program Verification/TA/attachments/2. Overview - Table 2-4.png",
     "1st semester/Program Verification/TA/attachments/2. Overview - Definition 2-10 Foundational Judgement for Toy Triples.png",
