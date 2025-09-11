@@ -6,7 +6,7 @@
       {
         "id": "9360468d8ff2706f",
         "type": "tabs",
-        "dimension": 36.106346483704975,
+        "dimension": 76.07204116638079,
         "children": [
           {
             "id": "0b51499b7cc43624",
@@ -25,12 +25,12 @@
         ]
       },
       {
-        "id": "52bf408bd39992a7",
+        "id": "1b029297ed7e1593",
         "type": "tabs",
-        "dimension": 63.893653516295025,
+        "dimension": 23.92795883361921,
         "children": [
           {
-            "id": "a28790c4d9fe8c61",
+            "id": "2d2c55bdbf869af2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -200,12 +200,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a28790c4d9fe8c61",
+  "active": "0b51499b7cc43624",
   "lastOpenFiles": [
-    "1st semester/Program Verification/TA/2. Overview.md",
     "1st semester/Program Verification/TA/Claude.md",
-    "1st semester/Program Verification/TA/attachments/2. Overview - Definition 2-10 Foundational Judgement for Toy Triples.png",
+    "1st semester/Program Verification/TA/2. Overview.md",
+    "1st semester/Program Verification/TA/attachments/2. Overview - Definition 2-11 Toy Program Logic.png",
     "1st semester/Program Verification/TA/attachments/2. Overview - Table 2-4.png",
+    "1st semester/Program Verification/TA/attachments/2. Overview - Definition 2-10 Foundational Judgement for Toy Triples.png",
     "1st semester/Program Verification/TA/attachments",
     "1st semester/Program Verification/Exercises/Module 2 - Overview (exercises).md",
     "1st semester/Program Verification/TA/1. Introduction - Warm up excercises.md",
@@ -234,7 +235,6 @@
     "1st semester/Model Checking/Lecture 00.md",
     "2nd semester/CompilerConstruction/Module 6.md",
     "2nd semester/CompilerConstruction/Module 5.md",
-    "2nd semester/CompilerConstruction/Module 2.md",
     "Program Analysis",
     "2nd semester",
     "2nd semester/AutomatedReasoning/EXAM/Exam.pdf",
@@ -247,7 +247,6 @@
     "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/AppIcon.appiconset/universal-icon-1024@1x.png",
     "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/AppIcon.appiconset/mac-icon-512@2x.png",
     "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/AppIcon.appiconset/mac-icon-512@1x.png",
-    "AutomatedReasoning/Module6/Downloads/dtu_an/dtu-course-analyzer-1.3.5/Safari extension/Shared (App)/Assets.xcassets/AppIcon.appiconset/mac-icon-32@2x.png",
     "CompilerConstruction/Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled.canvas",

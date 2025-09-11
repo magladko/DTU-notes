@@ -107,6 +107,8 @@ Thus $\mem' \Satisfies 0 < \x$, proving the triple is valid.
 
 ### (b) Proof tree for the given triple
 
+![[2. Overview - Definition 2-11 Toy Program Logic.png]]$\newcommand{\z}{\texttt{z}}$
+
 **Triple**: 
 $$\Triple{\y \teq 0}{\Ite{\x \teq 0}{\Skip}{\Assign{\y}{\x + \x}}\Seq\Assign{\z}{\y + \x}}{\z \teq 3 \cdot \x}
 $$
@@ -116,20 +118,30 @@ The proof tree:
 $$
 \begin{prooftree}
 \AxiomC{}
-\UnaryInfC{$\provable \Triple{\y \teq 0 \And \x \teq 0}{\Skip}{\y \teq 0 \And \x \teq 0}$}
-\AxiomC{$\y \teq 0 \And \x \teq 0 \Entails \y + \x \teq 3 \cdot \x$}
-\UnaryInfC{$\provable \Triple{\y \teq 0 \And \x \teq 0}{\Skip}{\y + \x \teq 3 \cdot \x}$}
 \AxiomC{}
-\UnaryInfC{$\provable \Triple{(\x + \x) + \x \teq 3 \cdot \x}{\Assign{\y}{\x + \x}}{\y + \x \teq 3 \cdot \x}$}
-\AxiomC{$\y \teq 0 \And \Neg(\x \teq 0) \Entails (\x + \x) + \x \teq 3 \cdot \x$}
-\UnaryInfC{$\provable \Triple{\y \teq 0 \And \Neg(\x \teq 0)}{\Assign{\y}{\x + \x}}{\y + \x \teq 3 \cdot \x}$}
+\RightLabel{skip}
+\UnaryInfC{$\provable \Triple{\y \teq 0 \wedge x \teq 0}{\Skip}{\y \teq 0 \wedge x \teq 0}$}
+\AxiomC{$(\y \teq 0 \wedge x \teq 0) \Entails (\y + \x \teq 3 \cdot \x)$}
+\RightLabel{consequence}
+\TrinaryInfC{$\provable \Triple{\y \teq 0 \wedge x \teq 0}{\Skip}{\y + \x \teq 3 \cdot \x}$}
+\AxiomC{$\y \teq 0 \wedge \Neg(\x \teq 0) \Entails (\x + \x + \x \teq 3 \cdot \x)$}
+\AxiomC{}
+\RightLabel{assign}
+\UnaryInfC{$\provable \Triple{\x + \x + \x \teq 3 \cdot \x}{\Assign{\y}{\x + \x}}{\y + \x \teq 3 \cdot \x}$}
+\AxiomC{$(\y + \x \teq 3 \cdot \x) \Entails (\y + \x \teq 3 \cdot \x)$}
+\RightLabel{consequence}
+\TrinaryInfC{$\provable \Triple{\y \teq 0 \wedge \Neg(\x \teq 0)}{\Assign{\y}{\x + \x}}{\y + \x \teq 3 \cdot \x}$}
+\RightLabel{conditional}
 \BinaryInfC{$\provable \Triple{\y \teq 0}{\Ite{\x \teq 0}{\Skip}{\Assign{\y}{\x + \x}}}{\y + \x \teq 3 \cdot \x}$}
 \AxiomC{}
+\RightLabel{assign}
 \UnaryInfC{$\provable \Triple{\y + \x \teq 3 \cdot \x}{\Assign{\z}{\y + \x}}{\z \teq 3 \cdot \x}$}
+\RightLabel{sequence}
 \BinaryInfC{$\provable \Triple{\y \teq 0}{\Ite{\x \teq 0}{\Skip}{\Assign{\y}{\x + \x}}\Seq\Assign{\z}{\y + \x}}{\z \teq 3 \cdot \x}$}
 \end{prooftree}
 $$
 
+$$\begin{prooftree} \AxiomC{} \UnaryInfC{$\provable \Triple{\y \teq 0 \And \x \teq 0}{\Skip}{\y \teq 0 \And \x \teq 0}$} \AxiomC{$\y \teq 0 \And \x \teq 0 \Entails \y + \x \teq 3 \cdot \x$} \UnaryInfC{$\provable \Triple{\y \teq 0 \And \x \teq 0}{\Skip}{\y + \x \teq 3 \cdot \x}$} \AxiomC{} \UnaryInfC{$\provable \Triple{(\x + \x) + \x \teq 3 \cdot \x}{\Assign{\y}{\x + \x}}{\y + \x \teq 3 \cdot \x}$} \AxiomC{$\y \teq 0 \And \Neg(\x \teq 0) \Entails (\x + \x) + \x \teq 3 \cdot \x$} \UnaryInfC{$\provable \Triple{\y \teq 0 \And \Neg(\x \teq 0)}{\Assign{\y}{\x + \x}}{\y + \x \teq 3 \cdot \x}$} \BinaryInfC{$\provable \Triple{\y \teq 0}{\Ite{\x \teq 0}{\Skip}{\Assign{\y}{\x + \x}}}{\y + \x \teq 3 \cdot \x}$} \AxiomC{} \UnaryInfC{$\provable \Triple{\y + \x \teq 3 \cdot \x}{\Assign{\z}{\y + \x}}{\z \teq 3 \cdot \x}$} \BinaryInfC{$\provable \Triple{\y \teq 0}{\Ite{\x \teq 0}{\Skip}{\Assign{\y}{\x + \x}}\Seq\Assign{\z}{\y + \x}}{\z \teq 3 \cdot \x}$} \end{prooftree}$$
 ### (c) Analysis of modified triple
 
 No, there is no such precondition $F$ and memory $\mem$.
