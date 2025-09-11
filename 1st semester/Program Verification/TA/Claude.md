@@ -154,7 +154,7 @@ For the postcondition to hold:
 - When $F$ is true (skip branch): we need $\y + \x = 3 \cdot \x$, which requires $\y = 2 \cdot \x$
 - When $F$ is false (else branch): after $\y := \x + \x$, we get $\z = 2\x + \x = 3\x$ ✓
 
-Since we require $\y \teq 0$ as precondition, the skip branch requires $0 + \x = 3 \cdot \x$, which means $\x = 0$. So $F$ must be true exactly when $\x = 0$ for all memories satisfying the precondition. But if $\mem \Satisfies F$ and $\mem \NotSatisfies \y \teq 0$, then we cannot guarantee the postcondition.
+Since we require $\y \teq 0$ as precondition, the skip branch requires $0 + \x = 3 \cdot \x$, which means $\x = 0$. So $F$ must be true exactly when $\x = 0$ for all memories satisfying the precondition. But if $\mem \Satisfies F$ and $\mem \not\Satisfies \y \teq 0$, then we cannot guarantee the postcondition.
 
 ### (d) Proof outline
 
@@ -199,53 +199,53 @@ Now checking if $\x \teq B \And \y \teq A \And 0 < \x \And 0 < \y \Entails \wp[\
 - When $\x > \y$: We need $\x - \y \leq B$. Since $\x = B$ and $\y > 0$, we have $\x - \y < \x = B$. ✓
 - When $\x \leq \y$: We need $\y - \x \leq A$. Since $\y = A$ and $\x > 0$, we have $\y - \x < \y = A$. ✓
 
-Therefore, $F \Entails \wp[\cc](G)$ holds.
+Therefore, $F \Entails \wp{\cc}{G}$ holds.
 
 ## T4: Strongest Postconditions (40 Points)
 
-I'll prove the four properties to show that $\sp[\cc](F) \Entails G \iff F \Entails \wp[\cc](G)$.
+I'll prove the four properties to show that $\sp{\cc}{\ff} \Entails G \iff F \Entails \wp{\cc}{G}$.
 
-### (a) $\provable \Triple{F}{\cc}{\sp[\cc](F)}$
+### (a) $\provable \Triple{F}{\cc}{\sp{\cc}{\ff}}$
 
 **Proof by structural induction on $\cc$:**
 
 **Base case $\cc = \Skip$**: 
-$\sp[\Skip](F) = F$, and $\provable \Triple{F}{\Skip}{F}$ by the skip rule.
+$\sp{\Skip}{F} = F$, and $\provable \Triple{F}{\Skip}{F}$ by the skip rule.
 
 **Base case $\cc = \Assign{\x}{\aee}$**:
-$\sp[\Assign{\x}{\aee}](F) = \Exists \y \qdot F[\x := \y] \And \x \teq \aee[\x := \y]$
+$\sp{\Assign{\x}{\aee}}{F} = \Exists \y \qdot F[\x := \y] \And \x \teq \aee[\x := \y]$
 
 We need to show this is the strongest postcondition reachable from $F$. By the assignment rule and consequence, this captures exactly the memories reachable after the assignment.
 
 **Inductive case $\cc = \cc_1\Seq\cc_2$**:
-By I.H., $\provable \Triple{F}{\cc_1}{\sp[\cc_1](F)}$ and $\provable \Triple{\sp[\cc_1](F)}{\cc_2}{\sp[\cc_2](\sp[\cc_1](F))}$.
-By the sequence rule, $\provable \Triple{F}{\cc_1\Seq\cc_2}{\sp[\cc_2](\sp[\cc_1](F))} = \Triple{F}{\cc_1\Seq\cc_2}{\sp[\cc_1\Seq\cc_2](F)}$.
+By I.H., $\provable \Triple{F}{\cc_1}{\sp{\cc_1}{F}}$ and $\provable \Triple{\sp{\cc_1}{F}}{\cc_2}{\sp{\cc_2}{\sp{\cc_1}{F}}}$.
+By the sequence rule, $\provable \Triple{F}{\cc_1\Seq\cc_2}{\sp{\cc_2}{\sp{\cc_1}{F}}} = \Triple{F}{\cc_1\Seq\cc_2}{\sp{\cc_1\Seq\cc_2}{F}}$.
 
 **Inductive case $\cc = \Ite{\bb}{\cc_1}{\cc_2}$**:
 Similar argument using the conditional rule and I.H.
 
-### (b) $\sp[\cc](F) \Entails G$ implies $F \Entails \wp[\cc](G)$
+### (b) $\sp{\cc}{\ff} \Entails G$ implies $F \Entails \wp{\cc}{G}$
 
-Assume $\sp[\cc](F) \Entails G$. 
+Assume $\sp{\cc}{\ff} \Entails G$. 
 
-From (a), we have $\valid \Triple{F}{\cc}{\sp[\cc](F)}$.
-By consequence rule with $\sp[\cc](F) \Entails G$, we get $\valid \Triple{F}{\cc}{G}$.
-By Theorem 2.4.6 (characterization of weakest preconditions), this means $F \Entails \wp[\cc](G)$.
+From (a), we have $\valid \Triple{F}{\cc}{\sp{\cc}{\ff}}$.
+By consequence rule with $\sp{\cc}{\ff} \Entails G$, we get $\valid \Triple{F}{\cc}{G}$.
+By Theorem 2.4.6 (characterization of weakest preconditions), this means $F \Entails \wp{\cc}{G}$.
 
-### (c) If $\mem' \Satisfies \sp[\cc](F)$, then $\exists \mem$ such that $\mem \Satisfies F$ and $\tuple{\cc, \mem} \opSteps \tuple{\Done, \mem'}$
+### (c) If $\mem' \Satisfies \sp{\cc}{\ff}$, then $\exists \mem$ such that $\mem \Satisfies F$ and $\tuple{\cc, \mem} \opSteps \tuple{\Done, \mem'}$
 
 **Proof by structural induction on $\cc$:**
 
 This follows from the definition of strongest postcondition - it collects exactly the reachable memories.
 
-### (d) $F \Entails \wp[\cc](G)$ implies $\sp[\cc](F) \Entails G$
+### (d) $F \Entails \wp{\cc}{G}$ implies $\sp{\cc}{\ff} \Entails G$
 
-Assume $F \Entails \wp[\cc](G)$.
+Assume $F \Entails \wp{\cc}{G}$.
 
 By Theorem 2.4.6, this means $\valid \Triple{F}{\cc}{G}$.
-From (a), we have $\valid \Triple{F}{\cc}{\sp[\cc](F)}$.
-By (c), every memory satisfying $\sp[\cc](F)$ is reachable from some memory satisfying $F$.
+From (a), we have $\valid \Triple{F}{\cc}{\sp{\cc}{\ff}}$.
+By (c), every memory satisfying $\sp{\cc}{\ff}$ is reachable from some memory satisfying $F$.
 Since $\valid \Triple{F}{\cc}{G}$, all such reachable memories must satisfy $G$.
-Therefore, $\sp[\cc](F) \Entails G$.
+Therefore, $\sp{\cc}{\ff} \Entails G$.
 
-**Conclusion**: We have shown all four properties, establishing that $\sp[\cc](F) \Entails G \iff F \Entails \wp[\cc](G)$.
+**Conclusion**: We have shown all four properties, establishing that $\sp{\cc}{\ff} \Entails G \iff F \Entails \wp{\cc}{G}$.
