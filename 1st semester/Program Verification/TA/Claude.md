@@ -107,7 +107,6 @@ Thus $\mem' \Satisfies 0 < \x$, proving the triple is valid.
 
 ### (b) Proof tree for the given triple
 
-![[2. Overview - Definition 2-11 Toy Program Logic.png]]$\newcommand{\z}{\texttt{z}}$
 
 **Triple**: 
 $$\Triple{\y \teq 0}{\Ite{\x \teq 0}{\Skip}{\Assign{\y}{\x + \x}}\Seq\Assign{\z}{\y + \x}}{\z \teq 3 \cdot \x}
