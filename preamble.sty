@@ -1,6 +1,16 @@
 %%%==== Program Verification ====%%%
 \usepackage{bussproofs}
 
+% Formatting Commands
+% ------------------------------------------------------------
+\newcommand{\FunFont}[1]{\mathsf{#1}}
+\newcommand{\LogicFont}[1]{\mathfrak{#1}}
+\newcommand{\NonterminalFont}[1]{\textsf{#1}}
+\newcommand{\PredFont}[1]{\mathit{#1}}
+\newcommand{\SetFont}[1]{\textbf{#1}}
+\newcommand{\SymbolFont}[1]{\textsf{#1}}
+\newcommand{\ccFont}[1]{\texttt{#1}}
+
 % ---------- Memory ----------
 \newcommand{\memory}{\mathfrak{m}}
 \newcommand{\mem}{\memory}
@@ -22,6 +32,22 @@
 \newcommand{\Begin}{\{}
 \newcommand{\End}{\}}
 \newcommand{\Choice}{\texttt{[]}}
+
+% ---------- Sequences and Tuples ----------
+\newcommand{\AssignSeq}[2]{\Sequence{#1}~\ccSymbol{:=}~\Sequence{#2}}
+\newcommand{\EmptySequence}{\varepsilon}
+\newcommand{\GenSequence}{\Sequence{s}}
+\newcommand{\LetInSeq}[4]{\ccFont{let}~\Sequence{\VarAssign{#1}{#2}{#3}}~\ccFont{in}~#4}
+\newcommand{\OfTypeSeq}[2]{\Sequence{#1 \texttt{:} #2}}
+\newcommand{\Seq}{\,\ccSymbol{;}~}
+\newcommand{\Sequence}[1]{\overline{#1}}
+\newcommand{\SequenceElement}[1]{[#1]}
+\newcommand{\SubstSeq}[2]{\subst{\Sequence{#1} \mapsto \Sequence{#2}}}
+\newcommand{\seq}{\equiv}
+\newcommand{\tuple}[1]{\left\langle #1 \right\rangle}
+\newcommand{\tupleElem}[1]{[#1]}
+\newcommand{\tupleLen}[1]{|#1|}
+\newcommand{\tupleName}[1]{\overline{#1}}
 
 % ---------- Assertions and Assumptions ----------
 \newcommand{\Assert}[1]{\texttt{assert}~#1}
@@ -61,6 +87,21 @@
 \newcommand{\qdot}{\,.\,}
 \newcommand{\Implies}{\rightarrow}
 \newcommand{\Neg}[1]{\neg #1}
+\newcommand{\AbsEntails}{\models}
+\newcommand{\And}{\mathbin{\wedge}}
+\newcommand{\Entails}{\models}
+\newcommand{\JudgeSem}{\models}
+% \newcommand{\Neg}{\neg}
+\newcommand{\NotSatisfies}{\not\models}
+\newcommand{\Or}{\mathbin{\vee}}
+\newcommand{\Satisfies}{\models}
+\newcommand{\Valid}{\models}
+\newcommand{\aNeg}{${\color{blue!80}\Neg}$}
+\newcommand{\valid}[1]{\models_{#1}}
+\newcommand{\Equivalent}{\mathbin{\leftrightarrow}}
+\newcommand{\qand}{\quad\text{and}\quad}
+\newcommand{\qimplies}{\quad\text{implies}\quad}
+
 % ---------- Boolean and Comparison Operators ----------
 \newcommand{\True}{\texttt{true}}
 \newcommand{\False}{\texttt{false}}
@@ -99,6 +140,9 @@
 \newcommand{\Inv}{\textit{Inv}}
 \newcommand{\return}{\texttt{return}}
 \newcommand{\nop}{\texttt{nop}}
+\newcommand{\VarAssign}[3]{\Assign{\Var{#1}{#2}}{#3}}
+\newcommand{\VarAssignSeq}[3]{\Assign{\ccFont{var}~\Sequence{\tof{#1}{#2}}}{\Sequence{#3}}}
+\newcommand{\VarAssignment}{\LogicFont{v}}
 
 % ---------- Auxiliary Variables and Symbols ----------
 \newcommand{\cc}{C}
@@ -106,6 +150,7 @@
 \newcommand{\X}{\textbf{X}}
 \newcommand{\bb}{b}
 \newcommand{\x}{\texttt{x}}
+\newcommand{\xs}{\texttt{x}}
 \newcommand{\y}{\texttt{y}}
 \newcommand{\z}{\texttt{z}}
 \newcommand{\ee}{\texttt{e}}
@@ -114,10 +159,33 @@
 \newcommand{\vv}{\mathit{v}}
 \newcommand{\vu}{\mathit{u}}
 \newcommand{\aee}{\mathit{a}}
+\newcommand{\fun}{\mathit{f}}
+\newcommand{\rel}{\mathit{R}}
+\newcommand{\Term}{t}
+\newcommand{\TermA}{a}
+\newcommand{\TermB}{b}
+\newcommand{\TermC}{c}
+\newcommand{\TermE}{\mathit{e}}
+\newcommand{\TermI}{t_i}
+\newcommand{\TermInt}{k}
+\newcommand{\TermN}{t_n}
+\newcommand{\TermP}{t'}
+\newcommand{\TermX}{t_1}
+\newcommand{\TermY}{t_2}
+\newcommand{\TermZ}{t_3}
+\newcommand{\Term}{\mathit{t}}
+\newcommand{\const}{c}
+\newcommand{\constInt}{k}
+\newcommand{\Signature}{\Sigma}
+\newcommand{\Functions}{\texttt{Fun}}
+\newcommand{\Relations}{\texttt{Rel}}
+\newcommand{\Structure}{\mathfrak{A}}
+\newcommand{\Interpretation}{\LogicFont{I}}
 \newcommand{\SetComp}[2]{\left\{ #1 \mid #2 \right\}}
 \newcommand{\AX}{\textbf{AX}}
 \newcommand{\fg}{G}
 \newcommand{\WhileDoInv}[2]{\texttt{while}~(#1)~\texttt{invariant}~#2}
+
 % ---------- Meta-Variables ----------
 \newcommand{\Pre}{P}
 \newcommand{\Post}{Q}
@@ -133,12 +201,17 @@
 \newcommand{\Encode}[1]{\texttt{enc}(#1)}
 \newcommand{\opStep}{\step}
 \newcommand{\VarSet}{\texttt{Var}}
-\newcommand{\Universe}{\mathfrak{A}}
+\newcommand{\Vars}{\VarSet}
+% \newcommand{\Universe}{\mathfrak{A}}
+\newcommand{\Universe}{\mathbf{A}}
 \newcommand{\Set}[1]{\{#1\}}
+\newcommand{\Interpreted}[1]{\mathbf{#1}^{\Structure}}
 \newcommand{\ModVarsOf}[1]{\mathbf{Mod}(#1)}
-\newcommand{\xs}{\texttt{x}}
 \newcommand{\ForDo}[4]{\texttt{for}~#1~\texttt{in}~#2..#3~\{#4\}}
 \newcommand{\defq}{\stackrel{\text{def}}{=}}
+\newcommand{\EBNF}{\texttt{::=}}
+\newcommand{\qq}[1]{\quad #1 \quad}
+\newcommand{\ees}{\Sequence{\ee}}
 %%%---- Program Verification ----%%%
 
 
