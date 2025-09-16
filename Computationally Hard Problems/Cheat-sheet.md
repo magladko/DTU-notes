@@ -10,7 +10,7 @@ $$
 
 Expected running time of randomized algorithm
 $$
-E[X] = \sum_{n=0}^\inf P[X = n] * n 
+E[X] = \sum_{n=0}^\inf P[X = n] \cdot n 
 $$
 Geometric Series formula
 $$
