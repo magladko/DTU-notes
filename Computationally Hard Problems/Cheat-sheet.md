@@ -14,5 +14,6 @@ E[X] = \sum_{n=0}^\inf P[X = n] * n
 $$
 Geometric Series formula
 $$
-
+\sum_{n=0}^\inf \cdot \left( \frac{1}{2} \right)^{n+1} = \frac{q}{(1-q)^2}
 $$
+
