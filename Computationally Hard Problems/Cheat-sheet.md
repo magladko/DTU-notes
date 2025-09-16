@@ -17,3 +17,10 @@ $$
 \sum_{n=0}^\inf n \cdot \left( \frac{1}{2} \right)^{n+1} = \frac{q}{(1-q)^2}
 $$
 
+![[class-p.png]]
+![[class-np1.png]]
+![[class-np2.png]]
+![[class-rp.png]]
+![[class-bpp.png]]
+![[class-zpp.png]]
+![[class-relations.png]]
