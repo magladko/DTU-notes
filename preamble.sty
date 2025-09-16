@@ -1,336 +1,564 @@
-%%%==== Program Verification ====%%%
-\usepackage{bussproofs}
-
-% Formatting Commands
-% ------------------------------------------------------------
-\newcommand{\FunFont}[1]{\mathsf{#1}}
-\newcommand{\LogicFont}[1]{\mathfrak{#1}}
-\newcommand{\NonterminalFont}[1]{\textsf{#1}}
-\newcommand{\PredFont}[1]{\mathit{#1}}
-\newcommand{\SetFont}[1]{\textbf{#1}}
-\newcommand{\SymbolFont}[1]{\textsf{#1}}
-\newcommand{\ccFont}[1]{\texttt{#1}}
-
-% ---------- Memory ----------
-\newcommand{\memory}{\mathfrak{m}}
-\newcommand{\mem}{\memory}
-
-% ---------- Floyd-Hoare Logic ----------
-\newcommand{\triple}[3]{{\color{blue!80}\{\!\{~#1~\}\!\}}~#2~{\color{blue!80}\{\!\{~#3~\}\!\}}}
-\newcommand{\Triple}[3]{\triple{#1}{#2}{#3}}
-
-% ---------- Conditional and Control Structures ----------
-\newcommand{\choice}[2]{\{~#1~\}~\texttt{[]}~\{~#2~\}}
-\newcommand{\ite}[3]{\texttt{if}~(#1)~\{~#2~\}~\texttt{else}~\{~#3~\}}
-\newcommand{\Ite}[3]{\texttt{if}~(#1)~\{~#2~\}~\texttt{else}~\{~#3~\}}
-\newcommand{\WhileDo}[2]{\texttt{while}~(#1)~\{#2\}}
-\newcommand{\IfThenElse}[3]{\texttt{if}~(#1)~\{#2\}~\texttt{else}~\{#3\}}
-\newcommand{\Done}{\texttt{done}}
-\newcommand{\Abort}{\texttt{abort}}
-\newcommand{\Skip}{\texttt{skip}}
-\newcommand{\Seq}{;}
-\newcommand{\Begin}{\{}
-\newcommand{\End}{\}}
-\newcommand{\Choice}{\texttt{[]}}
-
-% ---------- Sequences and Tuples ----------
-\newcommand{\AssignSeq}[2]{\Sequence{#1}~\ccSymbol{:=}~\Sequence{#2}}
-\newcommand{\EmptySequence}{\varepsilon}
-\newcommand{\GenSequence}{\Sequence{s}}
-\newcommand{\LetInSeq}[4]{\ccFont{let}~\Sequence{\VarAssign{#1}{#2}{#3}}~\ccFont{in}~#4}
-\newcommand{\OfTypeSeq}[2]{\Sequence{#1 \texttt{:} #2}}
-\newcommand{\Seq}{\,\ccSymbol{;}~}
-\newcommand{\Sequence}[1]{\overline{#1}}
-\newcommand{\SequenceElement}[1]{[#1]}
-\newcommand{\SubstSeq}[2]{\subst{\Sequence{#1} \mapsto \Sequence{#2}}}
-\newcommand{\seq}{\equiv}
-\newcommand{\tuple}[1]{\left\langle #1 \right\rangle}
-\newcommand{\tupleElem}[1]{[#1]}
-\newcommand{\tupleLen}[1]{|#1|}
-\newcommand{\tupleName}[1]{\overline{#1}}
-
-% ---------- Assertions and Assumptions ----------
-\newcommand{\Assert}[1]{\texttt{assert}~#1}
-\newcommand{\Assume}[1]{\texttt{assume}~#1}
-\newcommand{\AssertI}[1]{\texttt{assert}~#1}
-\newcommand{\AssumeI}[1]{\texttt{assume}~#1}
-
-% ---------- Matching and Cases ----------
-\newcommand{\Match}[1]{\texttt{match}~\{~#1~\}}
-\newcommand{\Case}[2]{#1~\texttt{=>}~#2}
-\newcommand{\default}{\texttt{default}}
-
-% ---------- Assignment and Updates ----------
-\newcommand{\Assign}[2]{#1 := #2}
-\newcommand{\Havoc}[1]{\texttt{havoc}~#1}
-\newcommand{\VarAssign}[3]{\texttt{var}~#1:~#2~:=~#3}
-\newcommand{\Var}[2]{\texttt{var}~#1:~#2}
-
-% ---------- Expressions ----------
-\newcommand{\UniverseOf}[1]{\mathbf{A}(#1)}
-\newcommand{\VarsOf}[1]{\mathbf{Var}(#1)}
-\newcommand{\tof}[2]{#1 : #2}
-\newcommand{\eval}[2]{#1 \leftarrow [#2](\memory)}
-\newcommand{\mUpdate}[2]{[#1\leftarrow#2]}
-\newcommand{\evalE}[1]{[#1]}
-
-% ---------- Substitution ----------
-\newcommand{\subst}[2]{[#1 := #2]}
-\newcommand{\Subst}[2]{[#1 := #2]}
-
-% ---------- Logic and Quantifiers ----------
-\newcommand{\Exists}{\exists}
-\newcommand{\Forall}{\forall}
-\newcommand{\qiff}{\text{ iff }}
-\newcommand{\texists}{\text{ there exists }}
-\newcommand{\tsuch}{\text{ such that }}
-\newcommand{\qdot}{\,.\,}
-\newcommand{\Implies}{\rightarrow}
-\newcommand{\Neg}[1]{\neg #1}
-\newcommand{\AbsEntails}{\models}
-\newcommand{\And}{\mathbin{\wedge}}
-\newcommand{\Entails}{\models}
-\newcommand{\JudgeSem}{\models}
-% \newcommand{\Neg}{\neg}
-\newcommand{\NotSatisfies}{\not\models}
-\newcommand{\Or}{\mathbin{\vee}}
-\newcommand{\Satisfies}{\models}
-\newcommand{\Valid}{\models}
-\newcommand{\aNeg}{${\color{blue!80}\Neg}$}
-\newcommand{\valid}[1]{\models_{#1}}
-\newcommand{\Equivalent}{\mathbin{\leftrightarrow}}
-\newcommand{\qand}{\quad\text{and}\quad}
+\newcommand{\TODO}[1]{\Sidenote{\textbf{TODO:} #1}}
+\newcommand{\TODOIN}[1]{\Sidenote{\textbf{TODO}}\paragraph{\textbf{TODO}.} #1}
+\newcommand{\CURRENT}{\Sidenote{\color{red}\textbf{CURRENT}} \section*{\color{red}CURRENT CURRENT CURRENT CURRENT CURRENT} }
+\newcommand{\tif}{\text{ if }}
+\newcommand{\tiff}{\text{ iff }}
+\newcommand{\tiffq}{\text{iff}\quad}
+\newcommand{\qiff}{\quad\text{iff}\quad}
+\newcommand{\qif}{\quad\text{if}\quad}
+\newcommand{\tforall}{\text{for all }}
+\newcommand{\totherwise}{\text{ otherwise}}
+\newcommand{\timplies}{\text{ implies }}
 \newcommand{\qimplies}{\quad\text{implies}\quad}
-
-% ---------- Boolean and Comparison Operators ----------
+\newcommand{\texists}{\text{ there exists }}
+\newcommand{\tsome}{\text{for some }}
+\newcommand{\tnexists}{\text{ there is no }}
+\newcommand{\tsuch}{\text{ such that }}
+\newcommand{\tand}{\text{ and }}
+\newcommand{\qand}{\quad\text{and}\quad}
+\newcommand{\tfresh}{\text{ fresh}}
+\newcommand{\tor}{\text{ or }}
+\newcommand{\tthen}{\text{ then }}
+\newcommand{\twhere}{\text{ where }}
+\newcommand{\twhenever}{\text{whenever }}
+\newcommand{\qq}[1]{\quad #1 \quad}
+\newcommand{\highlight}[1]{{\color{blue}#1}}
+\newcommand{\memph}[1]{\textit{#1}}
+\newcommand{\empha}[1]{#1}
+\newcommand{\emphb}[1]{#1}
+\newcommand{\emphc}[1]{#1}
+\newcommand{\emphd}[1]{#1}
+\newcommand{\itema}{\item}
+\newcommand{\itemb}{\item}
+\newcommand{\itemc}{\item}
+\newcommand{\itemu}{\item}
+\newcommand{\itemv}{\item}
+\newcommand{\itemw}{\item}
+\newcommand{\known}[1]{{\color{black!30}#1}}
+\newcommand{\PL}[1]{\SetFont{PL}{#1}}
+\newcommand{\PLog}[1]{\LL{#1}}
+\newcommand{\defeq}{\overset{\text{def}}{=}}
+\newcommand{\defqeq}{\quad\defeq\quad}
+\newcommand{\seq}{\equiv}
+\newcommand{\sneq}{\not\equiv}
+\newcommand{\eq}{=}
+\newcommand{\eeq}{~=~}
+\newcommand{\qeq}{\quad=\quad}
+\newcommand{\eX}{a}
+\newcommand{\eY}{b}
+\newcommand{\eZ}{c}
+\newcommand{\MathSet}[1]{\mathbb{#1}}
+\newcommand{\Nats}{\MathSet{N}}
+\newcommand{\PosNats}{\Nats_{>0}}
+\newcommand{\SetFont}[1]{\textbf{#1}}
+\newcommand{\Set}[1]{\left\{\,#1\,\right\}}
+\newcommand{\powerset}[1]{2^{#1}}
+\newcommand{\X}{\SetFont{X}}
+\newcommand{\AX}{\SetFont{AX}}
+\newcommand{\Y}{\SetFont{Y}}
+\newcommand{\Z}{\SetFont{Z}}
+\newcommand{\I}{\SetFont{I}}
+\newcommand{\R}{\SetFont{R}}
+\newcommand{\F}{\SetFont{F}}
+\newcommand{\G}{\SetFont{G}}
+\newcommand{\M}{\SetFont{S}}
+\newcommand{\LL}{\MathSet{L}}
+\newcommand{\PropL}{\SetFont{Prop}}
+\newcommand{\fun}{f}
+\newcommand{\gun}{g}
+\newcommand{\rel}{R}
+\newcommand{\relS}{S}
+\newcommand{\const}{c}
+\newcommand{\undefined}{\mathit{undefined}}
+\newcommand{\dom}[1]{\SetFont{dom}(#1)}
+\newcommand{\codom}[1]{\SetFont{codom}(#1)}
+\newcommand{\FunctionsFromTo}[2]{\left[#1 \to #2\right]}
+\newcommand{\CurryFromTo}[2]{{#1 \to #2}}
+\newcommand{\lambdaExpr}[1]{\lambda #1\,.~}
+\newcommand{\mUpdate}[2]{[#1 \leftarrow #2]}
+\newcommand{\Bool}{\MathSet{B}}
+\newcommand{\true}{\texttt{true}}
+\newcommand{\false}{\texttt{false}}
+\newcommand{\Models}[1]{\MathSet{M}(#1)}
+\newcommand{\SetComp}[2]{\left\{\,#1 ~\middle|~ #2 \,\right\}}
 \newcommand{\True}{\texttt{true}}
 \newcommand{\False}{\texttt{false}}
-\newcommand{\teq}{~\texttt{==}~}
-\newcommand{\eq}{=}
-\newcommand{\defqeq}{\stackrel{\text{def}}{=}}
-\newcommand{\defeq}{\defqeq}
-
-% ---------- Configurations and Judgements ----------
-\newcommand{\conf}[1]{\langle\, #1 \,\rangle}
-\newcommand{\tuple}[1]{\langle\, #1 \,\rangle}
-\newcommand{\qopStep}{\step}
-\newcommand{\step}{~\Rightarrow~}
-\newcommand{\valid}{\models}
+\newcommand{\Neg}{\neg}
+\renewcommand{\And}{\mathbin{\wedge}}
+\newcommand{\Or}{\mathbin{\vee}}
+\newcommand{\Implies}{\mathbin{\rightarrow}}
+\newcommand{\Equivalent}{\mathbin{\leftrightarrow}}
 \newcommand{\Entails}{\models}
-\newcommand{\provable}{\vdash}
-\newcommand{\JudgeSyn}{\vdash}
 \newcommand{\Satisfies}{\models}
+\newcommand{\NotSatisfies}{\not\models}
+\newcommand{\tuple}[1]{\left\langle #1 \right\rangle}
+\newcommand{\tupleLen}[1]{|#1|}
+\newcommand{\tupleName}[1]{\overline{#1}}
+\newcommand{\tn}[1]{\tupleName{#1}}
+\newcommand{\tupleElem}[1]{[#1]}
 \newcommand{\tsep}{,~}
-\newcommand{\Configurations}{\texttt{Conf}}
-\newcommand{\Variant}{\textit{V}}
-
-% ---------- Typing ----------
-\newcommand{\TT}{\texttt{T}}
-
-% ---------- Programs and Commands ----------
-\newcommand{\Block}{\texttt{begin}~\textit{C}~\texttt{end}}
-\newcommand{\Vc}[2]{\text{VC}\left(#1, #2\right)}
-\newcommand{\BlockBegin}{\texttt{begin}}
-\newcommand{\BlockEnd}{\texttt{end}}
-\newcommand{\Wp}[2]{\mathbf{wp}[#1](#2)}
-\renewcommand{\wp}{\Wp}
-\newcommand{\sp}[2]{\mathbf{sp}[#1](#2)}
-\newcommand{\swp}[2]{\mathbf{swp}[#1](#2)}
-\newcommand{\Invariant}{\textit{Inv}}
-\newcommand{\Inv}{\textit{Inv}}
-\newcommand{\return}{\texttt{return}}
-\newcommand{\nop}{\texttt{nop}}
-\newcommand{\VarAssign}[3]{\Assign{\Var{#1}{#2}}{#3}}
-\newcommand{\VarAssignSeq}[3]{\Assign{\ccFont{var}~\Sequence{\tof{#1}{#2}}}{\Sequence{#3}}}
-\newcommand{\VarAssignment}{\LogicFont{v}}
-
-% ---------- Auxiliary Variables and Symbols ----------
+\newcommand{\teX}{\tn{\eX}}
+\newcommand{\teY}{\tn{\eY}}
+\newcommand{\teZ}{\tn{\eZ}}
+\newcommand{\lub}{\textsf{lub}\,}
+\newcommand{\glb}{\text{glb}\,}
+\newcommand{\lfp}[1]{\textsf{lfp}\left(#1\right)}
+\newcommand{\gfp}[1]{\text{gfp}\left(#1\right)}
+\newcommand{\RuleName}[1]{\text{#1}}
+\newcommand{\EBNF}{\texttt{::=}}
+\newcommand{\emptyWord}{\varepsilon}
+\newcommand{\Commands}{\SetFont{Cmd}}
 \newcommand{\cc}{C}
-\newcommand{\ff}{\mathit{F}}
-\newcommand{\X}{\textbf{X}}
-\newcommand{\bb}{b}
+\newcommand{\Declarations}{\SetFont{Decl}}
+\newcommand{\Assertions}{\SetFont{Formulae}}
+\newcommand{\PredFont}[1]{\mathit{#1}}
+\newcommand{\ff}{\PredFont{F}}
+\newcommand{\fg}{\PredFont{G}}
+\newcommand{\fh}{\PredFont{H}}
+\newcommand{\peq}{\eq}
+\newcommand{\peeq}{\eeq}
+\newcommand{\pqeq}{\qeq}
+\newcommand{\triple}[3]{\{#1\}~#2~\{#3\}}
+\newcommand{\Pre}{\ff}
+\newcommand{\Mid}{\fh}
+\newcommand{\Post}{\fg}
+\newcommand{\provable}[1]{\vdash_{#1}}
+\newcommand{\unprovable}[1]{\not\vdash_{#1}}
+\newcommand{\valid}[1]{\models_{#1}}
+\newcommand{\pPartial}{\PredFont{partial}}
+\newcommand{\pTotal}{\PredFont{total}}
+\newcommand{\validPartial}{\valid{\pPartial}}
+\newcommand{\validTotal}{\valid{\pTotal}}
+\newcommand{\pValid}{\PredFont{valid}}
+\newcommand{\semWP}[2]{\PredFont{WP}[#1](#2)}
+\newcommand{\semWLP}[2]{\PredFont{WLP}[#1](#2)}
+\newcommand{\Mems}{\SetFont{Mem}}
+\newcommand{\mem}{\mathfrak{m}}
+\newcommand{\mems}{\SetFont{M}}
+\newcommand{\Configurations}{\SetFont{Conf}}
+\newcommand{\cnf}{c}
+\newcommand{\confs}{\SetFont{C}}
+\newcommand{\cFinal}{\SetFont{Final}}
+\newcommand{\opStep}{\Rightarrow}
+\newcommand{\qopStep}{\quad\opStep\quad}
+\newcommand{\opSteps}{\opStep^{*}}
+\newcommand{\opStepsN}[1]{\opStep^{#1}}
+\newcommand{\cSuccSym}{\SetFont{Succ}}
+\newcommand{\cSucc}[1]{\cSuccSym\left(#1\right)}
+\newcommand{\cSuccs}[2]{\cSuccSym^{#1}\left(#2\right)}
+\newcommand{\opPostSym}{\SetFont{Post}}
+\newcommand{\opPost}[1]{\opPostSym\left(#1\right)}
+\newcommand{\opPreSym}{\SetFont{Pre}}
+\newcommand{\opPre}[1]{\opPreSym\left(#1\right)}
+\newcommand{\cStuck}{\SetFont{Final}}
+\newcommand{\cSafe}{\F}
+\newcommand{\cInitial}{\I}
+\newcommand{\ccFont}[1]{\texttt{#1}}
+\newcommand{\Abort}{\ccFont{abort}}
+\newcommand{\Magic}{\ccFont{magic}}
+\newcommand{\Done}{\ccFont{done}}
+\newcommand{\cAbort}{\SetFont{Abort}}
+\newcommand{\cDone}{\SetFont{Done}}
+\newcommand{\cMagic}{\SetFont{Magic}}
+\newcommand{\cConf}[1]{\Configurations(#1)}
+\newcommand{\pTermination}{\PredFont{termination}}
+\newcommand{\pDivergence}{\PredFont{divergence}}
+\newcommand{\pFunctional}[1]{\PredFont{functional}_{#1}}
+\newcommand{\pSafe}[1]{\PredFont{safe}_{#1}}
+\newcommand{\cPred}[1]{\SetFont{Pred}\left(#1\right)}
+\newcommand{\cAssn}[1]{\Configurations\left(#1\right)}
+\newcommand{\pWpsym}{\SetFont{WP}}
+\newcommand{\pWp}[2]{\pWpsym(#1, #2)}
+\newcommand{\pDiverge}[1]{\SetFont{DIVERGE}(#1)}
+\newcommand{\pWlpsym}{\SetFont{WLP}}
+\newcommand{\pWlp}[2]{\pWlpsym(#1, #2)}
+\newcommand{\Types}{\SetFont{Typ}}
+\newcommand{\type}{\tau}
+\newcommand{\tof}[2]{#1\colon #2}
+\newcommand{\tGet}[1]{\textsf{type}(#1)}
+\newcommand{\tSort}[1]{\textsf{Sort}_{#1}}
+\newcommand{\tBool}{\SetFont{Bool}}
+\newcommand{\tInt}{\SetFont{Int}}
+\newcommand{\Vals}{\SetFont{Val}}
+\newcommand{\tVals}[1]{\Vals(#1)}
+\newcommand{\vu}{\mathit{u}}
+\newcommand{\vv}{\mathit{v}}
+\newcommand{\vw}{\mathit{w}}
+\newcommand{\veq}{=}
+\newcommand{\vneq}{\neq}
+\newcommand{\vundef}{\bot}
+\newcommand{\Vars}{\SetFont{Var}}
+\newcommand{\tVars}[1]{\Vars(#1)}
 \newcommand{\x}{\texttt{x}}
-\newcommand{\xs}{\texttt{x}}
 \newcommand{\y}{\texttt{y}}
 \newcommand{\z}{\texttt{z}}
-\newcommand{\ee}{\texttt{e}}
-\newcommand{\F}{\textit{F}}
-\newcommand{\A}{\mathfrak{A}}
-\newcommand{\vv}{\mathit{v}}
-\newcommand{\vu}{\mathit{u}}
+\newcommand{\Expr}{\SetFont{Expr}}
+\newcommand{\ee}{\mathit{e}}
+\newcommand{\Variant}{\mathit{V}}
+\newcommand{\evalE}[1]{[#1]}
+\newcommand{\eval}[2]{\evalE{#1}(#2)}
+\newcommand{\VarsOf}[1]{\Vars(#1)}
+\newcommand{\ModVarsOf}[1]{\SetFont{Mod}(#1)}
+\newcommand{\AllVarsOf}[1]{\SetFont{AllVars}(#1)}
+\newcommand{\subst}[2]{[#1 \,:=\, #2]}
+\newcommand{\Exists}{\exists}
+\newcommand{\Forall}{\forall}
+\newcommand{\mydot}{\colon}
+\newcommand{\PredicateCom}[2]{#1[#2]}
+\newcommand{\PredicateTrans}[3]{#1[#2](#3)}
+\newcommand{\wspsym}{\textsf{w(l)p}}
+\newcommand{\wspC}[1]{\PredicateCom{\wspsym}{#1}}
+\newcommand{\wsp}[2]{\PredicateTrans{\wspsym}{#1}{#2}}
+\newcommand{\wpsym}{\textsf{wp}}
+\newcommand{\wpC}[1]{\PredicateCom{\wpsym}{#1}}
+\renewcommand{\wp}[2]{\PredicateTrans{\wpsym}{#1}{#2}}
+\newcommand{\wlpsym}{\textsf{wlp}}
+\newcommand{\wlpC}[1]{\PredicateCom{\wlpsym}{#1}}
+\newcommand{\wlp}[2]{\PredicateTrans{\wlpsym}{#1}{#2}}
+\newcommand{\swpsym}{\SetFont{swp}}
+\newcommand{\swpC}[1]{\PredicateCom{\swpsym}{#1}}
+\newcommand{\swp}[2]{\PredicateTrans{\swpsym}{#1}{#2}}
+\newcommand{\Procedures}{\SetFont{Proc}}
+\newcommand{\proc}{p}
+\newcommand{\prBody}{\cc}
+\newcommand{\prIn}{\tupleName{in}}
+\newcommand{\prOut}{\tupleName{out}}
+\newcommand{\prDefault}{\_}
+\newcommand{\prEnv}{D}
+\newcommand{\prDecl}{\prBody(\prIn)\colon \prOut}
+\newcommand{\prX}{\tupleName{\x}}
+\newcommand{\prY}{\tupleName{\y}}
+\newcommand{\prZ}{\tupleName{\z}}
+\newcommand{\prE}{\tupleName{\ee}}
+\newcommand{\prAssign}{\CallAssign{\prX}{\proc}{\prE}}
+\newcommand{\prContext}{\Gamma}
+\newcommand{\aVars}{\Sigma}
+\newcommand{\aX}{X}
+\newcommand{\aY}{Y}
+\newcommand{\aZ}{Z}
+\newcommand{\aff}{\ff}
+\newcommand{\afg}{\fg}
+\newcommand{\afh}{\fh}
+\newcommand{\Formulas}{\SetFont{Pred}}
+\newcommand{\Valid}{\models}
+\newcommand{\Fields}{\SetFont{Fields}}
+\newcommand{\field}{f}
+\newcommand{\Threads}{\SetFont{Processes}}
+\newcommand{\thread}{\mathit{pid}}
+\newcommand{\Locks}{\SetFont{Locks}}
+\newcommand{\lock}{\ell}
+\newcommand{\Skip}{\ccFont{skip}}
+\newcommand{\Diverge}{\ccFont{diverge}}
+\newcommand{\Loop}{\ccFont{loop}}
+\newcommand{\Assert}[1]{\ccFont{assert}~#1}
+\newcommand{\Assume}[1]{\ccFont{assume}~#1}
+\newcommand{\Havoc}[1]{\ccFont{havoc}~#1}
+\newcommand{\Assign}[2]{#1~\ccFont{:=}~#2}
+\newcommand{\SimpleCall}[1]{\ccFont{call}~#1}
+\newcommand{\CallAssign}[3]{\Assign{#1}{#2(\,#3\,)}}
+\newcommand{\New}[1]{\Assign{#1}{\ccFont{new}}}
+\newcommand{\Free}[1]{\ccFont{free}~#1}
+\newcommand{\AssignField}[3]{\Assign{#1.#2}{#3}}
+\newcommand{\ReadField}[3]{\Assign{#1}{#2.#3}}
+\newcommand{\ForkThread}[1]{\ccFont{fork}~#1}
+\newcommand{\JoinThread}[1]{\ccFont{join}~#1}
+\newcommand{\Acquire}[1]{\ccFont{acquire}~#1}
+\newcommand{\Release}[1]{\ccFont{release}~#1}
+\newcommand{\Seq}{\,\ccSymbol{;}~}
+\newcommand{\Par}{~\ccSymbol{||}~}
+\newcommand{\Choice}{~\ccSymbol{[\,]}~}
+\newcommand{\LetIn}[2]{\ccFont{let}~\Assign{#1}{#2}~\ccFont{in}~}
+\newcommand{\If}[1]{\ccFont{if}~(\,#1\,)~}
+\newcommand{\Else}{~\ccFont{else}~}
+\newcommand{\While}[1]{\ccFont{while}~(\,#1\,)~}
+\newcommand{\pEnv}{D}
+\newcommand{\pDeclare}[2]{#1~{\triangleright}~#2}
+\newcommand{\pSep}{~\,{::}\,~}
 \newcommand{\aee}{\mathit{a}}
-\newcommand{\fun}{\mathit{f}}
-\newcommand{\rel}{\mathit{R}}
+\newcommand{\predicate}{\texttt{P}}
+\newcommand{\constInt}{k}
+\newcommand{\setInt}{\mathbb{Z}}
+\newcommand{\ccSymbol}[1]{\mathtt{#1}}
+\newcommand{\NonterminalFont}[1]{\textsf{#1}}
+\newcommand{\IdentifierFont}[1]{\textit{#1}}
+\newcommand{\GenSet}{\SetFont{S}}
+\newcommand{\GenRel}{\SetFont{R}}
+\newcommand{\EmptySequence}{\varepsilon}
+\newcommand{\Sequence}[1]{\overline{#1}}
+\newcommand{\GenSequence}{\Sequence{s}}
+\newcommand{\xts}{\Sequence{\tof{\x}{\TT}}}
+\newcommand{\yts}{\Sequence{\tof{\y}{\TTS}}}
+\newcommand{\zts}{\Sequence{\tof{\z}{\TTS}}}
+\newcommand{\ees}{\Sequence{\ee}}
+\newcommand{\xs}{\Sequence{\x}}
+\newcommand{\ys}{\Sequence{\y}}
+\newcommand{\zs}{\Sequence{\z}}
+\newcommand{\vvs}{\Sequence{\vv}}
+\newcommand{\tmp}{\ccFont{tmp}}
+\newcommand{\tmps}{\Sequence{\tmp}}
+\newcommand{\TTs}{\Sequence{\TT}}
+\newcommand{\TTSs}{\Sequence{\TTS}}
+\newcommand{\SequenceElement}[1]{[#1]}
+\newcommand{\GenSize}[1]{|#1|}
+\newcommand{\Constant}{c}
+\newcommand{\LogicFont}[1]{\mathfrak{#1}}
+\newcommand{\CommandsOf}[1]{\SetFont{Cmd}(#1)}
+\newcommand{\Signature}{\Sigma}
+\newcommand{\Sorts}{\SetFont{Sorts}}
+\newcommand{\SymbolFont}[1]{\textsf{#1}}
+\newcommand{\GenSortSymbol}{\SymbolFont{S}}
+\newcommand{\GenRelSymbol}{\SymbolFont{R}}
+\newcommand{\GenConsSymbol}{\SymbolFont{c}}
+\newcommand{\GenFunSymbol}{\SymbolFont{f}}
+\newcommand{\Relations}{\SetFont{Rel}}
+\newcommand{\arityOf}[2]{#1 / #2}
+\newcommand{\Constants}{\SetFont{Con}}
+\newcommand{\Functions}{\SetFont{Fun}}
+\newcommand{\GetSort}{\FunFont{sort}}
+\newcommand{\SetPlus}[1]{{#1}^{+}}
+\newcommand{\Structure}{\LogicFont{A}}
+\newcommand{\Universe}{\SetFont{A}}
+\newcommand{\UniverseOf}[1]{\Universe(#1)}
+\newcommand{\GetUniverse}{\LogicFont{u}}
+\newcommand{\GetAssignedMeaning}{\LogicFont{a}}
+\newcommand{\GetRelation}{\GetAssignedMeaning}
+\newcommand{\GetFunction}{\GetAssignedMeaning}
+\newcommand{\GetConstant}{\GetAssignedMeaning}
+\newcommand{\GetInterpretation}{\LogicFont{a}}
+\newcommand{\Interpreted}[1]{#1^{\Structure}}
+\newcommand{\IInterpreted}[2]{#1^{#2}}
+\newcommand{\VarAssignment}{\LogicFont{v}}
+\newcommand{\State}{\sigma}
+\newcommand{\States}{\SetFont{States}}
+\newcommand{\StatesOf}[1]{\States(#1)}
+\newcommand{\Interpretation}{\LogicFont{I}}
+\newcommand{\Formula}{F}
+\newcommand{\FormulaA}{G}
+\newcommand{\FormulaB}{H}
+\newcommand{\FormulaI}{I}
+\newcommand{\Intermediate}{\FormulaB}
+\newcommand{\Inv}{\FormulaI}
 \newcommand{\Term}{t}
+\newcommand{\TermE}{\mathit{e}}
 \newcommand{\TermA}{a}
 \newcommand{\TermB}{b}
 \newcommand{\TermC}{c}
-\newcommand{\TermE}{\mathit{e}}
-\newcommand{\TermI}{t_i}
 \newcommand{\TermInt}{k}
-\newcommand{\TermN}{t_n}
-\newcommand{\TermP}{t'}
 \newcommand{\TermX}{t_1}
 \newcommand{\TermY}{t_2}
 \newcommand{\TermZ}{t_3}
-\newcommand{\Term}{\mathit{t}}
-\newcommand{\const}{c}
-\newcommand{\constInt}{k}
-\newcommand{\Signature}{\Sigma}
-\newcommand{\Functions}{\texttt{Fun}}
-\newcommand{\Relations}{\texttt{Rel}}
-\newcommand{\Structure}{\mathfrak{A}}
-\newcommand{\Interpretation}{\LogicFont{I}}
-\newcommand{\SetComp}[2]{\left\{ #1 \mid #2 \right\}}
-\newcommand{\AX}{\textbf{AX}}
-\newcommand{\fg}{G}
-\newcommand{\WhileDoInv}[2]{\texttt{while}~(#1)~\texttt{invariant}~#2}
-
-% ---------- Meta-Variables ----------
-\newcommand{\Pre}{P}
-\newcommand{\Post}{Q}
-\newcommand{\confTerm}{\Done}
-
-% ---------- Magic and Additional Commands ----------
-\newcommand{\Magic}{\texttt{magic}}
-\newcommand{\Declared}[1]{\textbf{Declared}(#1)}
-\newcommand{\Mems}{\texttt{Mem}}
-\newcommand{\Scopes}{\mathcal{S}}
-\newcommand{\RestoreScope}{\texttt{RestoreScope}}
-\newcommand{\enc}[1]{[#1]}
-\newcommand{\Encode}[1]{\texttt{enc}(#1)}
-\newcommand{\opStep}{\step}
-\newcommand{\VarSet}{\texttt{Var}}
-\newcommand{\Vars}{\VarSet}
-% \newcommand{\Universe}{\mathfrak{A}}
-\newcommand{\Universe}{\mathbf{A}}
-\newcommand{\Set}[1]{\{#1\}}
-\newcommand{\Interpreted}[1]{\mathbf{#1}^{\Structure}}
-\newcommand{\ModVarsOf}[1]{\mathbf{Mod}(#1)}
-\newcommand{\ForDo}[4]{\texttt{for}~#1~\texttt{in}~#2..#3~\{#4\}}
-\newcommand{\defq}{\stackrel{\text{def}}{=}}
-\newcommand{\EBNF}{\texttt{::=}}
-\newcommand{\qq}[1]{\quad #1 \quad}
-\newcommand{\ees}{\Sequence{\ee}}
-%%%---- Program Verification ----%%%
-
-
-
-%%%==== Compiler Construction ====%%%
-% Type-related commands
-\newcommand{\hygTypeNoInit}[1]{\mathop{\text{type }} {#1} = \vphantom{x}}
-\newcommand{\hygTypeInit}[2]{\mathop{\text{type }} {#1} = {#2};\;}
-\newcommand{\hygType}[3]{\hygTypeInit{#1}{#2} {#3}}
-\newcommand{\hygVar}[1]{\mathit{#1\,}}
-
-% Let-related commands
-\newcommand{\hygLetNoInit}[2]{\mathop{\text{let }} \mathit{#1}: {#2} = \vphantom{x}}
-\newcommand{\hygLetInit}[3]{\hygLetNoInit{#1}{#2} {#3};\;}
-\newcommand{\hygLet}[4]{\hygLetInit{#1}{#2}{#3} {#4}}
-\newcommand{\hygLetUNoInit}[1]{\mathop{\text{let }} \mathit{#1} = \vphantom{x}}
-\newcommand{\hygLetUInit}[2]{\hygLetUNoInit{#1} {#2};\;}
-\newcommand{\hygLetU}[3]{\hygLetUInit{#1}{#2} {#3}}
-\newcommand{\hygLetMutNoInit}[1]{\mathop{\text{let mutable }} {#1} = \vphantom{x}}
-\newcommand{\hygLetMutInit}[2]{\hygLetMutNoInit{#1} {#2};\;}
-\newcommand{\hygLetMut}[3]{\hygLetMutInit{#1}{#2} {#3}}
-\newcommand{\hygLetRecNoInit}[2]{\mathop{\text{let rec }} {#1}: {#2} = \vphantom{x}}
-\newcommand{\hygLetRecInit}[3]{\hygLetRecNoInit{#1}{#2} {#3};\;}
-\newcommand{\hygLetRec}[4]{\hygLetRecInit{#1}{#2}{#3} {#4}}
-
-% Control flow commands
-\newcommand{\hygWhileNoBody}[1]{\text{while }{#1}\text{ do }}
-\newcommand{\hygWhile}[2]{\hygWhileNoBody{#1}{#2}}
-\newcommand{\hygDoWhileNoCond}[1]{\text{do }{#1}\text{ while }}
-\newcommand{\hygDoWhile}[2]{\hygDoWhileNoCond{#1}{#2}}
-\newcommand{\hygFor}[4]{\text{for }({#1}; {#2}; {#3})\; {#4}}
-
-% Conditional commands
-\newcommand{\hygCondNoThenElse}[1]{\mathop{\text{if }} {#1} \mathbin{\text{ then }} \vphantom{X}}
-\newcommand{\hygElse}[1]{\text{else }{#1}}
-\newcommand{\hygCond}[3]{\hygCondNoThenElse{#1} {#2} \mathbin{\text{ else }} {#3}}
-
-% Assert and print commands
-\newcommand{\hygAssert}[1]{\text{assert}({#1})}
-\newcommand{\hygPrint}[1]{\text{print}({#1})}
-\newcommand{\hygPrintln}[1]{\text{println}({#1})}
-\newcommand{\hygReadInt}{\text{readInt}()}
-\newcommand{\hygReadFloat}{\text{readFloat}()}
-
-% Logical operators
-\newcommand{\hygNot}[1]{\text{not }{#1}}
-\newcommand{\hygAssign}[2]{{#1}\mathbin{\leftarrow}{#2}}
-\newcommand{\hygTrue}{\text{true}}
-\newcommand{\hygFalse}{\text{false}}
-\newcommand{\hygStr}[1]{\text{"#1"}}
-\newcommand{\hygOr}[2]{{#1} \mathbin{\text{or}} {#2}}
-\newcommand{\hygAnd}[2]{{#1} \mathbin{\text{and}} {#2}}
-
-% Function and lambda commands
-\newcommand{\hygLambdaNoBody}[1]{\operatorname{\lambda}{\left({#1}\right)} \rightarrow \vphantom{X}}
-\newcommand{\hygLambda}[2]{\hygLambdaNoBody{#1}{#2}}
-\newcommand{\hygFunNoInit}[3]{\text{fun }\mathit{#1}\left({#2}\right): {#3} = \vphantom{X}}
-\newcommand{\hygFunInit}[4]{\hygFunNoInit{#1}{#2}{#3} {#4};}
-\newcommand{\hygFun}[5]{\hygFunInit{#1}{#2}{#3}{#4}\;{#5}}
-\newcommand{\hygApp}[2]{{#1}\left({#2}\right)}
-\newcommand{\hygRecFunNoInit}[3]{\text{rec fun }\mathit{#1}\left({#2}\right): {#3} = \vphantom{X}}
-\newcommand{\hygRecFunInit}[4]{\hygRecFunNoInit{#1}{#2}{#3} {#4};}
-\newcommand{\hygRecFun}[5]{\hygRecFunInit{#1}{#2}{#3}{#4}\;{#5}}
-
-% Structure and union commands
-\newcommand{\hygStructNoFields}{\text{struct }}
-\newcommand{\hygStruct}[1]{\hygStructNoFields\left\{{#1}\right\}}
-\newcommand{\hygField}[1]{\mathit{#1\,}}
-\newcommand{\hygFieldSel}[2]{{#1}{.}\hygField{#2}}
-\newcommand{\hygPtr}[1]{\mathsf{#1}}
-\newcommand{\hygUnionInst}[2]{{#1}\left\{{#2}\right\}}
-
-% Pattern matching commands
-\newcommand{\hygMatchCase}[3]{{#1}\{{#2}\}\rightarrow{#3}}
-\newcommand{\hygMatchNoCases}[1]{\text{match }{#1}\text{ with}}
-\newcommand{\hygMatch}[2]{\hygMatchNoCases{#1}\;\left\{{#2}\right\}}
-
-% Heap and evaluation commands
-\newcommand{\hygHeapMax}[1]{\text{maxAddr}({#1})}
-\newcommand{\hygEvalConf}[2]{\left\langle{#1}\bullet{#2}\right\rangle}
-% RENEW
-% TODO: CONFLICT WITH PV
-\renewcommand{\subst_cc}[3]{{#1}\left[{#2} \mapsto {#3}\right]}
-\newcommand{\envField}[2]{{#1}{.}{\text{#2}}}
-
-% Rule and inference commands
-\newcommand{\ruleVertSep}{2mm}
-\newcommand{\UnaryInfCLab}[2]{\RightLabel{[#1]}\UnaryInfC{#2}}
-\newcommand{\BinaryInfCLab}[2]{\RightLabel{[#1]}\BinaryInfC{#2}}
-\newcommand{\TrinaryInfCLab}[2]{\RightLabel{[#1]}\TrinaryInfC{#2}}
-\newcommand{\QuaternaryInfCLab}[2]{\RightLabel{[#1]}\QuaternaryInfC{#2}}
-\newcommand{\ruleFmt}[1]{\text{[#1]}}
-
-% Type judgment commands
-\newcommand{\hygTypeResJ}[3]{{#1} \vdash {#2} \triangleright {#3}}
-\newcommand{\hygTypeCheckJ}[3]{{#1} \vdash {#2} : {#3}}
-\newcommand{\hygSubtypingJ}[3]{{#1} \vdash {#2} \leqslant {#3}}
-\newcommand{\hygSubtypingAJ}[4]{{#1},{#2} \vdash {#3} \leqslant {#4}}
-\newcommand{\mapEntry}[2]{{#1} \mapsto {#2}}
-\newcommand{\hlight}[1]{{\colorbox{yellow}{#1}}}
-\newcommand{\hlightM}[1]{{\colorbox{yellow}{$#1$}}}
-
-% Type constructors
-\newcommand{\tBool}{\text{bool}}
-\newcommand{\tInt}{\text{int}}
-\newcommand{\tFloat}{\text{float}}
-\newcommand{\tString}{\text{string}}
-\newcommand{\tUnit}{\text{unit}}
-\newcommand{\tFun}[2]{\left({#1}\right) \rightarrow {#2}}
-\newcommand{\tStructNoCases}{\text{struct}\,}
-\newcommand{\tStruct}[1]{\tStructNoCases\left\{{#1}\right\}}
-\newcommand{\tUnionNoFields}{\text{union}\,}
-\newcommand{\tUnion}[1]{\tUnionNoFields\left\{{#1}\right\}}
-
-% Analysis operators
-\newcommand{\fv}[1]{\operatorname{fv}\!\left({#1}\right)}
-\newcommand{\captures}[1]{\operatorname{cv}\!\left({#1}\right)}
-\newcommand{\lub}[2]{\operatorname{lub}\!\left({#1},{#2}\right)}
-\newcommand{\hygToANFDefs}[1]{\operatorname{toANFDefs}\!\left({#1}\right)}
-\newcommand{\hygToANF}[2]{\operatorname{toANF}\!\left({#1},{#2}\right)}
-\newcommand{\hygToANFOneArg}[1]{\operatorname{toANF}\!\left({#1}\right)}
-%%%---- Compiler Construction ----%%%
+\newcommand{\TermN}{t_n}
+\newcommand{\TermI}{t_i}
+\newcommand{\TermP}{t'}
+\newcommand{\xx}{x}
+\newcommand{\xxA}{y}
+\newcommand{\xxB}{z}
+\newcommand{\xxC}{p}
+\newcommand{\xxD}{q}
+\newcommand{\xxO}{\textit{old}}
+\newcommand{\cxx}{\ccSymbol{x}}
+\newcommand{\cxxA}{\ccSymbol{y}}
+\newcommand{\cxxB}{\ccSymbol{z}}
+\newcommand{\cxxC}{\ccSymbol{p}}
+\newcommand{\cxxD}{\ccSymbol{q}}
+\newcommand{\iUpdate}[2]{[#1 \leftarrow #2]}
+\newcommand{\FunFont}[1]{\mathsf{#1}}
+\newcommand{\fA}{\FunFont{A}}
+\newcommand{\fB}{\FunFont{B}}
+\newcommand{\fC}{\FunFont{C}}
+\newcommand{\fS}{\FunFont{S}}
+\newcommand{\termeval}[2]{[#2](#1)}
+\newcommand{\myllbracket}{[\!\![}
+\newcommand{\myrrbracket}{]\!\!]}
+\newcommand{\leval}[2]{\myllbracket #1 \myrrbracket(#2)}
+\newcommand{\Subst}[2]{\subst{#1}{#2}}
+\newcommand{\SubstSeq}[2]{\subst{\Sequence{#1} \mapsto \Sequence{#2}}}
+\newcommand{\freeVariables}{\FunFont{fv}}
+\newcommand{\FOL}{\SetFont{FOL}[\Signature]}
+\newcommand{\teq}{~\texttt{==}~}
+\newcommand{\syneq}{=}
+\newcommand{\FormulaSet}{\Phi}
+\newcommand{\Theory}{\SetFont{Th}}
+\newcommand{\Sat}{\FunFont{sat}}
+\newcommand{\Unsat}{\FunFont{unsat}}
+\newcommand{\SatisfiesMod}[1]{\Satisfies_{#1}}
+\newcommand{\SatisfiesAX}{\SatisfiesMod{\AX}}
+\newcommand{\EntailsAX}{\SatisfiesMod{\AX}}
+\newcommand{\ValidAX}{\SatisfiesMod{\AX}}
+\newcommand{\TSatisfies}{\Satisfies_{\FormulaSet}}
+\newcommand{\ccA}{C_1}
+\newcommand{\ccB}{C_2}
+\newcommand{\ccC}{C_3}
+\newcommand{\acc}{A}
+\newcommand{\PP}{P}
+\newcommand{\PPA}{P_1}
+\newcommand{\PPB}{P_2}
+\newcommand{\PPC}{P_3}
+\newcommand{\bb}{b}
+\newcommand{\AbsPredicates}{\SetFont{Pred}}
+\newcommand{\pp}{\varphi}
+\newcommand{\ppA}{\psi}
+\newcommand{\ppB}{\vartheta}
+\newcommand{\AbsEntails}{\models}
+\newcommand{\markerFunctional}{\text{f}}
+\newcommand{\markerSafe}{\text{p}}
+\newcommand{\markerTotal}{\text{t}}
+\newcommand{\JudgeSem}{\models}
+\newcommand{\JudgeFunctional}{\JudgeSem_{\markerFunctional}}
+\newcommand{\JudgeSafe}{\JudgeSem_{\markerSafe}}
+\newcommand{\JudgeTotal}{\JudgeSem_{\markerTotal}}
+\newcommand{\JudgeSyn}{\vdash}
+\newcommand{\JudgeSynTotal}{\JudgeSyn_{\markerTotal}}
+\newcommand{\JudgeSynSafe}{\JudgeSyn_{\markerSafe}}
+\newcommand{\Ann}[1]{{\color{blue!80}\{\!\{~#1~\}\!\}}}
+\newcommand{\AnnOpen}[1]{{\color{blue!80}\{\!\{~#1}}
+\newcommand{\AnnClose}[1]{{\color{blue!80}#1~\}\!\}}}
+\newcommand{\Triple}[3]{{\color{blue!80}\{\!\{~#1~\}\!\}}~#2~{\color{blue!80}\{\!\{~#3~\}\!\}}}
+\newcommand{\BTriple}[3]{{\color{black}\{\!\{~#1~\}\!\}}~#2~{\color{black}\{\!\{~#3~\}\!\}}}
+\newcommand{\Defsym}{\textsf{def}}
+\newcommand{\Def}[1]{\Defsym(#1)}
+\newcommand{\ewpsym}{\textsf{ewp}}
+\newcommand{\ewpC}[1]{\PredicateCom{\ewpsym}{#1}}
+\newcommand{\ewp}[2]{\PredicateTrans{\ewpsym}{#1}{#2}}
+\newcommand{\sewpsym}{\textsf{sewp}}
+\newcommand{\sewpC}[1]{\PredicateCom{\sewpsym}{#1}}
+\newcommand{\sewp}[2]{\PredicateTrans{\sewpsym}{#1}{#2}}
+\newcommand{\wfpsym}{\textsf{wfp}}
+\newcommand{\wfpC}[1]{\PredicateCom{\wfpsym}{#1}}
+\newcommand{\wfp}[2]{\PredicateTrans{\wfpsym}{#1}{#2}}
+\newcommand{\wpfsym}{\textsf{wp}_{\markerFunctional}}
+\newcommand{\wpfC}[1]{\PredicateCom{\wpfsym}{#1}}
+\newcommand{\wpf}[2]{\PredicateTrans{\wpfsym}{#1}{#2}}
+\newcommand{\wpssym}{\textsf{wp}_{\markerSafe}}
+\newcommand{\wpsC}[1]{\PredicateCom{\wpssym}{#1}}
+\newcommand{\wps}[2]{\PredicateTrans{\wpssym}{#1}{#2}}
+\newcommand{\wptsym}{\textsf{wp}_{\markerTotal}}
+\newcommand{\wptC}[1]{\PredicateCom{\wptsym}{#1}}
+\newcommand{\wpt}[2]{\PredicateTrans{\wptsym}{#1}{#2}}
+\newcommand{\vcsym}{\textsf{vc}}
+\newcommand{\vcC}[1]{\PredicateCom{\vcsym}{#1}}
+\newcommand{\vc}[2]{\PredicateTrans{\vcsym}{#1}{#2}}
+\newcommand{\vpresym}{\textsf{vpre}}
+\newcommand{\vpreC}[1]{\PredicateCom{\vpresym}{#1}}
+\newcommand{\vpre}[2]{\PredicateTrans{\vpresym}{#1}{#2}}
+\newcommand{\vpostsym}{\textsf{vpost}}
+\newcommand{\vpostC}[1]{\PredicateCom{\vpostsym}{#1}}
+\newcommand{\vpost}[2]{\PredicateTrans{\vpostsym}{#1}{#2}}
+\newcommand{\spsym}{\textsf{sp}}
+\newcommand{\spC}[1]{\PredicateCom{\spsym}{#1}}
+\renewcommand{\sp}[2]{\PredicateTrans{\spsym}{#1}{#2}}
+\newcommand{\spfsym}{\textsf{sp}_{\markerFunctional}}
+\newcommand{\spfC}[1]{\PredicateCom{\spfsym}{#1}}
+\newcommand{\spf}[2]{\PredicateTrans{\spfsym}{#1}{#2}}
+\newcommand{\spssym}{\textsf{sp}_{\markerSafe}}
+\newcommand{\spsC}[1]{\PredicateCom{\spssym}{#1}}
+\newcommand{\sps}[2]{\PredicateTrans{\spssym}{#1}{#2}}
+\newcommand{\sptsym}{\textsf{sp}_{\markerTotal}}
+\newcommand{\sptC}[1]{\PredicateCom{\sptsym}{#1}}
+\newcommand{\spt}[2]{\PredicateTrans{\sptsym}{#1}{#2}}
+\newcommand{\EnvProc}{\Gamma}
+\newcommand{\EnvVar}{\Lambda}
+\newcommand{\opNotSteps}{\not\opStep^{*}}
+\newcommand{\conf}{\textsf{cnf}}
+\newcommand{\confTerm}{\textsf{done}}
+\newcommand{\confError}{\textsf{error}}
+\newcommand{\confMagic}{\textsf{magic}}
+\newcommand{\OfType}[2]{#1 \texttt{:} #2}
+\newcommand{\OfTypeSeq}[2]{\Sequence{#1 \texttt{:} #2}}
+\newcommand{\sepcon}{\ast}
+\newcommand{\qdot}{\texttt{.}\,}
+\newcommand{\aaa}[1]{{\color{blue!80}#1}}
+\newcommand{\aleq}{${\color{blue!80}\leq}$}
+\newcommand{\aneq}{${\color{blue!80}\neq}$}
+\newcommand{\aAnd}{${\color{blue!80}\And}$}
+\newcommand{\aOr}{${\color{blue!80}\Or}$}
+\newcommand{\aNeg}{${\color{blue!80}\Neg}$}
+\newcommand{\cleq}{${\color{orange}\leq}$}
+\newcommand{\cneq}{${\color{orange}\neq}$}
+\newcommand{\cAnd}{${\color{orange}\And}$}
+\newcommand{\cOr}{${\color{orange}\Or}$}
+\newcommand{\TT}{\texttt{T}}
+\newcommand{\TTS}{\texttt{S}}
+\newcommand{\ttL}{\texttt{(}}
+\newcommand{\ttR}{\texttt{)}}
+\newcommand{\OfTypeSym}{\ccSymbol{:}}
+\newcommand{\dd}{\NonterminalFont{D}}
+\newcommand{\dda}{\NonterminalFont{A}}
+\newcommand{\ddr}{\NonterminalFont{R}}
+\newcommand{\ddp}{\NonterminalFont{Spec}}
+\newcommand{\ddv}{\NonterminalFont{V}}
+\newcommand{\BlockBegin}{\ccFont{begin}}
+\newcommand{\BlockEnd}{\ccFont{end}}
+\newcommand{\Declared}{\SetFont{Declared}}
+\newcommand{\Begin}{\ccSymbol{\{}}
+\newcommand{\End}{\ccSymbol{\}}}
+\newcommand{\Old}[1]{\ccSymbol{old(}#1\ccSymbol{)}}
+\newcommand{\LPar}{\ccSymbol{(}}
+\newcommand{\RPar}{\ccSymbol{)}}
+\newcommand{\AssignSeq}[2]{\Sequence{#1}~\ccSymbol{:=}~\Sequence{#2}}
+\newcommand{\Ite}[3]{\ccFont{if}~\LPar#1\RPar~\Begin~#2~\End~\ccFont{else}~\Begin~#3~\End}
+\newcommand{\WhileDo}[2]{\While{#1}\Begin~#2~\End}
+\newcommand{\RepeatUntil}[2]{\ccFont{repeat}~#1~\ccFont{until}~#2}
+\newcommand{\Call}[2]{#1(#2)}
+\newcommand{\Var}[2]{\ccFont{var}~#1\OfTypeSym #2}
+\newcommand{\CallInline}[3]{\FunFont{inline}\myllbracket\CallAssign{#1}{#2}{#3}\myrrbracket}
+\newcommand{\CallInlineN}[4]{\FunFont{inline}^{#4}\myllbracket\CallAssign{#1}{#2}{#3}\myrrbracket}
+\newcommand{\VarSeq}[2]{\Sequence{\ccFont{var}~#1\OfTypeSym #2}}
+\newcommand{\VarAssign}[3]{\Assign{\Var{#1}{#2}}{#3}}
+\newcommand{\VarAssignSeq}[3]{\Assign{\ccFont{var}~\Sequence{\tof{#1}{#2}}}{\Sequence{#3}}}
+\newcommand{\SimpleVarSeq}[1]{\ccFont{var}~\Sequence{#1}}
+\newcommand{\SimpleVarAssignSeq}[2]{\Assign{\ccFont{var}~\Sequence{#1}}{\Sequence{#2}}}
+\newcommand{\GlobalVar}[2]{\ccFont{global}~#1\OfTypeSym #2}
+\newcommand{\Requires}[1]{\ccFont{requires}~#1}
+\newcommand{\Ensures}[1]{\ccFont{ensures}~#1}
+\newcommand{\Invariant}[1]{\ccFont{invariant}~#1}
+\newcommand{\Decreases}[1]{\ccFont{decreases}~#1}
+\newcommand{\Modifies}[1]{\ccFont{modifies}~#1}
+\newcommand{\WhileDoInv}[3]{\While{#1}~\Invariant{#2}~\Begin~#3~\End}
+\newcommand{\LetInSeq}[4]{\ccFont{let}~\Sequence{\VarAssign{#1}{#2}{#3}}~\ccFont{in}~#4}
+\newcommand{\Inhale}[1]{\ccFont{inhale}~#1}
+\newcommand{\Exhale}[1]{\ccFont{exhale}~#1}
+\newcommand{\Unfold}[1]{\ccFont{unfold}~#1}
+\newcommand{\Fold}[1]{\ccFont{fold}~#1}
+\newcommand{\Domain}{\ccFont{domain}}
+\newcommand{\DeclDomain}{\NonterminalFont{dom}}
+\newcommand{\DeclTypedVar}{\textit{typedVar}}
+\newcommand{\Function}{\ccFont{function}}
+\newcommand{\Result}{\ccFont{result}}
+\newcommand{\DomAxiom}{\ccFont{axiom}}
+\newcommand{\Ident}{\IdentifierFont{ident}}
+\newcommand{\IdentType}{\IdentifierFont{type}}
+\newcommand{\IdentFunction}{\IdentifierFont{fun}}
+\newcommand{\IdentMethod}{\IdentifierFont{mthd}}
+\newcommand{\DeclParams}[1]{\Sequence{#1\OfTypeSym\TT}}
+\newcommand{\DeclSpec}{\NonterminalFont{spec}}
+\newcommand{\DeclFunSpec}{\NonterminalFont{funSpec}}
+\newcommand{\DeclLoopSpec}{\NonterminalFont{loopSpec}}
+\newcommand{\Method}{\ccFont{method}}
+\newcommand{\Returns}{\ccFont{returns}}
+\newcommand{\DeclStar}[1]{[#1]^{*}}
+\newcommand{\DeclOptional}[1]{[#1]^{?}}
+\newcommand{\mBody}{\FunFont{body}}
+\newcommand{\mIn}{\FunFont{in}}
+\newcommand{\mOut}{\FunFont{out}}
+\newcommand{\mPre}{\FunFont{pre}}
+\newcommand{\mPost}{\FunFont{post}}
+\newcommand{\IVL}[1]{\text{IVL}#1}
+\newcommand{\Values}[1]{\SetFont{Values}(#1)}
+\newcommand{\Int}{\SetFont{Int}}
+\newcommand{\Real}{\SetFont{Real}}
+\newcommand{\TSet}[1]{\SetFont{Set}[\,#1\,]}
+\newcommand{\CEmptySet}[1]{\ccSymbol{Set}[\,#1\,]()}
+\newcommand{\CSingleSet}[1]{\ccSymbol{Set}(#1)}
+\newcommand{\CUnion}{\ccFont{union}}
+\newcommand{\CIn}{\ccFont{in}}
+\newcommand{\CCardinality}[1]{\ccSymbol{|}#1\ccSymbol{|}}
+\newcommand{\TSeq}[1]{\SetFont{Seq}[\,#1\,]}
+\newcommand{\TMultiset}[1]{\SetFont{Multiset}[\,#1\,]}
+\newcommand{\TMap}[2]{\SetFont{Map}[\,#1,\,#2\,]}
+\newcommand{\Encode}[1]{\textsf{enc}(#1)}
+\newcommand{\Clean}[1]{\textsf{clean}(#1)}
+\newcommand{\Context}{\textsf{ctx}}
+\newcommand{\Local}[1]{\textsf{local}(#1)}
+\newcommand{\Ints}{\MathSet{Z}}
+\newcommand{\Reals}{\MathSet{R}}

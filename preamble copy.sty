@@ -1,0 +1,336 @@
+%%%==== Program Verification ====%%%
+\usepackage{bussproofs}
+
+% Formatting Commands
+% ------------------------------------------------------------
+\newcommand{\FunFont}[1]{\mathsf{#1}}
+\newcommand{\LogicFont}[1]{\mathfrak{#1}}
+\newcommand{\NonterminalFont}[1]{\textsf{#1}}
+\newcommand{\PredFont}[1]{\mathit{#1}}
+\newcommand{\SetFont}[1]{\textbf{#1}}
+\newcommand{\SymbolFont}[1]{\textsf{#1}}
+\newcommand{\ccFont}[1]{\texttt{#1}}
+
+% ---------- Memory ----------
+\newcommand{\memory}{\mathfrak{m}}
+\newcommand{\mem}{\memory}
+
+% ---------- Floyd-Hoare Logic ----------
+\newcommand{\triple}[3]{{\color{blue!80}\{\!\{~#1~\}\!\}}~#2~{\color{blue!80}\{\!\{~#3~\}\!\}}}
+\newcommand{\Triple}[3]{\triple{#1}{#2}{#3}}
+
+% ---------- Conditional and Control Structures ----------
+\newcommand{\choice}[2]{\{~#1~\}~\texttt{[]}~\{~#2~\}}
+\newcommand{\ite}[3]{\texttt{if}~(#1)~\{~#2~\}~\texttt{else}~\{~#3~\}}
+\newcommand{\Ite}[3]{\texttt{if}~(#1)~\{~#2~\}~\texttt{else}~\{~#3~\}}
+\newcommand{\WhileDo}[2]{\texttt{while}~(#1)~\{#2\}}
+\newcommand{\IfThenElse}[3]{\texttt{if}~(#1)~\{#2\}~\texttt{else}~\{#3\}}
+\newcommand{\Done}{\texttt{done}}
+\newcommand{\Abort}{\texttt{abort}}
+\newcommand{\Skip}{\texttt{skip}}
+\newcommand{\Seq}{;}
+\newcommand{\Begin}{\{}
+\newcommand{\End}{\}}
+\newcommand{\Choice}{\texttt{[]}}
+
+% ---------- Sequences and Tuples ----------
+\newcommand{\AssignSeq}[2]{\Sequence{#1}~\ccSymbol{:=}~\Sequence{#2}}
+\newcommand{\EmptySequence}{\varepsilon}
+\newcommand{\GenSequence}{\Sequence{s}}
+\newcommand{\LetInSeq}[4]{\ccFont{let}~\Sequence{\VarAssign{#1}{#2}{#3}}~\ccFont{in}~#4}
+\newcommand{\OfTypeSeq}[2]{\Sequence{#1 \texttt{:} #2}}
+\newcommand{\Seq}{\,\ccSymbol{;}~}
+\newcommand{\Sequence}[1]{\overline{#1}}
+\newcommand{\SequenceElement}[1]{[#1]}
+\newcommand{\SubstSeq}[2]{\subst{\Sequence{#1} \mapsto \Sequence{#2}}}
+\newcommand{\seq}{\equiv}
+\newcommand{\tuple}[1]{\left\langle #1 \right\rangle}
+\newcommand{\tupleElem}[1]{[#1]}
+\newcommand{\tupleLen}[1]{|#1|}
+\newcommand{\tupleName}[1]{\overline{#1}}
+
+% ---------- Assertions and Assumptions ----------
+\newcommand{\Assert}[1]{\texttt{assert}~#1}
+\newcommand{\Assume}[1]{\texttt{assume}~#1}
+\newcommand{\AssertI}[1]{\texttt{assert}~#1}
+\newcommand{\AssumeI}[1]{\texttt{assume}~#1}
+
+% ---------- Matching and Cases ----------
+\newcommand{\Match}[1]{\texttt{match}~\{~#1~\}}
+\newcommand{\Case}[2]{#1~\texttt{=>}~#2}
+\newcommand{\default}{\texttt{default}}
+
+% ---------- Assignment and Updates ----------
+\newcommand{\Assign}[2]{#1 := #2}
+\newcommand{\Havoc}[1]{\texttt{havoc}~#1}
+\newcommand{\VarAssign}[3]{\texttt{var}~#1:~#2~:=~#3}
+\newcommand{\Var}[2]{\texttt{var}~#1:~#2}
+
+% ---------- Expressions ----------
+\newcommand{\UniverseOf}[1]{\mathbf{A}(#1)}
+\newcommand{\VarsOf}[1]{\mathbf{Var}(#1)}
+\newcommand{\tof}[2]{#1 : #2}
+\newcommand{\eval}[2]{#1 \leftarrow [#2](\memory)}
+\newcommand{\mUpdate}[2]{[#1\leftarrow#2]}
+\newcommand{\evalE}[1]{[#1]}
+
+% ---------- Substitution ----------
+\newcommand{\subst}[2]{[#1 := #2]}
+\newcommand{\Subst}[2]{[#1 := #2]}
+
+% ---------- Logic and Quantifiers ----------
+\newcommand{\Exists}{\exists}
+\newcommand{\Forall}{\forall}
+\newcommand{\qiff}{\text{ iff }}
+\newcommand{\texists}{\text{ there exists }}
+\newcommand{\tsuch}{\text{ such that }}
+\newcommand{\qdot}{\,.\,}
+\newcommand{\Implies}{\rightarrow}
+\newcommand{\Neg}[1]{\neg #1}
+\newcommand{\AbsEntails}{\models}
+\newcommand{\And}{\mathbin{\wedge}}
+\newcommand{\Entails}{\models}
+\newcommand{\JudgeSem}{\models}
+% \newcommand{\Neg}{\neg}
+\newcommand{\NotSatisfies}{\not\models}
+\newcommand{\Or}{\mathbin{\vee}}
+\newcommand{\Satisfies}{\models}
+\newcommand{\Valid}{\models}
+\newcommand{\aNeg}{${\color{blue!80}\Neg}$}
+\newcommand{\valid}[1]{\models_{#1}}
+\newcommand{\Equivalent}{\mathbin{\leftrightarrow}}
+\newcommand{\qand}{\quad\text{and}\quad}
+\newcommand{\qimplies}{\quad\text{implies}\quad}
+
+% ---------- Boolean and Comparison Operators ----------
+\newcommand{\True}{\texttt{true}}
+\newcommand{\False}{\texttt{false}}
+\newcommand{\teq}{~\texttt{==}~}
+\newcommand{\eq}{=}
+\newcommand{\defqeq}{\stackrel{\text{def}}{=}}
+\newcommand{\defeq}{\defqeq}
+
+% ---------- Configurations and Judgements ----------
+\newcommand{\conf}[1]{\langle\, #1 \,\rangle}
+\newcommand{\tuple}[1]{\langle\, #1 \,\rangle}
+\newcommand{\qopStep}{\step}
+\newcommand{\step}{~\Rightarrow~}
+\newcommand{\valid}{\models}
+\newcommand{\Entails}{\models}
+\newcommand{\provable}{\vdash}
+\newcommand{\JudgeSyn}{\vdash}
+\newcommand{\Satisfies}{\models}
+\newcommand{\tsep}{,~}
+\newcommand{\Configurations}{\texttt{Conf}}
+\newcommand{\Variant}{\textit{V}}
+
+% ---------- Typing ----------
+\newcommand{\TT}{\texttt{T}}
+
+% ---------- Programs and Commands ----------
+\newcommand{\Block}{\texttt{begin}~\textit{C}~\texttt{end}}
+\newcommand{\Vc}[2]{\text{VC}\left(#1, #2\right)}
+\newcommand{\BlockBegin}{\texttt{begin}}
+\newcommand{\BlockEnd}{\texttt{end}}
+\newcommand{\Wp}[2]{\mathbf{wp}[#1](#2)}
+\renewcommand{\wp}{\Wp}
+\newcommand{\sp}[2]{\mathbf{sp}[#1](#2)}
+\newcommand{\swp}[2]{\mathbf{swp}[#1](#2)}
+\newcommand{\Invariant}{\textit{Inv}}
+\newcommand{\Inv}{\textit{Inv}}
+\newcommand{\return}{\texttt{return}}
+\newcommand{\nop}{\texttt{nop}}
+\newcommand{\VarAssign}[3]{\Assign{\Var{#1}{#2}}{#3}}
+\newcommand{\VarAssignSeq}[3]{\Assign{\ccFont{var}~\Sequence{\tof{#1}{#2}}}{\Sequence{#3}}}
+\newcommand{\VarAssignment}{\LogicFont{v}}
+
+% ---------- Auxiliary Variables and Symbols ----------
+\newcommand{\cc}{C}
+\newcommand{\ff}{\mathit{F}}
+\newcommand{\X}{\textbf{X}}
+\newcommand{\bb}{b}
+\newcommand{\x}{\texttt{x}}
+\newcommand{\xs}{\texttt{x}}
+\newcommand{\y}{\texttt{y}}
+\newcommand{\z}{\texttt{z}}
+\newcommand{\ee}{\texttt{e}}
+\newcommand{\F}{\textit{F}}
+\newcommand{\A}{\mathfrak{A}}
+\newcommand{\vv}{\mathit{v}}
+\newcommand{\vu}{\mathit{u}}
+\newcommand{\aee}{\mathit{a}}
+\newcommand{\fun}{\mathit{f}}
+\newcommand{\rel}{\mathit{R}}
+\newcommand{\Term}{t}
+\newcommand{\TermA}{a}
+\newcommand{\TermB}{b}
+\newcommand{\TermC}{c}
+\newcommand{\TermE}{\mathit{e}}
+\newcommand{\TermI}{t_i}
+\newcommand{\TermInt}{k}
+\newcommand{\TermN}{t_n}
+\newcommand{\TermP}{t'}
+\newcommand{\TermX}{t_1}
+\newcommand{\TermY}{t_2}
+\newcommand{\TermZ}{t_3}
+\newcommand{\Term}{\mathit{t}}
+\newcommand{\const}{c}
+\newcommand{\constInt}{k}
+\newcommand{\Signature}{\Sigma}
+\newcommand{\Functions}{\texttt{Fun}}
+\newcommand{\Relations}{\texttt{Rel}}
+\newcommand{\Structure}{\mathfrak{A}}
+\newcommand{\Interpretation}{\LogicFont{I}}
+\newcommand{\SetComp}[2]{\left\{ #1 \mid #2 \right\}}
+\newcommand{\AX}{\textbf{AX}}
+\newcommand{\fg}{G}
+\newcommand{\WhileDoInv}[2]{\texttt{while}~(#1)~\texttt{invariant}~#2}
+
+% ---------- Meta-Variables ----------
+\newcommand{\Pre}{P}
+\newcommand{\Post}{Q}
+\newcommand{\confTerm}{\Done}
+
+% ---------- Magic and Additional Commands ----------
+\newcommand{\Magic}{\texttt{magic}}
+\newcommand{\Declared}[1]{\textbf{Declared}(#1)}
+\newcommand{\Mems}{\texttt{Mem}}
+\newcommand{\Scopes}{\mathcal{S}}
+\newcommand{\RestoreScope}{\texttt{RestoreScope}}
+\newcommand{\enc}[1]{[#1]}
+\newcommand{\Encode}[1]{\texttt{enc}(#1)}
+\newcommand{\opStep}{\step}
+\newcommand{\VarSet}{\texttt{Var}}
+\newcommand{\Vars}{\VarSet}
+% \newcommand{\Universe}{\mathfrak{A}}
+\newcommand{\Universe}{\mathbf{A}}
+\newcommand{\Set}[1]{\{#1\}}
+\newcommand{\Interpreted}[1]{\mathbf{#1}^{\Structure}}
+\newcommand{\ModVarsOf}[1]{\mathbf{Mod}(#1)}
+\newcommand{\ForDo}[4]{\texttt{for}~#1~\texttt{in}~#2..#3~\{#4\}}
+\newcommand{\defq}{\stackrel{\text{def}}{=}}
+\newcommand{\EBNF}{\texttt{::=}}
+\newcommand{\qq}[1]{\quad #1 \quad}
+\newcommand{\ees}{\Sequence{\ee}}
+%%%---- Program Verification ----%%%
+
+
+
+%%%==== Compiler Construction ====%%%
+% Type-related commands
+\newcommand{\hygTypeNoInit}[1]{\mathop{\text{type }} {#1} = \vphantom{x}}
+\newcommand{\hygTypeInit}[2]{\mathop{\text{type }} {#1} = {#2};\;}
+\newcommand{\hygType}[3]{\hygTypeInit{#1}{#2} {#3}}
+\newcommand{\hygVar}[1]{\mathit{#1\,}}
+
+% Let-related commands
+\newcommand{\hygLetNoInit}[2]{\mathop{\text{let }} \mathit{#1}: {#2} = \vphantom{x}}
+\newcommand{\hygLetInit}[3]{\hygLetNoInit{#1}{#2} {#3};\;}
+\newcommand{\hygLet}[4]{\hygLetInit{#1}{#2}{#3} {#4}}
+\newcommand{\hygLetUNoInit}[1]{\mathop{\text{let }} \mathit{#1} = \vphantom{x}}
+\newcommand{\hygLetUInit}[2]{\hygLetUNoInit{#1} {#2};\;}
+\newcommand{\hygLetU}[3]{\hygLetUInit{#1}{#2} {#3}}
+\newcommand{\hygLetMutNoInit}[1]{\mathop{\text{let mutable }} {#1} = \vphantom{x}}
+\newcommand{\hygLetMutInit}[2]{\hygLetMutNoInit{#1} {#2};\;}
+\newcommand{\hygLetMut}[3]{\hygLetMutInit{#1}{#2} {#3}}
+\newcommand{\hygLetRecNoInit}[2]{\mathop{\text{let rec }} {#1}: {#2} = \vphantom{x}}
+\newcommand{\hygLetRecInit}[3]{\hygLetRecNoInit{#1}{#2} {#3};\;}
+\newcommand{\hygLetRec}[4]{\hygLetRecInit{#1}{#2}{#3} {#4}}
+
+% Control flow commands
+\newcommand{\hygWhileNoBody}[1]{\text{while }{#1}\text{ do }}
+\newcommand{\hygWhile}[2]{\hygWhileNoBody{#1}{#2}}
+\newcommand{\hygDoWhileNoCond}[1]{\text{do }{#1}\text{ while }}
+\newcommand{\hygDoWhile}[2]{\hygDoWhileNoCond{#1}{#2}}
+\newcommand{\hygFor}[4]{\text{for }({#1}; {#2}; {#3})\; {#4}}
+
+% Conditional commands
+\newcommand{\hygCondNoThenElse}[1]{\mathop{\text{if }} {#1} \mathbin{\text{ then }} \vphantom{X}}
+\newcommand{\hygElse}[1]{\text{else }{#1}}
+\newcommand{\hygCond}[3]{\hygCondNoThenElse{#1} {#2} \mathbin{\text{ else }} {#3}}
+
+% Assert and print commands
+\newcommand{\hygAssert}[1]{\text{assert}({#1})}
+\newcommand{\hygPrint}[1]{\text{print}({#1})}
+\newcommand{\hygPrintln}[1]{\text{println}({#1})}
+\newcommand{\hygReadInt}{\text{readInt}()}
+\newcommand{\hygReadFloat}{\text{readFloat}()}
+
+% Logical operators
+\newcommand{\hygNot}[1]{\text{not }{#1}}
+\newcommand{\hygAssign}[2]{{#1}\mathbin{\leftarrow}{#2}}
+\newcommand{\hygTrue}{\text{true}}
+\newcommand{\hygFalse}{\text{false}}
+\newcommand{\hygStr}[1]{\text{"#1"}}
+\newcommand{\hygOr}[2]{{#1} \mathbin{\text{or}} {#2}}
+\newcommand{\hygAnd}[2]{{#1} \mathbin{\text{and}} {#2}}
+
+% Function and lambda commands
+\newcommand{\hygLambdaNoBody}[1]{\operatorname{\lambda}{\left({#1}\right)} \rightarrow \vphantom{X}}
+\newcommand{\hygLambda}[2]{\hygLambdaNoBody{#1}{#2}}
+\newcommand{\hygFunNoInit}[3]{\text{fun }\mathit{#1}\left({#2}\right): {#3} = \vphantom{X}}
+\newcommand{\hygFunInit}[4]{\hygFunNoInit{#1}{#2}{#3} {#4};}
+\newcommand{\hygFun}[5]{\hygFunInit{#1}{#2}{#3}{#4}\;{#5}}
+\newcommand{\hygApp}[2]{{#1}\left({#2}\right)}
+\newcommand{\hygRecFunNoInit}[3]{\text{rec fun }\mathit{#1}\left({#2}\right): {#3} = \vphantom{X}}
+\newcommand{\hygRecFunInit}[4]{\hygRecFunNoInit{#1}{#2}{#3} {#4};}
+\newcommand{\hygRecFun}[5]{\hygRecFunInit{#1}{#2}{#3}{#4}\;{#5}}
+
+% Structure and union commands
+\newcommand{\hygStructNoFields}{\text{struct }}
+\newcommand{\hygStruct}[1]{\hygStructNoFields\left\{{#1}\right\}}
+\newcommand{\hygField}[1]{\mathit{#1\,}}
+\newcommand{\hygFieldSel}[2]{{#1}{.}\hygField{#2}}
+\newcommand{\hygPtr}[1]{\mathsf{#1}}
+\newcommand{\hygUnionInst}[2]{{#1}\left\{{#2}\right\}}
+
+% Pattern matching commands
+\newcommand{\hygMatchCase}[3]{{#1}\{{#2}\}\rightarrow{#3}}
+\newcommand{\hygMatchNoCases}[1]{\text{match }{#1}\text{ with}}
+\newcommand{\hygMatch}[2]{\hygMatchNoCases{#1}\;\left\{{#2}\right\}}
+
+% Heap and evaluation commands
+\newcommand{\hygHeapMax}[1]{\text{maxAddr}({#1})}
+\newcommand{\hygEvalConf}[2]{\left\langle{#1}\bullet{#2}\right\rangle}
+% RENEW
+% TODO: CONFLICT WITH PV
+\renewcommand{\subst_cc}[3]{{#1}\left[{#2} \mapsto {#3}\right]}
+\newcommand{\envField}[2]{{#1}{.}{\text{#2}}}
+
+% Rule and inference commands
+\newcommand{\ruleVertSep}{2mm}
+\newcommand{\UnaryInfCLab}[2]{\RightLabel{[#1]}\UnaryInfC{#2}}
+\newcommand{\BinaryInfCLab}[2]{\RightLabel{[#1]}\BinaryInfC{#2}}
+\newcommand{\TrinaryInfCLab}[2]{\RightLabel{[#1]}\TrinaryInfC{#2}}
+\newcommand{\QuaternaryInfCLab}[2]{\RightLabel{[#1]}\QuaternaryInfC{#2}}
+\newcommand{\ruleFmt}[1]{\text{[#1]}}
+
+% Type judgment commands
+\newcommand{\hygTypeResJ}[3]{{#1} \vdash {#2} \triangleright {#3}}
+\newcommand{\hygTypeCheckJ}[3]{{#1} \vdash {#2} : {#3}}
+\newcommand{\hygSubtypingJ}[3]{{#1} \vdash {#2} \leqslant {#3}}
+\newcommand{\hygSubtypingAJ}[4]{{#1},{#2} \vdash {#3} \leqslant {#4}}
+\newcommand{\mapEntry}[2]{{#1} \mapsto {#2}}
+\newcommand{\hlight}[1]{{\colorbox{yellow}{#1}}}
+\newcommand{\hlightM}[1]{{\colorbox{yellow}{$#1$}}}
+
+% Type constructors
+\newcommand{\tBool}{\text{bool}}
+\newcommand{\tInt}{\text{int}}
+\newcommand{\tFloat}{\text{float}}
+\newcommand{\tString}{\text{string}}
+\newcommand{\tUnit}{\text{unit}}
+\newcommand{\tFun}[2]{\left({#1}\right) \rightarrow {#2}}
+\newcommand{\tStructNoCases}{\text{struct}\,}
+\newcommand{\tStruct}[1]{\tStructNoCases\left\{{#1}\right\}}
+\newcommand{\tUnionNoFields}{\text{union}\,}
+\newcommand{\tUnion}[1]{\tUnionNoFields\left\{{#1}\right\}}
+
+% Analysis operators
+\newcommand{\fv}[1]{\operatorname{fv}\!\left({#1}\right)}
+\newcommand{\captures}[1]{\operatorname{cv}\!\left({#1}\right)}
+\newcommand{\lub}[2]{\operatorname{lub}\!\left({#1},{#2}\right)}
+\newcommand{\hygToANFDefs}[1]{\operatorname{toANFDefs}\!\left({#1}\right)}
+\newcommand{\hygToANF}[2]{\operatorname{toANF}\!\left({#1},{#2}\right)}
+\newcommand{\hygToANFOneArg}[1]{\operatorname{toANF}\!\left({#1}\right)}
+%%%---- Compiler Construction ----%%%
