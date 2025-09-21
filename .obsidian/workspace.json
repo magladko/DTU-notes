@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "426f2c6562637ed1",
+        "id": "fed4c65d804629c5",
         "type": "tabs",
         "children": [
           {
-            "id": "e83dca2cb35511dc",
+            "id": "1221a0cdada13569",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -178,8 +179,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f4ed663714496120",
+  "active": "1221a0cdada13569",
   "lastOpenFiles": [
+    "Computationally Hard Problems/Cheat-sheet.md",
+    "Computationally Hard Problems/xxx.md",
+    "_preamble1.sty",
     "preamble.sty",
     "_preamble.sty",
     "1st semester/Program Verification/TA/2. Overview.md",
@@ -189,7 +193,6 @@
     "1st semester/Program Verification/TA/attachments/2. Overview - Definition 2-10 Foundational Judgement for Toy Triples.png",
     "1st semester/Program Verification/Exercises/Preliminary Exercises.md",
     "1st semester/Program Verification/Exercises/Module 2 - Overview (exercises).md",
-    "Computationally Hard Problems/Cheat-sheet.md",
     "Computationally Hard Problems/attachments/class-relations.png",
     "Computationally Hard Problems/attachments/class-zpp.png",
     "Computationally Hard Problems/attachments/class-bpp.png",
@@ -224,8 +227,6 @@
     "Program Analysis",
     "2nd semester",
     "2nd semester/AutomatedReasoning/EXAM/Exam.pdf",
-    "2nd semester/AutomatedReasoning/MiniCalc/MiniCalc_Tutorial.pdf",
-    "AutomatedReasoning/EXAM/#Exam_file_3_of_3.thy#",
     "CompilerConstruction/Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled.canvas",
