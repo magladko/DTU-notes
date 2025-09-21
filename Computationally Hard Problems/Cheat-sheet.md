@@ -24,7 +24,8 @@ $$
 ![[class-bpp.png]]
 ![[class-zpp.png]]
 ![[class-relations.png]]
-Summary table
+
+#### Summary table
 
 | Class           | True answer YES                                          | True answer NO                                           |
 | --------------- | -------------------------------------------------------- | -------------------------------------------------------- |
@@ -32,4 +33,4 @@ Summary table
 | $\mathcal{RP}$  | $\prob{\yes}{\geq}{\frac{1}{2}}$                         | $\prob{\no}{=}{1}$                                       |
 | $\mathcal{BPP}$ | $\prob{\yes}{\geq}{\frac{1}{2}+\epsilon}$                | $\prob{\no}{\geq}{\frac{1}{2} + \epsilon}$               |
 | $\mathcal{ZPP}$ | $\prob{\yes}{\geq}{\frac{1}{2}}, \quad \prob{\no}{=}{0}$ | $\prob{\no}{\geq}{\frac{1}{2}}, \quad \prob{\yes}{=}{0}$ |
-
+| $\mathcal{P}$   | $\prob{\yes}{=}{1}$                                      | $\prob{\no}{=}{1}$                                       |
