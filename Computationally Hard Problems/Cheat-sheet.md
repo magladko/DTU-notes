@@ -26,9 +26,10 @@ $$
 ![[class-relations.png]]
 Summary table
 
-| Class           | True answer YES                         | True answer NO |
-| --------------- | --------------------------------------- | -------------- |
-| $\mathcal{NP}$  | $\boldsymbol{\mathit{P}}[\text{YES}]<3$ | $$             |
-| $\mathcal{RP}$  | $$                                      | $$             |
-| $\mathcal{BPP}$ | $$                                      | $$             |
-| $\mathcal{ZPP}$ | $$                                      | $$             |
+| Class           | True answer YES     | True answer NO |
+| --------------- | ------------------- | -------------- |
+| $\mathcal{NP}$  | $\prob{\yes}{>}{0}$ | $\yes$         |
+| $\mathcal{RP}$  | $$                  | $\prob{}{}{}$  |
+| $\mathcal{BPP}$ | $$                  | $$             |
+| $\mathcal{ZPP}$ | $$                  | $$             |
+|                 |                     |                |
