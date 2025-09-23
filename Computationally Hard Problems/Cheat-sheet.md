@@ -34,3 +34,4 @@ $$
 | $\mathcal{BPP}$ | $\prob{\yes}{\geq}{\frac{1}{2}+\epsilon}$                | $\prob{\no}{\geq}{\frac{1}{2} + \epsilon}$               |
 | $\mathcal{ZPP}$ | $\prob{\yes}{\geq}{\frac{1}{2}}, \quad \prob{\no}{=}{0}$ | $\prob{\no}{\geq}{\frac{1}{2}}, \quad \prob{\yes}{=}{0}$ |
 | $\mathcal{P}$   | $\prob{\yes}{=}{1}$                                      | $\prob{\no}{=}{1}$                                       |
+![[problem-classification.png]]
