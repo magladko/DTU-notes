@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Program Analysis/Lecture 2.md",
+                "file": "Computationally Hard Problems/Cheat-sheet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 2"
+              "title": "Cheat-sheet"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -181,6 +180,7 @@
   },
   "active": "5063273551df7291",
   "lastOpenFiles": [
+    "Program Analysis/Lecture 2.md",
     "Computationally Hard Problems/Cheat-sheet.md",
     "Computationally Hard Problems/xxx.md",
     "_preamble1.sty",
@@ -205,7 +205,6 @@
     "Computationally Hard Problems",
     "1st semester/Program Verification/EXAM NOTES/4. Building an Automated Verifier.md",
     "1st semester/Program Verification/EXAM NOTES/3. Automated Reasoning.md",
-    "Program Analysis/Lecture 2.md",
     "1st semester/Program Verification/EXAM NOTES/2. Overview.md",
     "1st semester/Program Verification/TA/attachments/2. Overview - Table 2-4.png",
     "1st semester/Program Verification/TA/attachments",
