@@ -36,3 +36,5 @@ $$
 | $\mathcal{P}$   | $\prob{\yes}{=}{1}$                                      | $\prob{\no}{=}{1}$                                       |
 ![[problem-classification.png|600]]
 
+Proving NP-problem
+![[proving-problem-in-np.png|800]]
