@@ -34,11 +34,11 @@ FS[0] - exception-related
 
 \+ LastErr (not a register - like C errno)
 ### Flags (Part of EFL)
-- C - carry (ran out of bits when arith, op)
+- **C** - carry (ran out of bits when arith, op)
 - P - parity bit (odd/even nr of 1s in the prev op)
 - A - auxiliary carry (almost unused)
-- Z - ?result of the last operation is zero
-- S - sign flag (last operation negative?)
+- **Z** - ?result of the last operation is zero
+- **S** - sign flag (last operation negative?)
 - T - trace flag - internal for the debugger
 - D - direction flag 
 - O - overflow (ie. sum of positive resulted in negative)
