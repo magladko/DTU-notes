@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e508c0c51be94a0b",
+        "id": "61748d3151092090",
         "type": "tabs",
         "children": [
           {
-            "id": "5063273551df7291",
+            "id": "2afe3dfe521e22b2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1st semester/Program Verification/Exercises/Module 2 - Overview (exercises).md",
+                "file": "ReverseEngineering/Lecture 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Module 2 - Overview (exercises)"
+              "title": "Lecture 1"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 258.5086555480957
+    "width": 200
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -178,12 +178,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5063273551df7291",
+  "active": "2afe3dfe521e22b2",
   "lastOpenFiles": [
+    "ReverseEngineering/attachments/prologue_1_ebp.png",
+    "ReverseEngineering/attachments",
+    "Computationally Hard Problems/Cheat-sheet.md",
+    "ReverseEngineering/Lecture 1.md",
+    "ReverseEngineering",
+    "1st semester/Program Verification/Exercises/Module 2 - Overview (exercises).md",
     "1st semester/Program Verification/Exercises/Preliminary Exercises.md",
     "1st semester/Program Verification/Quizes/Quiz 2.md",
     "1st semester/Program Verification/Quizes/Quiz 1.md",
-    "Computationally Hard Problems/Cheat-sheet.md",
     "Computationally Hard Problems/attachments/proving-problem-in-np.png",
     "1st semester/Program Verification/CHEAT SHEETS.md",
     "1st semester/Program Verification/TA/Claude.md",
@@ -197,7 +202,6 @@
     "_preamble.sty",
     "1st semester/Program Verification/TA/attachments/2. Overview - Definition 2-11 Toy Program Logic.png",
     "1st semester/Program Verification/TA/attachments/2. Overview - Definition 2-10 Foundational Judgement for Toy Triples.png",
-    "1st semester/Program Verification/Exercises/Module 2 - Overview (exercises).md",
     "Computationally Hard Problems/attachments/class-relations.png",
     "Computationally Hard Problems/attachments/class-zpp.png",
     "Computationally Hard Problems/attachments/class-bpp.png",
@@ -221,11 +225,7 @@
     "1st semester/Program Verification/EXAM NOTES/7. Loops.md",
     "1st semester/Program Verification/EXAM NOTES/6. Methods.md",
     "1st semester/Program Verification/EXAM NOTES/5. Encoding Verification Problems1.md",
-    "1st semester/QS/QS temp.md",
-    "1st semester/Model Checking/CHEAT SHEET.md",
     "Program Analysis",
-    "2nd semester",
-    "2nd semester/AutomatedReasoning/EXAM/Exam.pdf",
     "CompilerConstruction/Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled.canvas",

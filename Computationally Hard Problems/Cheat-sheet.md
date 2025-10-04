@@ -37,4 +37,4 @@ $$
 ![[problem-classification.png|600]]
 
 Proving NP-problem
-![[proving-problem-in-np.png|800]]
+![[proving-problem-in-np.png]]
