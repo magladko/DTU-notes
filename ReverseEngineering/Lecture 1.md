@@ -1,3 +1,4 @@
+**ABI** - Application Binary Interface
 **ESP** - stack pointer
 **EBP** - stack frame
 
