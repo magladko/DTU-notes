@@ -5,15 +5,15 @@
 
 |               | VMT addr | Constructor | VMs count |
 | ------------- | -------- | ----------- | --------- |
-| CZizala       | 414570   |             |           |
-| CUnknown      | 4147A4   |             |           |
+| CZizala       | 414570   | 4010E0      | 14        |
+| CUnknown      | 4147A4   | 40F030      | 4         |
 | IUnknown      | -        |             |           |
 | IZizala       | -        |             |           |
-| CZizalaApp    | 4145F8   |             |           |
+| CZizalaApp    | 4145F8   | 401A70      | 17        |
 | IZizalaApp    | -        |             |           |
-| CZizaliWindow | 414678   |             |           |
-| IZizaliWindow |          |             |           |
-| CObrazovka    | 4146A4   |             |           |
+| CZizaliWindow | 414678   | 402220      | 6         |
+| IZizaliWindow | -        |             |           |
+| CObrazovka    | 4146A4   | 402900      | 10        |
 | IObrazovka    | -        |             |           |
 
 TODO: hierarchy
