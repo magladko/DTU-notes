@@ -1,25 +1,24 @@
-- Examine the program and find all object constructors and VMT assignments.
-    - List the actual addresses of the VMTs and constructors.
-    - Make sure that the functions you found are actually constructors!
 
+|               | VMT addr   | Constructor | VMs count | BCA                                              |
+| ------------- | ---------- | ----------- | --------- | ------------------------------------------------ |
+| IUnknown      | -          | -           |           | IUnknown                                         |
+| CUnknown      | 0x004147A4 | 0x0040F030  | 4         | CUnknown, IUnknown                               |
+| IZizala       | -          | -           |           | IZizala, CUnknown, IUnknown                      |
+| CZizala       | 0x00414570 | 0x004010E0  | 14        | CZizala, IZizala, CUnknown, IUnknown             |
+| IZizalaApp    | -          | -           |           | IZizalaApp, CUnknown, IUnknown                   |
+| CZizalaApp    | 0x004145F8 | 0x00401A70  | 17        | CZizalaApp, IZizalaApp, CUnknown, IUnknown       |
+| IZizaliWindow | -          | -           |           | IZizaliWindow, CUnknown, IUnknown                |
+| CZizaliWindow | 0x00414678 | 0x00402220  | 6         | CZizaliWindow, IZizaliWindow, CUnknown, IUnknown |
+| IObrazovka    | -          | -           |           | IObrazovka, CUnknown, IUnknown                   |
+| CObrazovka    | 0x004146A4 | 0x00402900  | 10        | CObrazovka, IObrazovka, CUnknown, IUnknown       |
 
-|               | VMT addr | Constructor | VMs count |
-| ------------- | -------- | ----------- | --------- |
-| CZizala       | 414570   | 4010E0      | 14        |
-| CUnknown      | 4147A4   | 40F030      | 4         |
-| IUnknown      | -        |             |           |
-| IZizala       | -        |             |           |
-| CZizalaApp    | 4145F8   | 401A70      | 17        |
-| IZizalaApp    | -        |             |           |
-| CZizaliWindow | 414678   | 402220      | 6         |
-| IZizaliWindow | -        |             |           |
-| CObrazovka    | 4146A4   | 402900      | 10        |
-| IObrazovka    | -        |             |           |
+By comparing different BaseClassArrays I have been able to arrive to a following hierarchy by observing a change in BCA array for each listed class (there remain common BCA elements for the classes down the hierarchy).  However, I could not spot any strange parts in the induced hierarchy...
 
-TODO: hierarchy
-
-- From VMTs discover the numbers of virtual methods for each class.
-- Find those class names and the class hierarchy from the RTTI information.
-- Describe the class hierarchy.
-    - In your description you should explain specifically which part of the data supports your hierarchy and prevents alternative hierarchies.
-    - You will find that the hierarchy is a bit strange. List the strange parts and explain what is their meaning and what is the cause of them. Your explanation does not have to be completely accurate (from the binary, you can’t easily decide which of several causes was the real one), but it should be consistent with the observed facts.
+```mermaid
+graph TD;
+    IUnknown-->CUnknown;
+    CUnknown-->IZizala-->CZizala;
+    CUnknown-->IZizalaApp-->CZizalaApp;
+    CUnknown-->IZizaliWindow-->CZizaliWindow;
+    CUnknown-->IObrazkova-->CObrazkova;
+```

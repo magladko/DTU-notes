@@ -4092,6 +4092,7 @@ prob
 parity
 prev
 positive
+prevents
 verification
 verified
 verify
@@ -9634,6 +9635,7 @@ aUH
 arith
 auxiliary
 almost
+addr
 works
 whether
 where
@@ -18302,6 +18304,8 @@ sPn
 sYB
 sCO
 sign
+strange
+several
 fully
 formal
 forward
@@ -22625,6 +22629,11 @@ IFlg
 IRo
 ISK
 Interface
+IUnknown
+IZizala
+IZizalaApp
+IZizaliWindow
+IObrazovka
 Specifications
 Suffers
 Strengths
@@ -28366,6 +28375,9 @@ ckw
 cXYY
 cHI
 carry
+constructors
+count
+causes
 runs
 returns
 requires
@@ -31023,6 +31035,7 @@ orr
 onv
 oKkA
 overflow
+observed
 How
 Hence
 Hi
@@ -35311,6 +35324,9 @@ VHh
 VRo
 VVbT
 VPKO
+VMT
+VMTs
+VMs
 NOT
 Note
 Notice
@@ -40911,6 +40927,7 @@ EAX
 ECX
 EDX
 EBX
+Examine
 lead
 library
 labor
@@ -48331,6 +48348,12 @@ CUI
 CHY
 CwW
 Class
+Constructor
+CZizala
+CUnknown
+CZizalaApp
+CZizaliWindow
+CObrazovka
 handle
 high
 hints
@@ -49670,6 +49693,7 @@ hÄ
 hDo
 htj
 hcl
+hierarchy
 Requires
 Rust
 Reading
@@ -51239,6 +51263,7 @@ Roz
 RXXT
 ReTD
 Registers
+RTTI
 years
 your
 you
