@@ -63,3 +63,11 @@ NP hard problems class, like scheduling, automated reasoning, optimization and m
 Symbolic execution is limited by the need to create a symbolic expression over the entire program. This breaks down when dealing with complex constructs like built-in methods (e.g., `malloc`), one-way functions (like hashing), or string manipulation, which are hard to model in SMT solvers. Another major issue is handling memory aliasing and array access.
 3. Why would you use Concolic Execution?
 Concolic execution is a hybrid technique used to overcome the limitations of purely symbolic execution. By maintaining both concrete and symbolic values, you avoid having to simulate difficult built-in methods, instead using the concrete values to proceed even if the symbolic value is temporarily lost.
+
+## Context Sensitive Analysis
+1. Why are method calls complicated?
+Method calls are complicated because returning from a method is a common case of dynamic control flow. When performing static analysis, it's difficult to know where to return the results, as the return address depends on the caller. This complication is further increased by dynamic dispatching, where the call site itself may not be known.
+2. Why would you use context sensitive analysis?
+You use context sensitive analysis to expand the abstract state so it can react to the context in which a method was called. This approach provides precise static information by differentiating between different call sites, preventing the results from one call from leaking into another (which happens in simpler solutions).
+3. What is the drawback of a context sensitive analysis?
+The major drawback is two-fold: first, it requires keeping a version of the state for each reachable call stack, which can quickly lead to a space explosion. Second, handling recursive methods is problematic because the call stack can be dependent on the input and might be infinite, potentially causing the analysis to run forever.
