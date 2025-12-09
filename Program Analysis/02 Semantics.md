@@ -65,3 +65,10 @@ Values are dynamically typed -> every value carries around type info.
 
 > [!note] long and double purposefully omited (pain in the ass)
 
+JVM state is a triplet $\langle \lambda, \sigma, \iota \rangle$
+
+- $\lambda$: locals
+- $\sigma$: stack
+- $\iota$: Program Counter
+
+
