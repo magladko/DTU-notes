@@ -63,4 +63,5 @@ Values are dynamically typed -> every value carries around type info.
 - **stack values**: $V_{\sigma} := (\text{int }n)~|~(\text{float }f)~|~(\text{ref }r)$
 - **heap values**: $V_{\eta} := V_{\sigma}~|~(\text{byte }b)~|~(\text{char }c)~|~(\text{short }s)~|~(\text{array }t~a)~|~(\text{object }cn~fs)$
 
+> [!note] long and double purposefully omited (pain in the ass)
 
