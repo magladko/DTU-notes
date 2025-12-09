@@ -391,3 +391,40 @@ So if we have uncovered instructions, either we have not found the trace class t
 ### Trace abstraction 
 can potentially be expensive
 
+## Running Program
+
+#### +
+- Most programming languages comes with built-in interpreter. Running the program can sometimes be easier than using a syntactic analysis.
+- The analysis can present you with a concrete trace that produce the error. This makes it very easy to debug the error.
+- Since the goal of the dynamic analysis is to underestimate the set of valid traces, if it warns us about a problem, then the problem is real.
+### -
+- Setting up the correct environment of a program can be hard to downward impossible without running it in production.
+- Warning that something can happen by doing it, can be problematic if the program has side-effects like deleting the database or firing the missiles.
+- Running the program, will never tell you if something can't happen, like the program running forever.
+
+
+### Characterization Trace Testing
+
+Compare traces against "golden master" snapshot.
+
+### Assertions
+
+1. Tiger style (fail fast) by giving a contract via assertion
+2. Automatic assertion injection (e.g. for memory safety)
+
+### Selecting input
+
+#### Fuzzing
+Fuzz testing is about automating software testing by generating test automatically.
+
+- Random inputs
+- Dictionaries (gather interesting values from method body)
+- Coverage-Guided Fuzzing -- manipulate input byte-string (can be mapped to different inputs) to gather a max coverage
+- Property based testing
+#### Small-Scope Hypothesis
+
+>[!definition] The Small-Scope Hypothesis
+>Most bugs in a program can be found by investigating only a small section of the inputs.
+
+Hence limit test input range to small values.
+
