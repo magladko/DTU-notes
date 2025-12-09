@@ -374,3 +374,20 @@ Any question we can answer correctly for one trace can be turned into a _may an
 ## Trace abstraction and Prediction
 
 **Trace Prediction**: inferring information about other traces by analyzing a single trace.
+Maps each trace $\tau$ into a possible finite set of trace classes $[\tau]$. 
+
+### Path Equivalence Class
+$[t]_{\pi}$
+All traces that follow the same path through the program are equivalent.
+
+#### Coverage
+Coverage can be measured:
+- line
+- branch
+- instruction
+The last is nice because:
+So if we have uncovered instructions, either we have not found the trace class that covers it, or there is dead-code in our program.
+
+### Trace abstraction 
+can potentially be expensive
+
