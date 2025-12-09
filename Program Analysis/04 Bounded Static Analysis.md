@@ -24,3 +24,13 @@ A _partially ordered set_ or **poset is a tuple** (L,⊑) set of elements L
 > - booleans $(\{ \mathtt{tt}, \mathtt{ff} \}, \Rightarrow)$
 > - set of Sign's $(2^\text{Sign}, \subseteq)$
 
+
+### Lattices
+
+A lattice is partially ordered sets (L,⊑), with two extra operators ⊔ (join) and ⊓ (meet).
+>[!example] Sign Set lattice
+>- $\sqsubseteq_{\text{Sign}} = \subseteq$
+>- $\sqcup = \cap$
+>- $\sqcap = \cup$
+>- $\bot = \emptyset$
+>- $\top = \{ +, -, 0 \}$
