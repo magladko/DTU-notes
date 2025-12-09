@@ -65,10 +65,26 @@ Values are dynamically typed -> every value carries around type info.
 
 > [!note] long and double purposefully omited (pain in the ass)
 
-JVM state is a triplet $\langle \lambda, \sigma, \iota \rangle$
+### JVM state
+
+**JVM state is a triplet** $\langle \lambda, \sigma, \iota \rangle$
 
 - $\lambda$: locals
 - $\sigma$: stack
 - $\iota$: Program Counter
 
+### Stepping Function
+$$
+\text{bc} \vdash \langle \lambda, \sigma, \iota \rangle \to \langle  \overline{\lambda}, \overline{\sigma}, \overline{\iota} \rangle
+$$
+
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mrow><mi>𝚋</mi><mi>𝚌</mi></mrow><mo stretchy="false" form="prefix">[</mo><mi>ι</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mrow><mrow><mtext mathvariant="monospace">(𝚙𝚞𝚜𝚑:𝙸 </mtext><mspace width="0.333em"></mspace></mrow><mi>v</mi><mtext mathvariant="monospace">)</mtext></mrow></mrow><mrow><mrow><mi>𝚋</mi><mi>𝚌</mi></mrow><mo>⊢</mo><mrow><mo stretchy="true" form="prefix">⟨</mo><mi>λ</mi><mo>,</mo><mi>σ</mi><mo>,</mo><mi>ι</mi><mo stretchy="true" form="postfix">⟩</mo></mrow><mo>→</mo><mrow><mo stretchy="true" form="prefix">⟨</mo><mi>λ</mi><mo>,</mo><mi>σ</mi><mrow><mo stretchy="false" form="prefix">(</mo><mrow><mi>𝚒</mi><mi>𝚗</mi><mi>𝚝</mi></mrow><mspace width="0.222em"></mspace><mi>v</mi><mo stretchy="false" form="postfix">)</mo></mrow><mo>,</mo><mi>ι</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">⟩</mo></mrow></mrow></mfrac><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mi>u</mi><mi>s</mi><msub><mi>h</mi><mi>I</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow></math>
+```Python
+case jvm.Push(value=v):
+    frame.stack.push(v)
+    frame.pc += 1
+    return state
+```
+
+...
 
