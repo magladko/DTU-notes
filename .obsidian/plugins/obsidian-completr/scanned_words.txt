@@ -2818,6 +2818,7 @@ injection
 infeasible
 inherent
 influencing
+interval
 program
 permutation
 possible
@@ -9714,6 +9715,7 @@ act
 against
 approximation
 abstracted
+approximating
 works
 whether
 where
@@ -15520,6 +15522,7 @@ dead
 debug
 downward
 doing
+dramatically
 given
 good
 guarantees
@@ -16872,6 +16875,7 @@ golden
 giving
 gather
 generalize
+guaranteeing
 satisfies
 specification
 seL
@@ -19882,6 +19886,7 @@ follow
 firing
 fast
 fixpoint
+forces
 kernel
 knowledge
 known
@@ -24385,6 +24390,7 @@ Setting
 Sampling
 Selection
 Selecting
+Such
 method
 memory
 modify
@@ -25807,6 +25813,7 @@ missiles
 manipulate
 mapped
 max
+minimal
 not
 new
 note
@@ -28632,6 +28639,8 @@ came
 closed
 coverage
 computations
+constrained
+convergence
 runs
 returns
 requires
@@ -30035,6 +30044,8 @@ rajr
 reflexive
 radius
 repeat
+reach
+reached
 of
 original
 ordering

@@ -55,3 +55,11 @@ The primary problem is that if the abstract domain does not have a finite height
 3. Why do we need a widening operator?
 The widening operator (∇) forces convergence by dramatically over-approximating joins, guaranteeing that a fixed point is reached in a finite number of steps, even in lattices of infinite height.
 
+## Concolic Execution
+
+1. What are some good uses for SMT Solving?
+NP hard problems class, like scheduling, automated reasoning, optimization and more
+2. What are the big limitations of Symbolic Execution?
+Symbolic execution is limited by the need to create a symbolic expression over the entire program. This breaks down when dealing with complex constructs like built-in methods (e.g., `malloc`), one-way functions (like hashing), or string manipulation, which are hard to model in SMT solvers. Another major issue is handling memory aliasing and array access.
+3. Why would you use Concolic Execution?
+Concolic execution is a hybrid technique used to overcome the limitations of purely symbolic execution. By maintaining both concrete and symbolic values, you avoid having to simulate difficult built-in methods, instead using the concrete values to proceed even if the symbolic value is temporarily lost.
