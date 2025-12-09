@@ -33,3 +33,10 @@ The **Structural Operational Semantics** or **Small Step Semantics** are wri
 > [!definition] Transition System
 > A Transition system is a triplet $\langle \mathbf{State}_{P}, \delta_{P}, I_{P} \rangle$ where $\mathbf{State}_{P}$ is the set of program states, $\delta_{P}$ is the transition relation (defined by the single step semantics) and $I_{P}$ are possible initial states.
 
+A $\mathbf{Trace}_{P}$ is the possible infinite sequence of states and operations of the program.
+$$
+\mathbf{Trace}_{P} = \mathbf{State}^*_{P}
+$$
+
+A program can be described as a set of traces it exhibits.
+
