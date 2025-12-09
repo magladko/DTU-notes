@@ -36,3 +36,22 @@ It means to apply operational semantics described by code over state machine.
 3. When is random sampling of inputs better than testing small values and visa versa?
 - **Random Sampling (Fuzzing):** This is effective when the input space corresponds well to the path equivalent space. It works well when simple conditional branches (e.g., `i > 0`) give an equal chance of hitting either path.
 - **Small Value Testing (Small-Scope Hypothesis):** This is better when investigating only a small section of inputs is sufficient to find most bugs. It excels at small cases (like checking empty lists) and ensures that if a bug is found, the resulting input is the smallest one that creates the error.
+## Bounded Static Analysis
+
+1. Why should we use abstractions when analysing code?
+Abstractions are needed because it is infeasible or sometimes impossible to do computations over all traces at once, allowing a finite structure to represent a potentially infinite set of traces.
+2. What is the advantage of Galoi connections?
+They define a relationship between two ordered sets, ensuring that information abstracted from the concrete domain to the abstract domain maintains order, which provides guarantees that you are correctly over- or under-estimating the result.
+3. Which cases are the Sign abstraction not able to catch?
+e.g. comparing numbers of the same sign
+4. At which cases do your static analysis outperform your dynamic?
+Static analysis with proper abstractions can soundly prove code unreachable or guarantee certain properties, especially in cases involving loops or complex parameter sets where no finite test suite can cover all possible execution paths, a limitation inherent to dynamic analysis.
+
+## Unbounded Static Analysis
+1. What does it mean for two variables to be dependent?
+Such variables whose solution space are constrained by each other
+2. What is the primary problem when doing unbounded static analysis?
+The primary problem is that if the abstract domain does not have a finite height (like the interval abstraction), the analysis is not guaranteed to reach a minimal fixed point, meaning it may run forever
+3. Why do we need a widening operator?
+The widening operator (∇) forces convergence by dramatically over-approximating joins, guaranteeing that a fixed point is reached in a finite number of steps, even in lattices of infinite height.
+
