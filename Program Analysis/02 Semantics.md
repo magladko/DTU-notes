@@ -30,4 +30,6 @@ The **Structural Operational Semantics** or **Small Step Semantics** are wri
 
 ## Transition System and Traces
 
+> [!definition] Transition System
+> A Transition system is a triplet $\langle \mathbf{State}_{P}, \delta_{P}, I_{P} \rangle$ where $\mathbf{State}_{P}$ is the set of program states, $\delta_{P}$ is the transition relation (defined by the single step semantics) and $I_{P}$ are possible initial states.
 
