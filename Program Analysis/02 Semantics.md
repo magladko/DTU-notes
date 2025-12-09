@@ -40,3 +40,22 @@ $$
 
 A program can be described as a set of traces it exhibits.
 
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr class="fragment"><mtd columnalign="right" style="padding-right: 0"><mtext mathvariant="normal">Sem</mtext></mtd><mtd columnalign="left" style="padding-left: 0"><mrow><mspace width="0.222em"></mspace><mo>:</mo><mspace width="0.222em"></mspace></mrow><mrow><mi>𝐏</mi><mi>𝐫</mi><mi>𝐨</mi><mi>𝐠</mi><mi>𝐫</mi><mi>𝐚</mi><mi>𝐦</mi></mrow><mo>→</mo><msup><mn>2</mn><mrow><mi>𝐓</mi><mi>𝐫</mi><mi>𝐚</mi><mi>𝐜</mi><mi>𝐞</mi></mrow></msup></mtd></mtr><mtr class="fragment"><mtd columnalign="right" style="padding-right: 0"><mtext mathvariant="normal">Sem</mtext></mtd><mtd columnalign="left" style="padding-left: 0"><mo stretchy="false" form="prefix">(</mo><mi>P</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>τ</mi><mo>∈</mo><msubsup><mrow><mi>𝐒</mi><mi>𝐭</mi><mi>𝐚</mi><mi>𝐭</mi><mi>𝐞</mi></mrow><mi>P</mi><mi>n</mi></msubsup><mi>&nbsp;|&nbsp;</mi><mi>n</mi><mo>∈</mo><mo stretchy="false" form="prefix">[</mo><mn>1</mn><mo>,</mo><mi>∞</mi><mo stretchy="false" form="postfix">]</mo><mo>,</mo><msub><mi>τ</mi><mn>0</mn></msub><mo>∈</mo><msub><mi>I</mi><mi>P</mi></msub><mo>,</mo><mo>∀</mo><mi>i</mi><mo>∈</mo><mo stretchy="false" form="prefix">[</mo><mn>1</mn><mo>,</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo><mo>,</mo><msub><mi>δ</mi><mi>P</mi></msub><mo stretchy="false" form="prefix">(</mo><msub><mi>τ</mi><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>τ</mi><mi>i</mi></msub><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">}</mo></mrow></mtd></mtr></mtable></math>
+Also called **Maximal Trace Semantics**. 
+Properties can now be described (e.g. halt):
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>ℒ</mi><mtext mathvariant="normal">halt</mtext></msub><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>P</mi><mrow><mi>&nbsp;|&nbsp;</mi><mo>⁡</mo></mrow><mi>P</mi><mo>∈</mo><mi>ℒ</mi><mo>,</mo><mo>∀</mo><mi>τ</mi><mo>∈</mo><mtext mathvariant="normal">Sem</mtext><mo stretchy="false" form="prefix">(</mo><mi>P</mi><mo stretchy="false" form="postfix">)</mo><mi>.</mi><mspace width="0.222em"></mspace><mo stretchy="false" form="prefix">|</mo><mi>τ</mi><mo stretchy="false" form="prefix">|</mo><mo>≠</mo><mi>∞</mi><mo stretchy="false" form="postfix">}</mo></mrow></math>
+## JVM & Java Bytecode
+
+bytecode ($\text{bc}$) judgements:
+- $\text{bc} \vdash s \to s$
+- $\text{bc} \vdash s \to \text{ok}$
+- $\text{bc} \vdash s \to \text{err('msg')}$
+
+Program Counter ($\iota$)
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mtable><mtr class="fragment"><mtd columnalign="right" style="text-align: right"><mi>ι</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">⟨</mo><msub><mi>ι</mi><mi>m</mi></msub><mo>,</mo><msub><mi>ι</mi><mi>o</mi></msub><mo stretchy="true" form="postfix">⟩</mo></mrow></mtd></mtr><mtr class="fragment"><mtd columnalign="right" style="text-align: right"><mi>ι</mi><mo>+</mo><mi>n</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">⟨</mo><msub><mi>ι</mi><mi>m</mi></msub><mo>,</mo><msub><mi>ι</mi><mi>o</mi></msub><mo>+</mo><mi>n</mi><mo stretchy="true" form="postfix">⟩</mo></mrow></mtd></mtr><mtr class="fragment"><mtd columnalign="right" style="text-align: right"><mi>n</mi><mi>/</mi><mi>ι</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">⟨</mo><msub><mi>ι</mi><mi>m</mi></msub><mo>,</mo><mi>n</mi><mo stretchy="true" form="postfix">⟩</mo></mrow></mtd></mtr></mtable></math>
+
+
+- **Operator stack**: intermediate values
+- **Locals**: storage local to the method (indexed)
+- **Heap**: global memory
+
