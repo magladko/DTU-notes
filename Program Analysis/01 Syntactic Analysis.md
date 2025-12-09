@@ -120,3 +120,18 @@ int hello(int x) {
 where $\dagger$ is the smallest solution to the equation.
 
 
+### Folds: General Matching Patterns in Trees
+
+### Recursive Enumerable: Bespoke
+
+To match languages beyond Context-Insensitive languages, there exist some tools, but it becomes harder and harder to match full languages efficiently. In this case you have to write bespoke analyses in your favorite language.
+
+Almost all syntactic static analyses or linters falls into this category. Here are some examples:
+
+- [`https://spotbugs.github.io`](https://spotbugs.github.io/)
+- [`https://eslint.org`](https://eslint.org/)
+
+There is still interesting work in building an easy and intuitive system for pattern match normal programming constructs with recent work like [Rafnsson (2020)](https://courses.compute.dtu.dk/02242/topics/syntactic-analysis.html#ref:rafnsson2020fixing) and [Tomasdottir (2020)](https://courses.compute.dtu.dk/02242/topics/syntactic-analysis.html#ref:tomasdottir2020adoption).
+
+Another approach is to use LLMs. An LLM due to its fixed input window, can only recognize regular languages, however in practice, they tend to do well on simple analysis tasks because of its ability to recognize common patterns.
+
