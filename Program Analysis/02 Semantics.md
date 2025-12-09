@@ -25,3 +25,9 @@ Furthermore, the **Structural Operational Semantics** are defined exactly as y
 The **Structural Operational Semantics** or **Small Step Semantics** are written as judgments of the type ($\psi \vdash \sigma \to \overline{\sigma}$ ) which means given the environment $\psi$, the state of the program σ can be turned into $\overline{\sigma}$.
 
 
+**Big Step semantics**: easy to read, unable to encode infinite behavior
+**Small Step semantics**: translates directly to interpreter behavior
+
+## Transition System and Traces
+
+
