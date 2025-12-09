@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ReverseEngineering/Snake.md",
+                "file": "Program Analysis/01 Syntactic Analysis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Snake"
+              "title": "01 Syntactic Analysis"
             }
           }
         ],
@@ -107,8 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 206.5086555480957,
-    "collapsed": true
+    "width": 206.5086555480957
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -210,10 +209,14 @@
   },
   "active": "7064d2ac2cdd65a4",
   "lastOpenFiles": [
+    "1st semester/Program Verification/EXAM NOTES/9. Heaps and Objects.md",
+    "Program Analysis/01 Syntactic Analysis.md",
     "ReverseEngineering/Lecture 1.md",
     "ReverseEngineering/Snake.md",
+    "1st semester/Program Verification/EXAM NOTES/2. Overview.md",
+    "1st semester/Program Verification/EXAM NOTES/3. Automated Reasoning.md",
+    "Program Analysis/Lecture 2.md",
     "Untitled.md",
-    "1st semester/Program Verification/EXAM NOTES/9. Heaps and Objects.md",
     "1st semester/Program Verification/EXAM NOTES/10. Abstraction.md",
     "ReverseEngineering/attachments/ollyDbg_registers(fpu).png",
     "ReverseEngineering/attachments/prologue_1_ebp.png",
@@ -229,7 +232,6 @@
     "1st semester/Program Verification/TA/Claude.md",
     "1st semester/Program Verification/TA/2. Overview.md",
     "1st semester/Program Verification/TA/1. Introduction - Warm up excercises.md",
-    "Program Analysis/Lecture 2.md",
     "Computationally Hard Problems/attachments/problem-classification.png",
     "Computationally Hard Problems/xxx.md",
     "_preamble1.sty",
@@ -245,8 +247,6 @@
     "1st semester/Program Verification/EXAM NOTES/5. Encoding Verification Problems.md",
     "Computationally Hard Problems",
     "1st semester/Program Verification/EXAM NOTES/4. Building an Automated Verifier.md",
-    "1st semester/Program Verification/EXAM NOTES/3. Automated Reasoning.md",
-    "1st semester/Program Verification/EXAM NOTES/2. Overview.md",
     "1st semester/Program Verification/TA/attachments",
     "1st semester/Program Verification/TA",
     "1st semester/Program Verification/EXAM NOTES/13. Front-end Verifiers & Outlook.md",
@@ -254,7 +254,6 @@
     "1st semester/Program Verification/EXAM NOTES/11. Advanced Permission Models.md",
     "1st semester/Program Verification/EXAM NOTES/8. Verification Pragmatics.md",
     "1st semester/Program Verification/EXAM NOTES/7. Loops.md",
-    "1st semester/Program Verification/EXAM NOTES/6. Methods.md",
     "Program Analysis",
     "CompilerConstruction/Untitled.canvas",
     "Untitled 1.canvas",

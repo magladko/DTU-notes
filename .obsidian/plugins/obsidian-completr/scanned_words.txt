@@ -2802,6 +2802,7 @@ iiSB
 isf
 ilE
 internal
+induced
 program
 permutation
 possible
@@ -5355,6 +5356,7 @@ vFimMcMc
 vmqp
 vnL
 vFy
+viewBox
 Prove
 Program
 Proving
@@ -8111,6 +8113,8 @@ tFk
 tFm
 tlc
 trace
+transform
+tspan
 always
 as
 array
@@ -9636,6 +9640,10 @@ arith
 auxiliary
 almost
 addr
+arrive
+anchor
+accepting
+alphabet
 works
 whether
 where
@@ -10917,6 +10925,7 @@ wmZ
 wdedddd
 wTf
 wWfN
+white
 expected
 errors
 error
@@ -13932,6 +13941,7 @@ Tsy
 TtR
 TYk
 Tvo
+Tree
 determine
 does
 defined
@@ -15394,6 +15404,9 @@ dCVFFFFFFFFFFFF
 dvp
 debugger
 direction
+defs
+dropped
+deprecated
 given
 good
 guarantees
@@ -16736,6 +16749,9 @@ gYc
 gWQUY
 gQPi
 gOY
+gradientUnits
+gradient
+gradientTransform
 satisfies
 specification
 seL
@@ -18306,6 +18322,11 @@ sCO
 sign
 strange
 several
+spot
+svg
+stop
+stroke
+subset
 fully
 formal
 forward
@@ -19711,6 +19732,8 @@ fRT
 fIkL
 fGh
 flag
+fragment
+family
 kernel
 knowledge
 known
@@ -22634,6 +22657,8 @@ IZizala
 IZizalaApp
 IZizaliWindow
 IObrazovka
+Intention
+Intermedia
 Specifications
 Suffers
 Strengths
@@ -24186,6 +24211,7 @@ SOOe
 Sxy
 ShH
 Segment
+Syntactic
 method
 memory
 modify
@@ -25584,6 +25610,7 @@ mDFV
 msvv
 mathcal
 mostly
+man
 not
 new
 note
@@ -28378,6 +28405,11 @@ carry
 constructors
 count
 causes
+comparing
+change
+collection
+confusions
+constructions
 runs
 returns
 requires
@@ -29769,6 +29801,9 @@ randomized
 rVv
 rjt
 resulted
+rgb
+rect
+rejecting
 of
 original
 ordering
@@ -31036,6 +31071,8 @@ onv
 oKkA
 overflow
 observed
+observing
+origin
 How
 Hence
 Hi
@@ -33938,6 +33975,9 @@ Dyf
 DJz
 DGy
 Djd
+Dangerous
+Detection
+Decider
 Verification
 Verified
 Very
@@ -39358,6 +39398,7 @@ bcy
 bsS
 bbbM
 bIVF
+bytecode
 Even
 EveryCrypt
 Engineering
@@ -42326,6 +42367,8 @@ lmi
 lUF
 lgM
 last
+listed
+linearGradient
 unexpected
 use
 undecidability
@@ -43628,6 +43671,10 @@ unc
 uFr
 urY
 unused
+userSpaceOnUse
+url
+unimportant
+unoptimized
 Model
 More
 May
@@ -45151,6 +45198,7 @@ MIAA
 MUk
 MYdm
 MVK
+Monaco
 Automatic
 Automated
 Analogies
@@ -46820,6 +46868,7 @@ ANsRX
 AqZ
 AFn
 ABI
+Automaton
 Can
 CompCert
 Course
@@ -48354,6 +48403,9 @@ CUnknown
 CZizalaApp
 CZizaliWindow
 CObrazovka
+CST
+Concrete
+Complete
 handle
 high
 hints
@@ -51264,6 +51316,7 @@ RXXT
 ReTD
 Registers
 RTTI
+Recognizer
 years
 your
 you
@@ -55283,6 +55336,7 @@ LFFFFFFFF
 LBIX
 LHh
 LastErr
+Levels
 justify
 jd
 jt
@@ -64752,6 +64806,9 @@ BfN
 BnB
 BQK
 BinaryInfCteq
+BCA
+BaseClassArrays
+Bytecode
 KH
 KJP
 KR
