@@ -10,3 +10,14 @@
 		- nested structure: not regular
 		- scoping mechanism: not context free
 
+## Semantics
+1. Is analysing bytecode a semantic analysis?
+No, if without interpretation, it is merely a syntactic analysis.
+2. Name some ways can you describe the semantics of a program?
+	- Operational semantics (small+big step)
+	- Denotational semantics
+	- Maximal trace semantics
+	- Axiomatic semantics
+3. What does it mean to interpret a piece of code?
+It means to apply operational semantics described by code over state machine.
+

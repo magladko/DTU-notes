@@ -28,7 +28,7 @@ The **Structural Operational Semantics** or **Small Step Semantics** are wri
 **Big Step semantics**: easy to read, unable to encode infinite behavior
 **Small Step semantics**: translates directly to interpreter behavior
 
-## Transition System and Traces
+## Maximal Trace Semantics
 
 > [!definition] Transition System
 > A Transition system is a triplet $\langle \mathbf{State}_{P}, \delta_{P}, I_{P} \rangle$ where $\mathbf{State}_{P}$ is the set of program states, $\delta_{P}$ is the transition relation (defined by the single step semantics) and $I_{P}$ are possible initial states.
@@ -70,13 +70,17 @@ Values are dynamically typed -> every value carries around type info.
 **JVM state is a triplet** $\langle \lambda, \sigma, \iota \rangle$
 
 - $\lambda$: locals
-- $\sigma$: stack
+- $\sigma$: operator stack
 - $\iota$: Program Counter
-
+Additionally
+- $\mu$: call stack
+- $\eta \in \mathbb{N} \to \mathbf{V}_{\eta}$: heap
 ### Stepping Function
-$$
-\text{bc} \vdash \langle \lambda, \sigma, \iota \rangle \to \langle  \overline{\lambda}, \overline{\sigma}, \overline{\iota} \rangle
-$$
+
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mrow><mi>𝚋</mi><mi>𝚌</mi></mrow><mo>⊢</mo><mrow><mo stretchy="true" form="prefix">⟨</mo><mi>η</mi><mo>,</mo><mi>μ</mi><mo stretchy="true" form="postfix">⟩</mo></mrow><mo>→</mo><mrow><mo stretchy="true" form="prefix">⟨</mo><mover><mi>η</mi><mo accent="true">‾</mo></mover><mo>,</mo><mover><mi>μ</mi><mo accent="true">‾</mo></mover><mo stretchy="true" form="postfix">⟩</mo></mrow></mrow></math>
+
+Call stack $\mu$
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>μ</mi><mo>∼</mo><mi>…</mi><mrow><mo stretchy="true" form="prefix">⟨</mo><msub><mi>λ</mi><mn>2</mn></msub><mo>,</mo><msub><mi>σ</mi><mn>2</mn></msub><mo>,</mo><msub><mi>ι</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">⟩</mo></mrow><mrow><mo stretchy="true" form="prefix">⟨</mo><msub><mi>λ</mi><mn>1</mn></msub><mo>,</mo><msub><mi>σ</mi><mn>1</mn></msub><mo>,</mo><msub><mi>ι</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">⟩</mo></mrow></mrow></math>
 
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mrow><mrow><mi>𝚋</mi><mi>𝚌</mi></mrow><mo stretchy="false" form="prefix">[</mo><mi>ι</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mrow><mrow><mtext mathvariant="monospace">(𝚙𝚞𝚜𝚑:𝙸 </mtext><mspace width="0.333em"></mspace></mrow><mi>v</mi><mtext mathvariant="monospace">)</mtext></mrow></mrow><mrow><mrow><mi>𝚋</mi><mi>𝚌</mi></mrow><mo>⊢</mo><mrow><mo stretchy="true" form="prefix">⟨</mo><mi>λ</mi><mo>,</mo><mi>σ</mi><mo>,</mo><mi>ι</mi><mo stretchy="true" form="postfix">⟩</mo></mrow><mo>→</mo><mrow><mo stretchy="true" form="prefix">⟨</mo><mi>λ</mi><mo>,</mo><mi>σ</mi><mrow><mo stretchy="false" form="prefix">(</mo><mrow><mi>𝚒</mi><mi>𝚗</mi><mi>𝚝</mi></mrow><mspace width="0.222em"></mspace><mi>v</mi><mo stretchy="false" form="postfix">)</mo></mrow><mo>,</mo><mi>ι</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">⟩</mo></mrow></mrow></mfrac><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mi>u</mi><mi>s</mi><msub><mi>h</mi><mi>I</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow></math>
 ```Python
