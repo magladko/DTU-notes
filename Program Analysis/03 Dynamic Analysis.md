@@ -371,3 +371,6 @@ Possible trace questions:
 
 Any question we can answer correctly for one trace can be turned into a _may analysis_ for the full program (that may happen, but is not guaranteed).
 
+## Trace abstraction and Prediction
+
+**Trace Prediction**: inferring information about other traces by analyzing a single trace.
