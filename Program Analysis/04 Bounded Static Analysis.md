@@ -34,3 +34,6 @@ A lattice is partially ordered sets (L,⊑), with two extra operators ⊔ (joi
 >- $\sqcap = \cup$
 >- $\bot = \emptyset$
 >- $\top = \{ +, -, 0 \}$
+
+### Galois Connection
+![[galois connection.png]]
