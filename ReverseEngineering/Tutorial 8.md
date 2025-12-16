@@ -8,3 +8,5 @@
 
 Most of the cases: IDA finds only `start` function - goal: find main()
 Scan through function calls there, follow what's promising in size. Main should be expected somewhere down the line (initialization the longest, call main, cleanup)
+
+Main is expected to have arguments (argc + argv - value/types we expect are important to recognize)
