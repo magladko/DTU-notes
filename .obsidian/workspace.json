@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ReverseEngineering/Tutorial 8.md",
+                "file": "ReverseEngineering/Tutorial 8 - Analysis of a simple obfuscation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tutorial 8"
+              "title": "Tutorial 8 - Analysis of a simple obfuscation"
             }
           }
         ]
@@ -150,13 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ReverseEngineering/Tutorial 8.md",
+                "file": "ReverseEngineering/Tutorial 8 - Analysis of a simple obfuscation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Tutorial 8"
+              "title": "Outline of Tutorial 8 - Analysis of a simple obfuscation"
             }
           }
         ],
@@ -184,7 +184,7 @@
   "active": "35f63ad53e13be88",
   "lastOpenFiles": [
     "ReverseEngineering/Snake.md",
-    "ReverseEngineering/Tutorial 8.md",
+    "ReverseEngineering/Tutorial 8 - Analysis of a simple obfuscation.md",
     "Program Analysis/99 QUESTIONS.md",
     "Program Analysis/07 Context Sensitive Analysis.md",
     "Program Analysis/06 Concolic Execution.md",
