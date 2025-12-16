@@ -4,4 +4,5 @@
 4. cff explorer - import directory: look for characteristic libraries (eg. USER32.dll needed for window-based app)
 5. IDA: Strings, right click - Setup... - possible to check different string types (possibly all)
 6. IDA: cross reference: `X`
-7. 
+7. Try cross referencing strings of interest (CORRECT/WRONG etc.)
+8. 
