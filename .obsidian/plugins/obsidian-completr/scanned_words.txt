@@ -2819,6 +2819,7 @@ infeasible
 inherent
 influencing
 interval
+increased
 program
 permutation
 possible
@@ -4127,6 +4128,9 @@ pinned
 paint
 provides
 purely
+performing
+precise
+preventing
 verification
 verified
 verify
@@ -9718,6 +9722,7 @@ against
 approximation
 abstracted
 approximating
+another
 works
 whether
 where
@@ -12582,6 +12587,7 @@ equal
 excels
 ellipse
 estimating
+expand
 Task
 The
 Testing
@@ -15525,6 +15531,9 @@ debug
 downward
 doing
 dramatically
+dispatching
+differentiating
+drawback
 given
 good
 guarantees
@@ -18471,6 +18480,9 @@ software
 soundly
 suite
 symbolic
+site
+sensitive
+sites
 fully
 formal
 forward
@@ -24395,6 +24407,8 @@ Selection
 Selecting
 Such
 Solving
+Sensitive
+Second
 method
 memory
 modify
@@ -28646,6 +28660,8 @@ coverage
 computations
 constrained
 convergence
+complicated
+complication
 runs
 returns
 requires
@@ -30051,6 +30067,8 @@ radius
 repeat
 reach
 reached
+returning
+react
 of
 original
 ordering
@@ -42682,6 +42700,7 @@ lose
 limitation
 line
 lattices
+leaking
 unexpected
 use
 undecidability
@@ -50093,6 +50112,7 @@ happen
 hitting
 hashing
 hybrid
+happens
 Requires
 Rust
 Reading
