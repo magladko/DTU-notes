@@ -4,5 +4,7 @@
 4. cff explorer - import directory: look for characteristic libraries (eg. USER32.dll needed for window-based app)
 5. IDA: Strings, right click - Setup... - possible to check different string types (possibly all)
 6. IDA: cross reference: `X`
-7. Try cross referencing strings of interest (CORRECT/WRONG etc.)
-8. 
+7. Try cross referencing strings of interest (CORRECT/WRONG etc.) or API function calls that might be invoked close to the point of interest.
+
+Most of the cases: IDA finds only `start` function - goal: find main()
+Scan through function calls there, follow what's promising in size. Main should be expected somewhere down the line (initialization the longest, call main, cleanup)
