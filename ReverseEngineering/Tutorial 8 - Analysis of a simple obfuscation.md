@@ -11,3 +11,4 @@ Scan through function calls there, follow what's promising in size. Main should 
 
 Main is expected to have arguments (argc \[nr of args\] + argv \[ptr\] - value/types we expect are important to recognize)
 
+Else debug and observe which call is significant
