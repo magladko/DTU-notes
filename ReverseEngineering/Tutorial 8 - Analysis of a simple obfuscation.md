@@ -15,3 +15,6 @@ Else debug and observe which call is significant.
 
 IDA `M`: provide useful enumerables part of system libraries (eg. WM_DESTROY, WM_... for windowed apps events)
 
+IDA `H`: convert HEX/DEC
+
+IDA `R` in the hex view: change repr to string
