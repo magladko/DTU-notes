@@ -12,10 +12,17 @@ for 1.:
 ![[obfuscated_wip.png]]
 ![[deobfuscated.png]]
 
-Then reanalyze to let IDA recognize the code snippet as function (`P`).
-**IMPORTANT**: Save before - might mess up the work
-Then `SPACE` for the graph form.
+	Then reanalyze to let IDA recognize the code snippet as function (`P`).
+	**IMPORTANT**: Save before - might mess up the work
+	Then `SPACE` for the graph form.
 
+- If the jmp might be used, analyze what it means, convert to data and `;` put comment that it is actually a jmp
+  Or if jmp by 1 then == **nop (0x90)**, we need to convert the jmp to nop
+	- Change in hex editor (permanent), in hex view look at bottom left (offset) to use as a reference in the hexd
+	- In IDA: `Edit -> Patch program -> Change byte...`
+	  This shows current byte row, overwrite with 90 (nop)
+	  Leave comment of the original command (that it was modified), this is also visible in `Edit -> Patch program -> Patched bytes`
+	  REMEMBER TO CHANGE THE FOLLOWING BYTE TO INSTRUCTION
 NOTE:
 - Call gives no flag guarantees - jumps just after call should be assumed to be non-deterministic (can jump or not)
 - jl + jge (the same label) -> gives ultimately an unconditional jump
