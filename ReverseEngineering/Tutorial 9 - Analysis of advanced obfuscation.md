@@ -34,6 +34,10 @@ IDEA:
 	- `Edit -> Patch program -> Assemble...` with cursor on call
 	- change to `JMP [destination address]`
   
+**Irrelevant code obfuscation**
+A lot of commands without real impact on code.
+Important notice - side effects (e.g. overflow), like:
+mul 32bit 32bit register into another 32bit, not 64 (mul esi with eax)
 
 NOTE:
 - Call gives no flag guarantees - jumps just after call should be assumed to be non-deterministic (can jump or not)
