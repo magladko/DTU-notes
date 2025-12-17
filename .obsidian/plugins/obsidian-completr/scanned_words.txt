@@ -4136,6 +4136,7 @@ preventing
 password
 plaintext
 pressed
+permanent
 verification
 verified
 verify
@@ -5406,6 +5407,8 @@ vttl
 vKR
 visa
 versa
+view
+visible
 Prove
 Program
 Proving
@@ -6788,6 +6791,7 @@ PFn
 Posets
 Path
 Password
+Press
 that
 the
 to
@@ -9730,6 +9734,7 @@ abstracted
 approximating
 another
 anti
+assumed
 works
 whether
 where
@@ -11022,6 +11027,7 @@ written
 warning
 warns
 widening
+weird
 expected
 errors
 error
@@ -12599,6 +12605,7 @@ exeinfo
 explorer
 enter
 encountered
+editor
 Task
 The
 Testing
@@ -16899,6 +16906,7 @@ giving
 gather
 generalize
 guaranteeing
+gives
 satisfies
 specification
 seL
@@ -18496,6 +18504,8 @@ site
 sensitive
 sites
 stage
+signals
+switch
 fully
 formal
 forward
@@ -22859,6 +22869,10 @@ IxYi
 Infinite
 IDA
 Invalid
+IMPORTANT
+INSTRUCTION
+IDEA
+Irrelevant
 Specifications
 Suffers
 Strengths
@@ -25853,6 +25867,9 @@ mapped
 max
 minimal
 manipulation
+middle
+mess
+mul
 not
 new
 note
@@ -27060,6 +27077,7 @@ nNR
 nbsp
 none
 nice
+notice
 crash
 can
 correctness
@@ -28684,6 +28702,8 @@ complicated
 complication
 comipler
 comparison
+comment
+cursor
 runs
 returns
 requires
@@ -30092,6 +30112,7 @@ reached
 returning
 react
 randomization
+reanalyze
 of
 original
 ordering
@@ -31373,6 +31394,7 @@ outperform
 overcome
 obfuscation
 opposite
+overwrite
 How
 Hence
 Hi
@@ -37048,6 +37070,8 @@ NdN
 NSO
 Naur
 NWM
+Nested
+NOPs
 Good
 Group
 Give
@@ -39737,6 +39761,8 @@ background
 border
 byte
 breaks
+bytes
+bottom
 Even
 EveryCrypt
 Engineering
@@ -42730,6 +42756,8 @@ line
 lattices
 leaking
 locate
+locally
+lot
 unexpected
 use
 undecidability
@@ -44048,6 +44076,7 @@ unreachable
 unchecked
 unlock
 unlocking
+unconditional
 Model
 More
 May
@@ -45574,6 +45603,7 @@ MVK
 Monaco
 MIYXn
 Maximal
+MUST
 Automatic
 Automated
 Analogies
@@ -48795,6 +48825,7 @@ Caq
 Coverage
 Concolic
 Click
+CHANGE
 handle
 high
 hints
@@ -50147,6 +50178,8 @@ hashing
 hybrid
 happens
 hardcoded
+hex
+hexd
 Requires
 Rust
 Reading
@@ -51724,6 +51757,7 @@ RKj
 RXju
 Recognizing
 Repeat
+REMEMBER
 years
 your
 you
@@ -54316,6 +54350,7 @@ JfI
 Java
 JVM
 July
+Jump
 Less
 Lesson
 Let
@@ -55762,6 +55797,7 @@ LZcU
 Locals
 Lattices
 Lack
+Leave
 justify
 jd
 jt
@@ -57010,6 +57046,10 @@ jQRR
 jcF
 judgments
 joins
+jump
+jmp
+jumps
+jge
 Using
 Use
 Uncertainty
@@ -59855,6 +59895,7 @@ Fuzzing
 Fill
 Fuzz
 File
+FOLLOWING
 OPTIONS
 Overview
 Out
@@ -61156,6 +61197,7 @@ OUUl
 Operator
 Ordered
 Optional
+Obfuscation
 You
 Yes
 YE
@@ -65271,6 +65313,7 @@ Bkb
 BlDF
 BUb
 Bounded
+BYTE
 KH
 KJP
 KR

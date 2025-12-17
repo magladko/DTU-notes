@@ -42,4 +42,4 @@ mul 32bit 32bit register into another 32bit, not 64 (mul esi with eax)
 NOTE:
 - Call gives no flag guarantees - jumps just after call should be assumed to be non-deterministic (can jump or not)
 - jl + jge (the same label) -> gives ultimately an unconditional jump
-- `mul esi` -> actually `eax * esi`
+- `mul esi` -> actually `eax * esi`, might use EDX+EAX for 64bit result

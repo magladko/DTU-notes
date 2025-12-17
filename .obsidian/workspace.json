@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -184,11 +183,12 @@
   },
   "active": "35f63ad53e13be88",
   "lastOpenFiles": [
+    "ReverseEngineering/Lecture 1.md",
+    "ReverseEngineering/Tutorial 9 - Analysis of advanced obfuscation.md",
     "ReverseEngineering/attachments/deobfuscated.png",
     "ReverseEngineering/attachments/obfuscated_wip.png",
     "ReverseEngineering/attachments/obfuscated.png",
     "ReverseEngineering/Crackme.md",
-    "ReverseEngineering/Tutorial 9 - Analysis of advanced obfuscation.md",
     "ReverseEngineering/Tutorial 8 - Analysis of a simple obfuscation.md",
     "ReverseEngineering/Snake.md",
     "Program Analysis/99 QUESTIONS.md",
@@ -206,7 +206,6 @@
     "Program Analysis/attachments/Language Types.png",
     "Program Analysis/attachments/svgviewer-png-output.png",
     "Program Analysis/attachments",
-    "ReverseEngineering/Lecture 1.md",
     "1st semester/Program Verification/EXAM NOTES/2. Overview.md",
     "1st semester/Program Verification/EXAM NOTES/3. Automated Reasoning.md",
     "ReverseEngineering/attachments/ollyDbg_registers(fpu).png",
@@ -225,7 +224,6 @@
     "_preamble1.sty",
     "preamble.sty",
     "_preamble.sty",
-    "1st semester/Program Verification/TA/attachments/2. Overview - Definition 2-11 Toy Program Logic.png",
     "Computationally Hard Problems/attachments",
     "Computationally Hard Problems",
     "1st semester/Program Verification/TA/attachments",
