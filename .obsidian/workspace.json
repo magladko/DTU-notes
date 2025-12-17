@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ReverseEngineering/Crackme.md",
+                "file": "ReverseEngineering/Tutorial 9 - Analysis of advanced obfuscation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Crackme"
+              "title": "Tutorial 9 - Analysis of advanced obfuscation"
             }
           }
         ]
@@ -181,10 +181,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "35f63ad53e13be88",
+  "active": "f4ed663714496120",
   "lastOpenFiles": [
-    "ReverseEngineering/Tutorial 8 - Analysis of a simple obfuscation.md",
     "ReverseEngineering/Crackme.md",
+    "ReverseEngineering/Tutorial 9 - Analysis of advanced obfuscation.md",
+    "ReverseEngineering/Tutorial 8 - Analysis of a simple obfuscation.md",
     "ReverseEngineering/Snake.md",
     "Program Analysis/99 QUESTIONS.md",
     "Program Analysis/07 Context Sensitive Analysis.md",
@@ -204,7 +205,6 @@
     "ReverseEngineering/Lecture 1.md",
     "1st semester/Program Verification/EXAM NOTES/2. Overview.md",
     "1st semester/Program Verification/EXAM NOTES/3. Automated Reasoning.md",
-    "Untitled.md",
     "ReverseEngineering/attachments/ollyDbg_registers(fpu).png",
     "ReverseEngineering/attachments/prologue_1_ebp.png",
     "ReverseEngineering/attachments",
