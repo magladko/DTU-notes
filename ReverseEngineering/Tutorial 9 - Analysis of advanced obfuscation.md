@@ -8,7 +8,12 @@ for 1.:
   Press `D` - switch instruction -> data
   Press `C` - switch data -> instruction under weird jump label
   **MUST**: be sure that the byte is never executed
+![[obfuscated.png]]
+![[obfuscated_wip.png]]
+![[deobfuscated.png]]
 
+Then reanalyze to let IDA recognize the code snippet as function (`P`).
+**IMPORTANT**: Save before - might mess up the work
 
 NOTE:
 - Call gives no flag guarantees - jumps just after call should be assumed to be non-deterministic (can jump or not)

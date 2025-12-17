@@ -181,8 +181,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f4ed663714496120",
+  "active": "35f63ad53e13be88",
   "lastOpenFiles": [
+    "ReverseEngineering/attachments/deobfuscated.png",
+    "ReverseEngineering/attachments/obfuscated_wip.png",
+    "ReverseEngineering/attachments/obfuscated.png",
     "ReverseEngineering/Crackme.md",
     "ReverseEngineering/Tutorial 9 - Analysis of advanced obfuscation.md",
     "ReverseEngineering/Tutorial 8 - Analysis of a simple obfuscation.md",
@@ -217,14 +220,11 @@
     "Computationally Hard Problems/attachments/proving-problem-in-np.png",
     "1st semester/Program Verification/CHEAT SHEETS.md",
     "1st semester/Program Verification/TA/Claude.md",
-    "1st semester/Program Verification/TA/2. Overview.md",
     "Computationally Hard Problems/attachments/problem-classification.png",
     "_preamble1.sty",
     "preamble.sty",
     "_preamble.sty",
     "1st semester/Program Verification/TA/attachments/2. Overview - Definition 2-11 Toy Program Logic.png",
-    "1st semester/Program Verification/TA/attachments/2. Overview - Definition 2-10 Foundational Judgement for Toy Triples.png",
-    "Computationally Hard Problems/attachments/class-relations.png",
     "Computationally Hard Problems/attachments",
     "Computationally Hard Problems",
     "1st semester/Program Verification/TA/attachments",
