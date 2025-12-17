@@ -14,6 +14,7 @@ for 1.:
 
 Then reanalyze to let IDA recognize the code snippet as function (`P`).
 **IMPORTANT**: Save before - might mess up the work
+Then `SPACE` for the graph form.
 
 NOTE:
 - Call gives no flag guarantees - jumps just after call should be assumed to be non-deterministic (can jump or not)
