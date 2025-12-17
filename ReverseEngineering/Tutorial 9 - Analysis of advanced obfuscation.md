@@ -23,6 +23,18 @@ for 1.:
 	  This shows current byte row, overwrite with 90 (nop)
 	  Leave comment of the original command (that it was modified), this is also visible in `Edit -> Patch program -> Patched bytes`
 	  REMEMBER TO CHANGE THE FOLLOWING BYTE TO INSTRUCTION
+
+**Nested Function case** 
+Important note: it modifies the return address (add ptr \[esp+0\] ...)
+Which seems to skip exactly to the code directly after the function.
+IDEA:
+- interpret as data with comment left
+- fill with NOPs
+- change call to jmp to destination
+	- `Edit -> Patch program -> Assemble...` with cursor on call
+	- change to `JMP [destination address]`
+  
+
 NOTE:
 - Call gives no flag guarantees - jumps just after call should be assumed to be non-deterministic (can jump or not)
 - jl + jge (the same label) -> gives ultimately an unconditional jump
