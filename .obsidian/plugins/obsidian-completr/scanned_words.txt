@@ -4139,6 +4139,7 @@ password
 plaintext
 pressed
 permanent
+pFhAdxei
 verification
 verified
 verify
@@ -6795,6 +6796,7 @@ Path
 Password
 Press
 Position
+Paste
 that
 the
 to
@@ -8190,6 +8192,7 @@ transitive
 trickery
 tell
 temporarily
+textbox
 always
 as
 array
@@ -9741,6 +9744,7 @@ assumed
 argc
 argv
 apps
+avoidance
 works
 whether
 where
@@ -12615,6 +12619,10 @@ encountered
 editor
 expect
 enumerables
+explained
+encrypted
+extracting
+exe
 Task
 The
 Testing
@@ -28723,6 +28731,8 @@ characteristic
 click
 cross
 cleanup
+cyphertext
+calculate
 runs
 returns
 requires
@@ -31420,6 +31430,7 @@ obfuscation
 opposite
 overwrite
 observe
+obfuscations
 How
 Hence
 Hi
@@ -34342,6 +34353,8 @@ DialogFunc
 Dialog
 DESTROY
 DEC
+Discovered
+Decription
 Verification
 Verified
 Very
@@ -39792,6 +39805,7 @@ byte
 breaks
 bytes
 bottom
+beq
 Even
 EveryCrypt
 Engineering
@@ -41372,6 +41386,7 @@ EQPPX
 Environment
 Equivalence
 Else
+Enter
 lead
 library
 labor
@@ -50212,6 +50227,7 @@ happens
 hardcoded
 hex
 hexd
+hide
 Requires
 Rust
 Reading
@@ -52981,6 +52997,7 @@ yfn
 yRN
 yBN
 yLOOq
+yTblkq
 JUnit
 Just
 JB
@@ -57084,6 +57101,7 @@ jumps
 jge
 jnz
 jumping
+jSAuCXJXSzEmMUsmR
 Using
 Use
 Uncertainty
