@@ -24,3 +24,5 @@ If pushad/popad is obfuscated:
 After popad, there might be zeroing of stack for safer execution of the packed exe.
 
 If no pushad - then in the memory map look for executable memory segments, most of all the ones that are 0s. Then disable exec. rights (right click, set page memory rights, reade write only). This will crash the app exactly at the OEP (original entry point).
+
+If the memory segments are not executable, then VirtualProtect can be injected that will not permit to add exec permisions
