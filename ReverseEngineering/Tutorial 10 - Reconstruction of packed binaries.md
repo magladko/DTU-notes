@@ -20,3 +20,7 @@ To unpack:
 If pushad/popad is obfuscated:
 1. pushad: monitor ESP for a decrease 20h/32bytes/8pointers (pushing all registers)
 2. popad: hardware breakpoint on memory access for pushed registers
+
+After popad, there might be zeroing of stack for safer execution of the packed exe.
+
+If no pushad - then in the memory map look for executable memory segments, most of all the ones that are 0s. Then disable exec. rights (right click, set page memory rights, reade write only). This will crash the app exactly at the OEP (original entry point).
