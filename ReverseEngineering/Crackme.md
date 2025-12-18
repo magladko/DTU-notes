@@ -73,4 +73,4 @@ Discovered via RC4 Decription tool (both values found as function arguments):
 - Which new anti-debugging methods are used in this stage and how can we avoid them?
 	none
 - What was your approach to finding the password?
-	- After extracting the exe with cff explorer, the same way as in 1st. When I identified the algorithm I used external tool to quickly calculate the password.
+	After extracting the exe with cff explorer, the same way as in 1st. When I identified the algorithm I used external tool to quickly calculate the password.
