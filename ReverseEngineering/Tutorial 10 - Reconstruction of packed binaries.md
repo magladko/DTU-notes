@@ -3,6 +3,15 @@
 Used to make the context of the packed executable faithful to the original system env.
 
  If pushad used, then a popad could be expected at the same function (not to mess with the stack). Then a jmp could be encountered, which might lead to a different code segment (look at memory map) and might be followed by 0-data (filler data).
-If the jmp points to 0s, it is promising, since it might be filled with an unpacked app data.
+If the jmp points to 0s, it is promising, since it might be filled with an unpacked app data. (to look at jmp target: "follow in disassembler")
 
-After running to the breakpoint at this jmp, the data at target address should be filled with the unpacked entry point
+After running to the breakpoint at this jmp, the data at target address should be filled with the unpacked entry point.
+
+To unpack:
+1. perform the jmp
+2. plugins -> Scylla
+3. OEP: Address should be pre-filled 
+4. Click `DUMP`
+5. The result should look like .exe (might still not execute)
+6. Open in IDA.
+
