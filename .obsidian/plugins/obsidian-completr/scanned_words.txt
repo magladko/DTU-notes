@@ -2824,6 +2824,8 @@ increased
 initialization
 invoked
 import
+imported
+injected
 program
 permutation
 possible
@@ -4140,6 +4142,18 @@ plaintext
 pressed
 permanent
 pFhAdxei
+pop
+packed
+pushad
+popad
+perform
+plugins
+pushing
+pushed
+probably
+permit
+protection
+press
 verification
 verified
 verify
@@ -8193,6 +8207,7 @@ trickery
 tell
 temporarily
 textbox
+tab
 always
 as
 array
@@ -12623,6 +12638,7 @@ explained
 encrypted
 extracting
 exe
+exec
 Task
 The
 Testing
@@ -15571,6 +15587,7 @@ dispatching
 differentiating
 drawback
 disable
+disassembler
 given
 good
 guarantees
@@ -18525,6 +18542,8 @@ stage
 signals
 switch
 somewhere
+safer
+submit
 fully
 formal
 forward
@@ -19947,6 +19966,10 @@ forces
 finding
 followed
 finds
+faithful
+filler
+filled
+failed
 kernel
 knowledge
 known
@@ -22893,6 +22916,7 @@ IMPORTANT
 INSTRUCTION
 IDEA
 Irrelevant
+IAT
 Specifications
 Suffers
 Strengths
@@ -24465,6 +24489,7 @@ Second
 StartAddress
 Strings
 Scan
+Scylla
 method
 memory
 modify
@@ -25893,6 +25918,7 @@ middle
 mess
 mul
 messes
+managing
 not
 new
 note
@@ -28733,6 +28759,7 @@ cross
 cleanup
 cyphertext
 calculate
+complementary
 runs
 returns
 requires
@@ -30147,6 +30174,9 @@ repr
 restart
 restarted
 rewrote
+rights
+reade
+rename
 of
 original
 ordering
@@ -31431,6 +31461,7 @@ opposite
 overwrite
 observe
 obfuscations
+obfuscated
 How
 Hence
 Hi
@@ -35747,6 +35778,10 @@ VMs
 Vcue
 VUo
 VQUb
+VirtualProtect
+VirtualProtectEx
+VirtualAlloc
+VirtualAllocEx
 NOT
 Note
 Notice
@@ -39806,6 +39841,7 @@ breaks
 bytes
 bottom
 beq
+breakpoint
 Even
 EveryCrypt
 Engineering
@@ -41387,6 +41423,7 @@ Environment
 Equivalence
 Else
 Enter
+EntryPoint
 lead
 library
 labor
@@ -42804,6 +42841,8 @@ locally
 lot
 libraries
 longest
+located
+leads
 unexpected
 use
 undecidability
@@ -44123,6 +44162,10 @@ unchecked
 unlock
 unlocking
 unconditional
+unpacked
+unpack
+upx
+unpacking
 Model
 More
 May
@@ -48873,6 +48916,7 @@ Concolic
 Click
 CHANGE
 CORRECT
+Ctrl
 handle
 high
 hints
@@ -50228,6 +50272,7 @@ hardcoded
 hex
 hexd
 hide
+hardware
 Requires
 Rust
 Reading
@@ -51806,6 +51851,7 @@ RXju
 Recognizing
 Repeat
 REMEMBER
+Run
 years
 your
 you
@@ -58494,6 +58540,7 @@ UEQCr
 UQB
 UrQq
 USER
+Unpacking
 For
 Forecaster
 Financial
@@ -59949,6 +59996,7 @@ Fill
 Fuzz
 File
 FOLLOWING
+Fix
 OPTIONS
 Overview
 Out
@@ -67867,6 +67915,7 @@ zih
 zzzZ
 zRt
 zilTv
+zeroing
 QU
 QV
 QY

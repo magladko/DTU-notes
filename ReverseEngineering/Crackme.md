@@ -74,3 +74,52 @@ Discovered via RC4 Decription tool (both values found as function arguments):
 	none
 - What was your approach to finding the password?
 	After extracting the exe with cff explorer, the same way as in 1st. When I identified the algorithm I used external tool to quickly calculate the password.
+
+# Password 3
+
+----
+1. What I did next, but might not be necessary:
+	1. Right click on the erroneous position then choose Cut thunk
+	2. Adjust the Size to 1F4 (4 less than it used to be)
+	3. 
+
+NOTE
+- `pushad` at 0070D3C0 (marked as entry point)
+- `popad` at 0070D555
+- `jmp` at 0070D563
+- unpacked at 00413C98
+
+424b0f
+
+PASSWORD:
+Faculty of cool things and stuff
+
+
+- Which password is required for the next stage?
+	Faculty of cool things and stuff
+- How should the user enter this password to get to the next stage?
+	Paste/type into the first edit box, then click the button.
+- How is the password stored in the application?
+	As Base64 string (RmFjdWx0eSBvZiBjb29sIHRoaW5ncyBhbmQgc3R1ZmY=)
+- Which new obfuscation methods are used in this stage and how can we avoid them?
+	Unpacking with `upx -d`:
+	1. Ensure write access rights to the exe file `attrib -r .\Stage3.exe` (else it failed for me).
+	2. Replace BPX0 to UPX0 (common anti-upx pattern to rename section names)
+	3. Run `upx -d Stage3.exe` -- DONE
+
+	Manual unpacking
+	1. Open with x64dbg
+	2. Run the program, the execution will stop at EntryPoint (`pushad` instruction)
+	3. The complementary `popad` instruction is located at address 70D555 and the jmp instruction that leads to the unpacking location is at 70D563 (navigate there, that is Ctrl+G, enter the address then submit)
+	4. Set a breakpoint on this address and click Run to continue running the program.
+	5. When the breakpoint is achieved, press step into to jump to the unpacked program entry point.
+	6. Click Plugins > Scylla
+	7. Within Scylla click IAT Autosearch, accept advanced results
+	8. Click Get Imports
+	9. ISSUE: There is seemingly a phantom import record, this can be safely ignored. The file will not be functional, IDA will complain, but the analysis will be possible to perform.
+	10. Then click Dump to save dump, and after that Fix Dump selecting the freshly created dump file to fix the IAT with the calculated values.
+
+- Which new anti-debugging methods are used in this stage and how can we avoid them?
+none
+- What was your approach to finding the password?
+	I followed the approach from the Password 2 exactly, however in the hindsight I probably should've tried putting the decoded Base64 string at the moment I have seen it...

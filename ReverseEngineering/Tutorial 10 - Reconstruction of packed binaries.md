@@ -25,4 +25,4 @@ After popad, there might be zeroing of stack for safer execution of the packed e
 
 If no pushad - then in the memory map look for executable memory segments, most of all the ones that are 0s. Then disable exec. rights (right click, set page memory rights, reade write only). This will crash the app exactly at the OEP (original entry point).
 
-If the memory segments are not executable, then VirtualProtect (VirtualProtectEx, VirtualAlloc, VirtualAllocEx) (or probably some more access managing functions) can be injected that will not permit to add exec permissions
+If the memory segments are not executable, then VirtualProtect (VirtualProtectEx, VirtualAlloc , VirtualAllocEx) (or probably some more access managing functions) can be injected that will not permit to add exec permissions

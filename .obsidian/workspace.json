@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ReverseEngineering/Tutorial 10 - Reconstruction of packed binaries.md",
+                "file": "ReverseEngineering/Crackme.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tutorial 10 - Reconstruction of packed binaries"
+              "title": "Crackme"
             }
           }
         ]
@@ -183,15 +183,15 @@
   },
   "active": "35f63ad53e13be88",
   "lastOpenFiles": [
+    "ReverseEngineering/Snake.md",
+    "ReverseEngineering/Lecture 1.md",
     "ReverseEngineering/Crackme.md",
     "ReverseEngineering/Tutorial 10 - Reconstruction of packed binaries.md",
-    "ReverseEngineering/Tutorial 9 - Analysis of advanced obfuscation.md",
-    "ReverseEngineering/Lecture 1.md",
     "ReverseEngineering/Tutorial 8 - Analysis of a simple obfuscation.md",
+    "ReverseEngineering/Tutorial 9 - Analysis of advanced obfuscation.md",
     "ReverseEngineering/attachments/deobfuscated.png",
     "ReverseEngineering/attachments/obfuscated_wip.png",
     "ReverseEngineering/attachments/obfuscated.png",
-    "ReverseEngineering/Snake.md",
     "Program Analysis/99 QUESTIONS.md",
     "Program Analysis/07 Context Sensitive Analysis.md",
     "Program Analysis/06 Concolic Execution.md",
