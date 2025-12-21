@@ -123,3 +123,28 @@ Faculty of cool things and stuff
 none
 - What was your approach to finding the password?
 	I followed the approach from the Password 2 exactly, however in the hindsight I probably should've tried putting the decoded Base64 string at the moment I have seen it...
+
+
+# Password 4
+
+Expected length: 19h (25)
+
+- Which password is required for the next stage?
+	ETxXhmqg1RxdJz9ovWPkltW2V
+- How should the user enter this password to get to the next stage?
+	Write or paste in the second message box after submitting the prior one
+- How is the password stored in the application?
+    Password is encrypted with custom/mangled RC4 implementation. The key differences:
+	    The string is processed in chunks of length 3 (or less in the last steps) consumed from both ends (instead of linearly byte-by-byte)
+		S-Box is not a full permutation (some values are duplicate, some are missing)
+- Which new obfuscation methods are used in this stage and how can we avoid them?
+	Dynamically evaluated function calls, one needs to debug to see where the call leads
+	The result string messages are built dynamically.
+- Which new anti-debugging methods are used in this stage and how can we avoid them?
+	The program is checking for debugging flags and terminates process if that is the case (loc_410407) via NtGlobalFlag check technique [Anti-Debug: Debug Flags](https://anti-debug.checkpoint.com/techniques/debug-flags.html#:~:text=2.2.-,NtGlobalFlag,-The%20NtGlobalFlag%20field). We could use a debugger plugin, but I just invalidated the check by modifying the binary to never jump (2xnop instead of jnz).
+- What was your approach to finding the password?
+1. I searched for the immediate value of 0x3EB (1003) to locate where the new edit box resource is touched. It shows in 2 locations, first just after the first password is guessed to unlock the box, second when the contents should be processed. 
+2. Then I debugged the application to monitor how is the input value processed (after I modified anti-debugging check, which I identified by following call stack after setting breakpoints via: bp ExitProcess, bp TerminateProcess, bp NtTerminateProcess). The input modification occurred at address 4102BA.
+3. This lead me to the encoding function on which I have put a breakpoint, that helped me to uncover a 'test string' value being passed at the beginning of the program helping me to reverse engineer the encryption algorithm.
+4. I monitored the function calls to take note on the order in which the string chunks are processed.
+5. I translated the algorithm to python to find the correct password. 
