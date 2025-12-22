@@ -2828,6 +2828,7 @@ import
 imported
 injected
 ignored
+invalidated
 program
 permutation
 possible
@@ -4159,6 +4160,8 @@ press
 position
 phantom
 putting
+prior
+processed
 verification
 verified
 verify
@@ -8218,6 +8221,8 @@ tab
 thunk
 things
 tried
+touched
+translated
 always
 as
 array
@@ -12652,6 +12657,9 @@ exec
 erroneous
 edit
 eSBvZiBjb
+evaluated
+engineer
+encryption
 Task
 The
 Testing
@@ -14117,6 +14125,7 @@ Trick
 Trace
 Tiger
 Try
+TerminateProcess
 determine
 does
 defined
@@ -15603,6 +15612,8 @@ disable
 disassembler
 dump
 decoded
+duplicate
+debugged
 given
 good
 guarantees
@@ -16957,6 +16968,7 @@ gather
 generalize
 guaranteeing
 gives
+guessed
 satisfies
 specification
 seL
@@ -18563,6 +18575,8 @@ stuff
 sIHRoaW
 seemingly
 safely
+submitting
+searched
 fully
 formal
 forward
@@ -19990,6 +20004,7 @@ filler
 filled
 failed
 freshly
+flags
 kernel
 knowledge
 known
@@ -25942,6 +25957,11 @@ mul
 messes
 managing
 moment
+message
+mangled
+missing
+modification
+monitored
 not
 new
 note
@@ -28788,6 +28808,9 @@ cool
 complain
 created
 calculated
+custom
+chunks
+consumed
 runs
 returns
 requires
@@ -30205,6 +30228,7 @@ rewrote
 rights
 reade
 rename
+reverse
 of
 original
 ordering
@@ -31490,6 +31514,8 @@ overwrite
 observe
 obfuscations
 obfuscated
+ovWPkltW
+occurred
 How
 Hence
 Hi
@@ -37179,6 +37205,8 @@ Naur
 NWM
 Nested
 NOPs
+NtGlobalFlag
+NtTerminateProcess
 Good
 Group
 Give
@@ -39873,6 +39901,7 @@ bytes
 bottom
 beq
 breakpoint
+breakpoints
 Even
 EveryCrypt
 Engineering
@@ -41455,6 +41484,8 @@ Equivalence
 Else
 Enter
 EntryPoint
+ETxXhmqg
+ExitProcess
 lead
 library
 labor
@@ -42874,6 +42905,7 @@ libraries
 longest
 located
 leads
+linearly
 unexpected
 use
 undecidability
@@ -44197,6 +44229,7 @@ unpacked
 unpack
 upx
 unpacking
+uncover
 Model
 More
 May
@@ -50306,6 +50339,7 @@ hexd
 hide
 hardware
 hindsight
+helped
 Requires
 Rust
 Reading
@@ -51887,6 +51921,7 @@ REMEMBER
 Run
 Right
 RmFjdWx
+RxdJz
 years
 your
 you
@@ -70481,6 +70516,7 @@ xOTi
 xKGF
 xzxT
 xor
+xnop
 Xp
 XY
 Xj

@@ -129,6 +129,12 @@ none
 
 Expected length: 19h (25)
 
+For each byte of functions at 4102D0:
+1. add previously calculated key byte
+2. add current loop variant
+3. take 2 lowest bytes of ECX (cl)
+4. modify 
+
 - Which password is required for the next stage?
 	ETxXhmqg1RxdJz9ovWPkltW2V
 - How should the user enter this password to get to the next stage?
