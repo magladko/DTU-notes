@@ -154,3 +154,19 @@ For each byte of functions at 4102D0:
 3. This lead me to the encoding function on which I have put a breakpoint, that helped me to uncover a 'test string' value being passed at the beginning of the program helping me to reverse engineer the encryption algorithm.
 4. I monitored the function calls to take note on the order in which the string chunks are processed.
 5. I translated the algorithm to python to find the correct password. 
+
+# Password 5
+
+- Which password is required for the next stage?
+	Random number nine
+- How should the user enter this password to get to the next stage?
+	After submitting Password 3, a password 5 should be used in a second box instead of password 4.
+- How is the password stored in the application?
+	The password was stored a dynamically built string, which first has been base64 encoded, then it was xor'ed with 15h value.
+- Which new obfuscation methods are used in this stage and how can we avoid them?
+	none
+- Which new anti-debugging methods are used in this stage and how can we avoid them?
+	none
+- What was your approach to finding the password?
+	I was scanning through the IDA source code and the long sequences of mov byte literals caught my attention. 
+	I have put the sequences through llm, since they are good at recognizing patterns quickly. The success message string was only xor'ed with a 28h value, but the password was successfully identified as base64 string after xoring with 15h value as source code suggested (character set, length is a multiple of four, some randomness heuristics and capitalized start of the sequence). I then went through the available text boxes with a brute-force discovering that this password worked for a second one after unlocking it.
