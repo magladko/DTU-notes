@@ -46,20 +46,18 @@ show collision prob. is $\leq \frac{1}{m}$
 $$
 \forall_{x \neq y}. Pr(g(x) = g(y)) = \sum_{\alpha \in M} Pr(g(x) = \alpha \land g(y) = \alpha) = m \frac{1}{m^2} = \frac{1}{m}
 $$
-## 5. Linear Space Hashing The chained hashing solution for the dynamic dictionary problem presented assumes that m = Θ(n). Solve the following exercises.
-
+## 5. Linear Space Hashing. The chained hashing solution for the dynamic dictionary problem presented assumes that m = Θ(n). Solve the following exercises.
 
 ### 5.1 What is the space and time of chained hashing without this assumption? State your answer in terms of n and m.
 
 ![[ChainedHashing_space.png]]
 
-Space = O(m + n)
+Space = $O(m + n)$
 
 ![[ChainedHashin1.png]]
 ![[ChainedHashing2.png]]
 
-O(n/m)
-
+time expected: $O\left( 1 + \frac{n}{m} \right)$
 ### 5.2 Suppose we do not know n in advance (as in the exercise streaming statistics where we do not know how many distinct IP addresses we will see). Give a solution that achieves O(n) space and fast amortized time without assuming m = Θ(n). Hint: Think dynamic arrays.
 
 ## 6. Graph Adjacency. Let G be a graph with n vertices and m edges. We want to represent G efficiently and support the following operation.
