@@ -17,11 +17,13 @@ Time: O(1) **expected** - (expected is important due to randomization)
 Space: O(n), where n = \#distinct IP addresses
 ## 2. [w] Dense Set Hashing A set S ⊆ U = {0, . . . , u − 1} is called dense if |S| = Θ(u). Suggest a simple and efficient dictionary data structure for dense sets.
 
+
 ## 3. [w] Multi-Set Hashing A multi-set is a set M, where each element may occur multiple times. Design an efficient data structure supporting the following operations:
 
 - add(x): Add an(other) occurrence of x to M.
 - remove(x): Remove an occurrence of x from M. If x does not occur in M do nothing.
 - report(x): Return the number of occurrences of x.
+
 
 ## 5. Linear Space Hashing The chained hashing solution for the dynamic dictionary problem presented assumes that m = Θ(n). Solve the following exercises.
 
