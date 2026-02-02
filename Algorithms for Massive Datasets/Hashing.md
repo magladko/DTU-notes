@@ -42,7 +42,10 @@ $m \geq u$
 Yes, because the collision probability in this case is equal to 0.
 ### 4.3 A family G of hash functions mapping U to M is family of pair-wise independent hash function if for any `g ∈ G`, `Pr(g(x) = α ∧ g( y) = β) = 1/m2 ∀x ∕= y ∈ U, ∀α,β ∈ M`. Show that any family of pairwise independent hash functions is a family of universal hash functions.
 
-
+show collision prob. is $\leq \frac{1}{m}$
+$$
+\forall_{x \neq y}. Pr(g(x) = g(y)) = \sum_{\alpha \in M} Pr(g(x) = \alpha \land g(y) = \alpha) = m \frac{1}{m^2} = \frac{1}{m}
+$$
 ## 5. Linear Space Hashing The chained hashing solution for the dynamic dictionary problem presented assumes that m = Θ(n). Solve the following exercises.
 
 
