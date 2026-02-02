@@ -8,13 +8,16 @@ Let S = S_i , S_i be a stream of IP-adr
 Init dictionary D with universal hash function
 Init counter c
 For each S_i: If lookup(S_i) do nothing
-			  otherwise insert(S_i), increment
+			  otherwise insert(S_i)
+			  increment c
 Return c
 ```
 
 Time: O(1) **expected** - (expected is important due to randomization)
 Space: O(n), where n = \#distinct IP addresses
-## 2. 
+## 2. [w] Dense Set Hashing A set S ⊆ U = {0, . . . , u − 1} is called dense if |S| = Θ(u). Suggest a simple and efficient dictionary data structure for dense sets.
+
+
 ## 5. Linear Space Hashing The chained hashing solution for the dynamic dictionary problem presented assumes that m = Θ(n). Solve the following exercises.
 
 ### 5.1 What is the space and time of chained hashing without this assumption? State your answer in terms of n and m.
