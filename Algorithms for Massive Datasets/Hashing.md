@@ -12,6 +12,8 @@ For each S_i: If lookup(S_i) do nothing
 Return c
 ```
 
+Time: O(1) **expected** - (expected is important due to randomization)
+Space: O(n), where n = \#distinct IP addresses
 ## 2. 
 ## 5. Linear Space Hashing The chained hashing solution for the dynamic dictionary problem presented assumes that m = Θ(n). Solve the following exercises.
 
