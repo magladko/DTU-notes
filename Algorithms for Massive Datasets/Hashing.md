@@ -99,3 +99,25 @@ $$
 
 ### 7.2 Suppose we replace the universal hash function with a simpler near-universal hash function on both levels. Near-universal hashing is the same as universal hashing except that ≤ 1/m guarantee on the probability is changed to ≤ 2/m. Show how to modify the FKS so that the scheme still works efficiently.
 
+
+## 8. String Hashing and String Matching
+### 8.1 Show how to compute a fingerprint of a string of length s in time O(s).
+
+Walk through each character (take as byte time z^n-i) then mod, which gives O(s).
+### 8.2 Show the rolling property.
+
+basic idea: switching between the components of the polynomial
+### 8.3 Given a string S of length n and a set of k strings $\mathscr{P} = P_1, P_2, \dots , P_k$ all of length m, the multi-string matching problem is to decide if any of the strings in $\mathscr{P}$ occurs in S. Give a fast algorithm for this problem.
+
+Go through S once by rolling the fingerprint over m letters, match the fingerprint against each fp in the P, else follow procedure as if for a single substring.
+### 8.4 Let S, T, R be three strings such that S = T ⊙ R, where ⊙ denotes concatenation. Show that given the fingerprint of any two strings, we can efficiently compute the third’s fingerprint.
+
+
+
+## 9. Basic Probability Theory Refresh Bonus In case your knowledge of probability theory is rusty. Solve the following self-help exercises.
+
+### 9.1 Prove linearity of expectation.
+
+### 9.2 Prove that the expectation of the indicator function for h(x) = h( y) (1 if h(x) = h( y) and 0 otherwise) is equal to the probability that h(x) = h( y).
+
+### 9.3 Show that the expected number of trials to get a perfect hashing function using an array of size n2 is ≤ 2.
