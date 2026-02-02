@@ -29,6 +29,16 @@ Ops time: O(1)
 
 dictionary structure + satellite data (counter)
 when counter = 0 -> delete the element
+
+## 4. Properties of Universal Hashing. Let h ∈ H be a hash function from a universal family mapping U = {0, . . . , u − 1} to M = {0, . . . , m − 1}. Solve the following exercises.
+
+### 4.1 If h has no collision on U, how large must m be?
+
+### 4.2 Suppose m ≥ u. Is the identity function f (x) = x a universal hash function?
+
+### 4.3 A family G of hash functions mapping U to M is family of pair-wise independent hash function if for any `g ∈ G`, `Pr(g(x) = α ∧ g( y) = β) = 1/m2 ∀x ∕= y ∈ U, ∀α,β ∈ M`. Show that any family of pairwise independent hash functions is a family of universal hash functions.
+
+
 ## 5. Linear Space Hashing The chained hashing solution for the dynamic dictionary problem presented assumes that m = Θ(n). Solve the following exercises.
 
 ### 5.1 What is the space and time of chained hashing without this assumption? State your answer in terms of n and m.
