@@ -37,7 +37,9 @@ when counter = 0 -> delete the element
 $m \geq u$
 ### 4.2 Suppose m ≥ u. Is the identity function f (x) = x a universal hash function?
 
-No, universal hash function is a family of functions, that especially make use of randomness
+![[universal_Hashing.png]]
+
+Yes, because the collision probability in this case is equal to 0.
 ### 4.3 A family G of hash functions mapping U to M is family of pair-wise independent hash function if for any `g ∈ G`, `Pr(g(x) = α ∧ g( y) = β) = 1/m2 ∀x ∕= y ∈ U, ∀α,β ∈ M`. Show that any family of pairwise independent hash functions is a family of universal hash functions.
 
 
