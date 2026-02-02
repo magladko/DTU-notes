@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "attachments/CC_exercise10.md",
+                "file": "Algorithms for Massive Datasets/Hashing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CC_exercise10"
+              "title": "Hashing"
             }
           }
         ]
@@ -181,8 +181,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f4ed663714496120",
+  "active": "35f63ad53e13be88",
   "lastOpenFiles": [
+    "attachments/CC_exercise10.md",
     "3rd semester/Computationally Hard Problems/attachments/proving-problem-in-np.png",
     "3rd semester/Computationally Hard Problems/attachments/problem-classification.png",
     "3rd semester/Computationally Hard Problems/attachments/class-zpp.png",
@@ -197,7 +198,6 @@
     "3rd semester/Computationally Hard Problems",
     "Algorithms for Massive Datasets/Hashing.md",
     "3rd semester/ReverseEngineering/attachments/prologue_1_ebp.png",
-    "3rd semester/ReverseEngineering/attachments/ollyDbg_registers(fpu).png",
     "3rd semester/ReverseEngineering/attachments",
     "3rd semester/ReverseEngineering/Tutorial 9 - Analysis of advanced obfuscation.md",
     "3rd semester/ReverseEngineering/Tutorial 8 - Analysis of a simple obfuscation.md",
