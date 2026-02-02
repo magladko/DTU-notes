@@ -43,6 +43,7 @@ No, universal hash function is a family of functions, that especially
 
 ## 5. Linear Space Hashing The chained hashing solution for the dynamic dictionary problem presented assumes that m = Θ(n). Solve the following exercises.
 
+
 ### 5.1 What is the space and time of chained hashing without this assumption? State your answer in terms of n and m.
 
 ![[ChainedHashing_space.png]]
@@ -55,4 +56,19 @@ Space = O(m + n)
 O(n/m)
 
 ### 5.2 Suppose we do not know n in advance (as in the exercise streaming statistics where we do not know how many distinct IP addresses we will see). Give a solution that achieves O(n) space and fast amortized time without assuming m = Θ(n). Hint: Think dynamic arrays.
+
+## 6. Graph Adjacency. Let G be a graph with n vertices and m edges. We want to represent G efficiently and support the following operation.
+
+- adjacent(v, w): Return true if nodes v are w are adjacent and false otherwise.
+
+### 6.1 Analyse the space and query time in terms of n and m for the classic adjacency matrix and adjacency list representation.
+
+Matrix:
+Space: $O(V^2)$
+Time: $O(1)$
+
+List:
+Space: $O(V+E)$
+Time: $O(n)$
+### 6.2 Design a data structure that improves both the adjacency matrix and adjacency list.
 
