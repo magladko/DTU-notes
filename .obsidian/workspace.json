@@ -151,13 +151,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ReverseEngineering/Crackme.md",
+                "file": "Algorithms for Massive Datasets/Hashing.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Crackme"
+              "title": "Outline of Hashing"
             }
           }
         ],

@@ -80,6 +80,8 @@ Time: $O(n)$
 ### 6.2 Design a data structure that improves both the adjacency matrix and adjacency list.
 
 Use and array as in linked list + dictionary instead of linked list
+Space: $O(m+n)$
+Time: $O(1)$
 
 ## 7. Perfect Hashing Analysis. Consider the 2-level FKS perfect hashing scheme. A friend suggests the following two "optimizations" to the data structure. What happens to the performance of the data structure for each of these?
 
