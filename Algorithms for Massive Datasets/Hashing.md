@@ -37,7 +37,7 @@ when counter = 0 -> delete the element
 $m \geq u$
 ### 4.2 Suppose m ≥ u. Is the identity function f (x) = x a universal hash function?
 
-No, universal hash function is a family of functions, that especially 
+No, universal hash function is a family of functions, that especially make use of randomness
 ### 4.3 A family G of hash functions mapping U to M is family of pair-wise independent hash function if for any `g ∈ G`, `Pr(g(x) = α ∧ g( y) = β) = 1/m2 ∀x ∕= y ∈ U, ∀α,β ∈ M`. Show that any family of pairwise independent hash functions is a family of universal hash functions.
 
 
@@ -78,7 +78,6 @@ Use and array as in linked list + hashset instead of linked list
 
 ### 7.1 Modify level 1 of the data structure to map U to an array of size $n \sqrt{ n }$ instead of n to further decrease the probability of collisions.
 
-${1}\choose{1}{2}$
 
 $$
 \begin{align}
