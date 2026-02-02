@@ -1,7 +1,7 @@
 
 
 # Tasks
-## 1. [w] Streaming Statistics An IT-security friend of yours wants a high-speed algorithm to count the number of distinct incoming IP-addresses in his router to help detect denial-of-service attacks. Can you help him?
+## 1. [w] Streaming Statistics. An IT-security friend of yours wants a high-speed algorithm to count the number of distinct incoming IP-addresses in his router to help detect denial-of-service attacks. Can you help him?
 
 ```
 Let S = S_i , S_i be a stream of IP-adr
@@ -15,19 +15,20 @@ Return c
 
 Time: O(1) **expected** - (expected is important due to randomization)
 Space: O(n), where n = \#distinct IP addresses
-## 2. [w] Dense Set Hashing A set S ⊆ U = {0, . . . , u − 1} is called dense if |S| = Θ(u). Suggest a simple and efficient dictionary data structure for dense sets.
+## 2. [w] Dense Set Hashing. A set S ⊆ U = {0, . . . , u − 1} is called dense if |S| = Θ(u). Suggest a simple and efficient dictionary data structure for dense sets.
 
 Initialize array of size u, link 1-1 index
 
 Space: O(u) = O(n)
 Ops time: O(1)
-## 3. [w] Multi-Set Hashing A multi-set is a set M, where each element may occur multiple times. Design an efficient data structure supporting the following operations:
+## 3. [w] Multi-Set Hashing. A multi-set is a set M, where each element may occur multiple times. Design an efficient data structure supporting the following operations:
 
 - add(x): Add an(other) occurrence of x to M.
 - remove(x): Remove an occurrence of x from M. If x does not occur in M do nothing.
 - report(x): Return the number of occurrences of x.
 
-
+dictionary structure + satellite data (counter)
+when counter = 0 -> delete the element
 ## 5. Linear Space Hashing The chained hashing solution for the dynamic dictionary problem presented assumes that m = Θ(n). Solve the following exercises.
 
 ### 5.1 What is the space and time of chained hashing without this assumption? State your answer in terms of n and m.
