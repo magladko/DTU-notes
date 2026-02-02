@@ -72,3 +72,22 @@ Space: $O(V+E)$
 Time: $O(n)$
 ### 6.2 Design a data structure that improves both the adjacency matrix and adjacency list.
 
+Use and array as in linked list + hashset instead of linked list
+
+## 7. Perfect Hashing Analysis. Consider the 2-level FKS perfect hashing scheme. A friend suggests the following two "optimizations" to the data structure. What happens to the performance of the data structure for each of these?
+
+### 7.1 Modify level 1 of the data structure to map U to an array of size $n \sqrt{ n }$ instead of n to further decrease the probability of collisions.
+
+${1}\choose{1}{2}$
+
+$$
+\begin{align}
+E(C) & = {n \choose 2} \frac{1}{n \sqrt{ n }}  \\
+ & = {n \choose 2} \frac{\sqrt{ n }}{n^2} \\
+ & = \frac{n-1}{2} \cdot \frac{\sqrt{ n }}{n}  \\
+ & = \frac{n-1}{2 \sqrt{ n }} < (\frac{n}{2 \sqrt{ n }} = \frac{\sqrt{ n }}{2})
+\end{align}
+$$
+
+### 7.2 Suppose we replace the universal hash function with a simpler near-universal hash function on both levels. Near-universal hashing is the same as universal hashing except that ≤ 1/m guarantee on the probability is changed to ≤ 2/m. Show how to modify the FKS so that the scheme still works efficiently.
+

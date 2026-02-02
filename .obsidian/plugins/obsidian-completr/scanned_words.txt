@@ -2848,6 +2848,8 @@ ieTRf
 ifu
 iBmgX
 iMVaYFu
+incoming
+identity
 program
 permutation
 possible
@@ -4192,6 +4194,9 @@ pNaDZrh
 pfj
 pJK
 ppphpDplpbpj
+pairwise
+presented
+perfect
 verification
 verified
 verify
@@ -5469,6 +5474,7 @@ vto
 vvG
 vyq
 vqor
+vertices
 Prove
 Program
 Proving
@@ -6862,6 +6868,7 @@ PZpohwjs
 PUW
 Pca
 PUT
+Perfect
 that
 the
 to
@@ -9836,6 +9843,15 @@ aBx
 aRd
 aoB
 aNVx
+attacks
+assumes
+assumption
+advance
+achieves
+amortized
+assuming
+adjacent
+adjacency
 works
 whether
 where
@@ -11144,6 +11160,8 @@ wSSG
 wYD
 wGPW
 wvk
+wants
+wise
 expected
 errors
 error
@@ -12743,6 +12761,8 @@ egAD
 eJg
 egdg
 eoHm
+exercises
+except
 Task
 The
 Testing
@@ -14214,6 +14234,7 @@ ToT
 TIP
 TxBx
 TuN
+Tasks
 determine
 does
 defined
@@ -15712,6 +15733,9 @@ dZsM
 dmOX
 dWr
 dArlr
+detect
+denial
+dictionary
 given
 good
 guarantees
@@ -18686,6 +18710,11 @@ sLbF
 sCW
 slo
 sZy
+speed
+satellite
+streaming
+statistics
+scheme
 fully
 formal
 forward
@@ -20124,6 +20153,7 @@ fzs
 fpC
 fVnd
 fZg
+friend
 kernel
 knowledge
 known
@@ -23090,6 +23120,7 @@ IVt
 IPsR
 ITMvIv
 IIE
+Initialize
 Specifications
 Suffers
 Strengths
@@ -24668,6 +24699,9 @@ Sej
 SpZ
 SmU
 SIy
+Statistics
+Suggest
+Solve
 method
 memory
 modify
@@ -28981,6 +29015,10 @@ cPCHj
 cuf
 cdN
 cRPiX
+collision
+chained
+classic
+collisions
 runs
 returns
 requires
@@ -30413,6 +30451,8 @@ rvQ
 rTW
 rRrrrjrFrv
 rHYQ
+router
+report
 of
 original
 ordering
@@ -31708,6 +31748,10 @@ ozrr
 oGS
 oMVDI
 ozB
+occur
+occurrences
+otherwise
+optimizations
 How
 Hence
 Hi
@@ -33147,6 +33191,7 @@ HSa
 HuLfT
 Hwd
 HudfdN
+Hashing
 Different
 Deductive
 Dafny
@@ -34647,6 +34692,7 @@ DPN
 DVN
 DMmM
 DZW
+Dense
 Verification
 Verified
 Very
@@ -37433,6 +37479,7 @@ NIO
 NYO
 NUMU
 NDw
+Near
 Good
 Group
 Give
@@ -46029,6 +46076,8 @@ MYsB
 MVN
 MVG
 Mold
+Matrix
+Modify
 Automatic
 Automated
 Analogies
@@ -47713,6 +47762,8 @@ ARN
 AAe
 ApD
 AyFY
+Adjacency
+Analyse
 Can
 CompCert
 Course
@@ -50634,6 +50685,9 @@ hytT
 hcL
 hFV
 hEjDDe
+his
+hash
+hashset
 Requires
 Rust
 Reading
@@ -52229,6 +52283,7 @@ Rvu
 RkR
 RPCP
 RdP
+Remove
 years
 your
 you
@@ -53439,6 +53494,7 @@ yWxO
 ydb
 yej
 yXK
+yours
 JUnit
 Just
 JB

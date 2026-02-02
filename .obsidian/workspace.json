@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 380.51103591918945
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -178,11 +179,13 @@
       "command-palette:Open command palette": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "header-adjuster:Adjust headers": false
     }
   },
   "active": "35f63ad53e13be88",
   "lastOpenFiles": [
+    "Algorithms for Massive Datasets/Hashing.md",
     "Algorithms for Massive Datasets/attachments/ChainedHashing_space.png",
     "Algorithms for Massive Datasets/attachments/ChainedHashing2.png",
     "Algorithms for Massive Datasets/attachments/ChainedHashin1.png",
@@ -195,11 +198,9 @@
     "3rd semester/Computationally Hard Problems/attachments/class-relations.png",
     "3rd semester/Computationally Hard Problems/attachments/class-p.png",
     "3rd semester/Computationally Hard Problems/attachments/class-np2.png",
-    "3rd semester/Computationally Hard Problems/attachments/class-np1.png",
     "3rd semester/Computationally Hard Problems/attachments",
     "3rd semester/Computationally Hard Problems/Cheat-sheet.md",
     "3rd semester/Computationally Hard Problems",
-    "Algorithms for Massive Datasets/Hashing.md",
     "3rd semester/ReverseEngineering/attachments",
     "3rd semester/ReverseEngineering/Tutorial 9 - Analysis of advanced obfuscation.md",
     "3rd semester/ReverseEngineering/Tutorial 8 - Analysis of a simple obfuscation.md",
