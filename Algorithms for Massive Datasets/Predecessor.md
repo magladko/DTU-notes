@@ -25,6 +25,8 @@
 $O(\sqrt{ x })$
 ### 1.3 \[∗\] Show how to achieve a good bound (maybe roughly the same as in 2?) even when you do not know the number of floors in advance.
 
+1-step - not aggressive enough
+n^2-step - too aggressive
 
 ## 2. Range Reporting. Give a data structure for a set S ⊆ U = {0, . . . , u−1} of n values that supports the following operation: 
 
@@ -32,6 +34,11 @@ $O(\sqrt{ x })$
  
  The goal is a data structure with fast output-sensitive query bounds, that is, the query time should be on the form O(f (n, u) + occ), where occ is the number of elements returned by the query and f (n, u) is as fast as possible.
 
+predecessor-based data structure: $O(occ \cdot \log \log u)$
+
+> Linked List: O(loglog n + occ)
+> loglog n for predecessor
+> occ for reporting
 
 ## 3 van Emde Boas Bounds. Show that $T(u) = T(\sqrt{ u } + O(1) = O(\log \log u)$. Hint: consider the binary representation of u.
 
