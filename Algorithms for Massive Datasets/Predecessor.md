@@ -36,7 +36,7 @@ n^2-step - too aggressive
 
 predecessor-based data structure: $O(occ \cdot \log \log u)$
 
-> Linked List: O(loglog n + occ)
+> Linked List: O(n + occ) (\*during lecture loglog n was mentioned instead of n...?)
 > loglog n for predecessor
 > occ for reporting
 
@@ -46,7 +46,7 @@ $$
 T(u) = T(\sqrt{ u }+O(1))
 $$
 
-$u \quad \sqrt{ u } \quad u^{1/4} \quad u^{1/8} \ldots 1$ - the claimL length = ~log log u
+$u \quad \sqrt{ u } \quad u^{1/4} \quad u^{1/8} \ldots 1$ - the claim length = ~log log u
 
 apply logarithm on all elements:
 $\log u \quad \frac{1}{2}\log u \quad \frac{1}{4}\log u \dots 1$ - then we can see length ~= loglog u (is the same)
