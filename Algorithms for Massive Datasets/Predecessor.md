@@ -42,3 +42,9 @@ predecessor-based data structure: $O(occ \cdot \log \log u)$
 
 ## 3 van Emde Boas Bounds. Show that $T(u) = T(\sqrt{ u } + O(1) = O(\log \log u)$. Hint: consider the binary representation of u.
 
+$$
+T(u) = T(\sqrt{ u }+O(1))
+$$
+
+$u \quad \sqrt{ u } \quad u^{1/4} \quad u^{1/8} \ldots 1$ - the claimL length = ~log log u
+$\log u \quad \frac{1}{2}\log u \quad \frac{1}{4}\log u \dots 1$ - length ~= loglog u
