@@ -51,3 +51,9 @@ $u \quad \sqrt{ u } \quad u^{1/4} \quad u^{1/8} \ldots 1$ - the claimL length = 
 apply logarithm on all elements:
 $\log u \quad \frac{1}{2}\log u \quad \frac{1}{4}\log u \dots 1$ - then we can see length ~= loglog u (is the same)
 
+$\log_2 u \cdot \left(\frac{1}{2}\right)^{n-1} = 1$
+$\left(\frac{1}{2}\right)^{n-1} = \frac{1}{\log_2 u}$
+$2^{-(n-1)} = \frac{1}{\log_2 u}$
+$2^{n-1} = \log_2 u$
+$n-1 = \log_2(\log_2 u)$
+$n = 1 + \log_2(\log_2 u)$
