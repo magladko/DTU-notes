@@ -47,4 +47,7 @@ T(u) = T(\sqrt{ u }+O(1))
 $$
 
 $u \quad \sqrt{ u } \quad u^{1/4} \quad u^{1/8} \ldots 1$ - the claimL length = ~log log u
-$\log u \quad \frac{1}{2}\log u \quad \frac{1}{4}\log u \dots 1$ - length ~= loglog u
+
+apply logarithm on all elements:
+$\log u \quad \frac{1}{2}\log u \quad \frac{1}{4}\log u \dots 1$ - then we can see length ~= loglog u (is the same)
+
