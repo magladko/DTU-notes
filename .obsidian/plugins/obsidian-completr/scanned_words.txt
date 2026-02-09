@@ -2851,6 +2851,7 @@ iBmgX
 iMVaYFu
 incoming
 identity
+idx
 program
 permutation
 possible
@@ -4199,6 +4200,7 @@ pairwise
 presented
 perfect
 polynomial
+pred
 verification
 verified
 verify
@@ -6872,6 +6874,7 @@ Pca
 PUT
 Perfect
 Probability
+Pred
 that
 the
 to
@@ -14241,6 +14244,7 @@ TIP
 TxBx
 TuN
 Tasks
+Tabulation
 determine
 does
 defined
@@ -15742,6 +15746,7 @@ dArlr
 detect
 denial
 dictionary
+duplicates
 given
 good
 guarantees
@@ -18722,6 +18727,7 @@ streaming
 statistics
 scheme
 substring
+suc
 fully
 formal
 forward
@@ -24710,6 +24716,7 @@ SIy
 Statistics
 Suggest
 Solve
+Succ
 method
 memory
 modify
@@ -34707,6 +34714,7 @@ DVN
 DMmM
 DZW
 Dense
+Delete
 Verification
 Verified
 Very
@@ -36112,6 +36120,7 @@ VDk
 VuaN
 VbGjwj
 Vvt
+Vector
 NOT
 Note
 Notice
@@ -37494,6 +37503,7 @@ NYO
 NUMU
 NDw
 Near
+Needs
 Good
 Group
 Give
@@ -43224,6 +43234,7 @@ lVo
 lPw
 lbD
 linearity
+largest
 unexpected
 use
 undecidability
@@ -56375,6 +56386,7 @@ LDa
 LmJ
 Lgcd
 LpJxLp
+Linked
 justify
 jd
 jt
@@ -65953,6 +65965,9 @@ BHd
 BLo
 BYT
 Bonus
+Balanced
+BBST
+Bit
 KH
 KJP
 KR
