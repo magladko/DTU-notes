@@ -1258,6 +1258,7 @@ Wxu
 WJbG
 WOx
 WxTa
+Walk
 is
 its
 in
@@ -4197,6 +4198,7 @@ ppphpDplpbpj
 pairwise
 presented
 perfect
+polynomial
 verification
 verified
 verify
@@ -6869,6 +6871,7 @@ PUW
 Pca
 PUT
 Perfect
+Probability
 that
 the
 to
@@ -8280,6 +8283,8 @@ tPW
 tvc
 tux
 tWZ
+third
+trials
 always
 as
 array
@@ -12763,6 +12768,7 @@ egdg
 eoHm
 exercises
 except
+expectation
 Task
 The
 Testing
@@ -18715,6 +18721,7 @@ satellite
 streaming
 statistics
 scheme
+substring
 fully
 formal
 forward
@@ -20154,6 +20161,7 @@ fpC
 fVnd
 fZg
 friend
+fingerprint
 kernel
 knowledge
 known
@@ -26146,6 +26154,7 @@ mFq
 mGr
 mEF
 mne
+mod
 not
 new
 note
@@ -30453,6 +30462,10 @@ rRrrrjrFrv
 rHYQ
 router
 report
+reallocate
+rehash
+rolling
+rusty
 of
 original
 ordering
@@ -31752,6 +31765,7 @@ occur
 occurrences
 otherwise
 optimizations
+occurs
 How
 Hence
 Hi
@@ -43209,6 +43223,7 @@ lhWho
 lVo
 lPw
 lbD
+linearity
 unexpected
 use
 undecidability
@@ -52284,6 +52299,7 @@ RkR
 RPCP
 RdP
 Remove
+Refresh
 years
 your
 you
@@ -65936,6 +65952,7 @@ BwU
 BHd
 BLo
 BYT
+Bonus
 KH
 KJP
 KR
