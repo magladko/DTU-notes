@@ -36,7 +36,7 @@ n^2-step - too aggressive
 
 predecessor-based data structure: $O(occ \cdot \log \log u)$
 
-> Linked List: O(n + occ) (\*during lecture loglog n was mentioned instead of n...?)
+> Linked List: O(loglog n + occ) (\*during lecture loglog n was mentioned instead of n...?)
 > loglog n for predecessor
 > occ for reporting
 
