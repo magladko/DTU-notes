@@ -60,21 +60,52 @@ $2^{n-1} = \log_2 u$
 $n-1 = \log_2(\log_2 u)$
 $n = 1 + \log_2(\log_2 u)$
 
-
 ## 4. X-fast Tries. Let S = {8, 9, 13, 16, 20, 26} be a set S from a universe U = {0, . . . , 31}. Solve the following exercises.
 
 ### 4.1 \[w\] Draw the x-fast trie of S, including the trie structure and the contents of the dictionary. 
+
+```
+8:  01000
+9:  01001
+13: 01101
+16: 10000 
+20: 10100
+26: 11010
+```
+
+```mermaid
+graph TD
+    A(( )) -->|0| 0
+    A(( )) -->|1| 1
+    0  -->|1| 01
+    1  -->|0| 10
+    1  -->|1| 11
+    01 -->|0| 010
+    01 -->|1| 011
+```
+
+
 ### 4.2 \[w\] Show each step of predecessor searches for 8, 14, 21, and 30.
 
-## 5. Z-Fast Tries. An fellow student suggest a modification of the y-fast trie which he proudly names the z-fast trie. The z-fast trie partitions S into groups of log6 u consecutive values (recall y-fast tries partitions into groups of log u values). How does z-fast tries compare to y-fast tries?
+
+## 5. Z-Fast Tries. A fellow student suggest a modification of the y-fast trie which he proudly names the z-fast trie. The z-fast trie partitions S into groups of $\log^6 u$ consecutive values (recall y-fast tries partitions into groups of log u values). How does z-fast tries compare to y-fast tries?
+
+|       |                                                                                                                               |
+| ----- | ----------------------------------------------------------------------------------------------------------------------------- |
+| space | x-fast: $O\left( \frac{n}{\log^6u} \cdot \log u \right) = O\left( \frac{n}{\log^5u} \right)$<br>BBST: $O(n)$<br>TOTAL: $O(n)$ |
+| time  | $O(\log \log u + \log \log^6u) = O(\log \log u)$                                                                              |
 
 ## 6. Dynamic Y-Fast Tries. Solve the following exercises.
 
 ### 6.1 Show how to add insert and delete operation to the presented static solution for y-fast tries. Predecessor queries should take O(log log u) expected time and updates should take O(log log u) amortized expected time, i.e., any sequence of k updates should take O(k log log u) expected time. The space should be O(n).
 
+Similar to dynamic_array. grow/shrink with some splitting/joining
+
+1. start with insert
 ### 6.2 A friend of yours is not happy with y-fast tries and want to make x-fast tries dynamic instead. He claims that he can maintain the x-fast trie data structure in the same time bounds as above. Prove or disprove his claim.
 
 ## 7. Shortest Paths. Let G be a graph with n vertices and m ≥ n weighted edges. The edge weights are from the set U = {0, . . . , u − 1} and u > m. Show how to compute the shortest path between two vertices in O(m log log u) expected time.
+
 
 ## 8. The Bomberman Problem. Let A be a 2D array of size u×u. We consider efficient data structures for placing and exploding bombs within A. Let bi,j and b′ i′,j′ be two bombs at positions (i, j) and (i ′ , j ′ ) in A and let t be an integer, 1 ≤ t ≤ u. We define the bombs to be connected with threshold t if one of the following holds:
 
