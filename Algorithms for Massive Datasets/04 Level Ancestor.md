@@ -46,3 +46,6 @@ Ladder is always twice as long as the longest-paths and the length longest-paths
 
 
 ### 4.3 Ladders are obtained by doubling the long paths. Suppose we instead extend long paths by a factor k > 2. What is the effect?
+
+$T = O(\log_{k}h)$
+Space: $O(k \cdot h)$
