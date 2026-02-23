@@ -9,3 +9,31 @@ rl-path: root-to-leaf path
 | Jump pointers               | $O(n\log n)$   | $O(\log k)$  |
 | Long Path Decomposition     | $O(n)$         | $O(n^{1/2})$ |
 | Ladder decomposition        | $O(2n) = O(n)$ | $O(\log n)$  |
+
+# Tasks
+
+##  1. Direct shortcuts. Find a tree with n nodes such that the total size of all the arrays is $\Theta(n^2)$.
+
+Just a linked list
+
+$$
+1+2+\dots+n = \frac{n(n+1)}{2} = O(n^2)
+$$
+## 2. \[w\] Find LCA Perform LA(v,11) on the tree in Figure 1(a) using.
+![[fig1a.png]]
+
+### 2.1 Jump pointers: show which jump pointers that are used. 
+
+Jump: 8, 2, 1
+![[04.2.1_jump.png]]
+### 2.2 Long paths: Show which paths that are used. 
+
+![[04.2.2_long_path.png]]
+### 2.3 Ladders: Show which ladders that are used.
+
+![[04.2.3_ladder.png]]
+## 3 Long Path Decomposition Bounds. Prove tight bounds for the number of long paths in a root-to-leaf path. 
+
+### 3.1 Find a tree with n nodes such that the maximum number of long paths on a root-to-leaf path is Ω( p n). 
+
+### 3.2 \[∗\] Show that any tree with n nodes has O( p n) long paths on a root-to-leaf path.

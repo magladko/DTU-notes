@@ -6885,6 +6885,7 @@ Probability
 Pred
 Predecessor
 Paths
+Perform
 that
 the
 to
@@ -8301,6 +8302,7 @@ trials
 trie
 tries
 threshold
+tight
 always
 as
 array
@@ -15772,6 +15774,8 @@ duplicates
 drops
 disprove
 distance
+datastructure
+direct
 given
 good
 guarantees
@@ -18757,6 +18761,7 @@ suc
 shrink
 shortest
 succ
+shortcuts
 fully
 formal
 forward
@@ -30517,6 +30522,7 @@ rusty
 roughly
 recall
 removed
+root
 of
 original
 ordering
@@ -34760,6 +34766,7 @@ DZW
 Dense
 Delete
 Draw
+Decomposition
 Verification
 Verified
 Very
@@ -43287,6 +43294,8 @@ linearity
 largest
 loglog
 logarithm
+leaf
+ladders
 unexpected
 use
 undecidability
@@ -56442,6 +56451,8 @@ LmJ
 Lgcd
 LpJxLp
 Linked
+Ladder
+Ladders
 justify
 jd
 jt
@@ -60584,6 +60595,7 @@ Ftc
 FVnd
 FhAY
 Fast
+Figure
 OPTIONS
 Overview
 Out
