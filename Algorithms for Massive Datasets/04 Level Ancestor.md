@@ -10,7 +10,10 @@ rl-path: root-to-leaf path
 | Long Path Decomposition     | $O(n)$                        | $O(n^{1/2})$ |
 | Ladder decomposition        | $O(2n) = O(n)$                | $O(\log n)$  |
 | Ladder decomp.+Jump ptr     | $O(n + n\log n) = O(n\log n)$ | $O(1)$       |
-
+| Top-Bottom decomposition    | $O(n)$                        | $O(1)$       |
+TopBottom-decomposition
+- O(n/x) leaves in top tree
+- bottom trees are of size O(x)
 # Tasks
 
 ##  1. Direct shortcuts. Find a tree with n nodes such that the total size of all the arrays is $\Theta(n^2)$.
