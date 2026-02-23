@@ -2852,6 +2852,9 @@ iMVaYFu
 incoming
 identity
 idx
+identical
+insert
+interested
 program
 permutation
 possible
@@ -4201,6 +4204,10 @@ presented
 perfect
 polynomial
 pred
+proudly
+partitions
+placing
+positions
 verification
 verified
 verify
@@ -5479,6 +5486,7 @@ vvG
 vyq
 vqor
 vertices
+van
 Prove
 Program
 Proving
@@ -6875,6 +6883,8 @@ PUT
 Perfect
 Probability
 Pred
+Predecessor
+Paths
 that
 the
 to
@@ -8288,6 +8298,9 @@ tux
 tWZ
 third
 trials
+trie
+tries
+threshold
 always
 as
 array
@@ -9860,6 +9873,8 @@ amortized
 assuming
 adjacent
 adjacency
+aggressive
+augment
 works
 whether
 where
@@ -11170,6 +11185,8 @@ wGPW
 wvk
 wants
 wise
+weighted
+weights
 expected
 errors
 error
@@ -12772,6 +12789,9 @@ eoHm
 exercises
 except
 expectation
+eggs
+exploding
+explode
 Task
 The
 Testing
@@ -14245,6 +14265,8 @@ TxBx
 TuN
 Tasks
 Tabulation
+Tries
+TOTAL
 determine
 does
 defined
@@ -15747,6 +15769,9 @@ detect
 denial
 dictionary
 duplicates
+drops
+disprove
+distance
 given
 good
 guarantees
@@ -17106,6 +17131,7 @@ gtfWfo
 gvuu
 gMgd
 gwe
+grow
 satisfies
 specification
 seL
@@ -18728,6 +18754,9 @@ statistics
 scheme
 substring
 suc
+shrink
+shortest
+succ
 fully
 formal
 forward
@@ -20168,6 +20197,9 @@ fVnd
 fZg
 friend
 fingerprint
+floor
+floors
+fellow
 kernel
 knowledge
 known
@@ -23135,6 +23167,7 @@ IPsR
 ITMvIv
 IIE
 Initialize
+Interview
 Specifications
 Suffers
 Strengths
@@ -24717,6 +24750,7 @@ Statistics
 Suggest
 Solve
 Succ
+Shortest
 method
 memory
 modify
@@ -26162,6 +26196,7 @@ mGr
 mEF
 mne
 mod
+maybe
 not
 new
 note
@@ -29035,6 +29070,12 @@ collision
 chained
 classic
 collisions
+claim
+consecutive
+compare
+claims
+connected
+compact
 runs
 returns
 requires
@@ -30473,6 +30514,9 @@ reallocate
 rehash
 rolling
 rusty
+roughly
+recall
+removed
 of
 original
 ordering
@@ -34715,6 +34759,7 @@ DMmM
 DZW
 Dense
 Delete
+Draw
 Verification
 Verified
 Very
@@ -38875,6 +38920,7 @@ Galoi
 Get
 GDDTX
 GKx
+Google
 bugs
 behavior
 be
@@ -40214,6 +40260,9 @@ bYY
 bqrEr
 bqFB
 bgaC
+bound
+bombs
+bomb
 Even
 EveryCrypt
 Engineering
@@ -41804,6 +41853,7 @@ EmT
 EWFW
 EwF
 EdcA
+Emde
 lead
 library
 labor
@@ -43235,6 +43285,8 @@ lPw
 lbD
 linearity
 largest
+loglog
+logarithm
 unexpected
 use
 undecidability
@@ -50714,6 +50766,7 @@ hEjDDe
 his
 hash
 hashset
+highest
 Requires
 Rust
 Reading
@@ -52311,6 +52364,7 @@ RPCP
 RdP
 Remove
 Refresh
+Range
 years
 your
 you
@@ -54932,6 +54986,7 @@ JKF
 JVu
 JxX
 JvHv
+Jumping
 Less
 Lesson
 Let
@@ -57654,6 +57709,7 @@ jUZJk
 jPJT
 jAM
 jvh
+joining
 Using
 Use
 Uncertainty
@@ -60527,6 +60583,7 @@ FGDGG
 Ftc
 FVnd
 FhAY
+Fast
 OPTIONS
 Overview
 Out
@@ -65968,6 +66025,8 @@ Bonus
 Balanced
 BBST
 Bit
+Boas
+Bomberman
 KH
 KJP
 KR
