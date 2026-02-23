@@ -40,7 +40,8 @@ $$
 ### 3.1 Find a tree with n nodes such that the maximum number of long paths on a root-to-leaf path is Ω( p n). 
 
 ![[04.3.1_sol.png|20%]]
-### 3.2 \[∗\] Show that any tree with n nodes has $O( p n)$ long paths on a root-to-leaf path.
+### 3.2 \[∗\] Show that any tree with n nodes has $O( \sqrt{ n })$ long paths on a root-to-leaf path.
+
 
 ## 4. Ladders. Let T be a tree of height h with n nodes. Solve the following exercises. 
 ### 4.1 Show that a node v of height $h(v)$ is on a ladder of length at least $2h(v)$ (or equals height of root).
@@ -75,3 +76,29 @@ LA(u,4) = 001001000001110011111100101011 0111 0100
 
 ## 6. Few Leafs. Suppose that your input tree has no more than $n/\log n$ leaves. Suggest a (slightly) simplified solution to the level ancestor problem with linear space and constant query time.
 
+We make the leafs as jump nodes, since the number of jump nodes must be at most O(n/logn). Meaning we only have a top search.
+
+## 7. Heavy Paths. Let T be a tree with n nodes. Define size(v) to be the number of descendant of v. Consider the following decomposition rule. 
+- First find a root-to-leaf path as follows. Start at the root. At each node continue to a child of maximum size, until we reach a leaf. Remove the resulting path and recursively apply the rule to the remaining subtrees. 
+The resulting paths are called the heavy paths and the edges not on a heavy path are light edges. Solve the following exercises. 
+
+### 7.1 \[w\] Draw a not to small example of heavy paths in a tree. 
+
+![[04.7.1.png]]
+### 7.2 Give an upper bound on the number of heavy paths on any root-to-leaf path in T.
+
+The upper bound is $O(\log n)$
+When the path ends, we at least double the amount of descendants, that means we double the height (following the heavy path until root or change of paths).
+
+## 8. Weighted Level Ancestor. Let T be tree with n nodes. Each edge is assigned a weight from {0, . . . , u − 1}, and the weight of a node v is the sum of the weight of the edges on the path from the root to v. Assume n < u. We want a data structure that supports the following operation on T. Given a leaf $\ell$ and an integer x define
+- WLA($\ell$, x): return the deepest ancestor of $\ell$ of weight ≤ x. 
+### 8.1 \[w\] Give a simple data structure that supports WLA queries in $O(n^2)$ space and $O(\log\log u)$ time. 
+
+
+### 8.2 Give a data structure that supports WLA queries in $O(n)$ space and $O(\log n)$ time. 
+
+### 8.3 Consider the predecessor problem on n elements from a universe of size u. Any solution that uses O(n) space requires at least Ω(loglog u) query time. Can we hope to solve the weighted level ancestor problem in O(n) space and O(1) time? 
+
+### 8.4 \[∗\] Give a data structure that supports WLA queries O(n) space and O(loglog u) time. Hint: Use heavy path decomposition.
+
+## 9. Level Ancestor on Shallow Binary Trees. Let T be a rooted, binary tree with n nodes of height O(log n). Give a simple and compact data structure that supports fast level ancestor queries (without using a level ancestor data structure). Hint: A path in T can be encoded in a single word of memory.
