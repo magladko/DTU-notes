@@ -56,3 +56,22 @@ When we switch ladder we are jumping to at least double the height
 
 $T = O(\log_{k}h)$
 Space: $O(k \cdot n)$
+
+
+## 5. \[w\] Top-Bottom Decomposition
+### 5.1 Show the jump nodes on the tree in Figure 1(a), using $\left\lceil  \frac{1}{4} \log n  \right\rceil = 3$. 
+
+![[04.5.1_sol.png]]
+### 5.2 Show the parentheses encoding of the tree in Figure 1(b) and the encoding for the query LA(u,4).
+
+![[04.5.2.png]]
+(()(()((((()))(()))))) (()()())
+001001000001110011111100101011
+n = 16
+$\log\log 16 = 4$
+u: 0111
+4: 0100
+LA(u,4) = 001001000001110011111100101011 0111 0100
+
+## 6. Few Leafs. Suppose that your input tree has no more than $n/\log n$ leaves. Suggest a (slightly) simplified solution to the level ancestor problem with linear space and constant query time.
+
