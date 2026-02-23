@@ -42,7 +42,7 @@ $$
 ![[04.3.1_sol.png|20%]]
 ### 3.2 \[∗\] Show that any tree with n nodes has $O( \sqrt{ n })$ long paths on a root-to-leaf path.
 
-
+![[04.3.2_sol.png]]
 ## 4. Ladders. Let T be a tree of height h with n nodes. Solve the following exercises. 
 ### 4.1 Show that a node v of height $h(v)$ is on a ladder of length at least $2h(v)$ (or equals height of root).
 
@@ -52,13 +52,10 @@ Ladder is always twice as long as the longest-paths and the length longest-paths
 ### 4.2 Show that any root-to-leaf path can be covered by at most $O(\log h) = O(\log n)$ ladders. 
 When we switch ladder we are jumping to at least double the height
 - switch ladder: jump => double height
-
 ### 4.3 Ladders are obtained by doubling the long paths. Suppose we instead extend long paths by a factor k > 2. What is the effect?
 
 $T = O(\log_{k}h)$
 Space: $O(k \cdot n)$
-
-
 ## 5. \[w\] Top-Bottom Decomposition
 ### 5.1 Show the jump nodes on the tree in Figure 1(a), using $\left\lceil  \frac{1}{4} \log n  \right\rceil = 3$. 
 
@@ -84,7 +81,7 @@ The resulting paths are called the heavy paths and the edges not on a heavy path
 
 ### 7.1 \[w\] Draw a not to small example of heavy paths in a tree. 
 
-![[04.7.1.png]]
+![[04.7.1.png|500]]
 ### 7.2 Give an upper bound on the number of heavy paths on any root-to-leaf path in T.
 
 The upper bound is $O(\log n)$
