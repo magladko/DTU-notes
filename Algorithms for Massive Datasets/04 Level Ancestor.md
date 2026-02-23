@@ -19,18 +19,18 @@ $$
 1+2+\dots+n = \frac{n(n+1)}{2} = O(n^2)
 $$
 ## 2. \[w\] Find LCA Perform LA(v,11) on the tree in Figure 1(a) using.
-![[fig1a.png]]
+
+| 2.1 Jump pointers    | 2.2 Long paths            | 2.3 Ladders            |
+| -------------------- | ------------------------- | ---------------------- |
+| ![[04.2.1_jump.png]] | ![[04.2.2_long_path.png]] | ![[04.2.3_ladder.png]] |
 
 ### 2.1 Jump pointers: show which jump pointers that are used. 
-
-Jump: 8, 2, 1
-![[04.2.1_jump.png]]
+...
 ### 2.2 Long paths: Show which paths that are used. 
-
-![[04.2.2_long_path.png]]
+...
 ### 2.3 Ladders: Show which ladders that are used.
+...
 
-![[04.2.3_ladder.png]]
 ## 3. Long Path Decomposition Bounds. Prove tight bounds for the number of long paths in a root-to-leaf path. 
 
 ### 3.1 Find a tree with n nodes such that the maximum number of long paths on a root-to-leaf path is Ω( p n). 
@@ -44,8 +44,7 @@ Jump: 8, 2, 1
 Ladder is always twice as long as the longest-paths and the length longest-paths is always at least equal to the $h(v)$.
 ### 4.2 Show that any root-to-leaf path can be covered by at most $O(\log h) = O(\log n)$ ladders. 
 
-
 ### 4.3 Ladders are obtained by doubling the long paths. Suppose we instead extend long paths by a factor k > 2. What is the effect?
 
 $T = O(\log_{k}h)$
-Space: $O(k \cdot h)$
+Space: $O(k \cdot n)$
