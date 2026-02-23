@@ -15,7 +15,6 @@ rl-path: root-to-leaf path
 ##  1. Direct shortcuts. Find a tree with n nodes such that the total size of all the arrays is $\Theta(n^2)$.
 
 Just a linked list
-
 $$
 1+2+\dots+n = \frac{n(n+1)}{2} = O(n^2)
 $$
@@ -32,8 +31,18 @@ Jump: 8, 2, 1
 ### 2.3 Ladders: Show which ladders that are used.
 
 ![[04.2.3_ladder.png]]
-## 3 Long Path Decomposition Bounds. Prove tight bounds for the number of long paths in a root-to-leaf path. 
+## 3. Long Path Decomposition Bounds. Prove tight bounds for the number of long paths in a root-to-leaf path. 
 
 ### 3.1 Find a tree with n nodes such that the maximum number of long paths on a root-to-leaf path is Ω( p n). 
 
-### 3.2 \[∗\] Show that any tree with n nodes has O( p n) long paths on a root-to-leaf path.
+
+### 3.2 \[∗\] Show that any tree with n nodes has $O( p n)$ long paths on a root-to-leaf path.
+
+## 4. Ladders. Let T be a tree of height h with n nodes. Solve the following exercises. 
+### 4.1 Show that a node v of height $h(v)$ is on a ladder of length at least $2h(v)$ (or equals height of root).
+
+Ladder is always twice as long as the longest-paths and the length longest-paths is always at least equal to the $h(v)$.
+### 4.2 Show that any root-to-leaf path can be covered by at most $O(\log h) = O(\log n)$ ladders. 
+
+
+### 4.3 Ladders are obtained by doubling the long paths. Suppose we instead extend long paths by a factor k > 2. What is the effect?
