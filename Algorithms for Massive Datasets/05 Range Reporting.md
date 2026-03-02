@@ -19,3 +19,6 @@ Result: {(3,8), (6,6), (7,5), (9,6)}
 
 ## 2. Preprocessing for 2D Range Trees. Give a fast algorithm that constructs a 2D range tree from a set $P \subseteq \mathscr{R}^2$ of n points.
 
+Bottom-up construction by merge $T = O(n \log n)$ (~merge sort)
+
+Top-down (~selection sort)
