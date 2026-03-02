@@ -1259,6 +1259,7 @@ WJbG
 WOx
 WxTa
 Walk
+Weighted
 is
 its
 in
@@ -4208,6 +4209,7 @@ proudly
 partitions
 placing
 positions
+parentheses
 verification
 verified
 verify
@@ -8303,6 +8305,7 @@ trie
 tries
 threshold
 tight
+twice
 always
 as
 array
@@ -9877,6 +9880,7 @@ adjacent
 adjacency
 aggressive
 augment
+ancestor
 works
 whether
 where
@@ -12794,6 +12798,7 @@ expectation
 eggs
 exploding
 explode
+equals
 Task
 The
 Testing
@@ -14269,6 +14274,8 @@ Tasks
 Tabulation
 Tries
 TOTAL
+Top
+TopBottom
 determine
 does
 defined
@@ -15776,6 +15783,11 @@ disprove
 distance
 datastructure
 direct
+decomp
+doubling
+descendant
+descendants
+deepest
 given
 good
 guarantees
@@ -18762,6 +18774,7 @@ shrink
 shortest
 succ
 shortcuts
+subtrees
 fully
 formal
 forward
@@ -24756,6 +24769,7 @@ Suggest
 Solve
 Succ
 Shortest
+Shallow
 method
 memory
 modify
@@ -29081,6 +29095,7 @@ compare
 claims
 connected
 compact
+child
 runs
 returns
 requires
@@ -30523,6 +30538,9 @@ roughly
 recall
 removed
 root
+recursively
+remaining
+rooted
 of
 original
 ordering
@@ -43296,6 +43314,11 @@ loglog
 logarithm
 leaf
 ladders
+leaves
+ladder
+leafs
+logn
+light
 unexpected
 use
 undecidability
@@ -44630,6 +44653,7 @@ ueiv
 uiG
 uhQ
 uep
+upper
 Model
 More
 May
@@ -47851,6 +47875,7 @@ ApD
 AyFY
 Adjacency
 Analyse
+Ancestor
 Can
 CompCert
 Course
@@ -50776,6 +50801,8 @@ his
 hash
 hashset
 highest
+heavy
+hope
 Requires
 Rust
 Reading
@@ -56453,6 +56480,7 @@ LpJxLp
 Linked
 Ladder
 Ladders
+Leafs
 justify
 jd
 jt
@@ -66039,6 +66067,7 @@ BBST
 Bit
 Boas
 Bomberman
+Bottom
 KH
 KJP
 KR

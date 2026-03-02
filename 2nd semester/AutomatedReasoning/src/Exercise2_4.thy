@@ -13,7 +13,7 @@ lemma reverse_snoc [simp]: "reverse (snoc xs a) = a # (reverse xs)"
   apply(auto)
   done
 
-theorem double_reverse: "reverse (reverse xs) = xs"
+theorem double_reverse [simp]: "reverse (reverse xs) = xs"
   apply(induction xs)
   apply(auto)
   done
