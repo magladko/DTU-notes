@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1716d6e5e8b694ba",
+        "id": "3374188964958047",
         "type": "tabs",
         "children": [
           {
-            "id": "aedc2b761a57e30b",
+            "id": "10d746794536f48f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -182,12 +182,12 @@
       "header-adjuster:Adjust headers": false
     }
   },
-  "active": "aedc2b761a57e30b",
+  "active": "10d746794536f48f",
   "lastOpenFiles": [
     "Algorithms for Massive Datasets/attachments/05.1.2.png",
+    "Algorithms for Massive Datasets/05 Range Reporting.md",
     "Algorithms for Massive Datasets/attachments/05.1_tree.png",
     "Algorithms for Massive Datasets/04 Level Ancestor.md",
-    "Algorithms for Massive Datasets/05 Range Reporting.md",
     "Algorithms for Massive Datasets/attachments/05_rr_1d.png",
     "AI MAS/Untitled.md",
     "2nd semester/AutomatedReasoning/src/#Exercise2_4.thy#",
@@ -206,8 +206,6 @@
     "Algorithms for Massive Datasets/attachments/04.5.1_sol.png",
     "Algorithms for Massive Datasets/attachments/04.3.1_sol.png",
     "Algorithms for Massive Datasets/attachments/04.2.3_ladder.png",
-    "Algorithms for Massive Datasets/attachments/04.2.2_long_path.png",
-    "Algorithms for Massive Datasets/attachments/04.2.1_jump.png",
     "Algorithms for Massive Datasets/attachments/Drawing 2026-02-23 09.00.26.excalidraw.md",
     "Algorithms for Massive Datasets/02 Predecessor.md",
     "Algorithms for Massive Datasets/03 LCA and RMQ.md",

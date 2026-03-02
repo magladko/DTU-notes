@@ -9,11 +9,13 @@
 ### report(2,2,10,10)
 ![[05.1.2.png]]
 
+
 1D queries:
 1. {(3,8)} -> {(3,8)}
 2. {(4,1), (6,6)} -> {(6,6)}
 3. {(7,5), (9,6)} -> {(7,5), (9,6)}
-4. {(20,17)} -> {}
+
+Result: {(3,8), (6,6), (7,5), (9,6)}
 
 ## 2. Preprocessing for 2D Range Trees. Give a fast algorithm that constructs a 2D range tree from a set $P \subseteq \mathscr{R}^2$ of n points.
 
