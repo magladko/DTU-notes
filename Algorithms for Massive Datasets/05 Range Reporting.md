@@ -22,3 +22,22 @@ Result: {(3,8), (6,6), (7,5), (9,6)}
 Bottom-up construction by merge $T = O(n \log n)$ (~merge sort)
 
 Top-down (~selection sort)
+
+
+## 3. \[w\] 2D Range Tree with Bridges Example. Convert the above example for 2D range tree to use fractional cascading. Simulate a report(2, 2, 10, 10) query and show how to traverse bridges.
+
+![[05.3.png]]
+
+## 4. 
+
+### 1. 
+$$
+\begin{align}
+\log n + \log \frac{n}{2} + \log \frac{n}{4} + \dots \\
+= \log n + \log n - 1 + \log n - 2 + \dots \\
+= \frac{{n\log^2 n}}{2} = \Omega (\log^2n)
+\end{align}
+$$
+
+### 2.
+
