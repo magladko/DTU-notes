@@ -67,5 +67,23 @@ Directed graph G. n+1 verttices v1...vn
 Edge vi to vj labelled alpha <=> t[j] is leftmost pos in $T[i..n]$ with char alpha
 
 
+
 (assume FKS)
 Store array indexed by char at each node to rep G.
+
+1.2 sigma edges at node in array => O(n sigma) space
+1.3 Traverse G from v0 with chars from P from left to-right.
+- if all chars in P match => ret. true
+- otherwise -> return false
+1.4 O(1) time pr char => O(|P|) time
+
+2.1
+Store G as follows:
+- LEt S_alpha be all pos in T with char alpha ~=vertices with incoming edge labeled alpha
+- Store S_alpha for chars alpha in y-fast trie.
+2.2
+Each pos in T stored in exact 1 y-fast-trie. => O(n) space
+2.3
+Simulate graph traversal from 1.3. Each step at vi with char alpha is successor query with i+1 in S_alpha
+2.4 O(loglog n) pr successor query => O(|P| loglog n) time.
+
