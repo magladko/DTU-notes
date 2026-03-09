@@ -9,4 +9,4 @@ Properties of the trie. A trie T storing a collection $S$ of $s$ strings of tota
 - What is the height of T?
   length of the longest string ($n$)
 - What is the number of nodes in T?
-  $n$
+  $O(n)$
