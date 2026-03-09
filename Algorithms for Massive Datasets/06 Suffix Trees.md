@@ -35,6 +35,37 @@ String depth(u) = length of string obtained by concatenating labels on the path 
 - count(P): return the number of occurrences of P in S. 
 - Give a data structure that supports count(P) queries efficiently.
 
+dict of substrings (?)
 
-## 3 Number of nodes in a compact trie. Let T be a tree where every internal node has a least 2 children. Let ℓ be the number of leaves in T and let i be the number of internal nodes. Use induction to prove that i ≤ ℓ−1. Give an example showing that this is a tight bound.
+## 3 Number of nodes in a compact trie. Let T be a tree where every internal node has at least 2 children. Let ℓ be the number of leaves in T and let i be the number of internal nodes. Use induction to prove that i ≤ ℓ−1. Give an example showing that this is a tight bound.
 
+
+case 0: $n_{0} = 1$
+then $i = 0$ and $\ell = 1$
+$0 \leq 1-1$
+$i \leq \ell-1$
+
+case 1: $n_{1} = 3$
+then $i=1$ and $\ell = 2$
+$i \leq \ell -1$
+$1 \leq 2-1$
+
+case n: $n = n_1 + 1$
+
+
+IH: Assume for any valid tree with $\ell = k + 1$ leaves, we have $i \leq (k + 1)-1$
+
+case 1: $i =$
+
+
+
+
+
+---
+1.1
+Directed graph G. n+1 verttices v1...vn
+Edge vi to vj labelled alpha <=> t[j] is leftmost pos in $T[i..n]$ with char alpha
+
+
+(assume FKS)
+Store array indexed by char at each node to rep G.
