@@ -35,7 +35,9 @@ String depth(u) = length of string obtained by concatenating labels on the path 
 - count(P): return the number of occurrences of P in S. 
 - Give a data structure that supports count(P) queries efficiently.
 
-dict of substrings (?)
+1. suffix tree
+2. in every node add nr of leaves below it
+3. 
 
 ## 3 Number of nodes in a compact trie. Let T be a tree where every internal node has at least 2 children. Let ℓ be the number of leaves in T and let i be the number of internal nodes. Use induction to prove that i ≤ ℓ−1. Give an example showing that this is a tight bound.
 
@@ -57,15 +59,31 @@ IH: Assume for any valid tree with $\ell = k + 1$ leaves, we have $i \leq (k + 1
 
 case 1: $i =$
 
-
+1. $\ell = 1$ ok
+2. $\ell = \ell_{1}+\ell_{2}+\ell_{3}+ \dots \ell_{k}$
+   $i = i_{1}+i_{2}+i_{3}+\dots+i_{k}+1$
+   $\leq (\ell_{1}-1) + (\ell_{2}-1) + \dots + (\ell_{k}-1) + 1$
+   $= \ell-k + 1 \leq \ell -1$
+   $k \geq 2$
 
 ## 4 Repeats. Solve the following exercises. Assume you have an efficient black-box algorithm for computing the suffix tree of a string. 
 ### 4.1 A repeat in a string S is a substring R that occurs at least twice in S. Show how to efficiently compute the length of a longest substring of S that is a repeat. 
 
-
+We construct a suffix tree, then we traverse internal edges in search for a string of maximum depth. 
+The time is O(n) + O(n), since the number of nodes is O(n) in the suffix tree. -> O(n)
 ### 4.2 Given a string S of length n and an integer k, show how to efficiently find the smallest substring of S occurring exactly k times. Analyze the time and space consumption of your algorithm.
 
+We construct a suffix tree, then we look at the top level edges
 
+string depth should be computed until parent (then add 1) (?)
+
+## 5 Longest Common Extensions. Let S be a string of length n over alphabet Σ. The longest common extension problem is to preprocess S into data structure to support queries of the following form: 
+- LCE(i,j): Return the length of the longest common prefix of S\[i, n] and S\[ j, n].
+
+## 6 Restricted Suffix. Search Let S be a string of length n over alphabet Σ. Give an efficient data structure for S that supports the following query: 
+- rsearch(P, i, j): report the starting positions of occurrences of string P in S\[i, j].
+
+lookup: suffix array
 
 ---
 1.1
