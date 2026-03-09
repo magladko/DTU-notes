@@ -10,3 +10,13 @@ Properties of the trie. A trie T storing a collection $S$ of $s$ strings of tota
   length of the longest string ($n$)
 - What is the number of nodes in T?
   $O(n)$
+
+Search time: O(d) in each node => O(dm)
+- O(m) if d constant
+- d not constant: use dictionary
+	- Perfect hashing O(1) expected
+	- Balanced BST: O(log d)
+
+![[06.compact_trie.png|751]]
+
+![[06.compact_trie_props.png|615]]
