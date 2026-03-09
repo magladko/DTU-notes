@@ -21,6 +21,8 @@ Search time: O(d) in each node => O(dm)
 
 ![[06.compact_trie_props.png|615]]
 
+
+String depth(u) = length of string obtained by concatenating labels on the path from the root to u.
 # Tasks
 
 ## 1 \[w] Suffix Trees. Draw the suffix tree T for the string `mississippi$`. Write edge labels (substrings) and leaf labels (suffix number). Illustrate how a search for "issi"works.
