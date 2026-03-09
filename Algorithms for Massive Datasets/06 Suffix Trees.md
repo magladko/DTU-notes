@@ -59,11 +59,17 @@ case 1: $i =$
 
 
 
+## 4 Repeats. Solve the following exercises. Assume you have an efficient black-box algorithm for computing the suffix tree of a string. 
+### 4.1 A repeat in a string S is a substring R that occurs at least twice in S. Show how to efficiently compute the length of a longest substring of S that is a repeat. 
+
+
+### 4.2 Given a string S of length n and an integer k, show how to efficiently find the smallest substring of S occurring exactly k times. Analyze the time and space consumption of your algorithm.
+
 
 
 ---
 1.1
-Directed graph G. n+1 verttices v1...vn
+Directed graph G. n+1 vertices v1...vn
 Edge vi to vj labelled alpha <=> t[j] is leftmost pos in $T[i..n]$ with char alpha
 
 
