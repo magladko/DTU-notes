@@ -41,5 +41,47 @@ Correctness: $st[i][j−1], st[i+2^{j−1}][j−1]$ split the $st[i][j]$ range 
 
 ### 3.1 Give the arrays A' and P used for the sparse table in the two level ±1RMQ data structure. Use block size 3. 
 
+```
+     0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1
+A = [3, 4, 5, 4, 5, 4, 5, 4, 3, 2, 1, 0, 1, 0, 1, 2, 3, 4, 3, 4, 3, 2, 1, 2, 3, 2, 3, 4, 5, 6, 7, 6]
+A'= [      3,       4,       3,       0,       0,       2,       3,       1,       2,       4,    6]
+P = [      0,       3,       8,      11,      13,      15,      18,      22,      25,      27,   31]
+```
 
 ### 3.2 How many different tabulation tables do we need to store (how many different describing sequences/normalized blocks are there)?
+
+```
+     0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1
+A = [3, 4, 5, 4, 5, 4, 5, 4, 3, 2, 1, 0, 1, 0, 1, 2, 3, 4, 3, 4, 3, 2, 1, 2, 3, 2, 3, 4, 5, 6, 7, 6]
+    [0, 1, 2; 0, 1, 0; 0,-1,-2; 0,-1,-2; 0,-1, 0; 0, 1, 2; 0, 1, 0; 0,-1, 0; 0,-1, 0; 0, 1, 2; 0,-1]
+A'= [      3,       4,       3,       0,       0,       2,       3,       1,       2,       4,    6]
+P = [      0,       3,       8,      11,      13,      15,      18,      22,      25,      27,   31]
+```
+
+```
+0  1  2
+0  1  0
+0 -1 -2
+0 -1  0
+0 -1
+```
+
+4 tabulation tables
+
+## 4. Size of blocks. In the ±1RMQ data structure we divided the array into blocks of length $\frac{1}{2} \log n$. What happens if we instead use a block size of 
+- $\log n$
+- $\frac{3}{4} \log n$
+
+1. Sparse table: $O\left( \frac{n}{b} \log \frac{n}{b} \right)$
+2. Lookup table: $O(2^b \cdot b^2)$
+
+b = log n:
+$O\left( \frac{n}{\log n} \log \frac{n}{\log n}\right)$
+$O(2^{\log n} \cdot \log^2 n) = O(n \cdot \log^2 n)$
+
+b = 3/4 log n:
+$O\left( \frac{n}{\frac{3}{4}\log n} \log \frac{n}{\frac{3}{4}\log n}\right)$
+$O\left( 2^{3/4\log n} \cdot \frac{9}{16} \log^2 n \right) = O(n^{3/4} \cdot \log^2 n)$
+
+The lookup table grows in size -> the space complexity is no longer linear
+
