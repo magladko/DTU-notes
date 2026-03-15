@@ -59,6 +59,7 @@ IH: Assume for any valid tree with $\ell = k + 1$ leaves, we have $i \leq (k + 1
 
 case 1: $i =$
 
+
 1. $\ell = 1$ ok
 2. $\ell = \ell_{1}+\ell_{2}+\ell_{3}+ \dots \ell_{k}$
    $i = i_{1}+i_{2}+i_{3}+\dots+i_{k}+1$
@@ -83,7 +84,7 @@ string depth should be computed until parent (then add 1) (?)
 ## 6 Restricted Suffix. Search Let S be a string of length n over alphabet Σ. Give an efficient data structure for S that supports the following query: 
 - rsearch(P, i, j): report the starting positions of occurrences of string P in S\[i, j].
 
-lookup: suffix array
+lookup: suffix array, 2d range query
 
 ---
 1.1

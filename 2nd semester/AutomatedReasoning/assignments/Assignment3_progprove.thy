@@ -41,7 +41,6 @@ fun multp :: "int list \<Rightarrow> int list \<Rightarrow> int list" where
 "multp (x # xs) ys = addp (map (\<lambda>y. x * y) ys) (0 # multp xs ys)"
 
 fun coeffs :: "exp \<Rightarrow> int list" where
-
   "coeffs (Const c) = [c]" |
   "coeffs Var = [0, 1]" |
   "coeffs (Add e1 e2) = addp (coeffs e1) (coeffs e2)" |
