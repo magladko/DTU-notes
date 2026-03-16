@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algorithms for Massive Datasets/03 LCA and RMQ.md",
+                "file": "Algorithms for Massive Datasets/07 Radix and Suffix Sorting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03 LCA and RMQ"
+              "title": "07 Radix and Suffix Sorting"
             }
           }
         ]
@@ -184,15 +184,16 @@
   },
   "active": "10d746794536f48f",
   "lastOpenFiles": [
-    "Algorithms for Massive Datasets/02 Predecessor.md",
+    "Algorithms for Massive Datasets/06 Suffix Trees.md",
+    "Algorithms for Massive Datasets/07 Radix and Suffix Sorting.md",
     "Algorithms for Massive Datasets/03 LCA and RMQ.md",
+    "Algorithms for Massive Datasets/02 Predecessor.md",
     "Algorithms for Massive Datasets/attachments/03_lca_naive.png",
     "Algorithms for Massive Datasets/attachments/03_lca.png",
     "Algorithms for Massive Datasets/attachments/03_rmq.png",
     "Algorithms for Massive Datasets/04 Level Ancestor.md",
     "Algorithms for Massive Datasets/01 Hashing.md",
     "AI MAS/Untitled.md",
-    "Algorithms for Massive Datasets/06 Suffix Trees.md",
     "Algorithms for Massive Datasets/attachments/06.1.suffix_tree.png",
     "Algorithms for Massive Datasets/05 Range Reporting.md",
     "Algorithms for Massive Datasets/attachments/06.compact_trie_props.png",

@@ -4249,6 +4249,7 @@ phb
 pWK
 parent
 preprocess
+preprocessing
 verification
 verified
 verify
@@ -8386,6 +8387,8 @@ tFZ
 tYC
 tUEr
 traverse
+tabulation
+tables
 always
 as
 array
@@ -12902,6 +12905,7 @@ eyE
 eWBXBq
 eBN
 erF
+entries
 Task
 The
 Testing
@@ -15915,6 +15919,7 @@ dkK
 dct
 drT
 dBT
+describing
 given
 good
 guarantees
@@ -17286,6 +17291,7 @@ gNX
 grI
 gffn
 gDY
+grows
 satisfies
 specification
 seL
@@ -18929,6 +18935,7 @@ storing
 suffix
 substrings
 sigma
+sparse
 fully
 formal
 forward
@@ -24964,6 +24971,7 @@ SEj
 SZRX
 Suffix
 Substring
+Sparse
 method
 memory
 modify
@@ -27647,6 +27655,7 @@ nFA
 niRj
 nte
 nIZ
+normalized
 crash
 can
 correctness
@@ -45014,6 +45023,7 @@ uyb
 uCU
 uqy
 uNzoD
+union
 Model
 More
 May
@@ -49816,6 +49826,7 @@ CnF
 Csi
 CMC
 Convert
+Construct
 handle
 high
 hints
@@ -51207,6 +51218,7 @@ hte
 hrU
 hIiI
 hIK
+half
 Requires
 Rust
 Reading
@@ -56927,6 +56939,7 @@ Lra
 LJEP
 Longest
 LEt
+Lookup
 justify
 jd
 jt

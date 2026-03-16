@@ -1,0 +1,31 @@
+
+# Tasks
+
+## 1 LSD and MSD Radix Sort. Radix sort that process digits in right-to-left order is called LSD radix sort. If we instead process digits in left-to-right order we call the algorithm MSD radix sort. Solve the following exercises. 
+
+### 1.1 Show that LSD radix sort correctly sorts any input. 
+
+induction by k (nr of digits)
+
+base: k = 1
+step: assume after pass k-1 the array is sorted on the last k-1 digits by IH
+case 1:
+ - a != b in digit k -> just sort by current digit
+ - a = b in digit k -> needs to sort stabely to ensure k-1 digits are in the correct order
+### 1.2 Explain why each step in LSD radix sort must use a stable sorting algorithm. 
+
+In other case, the previously sorted order might be disrupted, since the context of the sorting looks at a single digit.
+### 1.3 Show that that are input for which MSD radix sort does not correctly sort any input. 
+
+Witness
+```
+11    03    11
+12 -> 11 -> 12
+03    12    03
+```
+
+### 1.4 \[∗] Explain how to modify MSD radix sort to sort correctly.
+
+run the sorting on the subranges
+
+## 2 [w] Prefix Doubling Suffix sort cocoa using prefix doubling.
