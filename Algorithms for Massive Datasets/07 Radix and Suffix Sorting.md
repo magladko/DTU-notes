@@ -28,4 +28,5 @@ Witness
 
 run the sorting on the subranges
 
-## 2 [w] Prefix Doubling Suffix sort cocoa using prefix doubling.
+## 2 \[w] Prefix Doubling Suffix sort cocoa using prefix doubling.
+
