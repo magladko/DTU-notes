@@ -29,14 +29,14 @@ run the sorting on the subranges
 
 ## 2 \[w] Prefix Doubling Suffix sort cocoa using prefix doubling.
 
-| order | $2^0$ |     | order |     | $2^1$ |     | order |     | $2^2$    |     | order |     | $2^3$            |
-| ----- | ----- | --- | ----- | --- | ----- | --- | ----- | --- | -------- | --- | ----- | --- | ---------------- |
-| 2     | c     |     | 2     | 23  | co    |     | 3     | 22  | coco     |     | 3     | 31  | cocoa\$\$\$      |
-| 3     | o     |     | 4     | 32  | oc    |     | 5     | 43  | ocoa     |     | 5     | 50  | ocoa\$\$\$\$     |
-| 2     | c     |     | 2     | 23  | co    |     | 2     | 21  | coa$     |     | 2     | 20  | coa\$\$\$\$\$    |
-| 3     | o     |     | 3     | 31  | oa    |     | 4     | 30  | oa\$$    |     | 4     | 40  | oa\$\$\$\$\$\$   |
-| 1     | a     |     | 1     | 10  | a$    |     | 1     | 10  | a\$\$$   |     | 1     | 10  | a\$\$\$\$\$\$\$  |
-| 0     | $     |     | 0     | 00  | \$$   |     | 0     | 00  | \$\$\$\$ |     | 0     | 00  | \$\$\$\$\$\$\$\$ |
-
+| order | $2^0$ |     | order |     | $2^1$ |     | order |     | $2^2$    |
+| ----- | ----- | --- | ----- | --- | ----- | --- | ----- | --- | -------- |
+| 2     | c     |     | 2     | 23  | co    |     | 3     | 22  | coco     |
+| 3     | o     |     | 4     | 32  | oc    |     | 5     | 43  | ocoa     |
+| 2     | c     |     | 2     | 23  | co    |     | 2     | 21  | coa$     |
+| 3     | o     |     | 3     | 31  | oa    |     | 4     | 30  | oa\$$    |
+| 1     | a     |     | 1     | 10  | a$    |     | 1     | 10  | a\$\$$   |
+| 0     | $     |     | 0     | 00  | \$$   |     | 0     | 00  | \$\$\$\$ |
+No need to continue, since we have the distinct order.
 ## 3 Odd-Even Sampling. Suppose we modify the sampling of suffixes in the DC3 algorithm such that the sampled and non-sampled suffixes are those starting at even and odd positions, respectively. Determine if the algorithm still works, i.e., show that it still works or explain where it fails.
 
