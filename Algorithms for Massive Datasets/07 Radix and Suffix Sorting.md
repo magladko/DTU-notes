@@ -40,6 +40,8 @@ run the sorting on the subranges
 No need to continue, since we have the distinct order.
 ## 3 Odd-Even Sampling. Suppose we modify the sampling of suffixes in the DC3 algorithm such that the sampled and non-sampled suffixes are those starting at even and odd positions, respectively. Determine if the algorithm still works, i.e., show that it still works or explain where it fails.
 
+![[07_3_mod2_fail.png]]
+
 ## 4 \[w] Suffix arrays. Write the suffix array for the string mississippi$
 
 ![[06.1.suffix_tree.png|1081]]
@@ -48,3 +50,23 @@ No need to continue, since we have the distinct order.
 [11, 10, 7, 4, 1, 0, 8, 9, 2, 5, 3, 6]
 ```
 
+
+## 5 Searching in Suffix Arrays. Let S be a string of length n and let SA be the suffix array of S. Given the SA and S show how to support search(P) for a string P of length m in time O(m log n + occ).
+
+```
+
+  m   i  s  s  i  s  s  i  p  p  i  $
+[11, 10, 7, 4, 1, 0, 8, 9, 2, 5, 3, 6]
+  $   i  i  i  i  m  p  p  s  s  s  s
+      $  p  s  s  i  p  i  s  s  i  i
+         p  s  s  s  i  $  i  i  s  p
+         i  i  i  s  $     s  p  s  p
+         $  p  s  i        s  p  i  i
+            p  s  s        i  i  p  $
+            i  i  s        p  $  p
+            $  p  i        p     i
+               p  p        i     $
+               i  p        $
+               $  i
+                  $
+```

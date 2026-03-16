@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 254.51103591918945
   },
   "right": {
     "id": "e41b1fdf766de89c",
@@ -186,6 +186,9 @@
   "lastOpenFiles": [
     "Algorithms for Massive Datasets/06 Suffix Trees.md",
     "Algorithms for Massive Datasets/07 Radix and Suffix Sorting.md",
+    "Algorithms for Massive Datasets/attachments/07_3_mod2_fail.ods",
+    "Algorithms for Massive Datasets/attachments/lu6225494f52w.tmp",
+    "Algorithms for Massive Datasets/attachments/07_3_mod2_fail.png",
     "Algorithms for Massive Datasets/05 Range Reporting.md",
     "Algorithms for Massive Datasets/03 LCA and RMQ.md",
     "Algorithms for Massive Datasets/02 Predecessor.md",
@@ -201,7 +204,6 @@
     "Algorithms for Massive Datasets/attachments/06.tries.png",
     "Algorithms for Massive Datasets/attachments/05.3.png",
     "Algorithms for Massive Datasets/attachments/05.1.2.png",
-    "Algorithms for Massive Datasets/attachments/05.1_tree.png",
     "2nd semester/AutomatedReasoning/src/#Exercise2_4.thy#",
     "2nd semester/AutomatedReasoning/MiniCalc_new/MyTest.thy",
     "2nd semester/AutomatedReasoning/MiniCalc_new/MiniCalc.thy",
@@ -210,8 +212,6 @@
     "2nd semester/AutomatedReasoning/MiniCalc/MyTest.thy~",
     "2nd semester/AutomatedReasoning/MiniCalc/#MyTest.thy#",
     "2nd semester/AutomatedReasoning/MiniCalc/MyTest.thy",
-    "2nd semester/AutomatedReasoning/MiniCalc/#MyTest#",
-    "2nd semester/AutomatedReasoning/MiniCalc/MyTest",
     "Algorithms for Massive Datasets/attachments/Drawing 2026-02-23 09.00.26.excalidraw.md",
     "attachments/CC_exercise10.md",
     "3rd semester/Computationally Hard Problems/Cheat-sheet.md",
@@ -229,7 +229,6 @@
     "3rd semester/Program Analysis/05 Unbounded Static Analysis.md",
     "3rd semester/Program Analysis/04 Bounded Static Analysis.md",
     "3rd semester/Program Analysis/03 Dynamic Analysis.md",
-    "3rd semester/Program Analysis/02 Semantics.md",
     "CompilerConstruction/Untitled.canvas",
     "Untitled 1.canvas",
     "Untitled.canvas",
