@@ -1268,6 +1268,7 @@ WCEg
 WIQ
 WEJab
 WGS
+Witness
 is
 its
 in
@@ -4250,6 +4251,7 @@ pWK
 parent
 preprocess
 preprocessing
+pass
 verification
 verified
 verify
@@ -6948,6 +6950,7 @@ PBE
 Pll
 PbQ
 PJx
+Prefix
 that
 the
 to
@@ -15920,6 +15923,9 @@ dct
 drT
 dBT
 describing
+digits
+digit
+disrupted
 given
 good
 guarantees
@@ -18936,6 +18942,11 @@ suffix
 substrings
 sigma
 sparse
+stabely
+stable
+subranges
+suffixes
+sampled
 fully
 formal
 forward
@@ -24972,6 +24983,7 @@ SZRX
 Suffix
 Substring
 Sparse
+Sort
 method
 memory
 modify
@@ -29331,6 +29343,8 @@ concatenating
 consumption
 char
 chars
+cocoa
+coco
 runs
 returns
 requires
@@ -30793,6 +30807,8 @@ rKZj
 rsearch
 rep
 ret
+radix
+respectively
 of
 original
 ordering
@@ -32099,6 +32115,7 @@ oNMM
 olJ
 oqY
 occurring
+ocoa
 How
 Hence
 Hi
@@ -35068,6 +35085,7 @@ DZp
 Drt
 DYp
 Directed
+Doubling
 Verification
 Verified
 Very
@@ -46569,6 +46587,7 @@ MMZ
 MPOi
 MER
 Meg
+MSD
 Automatic
 Automated
 Analogies
@@ -52828,6 +52847,7 @@ Result
 RZz
 Repeats
 Restricted
+Radix
 years
 your
 you
@@ -56940,6 +56960,7 @@ LJEP
 Longest
 LEt
 Lookup
+LSD
 justify
 jd
 jt
