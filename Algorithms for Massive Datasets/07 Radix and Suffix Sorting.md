@@ -79,3 +79,33 @@ Query order (search(issi)):
 
 2 * m * log n -> find the prefix
 occ  -> iterate on the matches (low to high)
+
+## 6 LCP array. Let S be a string of length n, let ST be the suffix tree of S and let SA be the suffix array of S. The LCP array LCP(S) is an array of length n, where LCP\[0] = −1 and LCP\[i] is the length of the longest common prefix of the suffix SA\[i − 1] and SA\[i] for 2 ≤ i ≤ n.
+
+### 6.1 \[w] Write the LCP array for the string mississippi$. 
+
+```
+  m  i  s  s  i  s  s  i  p  p  i  $  <- original string
+  0  1  2  3  4  5  6  7  8  9 10 11  <- indices
+[11,10, 7, 4, 1, 0, 8, 9, 2, 5, 3, 6] <- suffix array
+[-1, 0, 1, 1, 4, 0, 0, 1, 0, 3, 1, 2] <- LCP array
+  $  i  i  i  i  m  p  p  s  s  s  s
+     $  p  s  s  i  p  i  s  s  i  i
+        p  s  s  s  i  $  i  i  s  p
+        i  i  i  s  $     s  p  s  p
+        $  p  s  i        s  p  i  i
+           p  s  s        i  i  p  $
+           i  i  s        p  $  p
+           $  p  i        p     i
+              p  p        i     $
+              i  p        $
+              $  i
+                 $
+```
+
+$[-1, 0, 1, 1, 4, 0, 0, 1, 0, 3, 1, 2]$ <- LCP array
+### 6.2 Show how to obtain the LCP array from the suffix tree. Hint: Consider the stringdepth of the internal nodes. 
+
+
+### 6.3 Given two indicies i and j show how to efficiently compute the length of the longest common prefix of two suffixes SA\[i] and SA\[ j] using the LCP array.
+
