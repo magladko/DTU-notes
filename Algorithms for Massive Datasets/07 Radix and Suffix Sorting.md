@@ -19,9 +19,8 @@ In other case, the previously sorted order might be disrupted, since the context
 
 Witness
 ```
-11    03    11
-12 -> 11 -> 12
-03    12    03
+12    12    21
+21 -> 21 -> 12
 ```
 
 ### 1.4 \[∗] Explain how to modify MSD radix sort to sort correctly.
