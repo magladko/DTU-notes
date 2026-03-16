@@ -39,3 +39,5 @@ run the sorting on the subranges
 | 1     | a     |     | 1     | 10  | a$    |     | 1     | 10  | a\$\$$   |     | 1     | 10  | a\$\$\$\$\$\$\$  |
 | 0     | $     |     | 0     | 00  | \$$   |     | 0     | 00  | \$\$\$\$ |     | 0     | 00  | \$\$\$\$\$\$\$\$ |
 
+## 3 Odd-Even Sampling. Suppose we modify the sampling of suffixes in the DC3 algorithm such that the sampled and non-sampled suffixes are those starting at even and odd positions, respectively. Determine if the algorithm still works, i.e., show that it still works or explain where it fails.
+
