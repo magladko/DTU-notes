@@ -46,6 +46,7 @@ No need to continue, since we have the distinct order.
 
 ![[06.1.suffix_tree.png|1081]]
 
+in-order pass
 ```
 [11, 10, 7, 4, 1, 0, 8, 9, 2, 5, 3, 6]
 ```
@@ -79,6 +80,12 @@ Query order (search(issi)):
 
 2 * m * log n -> find the prefix
 occ  -> iterate on the matches (low to high)
+
+Conclusion:
+2 bin-search: 
+- left-most occurrence of the prefix in the suffix
+- right-most occurrence of the prefix in the suffix
+then iterate through occurrences
 
 ## 6 LCP array. Let S be a string of length n, let ST be the suffix tree of S and let SA be the suffix array of S. The LCP array LCP(S) is an array of length n, where LCP\[0] = −1 and LCP\[i] is the length of the longest common prefix of the suffix SA\[i − 1] and SA\[i] for 2 ≤ i ≤ n.
 
