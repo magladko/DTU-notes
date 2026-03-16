@@ -2878,6 +2878,9 @@ iTZ
 inf
 iNJ
 issi
+iterate
+indices
+indicies
 program
 permutation
 possible
@@ -18947,6 +18950,7 @@ stable
 subranges
 suffixes
 sampled
+stringdepth
 fully
 formal
 forward
@@ -24984,6 +24988,7 @@ Suffix
 Substring
 Sparse
 Sort
+Searching
 method
 memory
 modify
@@ -26438,6 +26443,7 @@ mFLI
 muq
 mgD
 merge
+mississippi
 not
 new
 note
@@ -32116,6 +32122,7 @@ olJ
 oqY
 occurring
 ocoa
+obtain
 How
 Hence
 Hi
@@ -46588,6 +46595,7 @@ MPOi
 MER
 Meg
 MSD
+MATCH
 Automatic
 Automated
 Analogies
@@ -56961,6 +56969,7 @@ Longest
 LEt
 Lookup
 LSD
+LCP
 justify
 jd
 jt
@@ -70525,6 +70534,7 @@ Qazn
 QBRrh
 Qbw
 Qhv
+Query
 xGG
 xR
 xr
