@@ -56,6 +56,7 @@ No need to continue, since we have the distinct order.
 ```
 
   m   i  s  s  i  s  s  i  p  p  i  $
+  0   1  2  3  4  5  6  7  8  9 10 11
 [11, 10, 7, 4, 1, 0, 8, 9, 2, 5, 3, 6]
   $   i  i  i  i  m  p  p  s  s  s  s
       $  p  s  s  i  p  i  s  s  i  i
@@ -70,3 +71,11 @@ No need to continue, since we have the distinct order.
                $  i
                   $
 ```
+
+Query order (search(issi)):
+ - 5 -> i < m
+ - 2 -> ip < is
+ - 3 -> issi -> MATCH - then what
+
+2 * m * log n -> find the prefix
+occ  -> iterate on the matches (low to high)
